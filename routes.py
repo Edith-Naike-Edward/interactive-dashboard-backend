@@ -5,6 +5,8 @@ import models
 from preprocessing import preprocess_health_data
 from anomaly_detection import detect_anomalies
 from api.auth.register.auth import router as auth_router 
+from api.auth.signin.auth import router as signin_router  # Import the signin router
+from api.auth.register.auth import router as register_router  # Import the register router
 import os
 import pandas as pd
 
@@ -14,7 +16,9 @@ models.Base.metadata.create_all(bind=engine)
 router = APIRouter()
 
 # Include authentication routes under /auth
-router.include_router(auth_router, prefix="/auth")
+# router.include_router(auth_router, prefix="/auth")
+router.include_router(signin_router, prefix="/auth")
+router.include_router(register_router, prefix="/auth")
 
 # Dependency: Get database session
 def get_db():
