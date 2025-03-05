@@ -7,7 +7,8 @@ from security import hash_password
 from security import validate_password 
 
 # router = APIRouter()
-router = APIRouter(prefix="/api/auth", tags=["auth"])
+# router = APIRouter(prefix="/api/auth", tags=["auth"])
+router = APIRouter(tags=["auth"]) 
 
 # Pydantic model for request validation
 class RegisterRequest(BaseModel):
