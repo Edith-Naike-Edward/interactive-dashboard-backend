@@ -6,7 +6,6 @@ from models import User  # Your User model
 from security import verify_password, create_access_token  # Hashing & JWT handling
 # from database import get_db # Dependency to get a database session
 
-# router = APIRouter(prefix="/api/auth", tags=["auth"])
 router = APIRouter(tags=["auth"]) 
 
 # Request Body Model
