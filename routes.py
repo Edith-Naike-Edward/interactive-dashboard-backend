@@ -9,6 +9,9 @@ from api.auth.signin.auth import router as signin_router  # Import the signin ro
 from api.auth.register.auth import router as register_router  # Import the register router
 import os
 import pandas as pd
+from models import HealthData
+
+CSV_FILE_PATH = r"D:\UNI FILES\YEAR 4.2\Interactive Dashboard\Backend\data\Health Screening Data.csv"
 
 # Ensure database tables are created
 models.Base.metadata.create_all(bind=engine)
@@ -46,6 +49,61 @@ def create_user(username: str, email: str, password: str, db: Session = Depends(
     db.commit()
     db.refresh(new_user)
     return new_user
+
+def load_health_screening_data(db: Session):
+    """
+    Load health screening data from a CSV file into the database.
+    """
+    # Path to your CSV file
+    CSV_FILE_PATH = r"D:\UNI FILES\YEAR 4.2\Interactive Dashboard\Backend\data\Health Screening Data.csv"
+
+    # Check if the CSV file exists
+    if not os.path.exists(CSV_FILE_PATH):
+        raise FileNotFoundError(f"CSV file not found at {CSV_FILE_PATH}")
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(CSV_FILE_PATH)
+
+    # Print the columns of the DataFrame
+    print(df.columns)
+
+    # Insert data into the database
+    for _, row in df.iterrows():
+        health_entry = models.HealthData(
+            age=row["age"],
+            gender=row["gender"],
+            height=row["height"],
+            weight=row["weight"],
+            ap_hi=row["ap_hi"],
+            ap_lo=row["ap_lo"],
+            cholesterol=row["cholesterol"],
+            gluc=row["gluc"],
+            smoke=row["smoke"],
+            alco=row["alco"],
+            active=row["active"],
+            cardio=row["cardio"],
+            AgeinYr=row["AgeinYr"],
+            BMI=row["BMI"],
+            BMICat=row["BMICat"],
+            AgeGroup=row["AgeGroup"]
+        )
+        db.add(health_entry)
+
+    # Commit the changes
+    db.commit()
+    db.refresh(health_entry)
+    return health_entry
+
+@router.post("/load-health-data/")
+def load_health_data(db: Session = Depends(get_db)):
+    """
+    Load health screening data from the CSV file into the database.
+    """
+    try:
+        load_health_screening_data(db)
+        return {"message": "Health screening data loaded successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 # Upload, preprocess, and save health data to the database
@@ -86,6 +144,24 @@ def get_health_data(db: Session = Depends(get_db)):
     if not health_data:
         raise HTTPException(status_code=404, detail="No data found")
     return health_data
+
+@router.get("/health-screening-data/")
+def get_health_screening_data():
+    """
+    Read the health screening data from the CSV file and return it as JSON.
+    """
+    # Check if the CSV file exists
+    if not os.path.exists(CSV_FILE_PATH):
+        raise HTTPException(status_code=404, detail="CSV file not found")
+
+    try:
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(CSV_FILE_PATH)
+        # Convert the DataFrame to JSON
+        data = df.to_dict(orient="records")
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading CSV file: {str(e)}")
 
 
 # Anomaly detection for glucose levels**
