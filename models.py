@@ -24,7 +24,7 @@ class HealthData(Base):
     id = Column(Integer, primary_key=True, index=True)  # Primary key
     age = Column(Integer, nullable=False)  # Age of the individual
     gender = Column(String, nullable=False)  # Gender of the individual
-    insulin = Column(Float, nullable=False)  # Insulin level
+    # insulin = Column(Float, nullable=False)  # Insulin level
     height = Column(Float, nullable=False)  # Height of the individual
     weight = Column(Float, nullable=False)  # Weight of the individual
     ap_hi = Column(Integer, nullable=False)  # Systolic blood pressure
