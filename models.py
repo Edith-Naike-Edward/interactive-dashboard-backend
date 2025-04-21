@@ -38,3 +38,5 @@ class HealthData(Base):
     BMI = Column(Float, nullable=False)  # Body Mass Index
     BMICat = Column(String, nullable=False)  # BMI category
     AgeGroup = Column(String, nullable=False)  # Age group category
+
+# class fillprescription(Base):
