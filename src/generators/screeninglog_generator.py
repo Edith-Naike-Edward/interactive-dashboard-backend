@@ -5,6 +5,8 @@ from faker import Faker
 from datetime import datetime, timedelta
 import uuid
 from .patientgenerator import COUNTIES, SUB_COUNTIES
+from src.generators.site_user_generation import generate_site_user_data
+sites_df, _ = generate_site_user_data(n_users_per_site=0)  # Generate empty sites_df for now
 
 fake = Faker()
 
@@ -27,6 +29,9 @@ def generate_screening_log(patients_df):
         is_diabetic = random.random() < 0.2
         glucose_value = round(np.random.normal(100, 20 if not is_diabetic else 40), 1)
         glucose_type = random.choice(["FBS", "RBS"])
+
+        random_site = sites_df.sample(1).iloc[0]
+    
         
         # CVD Risk calculation (simplified)
         cvd_risk_score = max(0, round(
@@ -77,8 +82,8 @@ def generate_screening_log(patients_df):
             "county_name": patient["county_name"],
             "sub_county_id": patient["sub_county_id"],
             "sub_county_name": patient["sub_county_name"],
-            "site_id": patient["site_id"],
-            "site_name": patient["site_name"],
+            "site_id": random_site['site_id'],  # Use real site ID
+            "site_name": random_site['name'],   # Use real site name
             "landmark": patient["landmark"],
             "latitude": round(random.uniform(-1.0, 1.0) + 37.0, 6),  # Kenya approx
             "longitude": round(random.uniform(-1.0, 1.0) + 36.0, 6),

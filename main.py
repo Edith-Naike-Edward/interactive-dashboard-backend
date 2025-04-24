@@ -9,8 +9,12 @@ from src.generators.bplog_generator import generate_bp_log
 from src.generators.glucoselog_generator import generate_glucose_log
 from src.generators.patientmedicalcompliance_generator import generate_patient_medical_compliances
 from src.generators.patientlifestyle_generator import generate_patient_lifestyles
+from src.generators.patientmedicalreview_generator import generate_patient_medical_reviews
+from src.generators.patientdiagnosis_generator import generate_patient_diagnoses
 from src.generators.health_metrics_generator import generate_health_metrics
 from src.analytics.anomaly_detector import detect_anomalies
+from src.generators.site_user_generation import generate_site_user_data
+from src.generators.patient_visit_generator import generate_visits
 import os
 from typing import Optional
 import os
@@ -71,6 +75,11 @@ def run_pipeline(
     """Core data generation pipeline"""
     try:
         print("Starting data generation...")
+
+        # 0. Generate sites and users first (since patients need sites)
+        sites_df, users_df = generate_site_user_data()
+        sites_df.to_csv("data/raw/sites.csv", index=False)
+        users_df.to_csv("data/raw/users.csv", index=False)
         
         # 1. Generate patients
         patients = generate_patients(num_patients)
@@ -87,11 +96,21 @@ def run_pipeline(
         glucose_logs = generate_glucose_log(screenings)
         glucose_logs.to_csv("data/raw/glucose_logs.csv", index=False)
 
+        visits_df = generate_visits()
+        visits_df.to_csv("data/raw/patient_visits.csv", index=False)
+    
+
         compliances = generate_patient_medical_compliances(bp_logs)
         compliances.to_csv("data/raw/compliances.csv", index=False)
 
         lifestyles = generate_patient_lifestyles(bp_logs)
         lifestyles.to_csv("data/raw/lifestyles.csv", index=False)
+
+        medical_reviews = generate_patient_medical_reviews(bp_logs, visits_per_patient=3)
+        medical_reviews.to_csv("data/raw/medical_reviews.csv", index=False)
+
+        diagnoses = generate_patient_diagnoses(patients)
+        diagnoses.to_csv("data/raw/diagnoses.csv", index=False)
         
         # 4. Generate continuous metrics
         health_metrics = generate_health_metrics(
@@ -104,12 +123,17 @@ def run_pipeline(
 
         # 5. Run anomaly detection on all generated data
         health_data = {
+            'sites': sites_df,
+            'users': users_df,
             'screenings': screenings,
             'bp_logs': bp_logs,
             'glucose_logs': glucose_logs,
             'health_metrics': health_metrics,
             'compliances': compliances,
-            'lifestyles': lifestyles
+            'lifestyles': lifestyles,
+            'medical_reviews': medical_reviews,
+            'diagnoses': diagnoses,
+            'visits': visits_df
         }
         anomalies = detect_anomalies(health_data)
         anomalies.to_csv("data/raw/anomalies.csv", index=False)

@@ -83,7 +83,7 @@ def generate_medical_review_record(bp_log, visit_id=None):
     return {
         "clinical_note": clinical_note,
         "physical_exam_comments": physical_exam,
-        "patient_track_id": bp_log['patient_id'],  # Linking to patient
+        "patient_track_id": bp_log['patient_track_id'],  # Linking to patient
         "complaint_comments": complaint_comment,
         "patient_visit_id":  visit_id if visit_id else str(uuid.uuid4()),  # Visit ID from the log or new UUID
         "patient_medical_review_id": str(uuid.uuid4()),
@@ -96,11 +96,11 @@ def generate_medical_review_record(bp_log, visit_id=None):
         "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
     }
 
-def generate_patient_medical_reviews(bp_log_df, visits_per_patient=3):
+def generate_patient_medical_reviews(bp_logs, visits_per_patient=3):
     """Generate medical review records for all patients"""
     medical_reviews = []
     
-    for _, bp_log in bp_log_df.iterrows():
+    for _, bp_log in bp_logs.iterrows():
         # Generate 1-5 visits per patient (weighted toward fewer visits)
         num_visits = random.choices([1, 2, 3, 4, 5], weights=[0.4, 0.3, 0.15, 0.1, 0.05])[0]
         

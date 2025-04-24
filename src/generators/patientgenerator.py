@@ -6,12 +6,17 @@ from datetime import datetime, timedelta
 import uuid
 from config.settings import NUM_PATIENTS, KDHS_2022, REPEAT_PATIENT_RATE
 from datetime import date
-
+from src.generators.site_user_generation import generate_site_user_data
+sites_df, _ = generate_site_user_data(n_users_per_site=0)  
 fake = Faker()
 
-# Add these global variables after your other mappings
+# # Add these global variables after your other mappings
+# patient_pool = []  # Stores base patient profiles
+# generated_patients = []  # Tracks all generated patients (new and repeats)
+# Global variables to track patients
 patient_pool = []  # Stores base patient profiles
 generated_patients = []  # Tracks all generated patients (new and repeats)
+repeat_patient_ids = set()  # Track patient IDs of repeat patients
 
 # County and sub-county mappings
 COUNTIES = {
@@ -240,11 +245,26 @@ def _assign_health_conditions(patients):
     return patients
 
 def generate_patient_record():
+    """Generate or identify an existing (repeat) patient."""
+    # Generate a new or repeat patient based on REPEAT_PATIENT_RATE
+    if random.random() < REPEAT_PATIENT_RATE and repeat_patient_ids:
+        # If we decide to generate a repeat patient
+        patient_id = random.choice(list(repeat_patient_ids))  # Choose an existing patient ID
+        existing_patient = next(p for p in generated_patients if p["patient_id"] == patient_id)
+        return existing_patient  # Return the repeat patient's details
+
+    # If it's a new patient, generate a new one
+    patient = generate_new_patient()
+    repeat_patient_ids.add(patient["patient_id"])  # Add new patient's ID to repeat set
+    return patient
+
+def generate_new_patient():
     # Select a random sub-county and get its county
     sub_county_name = random.choice(list(SUB_COUNTIES.keys()))
     county_name = SUB_COUNTIES[sub_county_name]
     sub_county_id = subcounty_to_idmapping[sub_county_name]
     county_id = COUNTIES[county_name]
+    random_site = sites_df.sample(1).iloc[0]
     
     # Generate names with 30% chance of having middle name
     first_name = fake.first_name()
@@ -298,8 +318,8 @@ def generate_patient_record():
         "phone_number": phone_number,
         "insurance_status": insurance_status,
         "is_pregnant": random.choice([True, False]) if gender == "F" and age >= 18 and age <= 45 else False,
-        "site_id": str(uuid.uuid4()),
-        "site_name": f"{sub_county_name} Health Center",
+        "site_id": random_site['site_id'],  # Use real site ID
+        "site_name": random_site['name'],   # Use real site name
         "first_name": first_name,
         "last_name": last_name,
         "age": age,
@@ -317,69 +337,59 @@ def generate_patient_record():
         "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S"),
         "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
     }
-    # Add health conditions based on KDHS statistics
-    # patients = _assign_health_conditions(patients)
-    # return patients
 
-# def generate_patients(num_patients=NUM_PATIENTS):
-#     patients = []
-#     for _ in range(num_patients):
-#         patients.append(generate_patient_record())
-#     return pd.DataFrame(patients)
-def get_patient():
-    """Get either a new patient or a repeat patient based on REPEAT_PATIENT_RATE"""
-    # If we have existing patients and random check passes, return a repeat patient
-    if patient_pool and random.random() < REPEAT_PATIENT_RATE:
-        repeat_patient = random.choice(patient_pool).copy()
-        repeat_patient['is_repeat_visit'] = True
-        return repeat_patient
-    
-    # Otherwise generate a new patient
-    new_patient = generate_patient_record()
-    new_patient['is_repeat_visit'] = False
-    patient_pool.append(new_patient.copy())  # Add to pool for potential future repeats
-    return new_patient
-
-def generate_patients(num_patients=NUM_PATIENTS):
-    """Generate a mix of new and repeat patients"""
-    global generated_patients, patient_pool
-    
-    # Clear previous runs if any
-    patient_pool.clear()
-    generated_patients.clear()
+def generate_patients(num_patients):
+    """Generate patients and return as DataFrame"""
+    patients_list = []
     
     for _ in range(num_patients):
-        patient = get_patient()
-        
-        # Update visit-specific details (keeps original if repeat patient)
-        # visit_date = fake.date_time_between(
-        #     start_date="-2y", 
-        #     end_date="now",
-        #     # For repeat patients, make sure visit date is after their original date
-        #     start_date=patient.get('created_at', "-2y")
-        # )
-        visit_date = fake.date_time_between(
-            start_date="-2y" if patient['is_repeat_visit'] else patient.get('created_at', "-2y"),
-            end_date="now"
-        )
-        
-        patient.update({
-            'site_id': str(uuid.uuid4()),
-            'site_name': f"{patient['sub_county_name']} Health Center",
-            'program_id': str(uuid.uuid4()),
-            'program_name': random.choice(["Diabetes Care", "Hypertension Management", "General Wellness"]),
-            'updated_at': visit_date.strftime("%Y-%m-%d %H:%M:%S"),
-            'is_pregnant': random.choice([True, False]) if patient['gender'] == "F" and 18 <= patient['age'] <= 45 else False,
-            'is_active': random.choice([True, False]),
-            'visit_date': visit_date.strftime("%Y-%m-%d %H:%M:%S")
-        })
-        
-        # For new patients, set created_at to visit date
-        if not patient['is_repeat_visit']:
-            patient['created_at'] = visit_date.strftime("%Y-%m-%d %H:%M:%S")
-        
-        # Assign health conditions
-        patient = _assign_health_conditions(patient)
+        patient = generate_patient_record()
+        patient = _assign_health_conditions(patient)  # Add health conditions
+        patients_list.append(patient)
         generated_patients.append(patient)
+        
+        # Add to patient pool if needed
+        if random.random() < 0.3:  # Example probability
+            patient_pool.append(generate_base_patient(patient))
     
-    return pd.DataFrame(generated_patients)
+    # Convert to DataFrame with proper types
+    patients_df = pd.DataFrame(patients_list)
+    
+    # Convert date fields
+    date_cols = ['date_of_birth', 'created_at', 'updated_at']
+    for col in date_cols:
+        if col in patients_df.columns:
+            patients_df[col] = pd.to_datetime(patients_df[col])
+    
+    return patients_df
+
+def calculate_patient_summary(patients_df: pd.DataFrame):
+    """
+    Calculate and display patient summary statistics, and save repeat and new patients to separate CSV files.
+    
+    Args:
+        patients_df: DataFrame containing all generated patients
+    """
+    patients_df['is_repeat'] = patients_df['patient_id'].isin(repeat_patient_ids) # Mark repeat patients
+    
+    # Separate the DataFrames
+    new_patients = patients_df[~patients_df['is_repeat']]
+    repeat_patients = patients_df[patients_df['is_repeat']]
+    
+    # Save to CSV files
+    new_patients.to_csv('new_patients.csv', index=False)
+    repeat_patients.to_csv('repeat_patients.csv', index=False)
+    
+    # Calculate statistics
+    total_patients = len(patients_df)
+    new_patient_count = len(new_patients)
+    repeat_patient_count = len(repeat_patients)
+    
+    print("Patient Summary:")
+    print(f"  Total Patient Records: {total_patients}")
+    print(f"  New Patients: {new_patient_count}")
+    print(f"  Repeat Patients: {repeat_patient_count}")
+    print("\nData saved to:")
+    print("  - new_patients.csv")
+    print("  - repeat_patients.csv")
+    
