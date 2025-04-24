@@ -107,11 +107,11 @@ def generate_medical_compliance_record(bp_log):
     }
 
 
-def generate_patient_medical_compliances(bp_logs_df):
+def generate_patient_medical_compliances(bp_logs):
     """Generate compliance records for each BP log"""
 
     compliances = []
-    for _, bp_log in bp_logs_df.iterrows():
+    for _, bp_log in bp_logs.iterrows():
         # Generate 1 to 5 compliance records per BP log
         num_records = random.choices([1, 2, 3, 4, 5], weights=[0.3, 0.3, 0.2, 0.1, 0.1])[0]
         

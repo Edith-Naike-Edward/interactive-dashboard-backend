@@ -1,5 +1,5 @@
-from sqlalchemy import Column, Integer, String, Float
-from sqlalchemy.orm import declarative_base
+from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy.orm import declarative_base, relationship
 
 # Create a base class for declarative class definitions
 Base = declarative_base()
@@ -15,28 +15,21 @@ class User(Base):
     password = Column(String, nullable=False)  # User's password
     role = Column(String, nullable=False)  # User's role
     organisation = Column(String, nullable=False)  # User's organisation
+    is_active = Column(Integer, default=1)  # User's active status (1 for active, 0 for inactive)
 
-# Define a HealthData class which will be mapped to the 'health_data' table
-class HealthData(Base):
-    __tablename__ = "health_data"
-    
-    # Define columns for the 'health_data' table
-    id = Column(Integer, primary_key=True, index=True)  # Primary key
-    age = Column(Integer, nullable=False)  # Age of the individual
-    gender = Column(String, nullable=False)  # Gender of the individual
-    height = Column(Float, nullable=False)  # Height of the individual
-    weight = Column(Float, nullable=False)  # Weight of the individual
-    ap_hi = Column(Integer, nullable=False)  # Systolic blood pressure
-    ap_lo = Column(Integer, nullable=False)  # Diastolic blood pressure
-    cholesterol = Column(Integer, nullable=False)  # Cholesterol level
-    gluc = Column(Integer, nullable=False)  # Glucose level
-    smoke = Column(Integer, nullable=False)  # Smoking status (0 or 1)
-    alco = Column(Integer, nullable=False)  # Alcohol intake status (0 or 1)
-    active = Column(Integer, nullable=False)  # Physical activity status (0 or 1)
-    cardio = Column(Integer, nullable=False)  # Presence of cardiovascular disease (0 or 1)
-    AgeinYr = Column(Integer, nullable=False)  # Age in years
-    BMI = Column(Float, nullable=False)  # Body Mass Index
-    BMICat = Column(String, nullable=False)  # BMI category
-    AgeGroup = Column(String, nullable=False)  # Age group category
+    site_id = Column(Integer, ForeignKey("sites.id"))
+    site = relationship("Site", back_populates="users")
 
-# class fillprescription(Base):
+class Site(Base):
+    __tablename__ = "sites"
+
+    site_id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    site_type = Column(String, nullable=False)
+    county_id = Column(Integer, nullable=False)
+    sub_county_id = Column(Integer, nullable=False)
+    latitude = Column(Float)
+    longitude = Column(Float)
+    is_active = Column(Integer, default=1)  # Sites' active status (1 for active, 0 for inactive)
+
+    users = relationship("User", back_populates="site")

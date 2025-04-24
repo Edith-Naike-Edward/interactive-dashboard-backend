@@ -4,7 +4,7 @@ NUM_PATIENTS = 500  # Number of patients to simulate
 DAYS_TO_SIMULATE = 30
 ANOMALY_RATE = 0.05  # 5% of records will be anomalies
 # Simulation settings
-REPEAT_PATIENT_RATE = 0.6  # 40% of patients will be repeat visits
+REPEAT_PATIENT_RATE = 0.7  # 70% of patients will be repeat visits
 MAX_VISITS_PER_REPEAT_PATIENT = 5  # Maximum number of visits per repeat patient
 
 
