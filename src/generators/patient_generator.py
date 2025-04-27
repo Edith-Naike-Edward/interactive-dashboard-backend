@@ -9,7 +9,14 @@ from datetime import date
 from src.generators.site_user_generation import generate_site_user_data
 sites_df, _ = generate_site_user_data(n_users_per_site=0)  
 fake = Faker()
-generated_patients = []  # Store generated patients
+
+# # Add these global variables after your other mappings
+# patient_pool = []  # Stores base patient profiles
+# generated_patients = []  # Tracks all generated patients (new and repeats)
+# Global variables to track patients
+patient_pool = []  # Stores base patient profiles
+generated_patients = []  # Tracks all generated patients (new and repeats)
+repeat_patient_ids = set()  # Track patient IDs of repeat patients
 
 # County and sub-county mappings
 COUNTIES = {
@@ -199,18 +206,21 @@ INSURANCE_TYPES = [
     "NHIF", "Private", "Community-Based", "Employer-Based", "None"
 ]
 
-def _assign_health_conditions_wrapper(row):
-    """Wrapper to handle DataFrame rows properly"""
-    patients_dict = row.to_dict()
-    return _assign_health_conditions(patients_dict)
+def generate_base_patient():
+    """Generate a base patient profile with core demographics"""
+    patient = generate_patient_record()
+    # Remove visit-specific details that might change between visits
+    for field in ['site_id', 'site_name', 'program_id', 'program_name', 
+                 'created_at', 'updated_at', 'is_pregnant', 'is_active']:
+        patient.pop(field, None)
+    return patient
 
 def _assign_health_conditions(patients):
     """Assign conditions based on KDHS statistics with county adjustments"""
-    if not isinstance(patients, dict):
-        raise ValueError("Patient data must be a dictionary")
     age_group = '15-49' if patients['age'] <= 49 else '50+'
     gender_key = f"{patients['gender']}_{age_group}"
     # county = patient['county_name']
+    
     
     # Hypertension
     htn_prob = KDHS_2022['hypertension']['prevalence'].get(gender_key, 0)
@@ -221,9 +231,6 @@ def _assign_health_conditions(patients):
     
     # Diabetes
     diabetes_prob = KDHS_2022['diabetes']['prevalence'].get(age_group, 0)
-    if np.random.random() < diabetes_prob:
-        patients['has_diabetes'] = True
-        patients['on_diabetes_meds'] = np.random.random() < KDHS_2022['diabetes']['treatment_rate'][patients['gender']]
     
     if np.random.random() < diabetes_prob:
         patients['has_diabetes'] = True
@@ -237,8 +244,21 @@ def _assign_health_conditions(patients):
     
     return patients
 
+def generate_patient_record():
+    """Generate or identify an existing (repeat) patient."""
+    # Generate a new or repeat patient based on REPEAT_PATIENT_RATE
+    if random.random() < REPEAT_PATIENT_RATE and repeat_patient_ids:
+        # If we decide to generate a repeat patient
+        patient_id = random.choice(list(repeat_patient_ids))  # Choose an existing patient ID
+        existing_patient = next(p for p in generated_patients if p["patient_id"] == patient_id)
+        return existing_patient  # Return the repeat patient's details
 
-def generate_patient(start_date, end_date):
+    # If it's a new patient, generate a new one
+    patient = generate_new_patient()
+    repeat_patient_ids.add(patient["patient_id"])  # Add new patient's ID to repeat set
+    return patient
+
+def generate_new_patient():
     # Select a random sub-county and get its county
     sub_county_name = random.choice(list(SUB_COUNTIES.keys()))
     county_name = SUB_COUNTIES[sub_county_name]
@@ -255,10 +275,8 @@ def generate_patient(start_date, end_date):
     dob = fake.date_of_birth(minimum_age=25, maximum_age=80)
     # age = (datetime.now() - dob).days // 365
     age = (date.today() - dob).days // 365
-    # created_at = fake.date_time_between(start_date="-5y", end_date="now")
-    # updated_at = fake.date_time_between(start_date=created_at, end_date="now")
-    created_at = fake.date_time_between(start_date=start_date, end_date=end_date)
-    updated_at = fake.date_time_between(start_date=created_at, end_date=end_date)
+    created_at = fake.date_time_between(start_date="-5y", end_date="now")
+    updated_at = fake.date_time_between(start_date=created_at, end_date="now")
     
     # Generate phone number
     phone_category = random.choice(["Personal", "Work", "Family", "Emergency"])
@@ -279,7 +297,7 @@ def generate_patient(start_date, end_date):
     national_id = str(full_uuid)[:14]  # Take first 14 digits
     insurance_id = str(full_uuid)[:14]  # Take first 14 digits
     
-    gender = random.choice(["M", "F"])
+    gender = random.choice(["M", "F", "Other"])
     return {
         "sub_county_id": sub_county_id,
         "sub_county_name": sub_county_name,
@@ -320,130 +338,58 @@ def generate_patient(start_date, end_date):
         "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
     }
 
-def generate_patients(num_patients, start_date, end_date):
-    """Generate patients and return as DataFrame with hourly distribution"""
-    global generated_patients
-    generated_patients = []  # Clear previous patients
+def generate_patients(num_patients):
+    """Generate patients and return as DataFrame"""
     patients_list = []
-
-    # Calculate total hours in the date range
-    total_hours = int((end_date - start_date).total_seconds() / 3600)
-    total_hours = max(1, total_hours)  # Avoid divide-by-zero
-
-    # Calculate patients per hour
-    patients_per_hour = max(1, num_patients // total_hours)
-
-    current_time = start_date
-    while current_time < end_date and len(patients_list) < num_patients:
-        # Generate patients for this hour
-        for _ in range(patients_per_hour):
-            if len(patients_list) >= num_patients:
-                break
-
-            # Generate patient with timestamp inside this hour
-            patient = generate_patient(current_time, current_time + timedelta(hours=1))
-            # patient = _assign_health_conditions(patient)
-            patients_list.append(patient)
-            generated_patients.append(patient)
-
-        # Move to next hour
-        current_time += timedelta(hours=1)
-
-    # Convert to DataFrame
+    
+    for _ in range(num_patients):
+        patient = generate_patient_record()
+        patient = _assign_health_conditions(patient)  # Add health conditions
+        patients_list.append(patient)
+        generated_patients.append(patient)
+        
+        # Add to patient pool if needed
+        if random.random() < 0.3:  # Example probability
+            patient_pool.append(generate_base_patient(patient))
+    
+    # Convert to DataFrame with proper types
     patients_df = pd.DataFrame(patients_list)
-
-    # # Apply health conditions using the wrapper
-    # patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
-    # Apply health conditions WITHOUT converting to Series
-    patients_df = patients_df.apply(lambda row: _assign_health_conditions(row.to_dict()), axis=1, result_type='expand')
-
+    
     # Convert date fields
     date_cols = ['date_of_birth', 'created_at', 'updated_at']
     for col in date_cols:
         if col in patients_df.columns:
             patients_df[col] = pd.to_datetime(patients_df[col])
-
+    
     return patients_df
 
-# def generate_patients(num_patients, start_date, end_date):
-#     """Generate patients and return as DataFrame with hourly distribution"""
-#     global generated_patients
-#     generated_patients = []  # Clear previous patients
-#     patients_list = []
+def calculate_patient_summary(patients_df: pd.DataFrame):
+    """
+    Calculate and display patient summary statistics, and save repeat and new patients to separate CSV files.
     
-#     # Calculate total hours in the date range
-#     total_hours = int((end_date - start_date).total_seconds() / 3600)
+    Args:
+        patients_df: DataFrame containing all generated patients
+    """
+    patients_df['is_repeat'] = patients_df['patient_id'].isin(repeat_patient_ids) # Mark repeat patients
     
-#     # Calculate patients per hour
-#     patients_per_hour = max(1, num_patients // total_hours)
+    # Separate the DataFrames
+    new_patients = patients_df[~patients_df['is_repeat']]
+    repeat_patients = patients_df[patients_df['is_repeat']]
     
-#     current_time = start_date
-#     while current_time < end_date and len(patients_list) < num_patients:
-#         # Generate patients for this hour
-#         for _ in range(patients_per_hour):
-#             if len(patients_list) >= num_patients:
-#                 break
-                
-#             # Generate patient with timestamp in this hour
-#             patient = generate_patient(current_time, current_time + timedelta(hours=1))
-#             patient = _assign_health_conditions(patient)
-#             patients_list.append(patient)
-#             generated_patients.append(patient)
-        
-#         # Move to next hour
-#         current_time += timedelta(hours=1)
+    # Save to CSV files
+    new_patients.to_csv('new_patients.csv', index=False)
+    repeat_patients.to_csv('repeat_patients.csv', index=False)
     
-#     # Convert to DataFrame with proper types
-#     patients_df = pd.DataFrame(patients_list)
+    # Calculate statistics
+    total_patients = len(patients_df)
+    new_patient_count = len(new_patients)
+    repeat_patient_count = len(repeat_patients)
     
-#     # Convert date fields
-#     date_cols = ['date_of_birth', 'created_at', 'updated_at']
-#     for col in date_cols:
-#         if col in patients_df.columns:
-#             patients_df[col] = pd.to_datetime(patients_df[col])
+    print("Patient Summary:")
+    print(f"  Total Patient Records: {total_patients}")
+    print(f"  New Patients: {new_patient_count}")
+    print(f"  Repeat Patients: {repeat_patient_count}")
+    print("\nData saved to:")
+    print("  - new_patients.csv")
+    print("  - repeat_patients.csv")
     
-#     return patients_df
-# def generate_patients(num_patients, start_date, end_date):
-#     """Generate patients and return as DataFrame"""
-#     global generated_patients
-#     generated_patients = []  # Clear previous patients
-#     patients_list = []
-    
-#     for _ in range(num_patients):
-#         patient = generate_patient(start_date, end_date)
-#         patient = _assign_health_conditions(patient)  # Add health conditions to individual patient
-#         patients_list.append(patient)
-#         generated_patients.append(patient)
-        
-#     # Convert to DataFrame with proper types
-#     patients_df = pd.DataFrame(patients_list)
-    
-#     # Convert date fields
-#     date_cols = ['date_of_birth', 'created_at', 'updated_at']
-#     for col in date_cols:
-#         if col in patients_df.columns:
-#             patients_df[col] = pd.to_datetime(patients_df[col])
-    
-#     return patients_df
-
-# def generate_patients(num_patients):
-#     """Generate patients and return as DataFrame"""
-#     patients_list = []
-    
-#     for _ in range(num_patients):
-#         patient = generate_patient()
-#         patient = _assign_health_conditions(patient)  # Add health conditions
-#         patients_list.append(patient)
-#         generated_patients.append(patient)
-        
-#     # Convert to DataFrame with proper types
-#     patients_df = pd.DataFrame(patients_list)
-    
-#     # Convert date fields
-#     date_cols = ['date_of_birth', 'created_at', 'updated_at']
-#     for col in date_cols:
-#         if col in patients_df.columns:
-#             patients_df[col] = pd.to_datetime(patients_df[col])
-    
-#     return patients_df
-

@@ -10,17 +10,19 @@ def generate_health_metrics(patients_df, start_date=None, days=30, frequency="ho
     if not start_date:
         start_date = datetime.now() - timedelta(days=days)
     
+     # Calculate the end date by adding 'days' to the start date
+    end_date = start_date + timedelta(days=days)
+
     records = []
     for _, patient in patients_df.iterrows():
-        # Generate timestamps (hourly/daily)
+        # Generate timestamps (hourly or daily)
         timestamps = pd.date_range(
-            start=start_date,
-            periods=days*(24 if frequency == "hourly" else 1),
-            freq="H" if frequency == "hourly" else "D"
+            start=start_date,        # Starting date
+            end=end_date,            # Ending date
+            freq="h" if frequency == "hourly" else "D"  # Hourly or daily frequency
         )
         
         # Get patient-specific baseline adjustments
-        age = (datetime.now() - datetime.strptime(patient["date_of_birth"], "%Y-%m-%d")).days // 365
         is_diabetic = patient.get("is_before_diabetes_diagnosis", False)
         is_hypertensive = patient.get("is_before_htn_diagnosis", False)
         
@@ -28,7 +30,7 @@ def generate_health_metrics(patients_df, start_date=None, days=30, frequency="ho
             record = {
                 "patient_id": patient["patient_id"],
                 "timestamp": ts,
-                "age": age
+                "age": patient["age"]
             }
             
             # Generate each metric with possible anomalies

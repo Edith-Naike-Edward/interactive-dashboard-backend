@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
 from routes import router
 import pandas as pd
-from src.generators.patientgenerator import generate_patients
+from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
 from src.generators.bplog_generator import generate_bp_log
 from src.generators.glucoselog_generator import generate_glucose_log
@@ -18,6 +18,7 @@ from src.generators.patient_visit_generator import generate_visits
 import os
 from typing import Optional
 import os
+import uuid
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -65,7 +66,13 @@ async def generate_data(
         days=days,
         frequency=frequency
     )
-    return {"message": "Data generation started in background"}
+    return {
+        "message": "Data generation started in background",    
+        "task_id": str(uuid.uuid4()),
+        "expected_time_range": {
+            "start": (datetime.now() - timedelta(days=days)).isoformat(),
+            "end": datetime.now().isoformat()
+     }}
 
 def run_pipeline(
     num_patients: int = 100,
@@ -74,15 +81,22 @@ def run_pipeline(
 ):
     """Core data generation pipeline"""
     try:
-        print("Starting data generation...")
+        print(f"Starting data generation for {days} days...")
+        
+        # Calculate consistent date range for all generated data
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=days)
 
         # 0. Generate sites and users first (since patients need sites)
         sites_df, users_df = generate_site_user_data()
         sites_df.to_csv("data/raw/sites.csv", index=False)
         users_df.to_csv("data/raw/users.csv", index=False)
         
-        # 1. Generate patients
-        patients = generate_patients(num_patients)
+        # 1. Generate patients WITH DATE RANGE
+        print(f"Generating {num_patients} patients between {start_date} and {end_date}")
+        patients = generate_patients(num_patients, start_date, end_date)
+        patients_df = pd.DataFrame(patients)
+        patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
         patients.to_csv("data/raw/patients.csv", index=False)
         
         # 2. Generate screening logs
@@ -115,7 +129,7 @@ def run_pipeline(
         # 4. Generate continuous metrics
         health_metrics = generate_health_metrics(
             patients,
-            start_date=datetime.now() - timedelta(days=days),
+            start_date=start_date,
             days=days,
             frequency=frequency
         )
@@ -123,6 +137,7 @@ def run_pipeline(
 
         # 5. Run anomaly detection on all generated data
         health_data = {
+            'patients': patients,
             'sites': sites_df,
             'users': users_df,
             'screenings': screenings,

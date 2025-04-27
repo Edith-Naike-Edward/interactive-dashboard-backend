@@ -18,7 +18,7 @@ def generate_screening_log(patients_df):
         height = round(np.random.normal(170, 10), 1)  # cm
         weight = round(np.random.normal(70, 15), 1)   # kg
         bmi = round(weight / ((height/100) ** 2), 1)
-        age = (datetime.now() - datetime.strptime(patient["date_of_birth"], "%Y-%m-%d")).days // 365
+        # age = (datetime.now() - datetime.strptime(patient["date_of_birth"], "%Y-%m-%d")).days // 365
         
         # Blood pressure with possible hypertension
         is_hypertensive = random.random() < 0.3
@@ -35,7 +35,7 @@ def generate_screening_log(patients_df):
         
         # CVD Risk calculation (simplified)
         cvd_risk_score = max(0, round(
-            (age / 10) + 
+            (patient["age"]  / 10) + 
             (1 if is_hypertensive else 0) * 5 + 
             (1 if is_diabetic else 0) * 3 +
             (1 if patient["is_regular_smoker"] else 0) * 2 +
@@ -55,7 +55,7 @@ def generate_screening_log(patients_df):
             "middle_name": patient["middle_name"],
             "gender": patient["gender"],
             "date_of_birth": patient["date_of_birth"],
-            "age": age,
+            "age": patient["age"],
             "national_id": patient["national_id"],
             "height": height,
             "weight": weight,
