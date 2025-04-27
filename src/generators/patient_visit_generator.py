@@ -87,7 +87,7 @@ def generate_visits():
     user_df = pd.read_csv("data/raw/users.csv")
 
     patient_ids = patient_df['patient_id'].tolist()
-    user_ids = user_df['user_id'].tolist()
+    user_ids = user_df['id'].tolist()
     
     # Generate 1000 patient visits
     visits_df = generate_patient_visits(1000, patient_ids, user_ids)

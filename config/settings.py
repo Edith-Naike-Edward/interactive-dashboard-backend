@@ -18,7 +18,11 @@ KDHS_2022 = {
         'treatment_rate': 0.32  # 32% on medication
     },
     'diabetes': {
-        'prevalence': 0.01,  # 1% both genders
+        'prevalence':{
+             '15-49': 0.01,# Now a dictionary
+              # 1% both genders
+             '50+': 0.02 
+        },
         'treatment_rate': {
             'F': 0.63,  # 63% women
             'M': 0.73    # 73% men

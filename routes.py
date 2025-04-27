@@ -1,6 +1,10 @@
+from datetime import datetime
+from pathlib import Path
 from fastapi import APIRouter, HTTPException
 import pandas as pd
 import os
+from fastapi import BackgroundTasks
+from datetime import datetime, timedelta
 from api.auth.register.auth import router as auth_router 
 from api.auth.signin.auth import router as signin_router  # Import the signin router
 from api.auth.register.auth import router as register_router  # Import the register router
@@ -10,9 +14,9 @@ from utils.monitoring import (
     get_current_active_counts,
     detect_5_percent_drop
 )
-from utils.patient_summary import get_patient_summary
+# from utils.patient_summary import get_patient_summary
 from fastapi.responses import JSONResponse
-# from src.generators.patientgenerator import ( calculate_patient_summary, generate_patients,generated_patients, NUM_PATIENTS, repeat_patient_ids)
+from src.generators.patientgenerator import generate_patients, generated_patients
 
 # # Ensure database tables are created
 # models.Base.metadata.create_all(bind=engine)
@@ -60,37 +64,37 @@ async def get_users(limit: int = 1000):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Visits data not found. Generate data first.")
 
-@router.get("/patient-summary")
-async def patient_summary():
-    """
-    Retrieve aggregate patient statistics
+# @router.get("/patient-summary")
+# async def patient_summary():
+#     """
+#     Retrieve aggregate patient statistics
     
-    Returns:
-        JSON response with:
-        - Total Patient Records
-        - New Patients Count
-        - Repeat Patients Count
-    """
-    try:
-        # Generate patient data
-        summary = get_patient_summary()
+#     Returns:
+#         JSON response with:
+#         - Total Patient Records
+#         - New Patients Count
+#         - Repeat Patients Count
+#     """
+#     try:
+#         # Generate patient data
+#         summary = get_patient_summary()
 
-        # return {
-        # "summary": summary,
-        # }
-        return JSONResponse(
-            status_code=200,
-            content={
-                "message": "Patient summary retrieved successfully",
-                "data": summary
-            }
-        )
+#         # return {
+#         # "summary": summary,
+#         # }
+#         return JSONResponse(
+#             status_code=200,
+#             content={
+#                 "message": "Patient summary retrieved successfully",
+#                 "data": summary
+#             }
+#         )
         
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Error processing patient data: {str(e)}"
-        )
+#     except Exception as e:
+#         raise HTTPException(
+#             status_code=500,
+#             detail=f"Error processing patient data: {str(e)}"
+#         )
 
 @router.get("/check-activity-decline")
 async def check_activity_decline():
@@ -110,15 +114,55 @@ async def check_activity_decline():
         "user_activity_declined_5_percent": user_declined
     }
 
+# @router.get("/patients")
+# async def get_patients(limit: int = 100):
+#     """Get generated patient data"""
+#     try:
+#         df = pd.read_csv("data/raw/patients.csv")
+#         return df.head(limit).to_dict(orient="records")
+#     except FileNotFoundError:
+#         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
 @router.get("/patients")
-async def get_patients(limit: int = 100):
-    """Get generated patient data"""
+async def generate_and_get_patients(
+    num_patients: int,
+    days: int,
+    # limit: int = 10,  # added a limit parameter
+    background_tasks: BackgroundTasks = None
+):
+    """
+    Generate synthetic patient data and return a preview.
+    Saves the data as both a versioned file and a latest file.
+    """
     try:
-        df = pd.read_csv("data/raw/patients.csv")
-        return df.head(limit).to_dict(orient="records")
+        # Set up date range
+        start_date = datetime.now() - timedelta(days=days)
+        end_date = datetime.now()
+
+        # Generate patient data
+        patients_df = generate_patients(num_patients, start_date, end_date)
+
+        # Ensure data directory exists
+        data_dir = Path("data/raw")
+        data_dir.mkdir(parents=True, exist_ok=True)
+
+        # Save patient data
+        version = datetime.now().strftime("%Y%m%d_%H%M%S")
+        versioned_filename = f"patients_{version}.csv"
+        latest_filename = "patients.csv"
+
+        patients_df.to_csv(data_dir / versioned_filename, index=False)
+        patients_df.to_csv(data_dir / latest_filename, index=False)
+
+        # Read and return a limited preview
+        df = pd.read_csv(data_dir / latest_filename)
+        return df.head().to_dict(orient="records")
+
     except FileNotFoundError:
-        raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
+        raise HTTPException(status_code=404, detail="Patient data not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
     
+
 @router.get("/medical_reviews")
 async def get_patientmedicalreview(limit: int = 100):
     """Get generated patient data"""
