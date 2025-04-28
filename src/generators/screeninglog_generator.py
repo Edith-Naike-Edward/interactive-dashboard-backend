@@ -10,15 +10,15 @@ sites_df, _ = generate_site_user_data(n_users_per_site=0)  # Generate empty site
 
 fake = Faker()
 
-def generate_screening_log(patients_df):
+def generate_screening_log(patients_df, days):
     screenings = []
     for _, patient in patients_df.iterrows():
         # Base screening record
-        screening_date = fake.date_time_between(start_date="-1y", end_date="now")
+        patient_created_at = patient["created_at"]
+        screening_date = fake.date_time_between(start_date=patient_created_at, end_date=datetime.now())
         height = round(np.random.normal(170, 10), 1)  # cm
         weight = round(np.random.normal(70, 15), 1)   # kg
         bmi = round(weight / ((height/100) ** 2), 1)
-        # age = (datetime.now() - datetime.strptime(patient["date_of_birth"], "%Y-%m-%d")).days // 365
         
         # Blood pressure with possible hypertension
         is_hypertensive = random.random() < 0.3
@@ -32,7 +32,6 @@ def generate_screening_log(patients_df):
 
         random_site = sites_df.sample(1).iloc[0]
     
-        
         # CVD Risk calculation (simplified)
         cvd_risk_score = max(0, round(
             (patient["age"]  / 10) + 

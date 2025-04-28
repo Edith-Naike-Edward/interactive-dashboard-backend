@@ -96,11 +96,19 @@ def run_pipeline(
         print(f"Generating {num_patients} patients between {start_date} and {end_date}")
         patients = generate_patients(num_patients, start_date, end_date)
         patients_df = pd.DataFrame(patients)
-        patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
-        patients.to_csv("data/raw/patients.csv", index=False)
-        
+        # patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
+        columns_to_drop = [
+            'has_diabetes', 'on_diabetes_meds',
+            'has_mental_health_issue', 'on_mh_treatment',
+            'has_hypertension', 'on_htn_meds'
+        ]
+        patients_df = patients_df.drop(columns=[col for col in columns_to_drop if col in patients_df.columns])
+        patients_df.to_csv("data/raw/patients.csv", index=False)
+
+
         # 2. Generate screening logs
-        screenings = generate_screening_log(patients)
+        # screenings = generate_screening_log(patients)
+        screenings = generate_screening_log(patients, days)
         screenings.to_csv("data/raw/screenings.csv", index=False)
         
         # 3. Generate clinical logs
@@ -163,29 +171,5 @@ def run_pipeline(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-# from fastapi import FastAPI
-# from fastapi.middleware.cors import CORSMiddleware
-# from routes import router
 
-# app = FastAPI()
-
-# # Enable CORS to allow frontend requests
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["http://localhost:3000"],  # Allow Next.js frontend
-#     allow_credentials=True,
-#     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
-#     allow_headers=["*"],  # Allow all headers
-# )
-
-# # Include API routes
-# app.include_router(router, prefix="/api")
-
-# @app.get("/")
-# def read_root():
-#     return {"message": "Welcome to the Interactive Health Dashboard API"}
-
-# @app.get("/ping")
-# def ping():
-#     return {"message": "API is running"}
 
