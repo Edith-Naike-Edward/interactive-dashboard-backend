@@ -161,6 +161,7 @@ def get_organization(site_name):
 
 def generate_sites():
     """Generate site data matching the Site model"""
+
     sites = []
     # site_ids = []
     
@@ -168,6 +169,7 @@ def generate_sites():
     site_id = 1
     
     for site_name, (county_name, sub_county_name) in real_sites.items():
+
         # Get IDs from mappings
         county_id = county_mapping.get(county_name, 0)
         sub_county_id = sub_county_mapping.get(county_name, {}).get(sub_county_name, 0)
@@ -180,9 +182,7 @@ def generate_sites():
         coord_hash = hash(site_name)
         latitude = -1.0 + (coord_hash % 2000) / 10000.0  # Kenya-appropriate range
         longitude = 36.5 + (coord_hash % 2000) / 10000.0  # Kenya-appropriate range
-        # latitude = fake.latitude()
-        # longitude = fake.longitude()
-        is_active = random.choice([True, False])
+        # is_active = random.choice([True, False])
 
         sites.append({
             "site_id": site_id,
@@ -192,7 +192,7 @@ def generate_sites():
             "sub_county_id": sub_county_id,
             "latitude": latitude,
             "longitude": longitude,
-            "is_active": is_active
+            # "is_active": is_active
         })
         site_id += 1
     
@@ -203,6 +203,9 @@ def generate_sites():
 
 def generate_users(sites_df, n_users=240):
     """Generate user data matching the User model"""
+    # random.seed(42)  # <-- FIXED seed for reproducibility
+    # Faker.seed(42)
+
     users = []
 
     # Mapping from site_id to name
@@ -216,18 +219,16 @@ def generate_users(sites_df, n_users=240):
     user_id = 1
     
     for _ in range(n_users):
+
         name = fake.name()
-        # Create email by:
-        # 1. Lowercasing the name
-        # 2. Replacing spaces with nothing
-        # 3. Adding @gmail.com
         email = name.lower().replace(" ", "") + "@gmail.com"
         password = fake.password()
         role = role_distribution[user_id % len(role_distribution)]
-        site_id = random.choice(site_ids)
-        # organization = get_organization(site_id_to_name[site_id])
+        # site_id = random.choice(site_ids)
+        # Replace random.choice with deterministic assignment
+        site_id = site_ids[user_id % len(site_ids)]
         organization = get_organization(sites_df.loc[sites_df['site_id'] == site_ids[user_id % len(site_ids)], 'name'].iloc[0])
-        is_active = random.choice([True, False])
+        # is_active = random.choice([True, False])
         
         users.append({
             "id": user_id,
@@ -236,8 +237,8 @@ def generate_users(sites_df, n_users=240):
             "password": password,
             "role": role,
             "organisation": organization,
-            "site_id": site_id,
-            "is_active": is_active
+            "site_id": site_id
+            # "is_active": is_active
         })
         user_id += 1
     
@@ -246,15 +247,41 @@ def generate_users(sites_df, n_users=240):
     df_users.to_csv(USER_CSV_PATH, index=False)
     return df_users
 
-def generate_site_user_data(n_users_per_site=3):
+def add_is_active_sites(sites_df):
+    """Add is_active column to sites."""
+    sites_df["is_active"] = [random.choice([True, False]) for _ in range(len(sites_df))]
+    return sites_df
+
+def add_is_active_users(users_df):
+    """Add is_active column to users."""
+    users_df["is_active"] = [random.choice([True, False]) for _ in range(len(users_df))]
+    return users_df
+
+def generate_site_user_data(n_users_per_site=3, force_regenerate=False):
     """Generate site and user data as DataFrames
     
     Args:
         n_users_per_site: Number of users to generate per site
+        force_regenerate: If True, regenerate data even if files exist
         
     Returns:
         tuple: (sites_df, users_df) pandas DataFrames
     """
+    # Check if files exist and we shouldn't force regeneration
+    if not force_regenerate and os.path.exists(SITE_CSV_PATH) and os.path.exists(USER_CSV_PATH):
+        print("Loading existing data files...")
+        sites_df = pd.read_csv(SITE_CSV_PATH)
+        users_df = pd.read_csv(USER_CSV_PATH)
+        # Add/update is_active columns
+        sites_df = add_is_active_sites(sites_df)
+        users_df = add_is_active_users(users_df)
+        # Save the updated data with is_active columns
+        sites_df.to_csv(SITE_CSV_PATH, index=False)
+        users_df.to_csv(USER_CSV_PATH, index=False)
+        return sites_df, users_df
+    
+    # Otherwise generate new data
+    print("Generating new data...")
     sites_df = generate_sites()
     total_users = len(sites_df) * n_users_per_site
     users_df = generate_users(sites_df, total_users)    
@@ -281,31 +308,3 @@ def calculate_active_summary(sites_df: pd.DataFrame, users_df: pd.DataFrame):
     print(f"  Total Users: {total_users}")
     print(f"  Active Users: {active_users}")
     print(f"  Inactive Users: {inactive_users}")
-
-
-# # Example usage
-# print(f"✅ Generated {len(sites_df)} sites and {len(users_df)} users")
-# print("\nSites DataFrame Sample:")
-# print(sites_df.head(3))
-# print("\nUsers DataFrame Sample:")
-# print(users_df.head(5))
-
-# def generate_site_user_data(n_users=100):   
-#     """Generate site and user data"""
-#     sites = generate_sites()
-#     site_ids = sites['site_id'].tolist()
-    
-#     users = generate_users(site_ids, sites, n_users)
-    
-#     return sites, users
-
-# # Generate the data
-# sites_df = generate_sites()
-# users_df = generate_users(sites_df)
-
-# # Example usage similar to your bp_logs example:
-# print(f"✅ Generated {len(sites_df)} sites and {len(users_df)} users")
-# print("\nSites DataFrame:")
-# print(sites_df.head())
-# print("\nUsers DataFrame:")
-# print(users_df.head())

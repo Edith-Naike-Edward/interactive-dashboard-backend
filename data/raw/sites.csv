@@ -1,92 +1,92 @@
 site_id,name,site_type,county_id,sub_county_id,latitude,longitude,is_active
-1,Makueni County Referral Hospital,Hospital,1,1,-0.922,36.578,True
-2,Kibwezi Sub-County Hospital,Hospital,1,4,-0.8796,36.6204,False
-3,Kilungu Sub-County Hospital,Hospital,1,3,-0.9292,36.5708,True
-4,Makindu Sub-County Hospital,Hospital,1,5,-0.9879,36.5121,True
-5,Sultan Hamud Health Centre,Health Centre,1,6,-0.9886,36.5114,False
-6,Wote Health Centre,Health Centre,1,1,-0.9964,36.5036,False
-7,Matiliku Health Centre,Health Centre,1,1,-0.8818,36.6182,False
-8,Kambu Health Centre,Health Centre,1,4,-0.9332,36.5668,False
-9,Kathonzweni Health Centre,Health Centre,1,1,-0.9705,36.5295,False
-10,Emali Model Health Centre,Health Centre,1,5,-0.9152,36.5848,True
-11,Nyeri County Referral Hospital,Hospital,2,13,-0.854,36.646,True
-12,Karatina Sub-County Hospital,Hospital,2,9,-0.8382000000000001,36.6618,False
-13,Othaya Sub-County Hospital,Hospital,2,13,-0.9473,36.5527,False
-14,Mukurweini Sub-County Hospital,Hospital,2,12,-0.8967,36.6033,True
-15,Naromoru Health Centre,Health Centre,2,7,-0.9852,36.5148,True
-16,Tumutumu PCEA Hospital,Hospital,2,10,-0.9399,36.5601,False
-17,Wamagana Health Centre,Health Centre,2,14,-0.8097,36.6903,False
-18,Gichiche Health Centre,Health Centre,2,13,-0.9151,36.5849,True
-19,Chaka Health Centre,Health Centre,2,7,-0.9353,36.5647,True
-20,Mweiga Health Centre,Health Centre,2,8,-0.9059,36.5941,True
-21,Kakamega County Referral Hospital,Hospital,3,21,-0.8911,36.6089,True
-22,Butere Sub-County Hospital,Hospital,3,16,-0.9877,36.5123,False
-23,Mumias County Hospital,Hospital,3,0,-0.9664,36.5336,True
-24,Malava Sub-County Hospital,Hospital,3,0,-0.9316,36.5684,True
-25,Mautuma County Hospital,Hospital,3,20,-0.9362,36.5638,True
-26,Khwisero Sub-County Hospital,Hospital,3,22,-0.8682,36.6318,False
-27,Matungu Sub-County Hospital,Hospital,3,0,-0.9818,36.5182,True
-28,Navakholo Sub-County Hospital,Hospital,3,24,-0.8532,36.6468,False
-29,Likuyani Sub-County Hospital,Hospital,3,0,-0.8504,36.6496,False
-30,Sheywe Community Hospital Limited,Hospital,3,18,-0.9813,36.5187,False
-31,Nakuru Level 5 Hospital,Hospital,4,30,-0.8404,36.6596,False
-32,Naivasha Sub-County Hospital,Hospital,4,31,-0.9742999999999999,36.5257,False
-33,Molo Sub-County Hospital,Hospital,4,32,-0.9892,36.5108,False
-34,Gilgil Sub-County Hospital,Hospital,4,33,-0.9198999999999999,36.5801,True
-35,Bahati Sub-County Hospital,Hospital,4,34,-0.8668,36.6332,True
-36,Subukia Sub-County Hospital,Hospital,4,39,-0.8135,36.6865,True
-37,Keringet Sub County Hospital,Hospital,4,36,-0.9614,36.5386,True
-38,Elburgon Sub-County Hospital,Hospital,4,32,-0.9523,36.5477,False
-39,Njoro Sub-County Hospital,Hospital,4,37,-0.9026,36.5974,True
-40,Rongai Health Centre,Health Centre,4,38,-0.9527,36.5473,True
-41,JM Kariuki Memorial Hospital,Hospital,5,40,-0.8436,36.6564,True
-42,Engineer Sub-County Hospital,Hospital,5,43,-0.8454,36.6546,True
-43,Ndaragwa Health Centre,Health Centre,5,42,-0.8068,36.6932,True
-44,Mirangine Health Centre,Health Centre,5,40,-0.9783,36.5217,True
-45,Kimathi Dispensary-Kipipiri Sub County,Dispensary,5,41,-0.9243,36.5757,True
-46,Ol Joro Orok Medical Clinic,Health Centre,5,44,-0.9875,36.5125,False
-47,Amani Medical Clinic,Health Centre,5,43,-0.9166,36.5834,False
-48,Wanjohi Health Centre,Health Centre,5,41,-0.9591,36.5409,False
-49,Shamata Health Centre,Health Centre,5,42,-0.8017,36.6983,False
-50,Leshau Pondo Health Centre,Health Centre,5,42,-0.8057,36.6943,True
-51,Kenyatta National Hospital,Hospital,9,78,-0.9651,36.5349,True
-52,Mama Lucy Kibaki Hospital,Hospital,9,69,-0.9598,36.5402,False
-53,Mbagathi County Referral Hospital,Hospital,9,78,-0.8703,36.6297,False
-54,Pumwani Maternity Hospital,Hospital,9,74,-0.8287,36.6713,False
-55,Dagoretti Sub-County Hospital Mutuini,Hospital,9,68,-0.8895,36.6105,True
-56,Kangemi Health Centre,Health Centre,9,77,-0.9277,36.5723,True
-57,Riruta Health Centre,Health Centre,9,67,-0.8157,36.6843,False
-58,Kayole II Sub County Hospital,Hospital,9,69,-0.9167,36.5833,True
-59,Kasarani Health Centre,Health Centre,9,75,-0.9087,36.5913,False
-60,Dandora II Health Centre,Health Centre,9,71,-0.9316,36.5684,True
-61,Coast General Teaching and Referral Hospital Vikwatani Outreach Centre,Hospital,8,62,-0.9054,36.5946,True
-62,Port Reitz Sub-County Hospital,Hospital,8,63,-0.9466,36.5534,True
-63,Tudor District Hospital,Hospital,8,61,-0.9282,36.5718,False
-64,Magongo (MCM) Dispensary,Dispensary,8,63,-0.8883,36.6117,True
-65,Likoni Sub-County Hospital,Hospital,8,64,-0.891,36.609,True
-66,Jomvu Model Health Centre,Health Centre,8,65,-0.9946,36.5054,True
-67,Kisauni Health Centre,Health Centre,8,66,-0.8604,36.6396,True
-68,Bamburi Dispensary,Dispensary,8,66,-0.9443,36.5557,False
-69,Coast General Teaching Refferal Hospital - Mtongwe Outreach Centre,Hospital,8,64,-0.9234,36.5766,False
-70,Diani Beach Hospital Limited - Shika Adabu,Hospital,8,65,-0.9295,36.5705,False
-71,Mikindani Medical Clinic,Health Centre,8,65,-0.8766,36.6234,True
-72,Kilifi County Hospital,Hospital,7,54,-0.9657,36.5343,False
-73,Malindi Sub-County Hospital,Hospital,7,56,-0.8708,36.6292,False
-74,Mariakani Sub-County Hospital,Hospital,7,60,-0.8686,36.6314,False
-75,Rabai Sub County Hospital,Hospital,7,59,-0.9746,36.5254,False
-76,Ganze Health Centre,Health Centre,7,58,-0.909,36.591,False
-77,Bamba Sub County Hospital,Hospital,7,58,-0.9554,36.5446,False
-78,Mtwapa Sub County Hospital,Hospital,7,55,-0.917,36.583,True
-79,Chasimba Health Centre,Health Centre,7,55,-0.8831,36.6169,True
-80,Vipingo Rural Demonstration Health Centre,Health Centre,7,55,-0.918,36.582,False
-81,Matsangoni Model Health Centre,Health Centre,7,54,-0.9319,36.5681,False
-82,Meru Teaching & Referral Hospital,Hospital,6,46,-0.8649,36.6351,False
-83,Consolata Mission Hospital Nkubu,Hospital,6,47,-0.8009,36.6991,True
-84,Maua Methodist Hospital,Hospital,6,53,-0.8228,36.6772,True
-85,Muthara Sub-District Hospital,Hospital,6,48,-0.8119000000000001,36.6881,True
-86,Miathene Sub-County Hospital,Hospital,6,49,-0.9298,36.5702,True
-87,Laare Health Centre,Health Centre,6,52,-0.9828,36.5172,False
-88,Kanyakine Sub County Hospital,Hospital,6,47,-0.9206,36.5794,True
-89,Kangeta Sub County Hospital,Hospital,6,51,-0.8835999999999999,36.6164,True
-90,Timau Sub-County Hospital,Hospital,6,0,-0.9659,36.5341,False
-91,Gatimbi Health Centre,Health Centre,6,45,-0.8136,36.6864,False
+1,Makueni County Referral Hospital,Hospital,1,1,-0.9796,36.5204,False
+2,Kibwezi Sub-County Hospital,Hospital,1,4,-0.8200000000000001,36.68,True
+3,Kilungu Sub-County Hospital,Hospital,1,3,-0.9447,36.5553,False
+4,Makindu Sub-County Hospital,Hospital,1,5,-0.8162,36.6838,False
+5,Sultan Hamud Health Centre,Health Centre,1,6,-0.8559,36.6441,False
+6,Wote Health Centre,Health Centre,1,1,-0.9487,36.5513,True
+7,Matiliku Health Centre,Health Centre,1,1,-0.9804,36.5196,False
+8,Kambu Health Centre,Health Centre,1,4,-0.8054,36.6946,False
+9,Kathonzweni Health Centre,Health Centre,1,1,-0.8921,36.6079,False
+10,Emali Model Health Centre,Health Centre,1,5,-0.8576,36.6424,True
+11,Nyeri County Referral Hospital,Hospital,2,13,-0.8758,36.6242,True
+12,Karatina Sub-County Hospital,Hospital,2,9,-0.9702,36.5298,True
+13,Othaya Sub-County Hospital,Hospital,2,13,-0.9945,36.5055,False
+14,Mukurweini Sub-County Hospital,Hospital,2,12,-0.8942,36.6058,True
+15,Naromoru Health Centre,Health Centre,2,7,-0.9536,36.5464,True
+16,Tumutumu PCEA Hospital,Hospital,2,10,-0.849,36.651,False
+17,Wamagana Health Centre,Health Centre,2,14,-0.9968,36.5032,False
+18,Gichiche Health Centre,Health Centre,2,13,-0.8357,36.6643,True
+19,Chaka Health Centre,Health Centre,2,7,-0.9271,36.5729,False
+20,Mweiga Health Centre,Health Centre,2,8,-0.9287,36.5713,True
+21,Kakamega County Referral Hospital,Hospital,3,21,-0.8205,36.6795,False
+22,Butere Sub-County Hospital,Hospital,3,16,-0.8425,36.6575,True
+23,Mumias County Hospital,Hospital,3,0,-0.8552,36.6448,False
+24,Malava Sub-County Hospital,Hospital,3,0,-0.8208,36.6792,True
+25,Mautuma County Hospital,Hospital,3,20,-0.9902,36.5098,True
+26,Khwisero Sub-County Hospital,Hospital,3,22,-0.8717,36.6283,False
+27,Matungu Sub-County Hospital,Hospital,3,0,-0.9218,36.5782,False
+28,Navakholo Sub-County Hospital,Hospital,3,24,-0.8521,36.6479,False
+29,Likuyani Sub-County Hospital,Hospital,3,0,-0.9145,36.5855,False
+30,Sheywe Community Hospital Limited,Hospital,3,18,-0.9495,36.5505,True
+31,Nakuru Level 5 Hospital,Hospital,4,30,-0.8645,36.6355,True
+32,Naivasha Sub-County Hospital,Hospital,4,31,-0.9688,36.5312,True
+33,Molo Sub-County Hospital,Hospital,4,32,-0.9101,36.5899,False
+34,Gilgil Sub-County Hospital,Hospital,4,33,-0.9435,36.5565,True
+35,Bahati Sub-County Hospital,Hospital,4,34,-0.9133,36.5867,True
+36,Subukia Sub-County Hospital,Hospital,4,39,-0.9968,36.5032,True
+37,Keringet Sub County Hospital,Hospital,4,36,-0.8493999999999999,36.6506,True
+38,Elburgon Sub-County Hospital,Hospital,4,32,-0.9356,36.5644,True
+39,Njoro Sub-County Hospital,Hospital,4,37,-0.8389,36.6611,False
+40,Rongai Health Centre,Health Centre,4,38,-0.8821,36.6179,False
+41,JM Kariuki Memorial Hospital,Hospital,5,40,-0.9145,36.5855,False
+42,Engineer Sub-County Hospital,Hospital,5,43,-0.8987,36.6013,False
+43,Ndaragwa Health Centre,Health Centre,5,42,-0.996,36.504,True
+44,Mirangine Health Centre,Health Centre,5,40,-0.967,36.533,False
+45,Kimathi Dispensary-Kipipiri Sub County,Dispensary,5,41,-0.9454,36.5546,False
+46,Ol Joro Orok Medical Clinic,Health Centre,5,44,-0.8016,36.6984,False
+47,Amani Medical Clinic,Health Centre,5,43,-0.9203,36.5797,True
+48,Wanjohi Health Centre,Health Centre,5,41,-0.8197,36.6803,True
+49,Shamata Health Centre,Health Centre,5,42,-0.8539,36.6461,True
+50,Leshau Pondo Health Centre,Health Centre,5,42,-0.84,36.66,True
+51,Kenyatta National Hospital,Hospital,9,78,-0.9265,36.5735,True
+52,Mama Lucy Kibaki Hospital,Hospital,9,69,-0.9874,36.5126,True
+53,Mbagathi County Referral Hospital,Hospital,9,78,-0.8378,36.6622,False
+54,Pumwani Maternity Hospital,Hospital,9,74,-0.8139000000000001,36.6861,False
+55,Dagoretti Sub-County Hospital Mutuini,Hospital,9,68,-0.9497,36.5503,False
+56,Kangemi Health Centre,Health Centre,9,77,-0.874,36.626,False
+57,Riruta Health Centre,Health Centre,9,67,-0.9402,36.5598,False
+58,Kayole II Sub County Hospital,Hospital,9,69,-0.8987,36.6013,False
+59,Kasarani Health Centre,Health Centre,9,75,-0.9073,36.5927,False
+60,Dandora II Health Centre,Health Centre,9,71,-0.8804,36.6196,True
+61,Coast General Teaching and Referral Hospital Vikwatani Outreach Centre,Hospital,8,62,-0.8378,36.6622,True
+62,Port Reitz Sub-County Hospital,Hospital,8,63,-0.9977,36.5023,False
+63,Tudor District Hospital,Hospital,8,61,-0.8824,36.6176,False
+64,Magongo (MCM) Dispensary,Dispensary,8,63,-0.8075,36.6925,True
+65,Likoni Sub-County Hospital,Hospital,8,64,-0.9491,36.5509,False
+66,Jomvu Model Health Centre,Health Centre,8,65,-0.8705,36.6295,False
+67,Kisauni Health Centre,Health Centre,8,66,-0.8824,36.6176,False
+68,Bamburi Dispensary,Dispensary,8,66,-0.8104,36.6896,True
+69,Coast General Teaching Refferal Hospital - Mtongwe Outreach Centre,Hospital,8,64,-0.8718,36.6282,True
+70,Diani Beach Hospital Limited - Shika Adabu,Hospital,8,65,-0.8418,36.6582,False
+71,Mikindani Medical Clinic,Health Centre,8,65,-0.8215,36.6785,True
+72,Kilifi County Hospital,Hospital,7,54,-0.8058,36.6942,True
+73,Malindi Sub-County Hospital,Hospital,7,56,-0.9275,36.5725,True
+74,Mariakani Sub-County Hospital,Hospital,7,60,-0.8845,36.6155,False
+75,Rabai Sub County Hospital,Hospital,7,59,-0.8552,36.6448,True
+76,Ganze Health Centre,Health Centre,7,58,-0.9317,36.5683,True
+77,Bamba Sub County Hospital,Hospital,7,58,-0.8526,36.6474,False
+78,Mtwapa Sub County Hospital,Hospital,7,55,-0.9438,36.5562,False
+79,Chasimba Health Centre,Health Centre,7,55,-0.9881,36.5119,False
+80,Vipingo Rural Demonstration Health Centre,Health Centre,7,55,-0.9311,36.5689,True
+81,Matsangoni Model Health Centre,Health Centre,7,54,-0.9357,36.5643,True
+82,Meru Teaching & Referral Hospital,Hospital,6,46,-0.9407,36.5593,False
+83,Consolata Mission Hospital Nkubu,Hospital,6,47,-0.8122,36.6878,False
+84,Maua Methodist Hospital,Hospital,6,53,-0.8516,36.6484,True
+85,Muthara Sub-District Hospital,Hospital,6,48,-0.9733,36.5267,True
+86,Miathene Sub-County Hospital,Hospital,6,49,-0.9355,36.5645,False
+87,Laare Health Centre,Health Centre,6,52,-0.8517,36.6483,True
+88,Kanyakine Sub County Hospital,Hospital,6,47,-0.9256,36.5744,False
+89,Kangeta Sub County Hospital,Hospital,6,51,-0.9155,36.5845,True
+90,Timau Sub-County Hospital,Hospital,6,0,-0.8257,36.6743,False
+91,Gatimbi Health Centre,Health Centre,6,45,-0.8808,36.6192,True

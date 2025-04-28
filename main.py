@@ -13,7 +13,7 @@ from src.generators.patientmedicalreview_generator import generate_patient_medic
 from src.generators.patientdiagnosis_generator import generate_patient_diagnoses
 from src.generators.health_metrics_generator import generate_health_metrics
 from src.analytics.anomaly_detector import detect_anomalies
-from src.generators.site_user_generation import generate_site_user_data
+from src.generators.site_user_generation import generate_site_user_data, add_is_active_sites, add_is_active_users
 from src.generators.patient_visit_generator import generate_visits
 import os
 from typing import Optional
@@ -89,7 +89,9 @@ def run_pipeline(
 
         # 0. Generate sites and users first (since patients need sites)
         sites_df, users_df = generate_site_user_data()
+        # sites_df = add_is_active_sites(sites_df)
         sites_df.to_csv("data/raw/sites.csv", index=False)
+        # users_df = add_is_active_users(users_df)
         users_df.to_csv("data/raw/users.csv", index=False)
         
         # 1. Generate patients WITH DATE RANGE
