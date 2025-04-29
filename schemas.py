@@ -5,6 +5,7 @@ class RegisterRequest(BaseModel):
     email: EmailStr
     role: str
     organization: str
+    site_id: int
     password: str
 
 class LoginRequest(BaseModel):

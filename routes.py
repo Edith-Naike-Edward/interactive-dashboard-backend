@@ -1,11 +1,12 @@
 from datetime import datetime
 from pathlib import Path
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 import pandas as pd
-import os
+from utils.dataloader import reload_all_data
+from database import get_db
+from sqlalchemy.orm import Session
 from fastapi import BackgroundTasks
 from datetime import datetime, timedelta
-from api.auth.register.auth import router as auth_router 
 from api.auth.signin.auth import router as signin_router  # Import the signin router
 from api.auth.register.auth import router as register_router  # Import the register router
 from utils.monitoring import (
@@ -15,27 +16,13 @@ from utils.monitoring import (
     detect_5_percent_drop
 )
 # from utils.patient_summary import get_patient_summary
-from fastapi.responses import JSONResponse
 from src.generators.patientgenerator import generate_patients, generated_patients
-
-# # Ensure database tables are created
-# models.Base.metadata.create_all(bind=engine)
 
 router = APIRouter()
 
 # Include authentication routes under /auth
-# router.include_router(auth_router, prefix="/auth")
 router.include_router(signin_router, prefix="/auth")
 router.include_router(register_router, prefix="/auth")
-
-# # Dependency: Get database session
-# def get_db():
-#     db = SessionLocal()
-#     try:
-#         yield db
-#     finally:
-#         db.close()
-# routes.py (add these new endpoints)
 
 @router.get("/sites")
 async def get_sites(limit: int = 100):
@@ -54,6 +41,14 @@ async def get_users(limit: int = 240):
         return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="User data not found. Generate data first.")
+    
+@router.post("/reload-data")
+async def reload_data(db: Session = Depends(get_db)):
+    try:
+        reload_all_data(db)
+        return {"message": "Data reloaded successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
     
 @router.get("/visits")
 async def get_users(limit: int = 1000):
@@ -114,14 +109,6 @@ async def check_activity_decline():
         "user_activity_declined_5_percent": user_declined
     }
 
-# @router.get("/patients")
-# async def get_patients(limit: int = 100):
-#     """Get generated patient data"""
-#     try:
-#         df = pd.read_csv("data/raw/patients.csv")
-#         return df.head(limit).to_dict(orient="records")
-#     except FileNotFoundError:
-#         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
 @router.get("/patients")
 async def generate_and_get_patients(
     num_patients: int,
