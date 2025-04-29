@@ -13,23 +13,26 @@ from src.generators.patientmedicalreview_generator import generate_patient_medic
 from src.generators.patientdiagnosis_generator import generate_patient_diagnoses
 from src.generators.health_metrics_generator import generate_health_metrics
 from src.analytics.anomaly_detector import detect_anomalies
-from src.generators.site_user_generation import generate_site_user_data, add_is_active_sites, add_is_active_users
+from src.generators.site_user_generation import generate_site_user_data
 from src.generators.patient_visit_generator import generate_visits
 import os
 from typing import Optional
 import os
 import uuid
 from fastapi import FastAPI
+from models import Base
+from database import engine
+
 
 app = FastAPI()
 
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000"],  # Or ["*"] for all origins (not recommended in production)
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allows all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allows all headers
 )
 
 # THIS IS THE FIX - Creates the folder automatically when starting
@@ -37,6 +40,10 @@ app.add_middleware(
 def startup():
     os.makedirs("data/raw", exist_ok=True)  # Creates folder if missing
     print(f"Data will be saved to: {os.path.abspath('data/raw')}")
+
+    # Create tables in the database
+    Base.metadata.create_all(bind=engine)
+    print("Database tables created (if not already existing).")
 
 # Include API routes
 app.include_router(router, prefix="/api")
@@ -89,9 +96,7 @@ def run_pipeline(
 
         # 0. Generate sites and users first (since patients need sites)
         sites_df, users_df = generate_site_user_data()
-        # sites_df = add_is_active_sites(sites_df)
         sites_df.to_csv("data/raw/sites.csv", index=False)
-        # users_df = add_is_active_users(users_df)
         users_df.to_csv("data/raw/users.csv", index=False)
         
         # 1. Generate patients WITH DATE RANGE

@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey
 from sqlalchemy.orm import declarative_base, relationship
 
 # Create a base class for declarative class definitions
@@ -15,9 +15,9 @@ class User(Base):
     password = Column(String, nullable=False)  # User's password
     role = Column(String, nullable=False)  # User's role
     organisation = Column(String, nullable=False)  # User's organisation
-    is_active = Column(Integer, default=1)  # User's active status (1 for active, 0 for inactive)
+    is_active = Column(Boolean, default=True)  # User's active status (1 for active, 0 for inactive)
 
-    site_id = Column(Integer, ForeignKey("sites.id"))
+    site_id = Column(Integer, ForeignKey("sites.site_id"))
     site = relationship("Site", back_populates="users")
 
 class Site(Base):
@@ -30,6 +30,6 @@ class Site(Base):
     sub_county_id = Column(Integer, nullable=False)
     latitude = Column(Float)
     longitude = Column(Float)
-    is_active = Column(Integer, default=1)  # Sites' active status (1 for active, 0 for inactive)
+    is_active = Column(Boolean, default=True) # Default to True if column missing
 
     users = relationship("User", back_populates="site")

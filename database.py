@@ -1,31 +1,3 @@
-# from sqlalchemy import create_engine, MetaData
-# from sqlalchemy.orm import sessionmaker, declarative_base
-# import os
-# from dotenv import load_dotenv
-
-# # Load environment variables from a .env file
-# load_dotenv()
-
-# # Debugging: Print to check if DATABASE_URL is loaded
-# print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")
-# # DATABASE_URL: postgresql://user:password@localhost/dbname
-# # Get the database URL from the .env file
-# DATABASE_URL = os.getenv("DATABASE_URL")
-
-# if not DATABASE_URL:
-#     raise ValueError("Error: DATABASE_URL is not set. Check your .env file.")
-
-# # Create a new SQLAlchemy engine instance
-# engine = create_engine(DATABASE_URL)
-
-# # Create a configured "Session" class
-# SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-# # Base class for all ORM models
-# Base = declarative_base()
-
-# # Metadata instance for the database schema
-# metadata = MetaData()
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
