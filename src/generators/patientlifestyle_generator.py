@@ -52,10 +52,17 @@ def generate_lifestyle_comment(lifestyle_name):
     category = next((k for k in LIFESTYLE_CATEGORIES if lifestyle_name in LIFESTYLE_CATEGORIES[k]), "Other")
     return base_comments[category].format(lifestyle_name.lower())
 
-def generate_lifestyle_record(bp_log):
+def generate_lifestyle_record(bp_log, days=30):
     """Generate lifestyle record using bp_log linkage"""
-    created_at = fake.date_time_between(start_date="-2y", end_date="now")
-    updated_at = fake.date_time_between(start_date=created_at, end_date="now")
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=days)
+    
+    # Clamp compliance time to the last 'days' days
+    lifestyle_time = fake.date_time_between(
+        start_date=start_date,
+        end_date=end_date
+    )
+    
 
     category = random.choice(list(LIFESTYLE_CATEGORIES.keys()))
     lifestyle_name = random.choice(LIFESTYLE_CATEGORIES[category])
@@ -79,21 +86,21 @@ def generate_lifestyle_record(bp_log):
         "tenant_id": bp_log['tenant_id'],
         "created_by": bp_log['created_by'],
         "updated_by": bp_log['updated_by'],
-        "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S"),
-        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
+        "updated_at": lifestyle_time.strftime("%Y-%m-%d %H:%M:%S"),
+        "created_at": lifestyle_time.strftime("%Y-%m-%d %H:%M:%S")
     }
 
-def generate_patient_lifestyles(bp_log_df):
+def generate_patient_lifestyles(bp_log_df, days=30):
     """Generate lifestyle records using bp_log linkage"""
     lifestyles = []
 
     # Iterate through the BP logs
-    for _, bp_log_row in bp_log_df.iterrows():
+    for _, bp_log in bp_log_df.iterrows():
         # Randomly decide how many lifestyle records to generate per log
         num_samples = random.choice([1, 2, 3, 4])
 
         for _ in range(num_samples):
-            lifestyle = generate_lifestyle_record(bp_log_row)
+            lifestyle = generate_lifestyle_record(bp_log, days=days)
             lifestyles.append(lifestyle)
 
     return pd.DataFrame(lifestyles)

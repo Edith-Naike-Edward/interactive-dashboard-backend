@@ -3,13 +3,18 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import uuid
+from faker import Faker
+
+fake = Faker()
 
 def generate_glucose_log(screenings_df):
     glucose_logs = []
     for _, screening in screenings_df.iterrows():
         # Generate 1-2 glucose readings per screening
         for reading_num in range(random.randint(1, 2)):
-            reading_time = datetime.strptime(screening["created_at"], "%Y-%m-%d %H:%M:%S") + timedelta(minutes=reading_num*30)
+            # reading_time = datetime.strptime(screening["created_at"], "%Y-%m-%d %H:%M:%S") + timedelta(minutes=reading_num*30)
+            screening_created_at = pd.to_datetime(screening["created_at"])
+            reading_time = fake.date_time_between(start_date=screening_created_at, end_date=datetime.now())
 
             # Calculate glucose value (single float instead of array)
             glucose_value = round(float(np.random.normal(screening["glucose_value"], 5)), 1)

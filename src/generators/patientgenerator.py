@@ -7,9 +7,11 @@ import uuid
 from config.settings import NUM_PATIENTS, KDHS_2022, REPEAT_PATIENT_RATE
 from datetime import date
 from src.generators.site_user_generation import generate_site_user_data
-sites_df, _ = generate_site_user_data(n_users_per_site=0)  
+sites_df, users_df = generate_site_user_data(n_users_per_site=0)  
 fake = Faker()
 generated_patients = []  # Store generated patients
+
+site_users = users_df.groupby('site_id')['name'].apply(list).to_dict()
 
 # County and sub-county mappings
 COUNTIES = {
@@ -237,6 +239,17 @@ def _assign_health_conditions(patients):
     
     return patients
 
+def get_created_and_updated_by(site_id):
+    available_users = site_users.get(site_id, [])
+    
+    if not available_users:
+        created_by = str(uuid.uuid4())
+        updated_by = str(uuid.uuid4())
+    else:
+        created_by = random.choice(available_users)
+        updated_by = random.choice([created_by, random.choice(available_users)])
+
+    return created_by, updated_by
 
 def generate_patient(start_date, end_date):
     # Select a random sub-county and get its county
@@ -255,10 +268,20 @@ def generate_patient(start_date, end_date):
     dob = fake.date_of_birth(minimum_age=25, maximum_age=80)
     # age = (datetime.now() - dob).days // 365
     age = (date.today() - dob).days // 365
-    # created_at = fake.date_time_between(start_date="-5y", end_date="now")
-    # updated_at = fake.date_time_between(start_date=created_at, end_date="now")
     created_at = fake.date_time_between(start_date=start_date, end_date=end_date)
     updated_at = fake.date_time_between(start_date=created_at, end_date=end_date)
+
+    site_id =random_site['site_id']
+    site_name = random_site['name']
+    # available_users = site_users.get(site_id, [])
+    # if not available_users:
+    #     created_by = str(uuid.uuid4())
+    #     updated_by = str(uuid.uuid4())
+    # else:
+    #     created_by = random.choice(available_users)
+    #     # For updated_by, use same user or different user randomly
+    #     updated_by = random.choice([created_by, random.choice(available_users)])
+    created_by, updated_by = get_created_and_updated_by(site_id)
     
     # Generate phone number
     phone_category = random.choice(["Personal", "Work", "Family", "Emergency"])
@@ -300,8 +323,8 @@ def generate_patient(start_date, end_date):
         "phone_number": phone_number,
         "insurance_status": insurance_status,
         "is_pregnant": random.choice([True, False]) if gender == "F" and age >= 18 and age <= 45 else False,
-        "site_id": random_site['site_id'],  # Use real site ID
-        "site_name": random_site['name'],   # Use real site name
+        "site_id": site_id,  # Use real site ID
+        "site_name": site_name,   # Use real site name
         "first_name": first_name,
         "last_name": last_name,
         "age": age,
@@ -314,8 +337,8 @@ def generate_patient(start_date, end_date):
         "is_active": random.choice([True, False]),
         "is_deleted": False,  # Typically few records would be deleted
         "tenant_id": str(uuid.uuid4()),
-        "created_by": str(uuid.uuid4()),
-        "updated_by": str(uuid.uuid4()),
+        "created_by": created_by,
+        "updated_by": updated_by,
         "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S"),
         "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
     }
