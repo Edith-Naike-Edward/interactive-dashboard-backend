@@ -1,6 +1,6 @@
 import pandas as pd
 import random
-from datetime import datetime
+from datetime import datetime, timedelta
 import uuid
 from faker import Faker
 
@@ -71,11 +71,17 @@ COMPLIANCE_TYPES = [
 ]
 
 
-def generate_medical_compliance_record(bp_log):
+def generate_medical_compliance_record(bp_log, days = 30):
     """Generate a single medical compliance record for a given BP log"""
 
-    created_at = fake.date_time_between(start_date="-2y", end_date="now")
-    updated_at = fake.date_time_between(start_date=created_at, end_date="now")
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=days)
+    
+    # Clamp compliance time to the last 'days' days
+    compliance_time = fake.date_time_between(
+        start_date=start_date,
+        end_date=end_date
+    )
 
     # 70% chance it's medication adherence
     is_medication = random.random() < 0.7
@@ -102,12 +108,12 @@ def generate_medical_compliance_record(bp_log):
         "tenant_id": bp_log['tenant_id'],
         "created_by": bp_log['created_by'],
         "updated_by": bp_log['updated_by'],
-        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S"),
-        "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S")
+        "created_at": compliance_time.strftime("%Y-%m-%d %H:%M:%S"),
+        "updated_at": compliance_time.strftime("%Y-%m-%d %H:%M:%S")
     }
 
 
-def generate_patient_medical_compliances(bp_logs):
+def generate_patient_medical_compliances(bp_logs, days = 30):
     """Generate compliance records for each BP log"""
 
     compliances = []
@@ -116,7 +122,7 @@ def generate_patient_medical_compliances(bp_logs):
         num_records = random.choices([1, 2, 3, 4, 5], weights=[0.3, 0.3, 0.2, 0.1, 0.1])[0]
         
         for _ in range(num_records):
-            compliance = generate_medical_compliance_record(bp_log)
+            compliance = generate_medical_compliance_record(bp_log, days=days)
             compliances.append(compliance)
 
     return pd.DataFrame(compliances)

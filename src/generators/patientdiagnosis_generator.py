@@ -1,7 +1,10 @@
+from datetime import datetime
 import pandas as pd
 import random
 import uuid
 from faker import Faker
+# from patientgenerator import created_by, updated_by
+from .patientgenerator import get_created_and_updated_by
 
 fake = Faker()
 
@@ -13,9 +16,13 @@ HTN_PATIENT_TYPES = ["Newly diagnosed", "Known hypertensive", "Unknown status"]
 
 def generate_diagnosis_record(patient):
     """Generate diagnosis record for a given patient"""
+    # site_id = patient['site_id']
+    # created_by, updated_by = get_created_and_updated_by(site_id)
+    created_by = patient['created_by']
+    updated_by = patient['updated_by']
 
-    created_at = fake.date_time_between(start_date="-5y", end_date="now")
-    updated_at = fake.date_time_between(start_date=created_at, end_date="now")
+    patient_created_at = pd.to_datetime(patient["created_at"])
+    diagnosis_time = fake.date_time_between(start_date=patient_created_at, end_date=datetime.now())
 
     # Derive age from patient if present, else use random
     age = patient.get('age', random.randint(20, 80))
@@ -25,13 +32,13 @@ def generate_diagnosis_record(patient):
     has_hypertension = random.random() < (0.15 + (age / 500))  # ~15–35%
 
     # Diabetes
-    diabetes_year = random.randint(created_at.year - 10, created_at.year) if has_diabetes else None
+    diabetes_year = random.randint(patient_created_at.year - 10, patient_created_at.year) if has_diabetes else None
     diabetes_type = random.choice(DIABETES_TYPES) if has_diabetes else None
     diabetes_patient_type = random.choice(DIABETES_PATIENT_TYPES) if has_diabetes else "Unknown status"
     diabetes_control = random.choice(DIABETES_CONTROL_TYPES) if has_diabetes else None
 
     # Hypertension
-    htn_year = random.randint(created_at.year - 10, created_at.year) if has_hypertension else None
+    htn_year = random.randint(patient_created_at.year - 10, patient_created_at.year) if has_hypertension else None
     htn_patient_type = random.choice(HTN_PATIENT_TYPES) if has_hypertension else "Unknown status"
 
     return {
@@ -48,10 +55,10 @@ def generate_diagnosis_record(patient):
         "is_active": random.choices([True, False], weights=[0.9, 0.1])[0],
         "is_deleted": False,
         "tenant_id": patient['tenant_id'],
-        "created_by": patient['created_by'],
-        "updated_by": patient['updated_by'],
-        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S"),
-        "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S")
+        "created_by": created_by,
+        "updated_by": updated_by,
+        "created_at": diagnosis_time.strftime("%Y-%m-%d %H:%M:%S"),
+        "updated_at": diagnosis_time.strftime("%Y-%m-%d %H:%M:%S")
     }
 
 def generate_patient_diagnoses(patients):

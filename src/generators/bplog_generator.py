@@ -13,8 +13,6 @@ def generate_bp_log(screenings_df):
         # Generate 1-3 BP readings per screening
         for reading_num in range(random.randint(1, 3)):
             patient_created_at = pd.to_datetime(screening["created_at"])
-            
-            # reading_time = datetime.strptime(screening["created_at"], "%Y-%m-%d %H:%M:%S") + timedelta(minutes=reading_num*5)
             reading_time = fake.date_time_between(start_date=patient_created_at, end_date=datetime.now())
             
             # BP values based on screening averages with some variation

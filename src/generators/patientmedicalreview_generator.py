@@ -56,11 +56,17 @@ def generate_vital_signs():
         'temp': round(random.uniform(36.1, 38.2), 1)
     }
 
-def generate_medical_review_record(bp_log, visit_id=None):
+def generate_medical_review_record(bp_log, visit_id=None, days=30):
     """Generate medical review record for a given patient"""
     # Base review information
-    created_at = fake.date_time_between(start_date="-2y", end_date="now")
-    updated_at = fake.date_time_between(start_date=created_at, end_date="now")
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=days)
+    
+    # Clamp compliance time to the last 'days' days
+    review_time = fake.date_time_between(
+        start_date=start_date,
+        end_date=end_date
+    )
     
     # Generate vital signs
     vitals = generate_vital_signs()
@@ -92,11 +98,11 @@ def generate_medical_review_record(bp_log, visit_id=None):
         "tenant_id": bp_log['tenant_id'],  # Same as patient's tenant
         "created_by": bp_log['created_by'],  # Same as patient creator
         "updated_by": bp_log['updated_by'],  # Same as patient updater
-        "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S"),
-        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
+        "updated_at": review_time.strftime("%Y-%m-%d %H:%M:%S"),
+        "created_at": review_time.strftime("%Y-%m-%d %H:%M:%S")
     }
 
-def generate_patient_medical_reviews(bp_logs, visits_per_patient=3):
+def generate_patient_medical_reviews(bp_logs, visits_per_patient=3, days=30):
     """Generate medical review records for all patients"""
     medical_reviews = []
     
@@ -109,7 +115,7 @@ def generate_patient_medical_reviews(bp_logs, visits_per_patient=3):
         
         for visit_id in visit_ids:
             # Each visit gets 1 medical review record
-            medical_reviews.append(generate_medical_review_record(bp_log, visit_id))
+            medical_reviews.append(generate_medical_review_record(bp_log, visit_id, days=days))
     
     return pd.DataFrame(medical_reviews)
 
