@@ -13,8 +13,11 @@ from utils.monitoring import (
     load_previous_counts,
     save_current_counts,
     get_current_active_counts,
-    detect_5_percent_drop
+    detect_5_percent_drop,
+    save_historical_data, 
+    HISTORICAL_DATA_PATH 
 )
+import json  # Add this import if not already present
 # from utils.patient_summary import get_patient_summary
 from src.generators.patientgenerator import generate_patients, generated_patients
 
@@ -34,7 +37,7 @@ async def get_sites(limit: int = 100):
         raise HTTPException(status_code=404, detail="Site data not found. Generate data first.")
 
 @router.get("/users")
-async def get_users(limit: int = 240):
+async def get_users(limit: int = 280):
     """Get generated user data"""
     try:
         df = pd.read_csv("data/raw/users.csv")
@@ -42,6 +45,18 @@ async def get_users(limit: int = 240):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="User data not found. Generate data first.")
     
+@router.get("/users/count")
+async def get_active_user_count():
+    """Get count of active users"""
+    try:
+        df = pd.read_csv("data/raw/users.csv")
+        df['is_active'] = df['is_active'].astype(bool)
+        user_count = df.shape[0]
+        active_count = df[df['is_active'] == True].shape[0]
+        return {"active_user_count": active_count, "total_user_count": user_count}
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="User data not found.")
+
 @router.post("/reload-data")
 async def reload_data(db: Session = Depends(get_db)):
     try:
@@ -96,17 +111,38 @@ async def check_activity_decline():
     previous_counts = load_previous_counts()
     current_sites, current_users = get_current_active_counts()
 
+    # Save historical data
+    save_historical_data(current_sites, current_users)
+        
+    # # Load previous data for comparison
+    # previous_data = load_previous_counts()
+
     site_declined = detect_5_percent_drop(previous_counts["active_sites"], current_sites)
     user_declined = detect_5_percent_drop(previous_counts["active_users"], current_users)
 
     # Save new counts
     save_current_counts(current_sites, current_users)
 
+    # Return both current status and historical data
+    historical_data = {}
+    if HISTORICAL_DATA_PATH.exists():
+        with open(HISTORICAL_DATA_PATH) as f:
+             historical_data = json.load(f)
+
     return {
-        "active_sites": current_sites,
-        "active_users": current_users,
+        "current": {
+            "sites": current_sites,
+            "users": current_users
+        },
+        "previous": {
+            "sites": previous_counts["active_sites"],
+            "users": previous_counts["active_users"]
+        },
+        # "active_sites": current_sites,
+        # "active_users": current_users,
         "site_activity_declined_5_percent": site_declined,
-        "user_activity_declined_5_percent": user_declined
+        "user_activity_declined_5_percent": user_declined,
+        "historical_data": historical_data
     }
 
 @router.get("/patients")
