@@ -202,10 +202,6 @@ def generate_sites():
     return df_sites
 
 def generate_users(sites_df, n_users=240):
-    """Generate user data matching the User model"""
-    # random.seed(42)  # <-- FIXED seed for reproducibility
-    # Faker.seed(42)
-
     users = []
 
     # Mapping from site_id to name
