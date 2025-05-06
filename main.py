@@ -103,7 +103,6 @@ def run_pipeline(
         print(f"Generating {num_patients} patients between {start_date} and {end_date}")
         patients = generate_patients(num_patients, start_date, end_date)
         patients_df = pd.DataFrame(patients)
-        # patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
         columns_to_drop = [
             'has_diabetes', 'on_diabetes_meds',
             'has_mental_health_issue', 'on_mh_treatment',
@@ -111,7 +110,6 @@ def run_pipeline(
         ]
         patients_df = patients_df.drop(columns=[col for col in columns_to_drop if col in patients_df.columns])
         patients_df.to_csv("data/raw/patients.csv", index=False)
-
 
         # 2. Generate screening logs
         # screenings = generate_screening_log(patients)
