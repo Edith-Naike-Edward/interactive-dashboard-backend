@@ -258,12 +258,15 @@ def generate_patient(start_date, end_date):
     sub_county_id = subcounty_to_idmapping[sub_county_name]
     county_id = COUNTIES[county_name]
     random_site = sites_df.sample(1).iloc[0]
-    
-    # Generate names with 30% chance of having middle name
-    first_name = fake.first_name()
+
+    # Generate gender first
+    gender = random.choice(["M", "F"])
+
+    # Use gender-appropriate first and middle names
+    first_name = fake.first_name_male() if gender == "M" else fake.first_name_female()
     last_name = fake.last_name()
-    middle_name = fake.first_name() if random.random() < 0.3 else ""
-    
+    middle_name = fake.first_name_male() if (gender == "M" and random.random() < 0.3) else (fake.first_name_female() if random.random() < 0.3 else "")
+
     # Generate dates with realistic age range
     dob = fake.date_of_birth(minimum_age=25, maximum_age=80)
     # age = (datetime.now() - dob).days // 365
@@ -273,14 +276,7 @@ def generate_patient(start_date, end_date):
 
     site_id =random_site['site_id']
     site_name = random_site['name']
-    # available_users = site_users.get(site_id, [])
-    # if not available_users:
-    #     created_by = str(uuid.uuid4())
-    #     updated_by = str(uuid.uuid4())
-    # else:
-    #     created_by = random.choice(available_users)
-    #     # For updated_by, use same user or different user randomly
-    #     updated_by = random.choice([created_by, random.choice(available_users)])
+
     created_by, updated_by = get_created_and_updated_by(site_id)
     
     # Generate phone number
@@ -289,20 +285,41 @@ def generate_patient(start_date, end_date):
     
     # Insurance details
     full_uuid = uuid.uuid4().int  # Get UUID as integer
-    insurance_id = str(full_uuid)[:14]  # Take first 14 digits
-    has_insurance = random.random() < 0.7  # 70% have insurance
-    insurance_status = "Active" if has_insurance else "None"
-    insurance_type = random.choice(INSURANCE_TYPES) if has_insurance else "None"
-    insurance_id = insurance_id if has_insurance else ""
+    has_insurance = random.random() < 0.7  # 70% chance of having insurance
+
+    if has_insurance:
+        insurance_type = random.choice([t for t in INSURANCE_TYPES if t != "None"])
+        insurance_status = "Active"
+        insurance_id = str(full_uuid)[:14]
+    else:
+        insurance_type = "None"
+        insurance_status = "None"
+        insurance_id = ""
+
 
     # Generate 9-digit patient ID from UUID
     full_uuid = uuid.uuid4().int  # Get UUID as integer
     # Generate patient ID, national ID, and insurance ID from UUID
     patient_id = str(full_uuid)[:9]  # Take first 9 digits
     national_id = str(full_uuid)[:14]  # Take first 14 digits
-    insurance_id = str(full_uuid)[:14]  # Take first 14 digits
     
-    gender = random.choice(["M", "F"])
+    age_group = '15-49' if age <= 49 else '50+'
+    gender_key = f"{gender}_{age_group}"
+
+    # Hypertension
+    htn_prob = KDHS_2022['hypertension']['prevalence'].get(gender_key, 0)
+    has_hypertension = np.random.random() < htn_prob
+    on_htn_meds = has_hypertension and (np.random.random() < KDHS_2022['hypertension']['treatment_rate'])
+    
+    # Diabetes
+    diabetes_prob = KDHS_2022['diabetes']['prevalence'].get(age_group, 0)
+    has_diabetes = np.random.random() < diabetes_prob
+    on_diabetes_meds = has_diabetes and (np.random.random() < KDHS_2022['diabetes']['treatment_rate'][gender])
+    
+    # Mental health
+    mh_prob = KDHS_2022['mental_health']['prevalence'].get(gender_key, 0)
+    has_mental_health_issue = np.random.random() < mh_prob
+    on_mh_treatment = has_mental_health_issue and (np.random.random() < KDHS_2022['mental_health']['treatment_rate'][gender])
     return {
         "sub_county_id": sub_county_id,
         "sub_county_name": sub_county_name,
@@ -340,7 +357,13 @@ def generate_patient(start_date, end_date):
         "created_by": created_by,
         "updated_by": updated_by,
         "updated_at": updated_at.strftime("%Y-%m-%d %H:%M:%S"),
-        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S")
+        "created_at": created_at.strftime("%Y-%m-%d %H:%M:%S"),
+        "has_hypertension": has_hypertension,
+        "has_diabetes": has_diabetes,
+        "has_mental_health_issue": has_mental_health_issue,
+        "on_htn_meds": on_htn_meds,
+        "on_diabetes_meds": on_diabetes_meds,
+        "on_mh_treatment": on_mh_treatment
     }
 
 def generate_patients(num_patients, start_date, end_date):
@@ -365,7 +388,6 @@ def generate_patients(num_patients, start_date, end_date):
 
             # Generate patient with timestamp inside this hour
             patient = generate_patient(current_time, current_time + timedelta(hours=1))
-            # patient = _assign_health_conditions(patient)
             patients_list.append(patient)
             generated_patients.append(patient)
 
@@ -378,7 +400,7 @@ def generate_patients(num_patients, start_date, end_date):
     # # Apply health conditions using the wrapper
     # patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
     # Apply health conditions WITHOUT converting to Series
-    patients_df = patients_df.apply(lambda row: _assign_health_conditions(row.to_dict()), axis=1, result_type='expand')
+    # patients_df = patients_df.apply(lambda row: _assign_health_conditions(row.to_dict()), axis=1, result_type='expand')
 
     # Convert date fields
     date_cols = ['date_of_birth', 'created_at', 'updated_at']

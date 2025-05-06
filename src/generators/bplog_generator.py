@@ -10,6 +10,7 @@ fake = Faker()
 def generate_bp_log(screenings_df):
     bp_logs = []
     for _, screening in screenings_df.iterrows():
+        track_id = str(uuid.uuid4()) # Simulated track ID
         # Generate 1-3 BP readings per screening
         for reading_num in range(random.randint(1, 3)):
             patient_created_at = pd.to_datetime(screening["created_at"])
@@ -23,7 +24,7 @@ def generate_bp_log(screenings_df):
             bp_log = {
                 "bplog_id": str(uuid.uuid4()),
                 "patient_id": screening["patient_id"],
-                "patient_track_id": str(uuid.uuid4()),  # Simulated track ID
+                "patient_track_id": track_id,  # Simulated track ID
                 "avg_systolic": systolic,
                 "avg_diastolic": diastolic,
                 "avg_pulse": pulse,

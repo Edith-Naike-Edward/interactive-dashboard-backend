@@ -1,1501 +1,307 @@
-0
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
-is_prescription
-is_investigation
-patient_visit_id
-is_medical_review
-patient_treatment_plan
-patient_track_id
-is_active
-is_deleted
-tenant_id
-created_by
-updated_by
-updated_at
-created_at
-visit_date
-patient_id
+is_prescription,is_investigation,patient_visit_id,is_medical_review,patient_treatment_plan,patient_track_id,is_active,is_deleted,tenant_id,created_by,updated_by,updated_at,created_at,visit_date,patient_id
+False,True,90fcbee5-ec2d-4da9-b774-f875d53f8c29,False,Recommended diagnostic procedures,c62c0260-3911-4af7-bfa7-cfdca1bd3d25,True,False,86c534d7-8700-41f2-b2c6-1884e3fdbb2c,24,38,2025-05-22 11:17:05,2025-05-03 11:17:05,2025-05-03 10:26:05,997614682
+True,True,8ea8abce-3f3c-401c-a7c5-e05579eae217,True,Comprehensive treatment plan,67786754-6db6-4cef-809b-75c9166278e4,True,False,08d8ea96-41fb-45d6-bcba-609df7e67e5d,145,225,2025-05-03 01:40:54,2025-04-08 01:40:54,2025-04-08 01:17:54,309571865
+True,False,7a7beb5a-d9f0-4d42-b472-8b1a90bc9b3f,False,Adjusted medication dosage,0dde05e7-3c94-4fd7-89b7-6f96f3ffe60f,True,False,fd86e30f-aee3-4969-b1ac-00bd66c4fdde,201,152,2025-05-10 16:17:13,2025-04-25 16:17:13,2025-04-25 16:11:13,309571865
+True,True,6259c03b-c4fa-448f-b500-b0218a1a148d,True,Comprehensive treatment plan,7a1e9d13-26fa-454a-afac-425a3a32abf8,True,False,29da4f20-a0ee-4d86-8ca0-6e33134a3781,192,6,2025-05-15 13:20:25,2025-04-24 13:20:25,2025-04-24 12:56:25,309571865
+False,False,eeca4259-ec4a-4760-837f-27c938f5bca3,True,Follow-up assessment,fb210c01-63e1-4d31-8cd9-dd46410e4809,True,False,373e16ed-d61c-454e-beee-6f87ae63124d,44,157,2025-05-01 10:09:08,2025-04-30 10:09:08,2025-04-30 09:57:08,110993565
+True,False,74e571ca-0ec5-4e14-8e42-94a5f9382a3b,False,Adjusted medication dosage,b4a716da-79fa-4574-92c6-4fc5b21782d5,True,False,1499c29e-f4e0-4618-9bf1-8ce91c063864,263,73,2025-05-14 14:20:19,2025-05-03 14:20:19,2025-05-03 13:29:19,110993565
+True,False,440e0572-4b1d-4e57-9844-d9db6ac0bcf0,False,Prescribed medication for condition,a0013779-6fc2-46f8-8c91-58030beef218,True,False,5b6ccba5-2e67-4db1-a774-d0e94993f03e,28,237,2025-05-26 16:30:19,2025-04-30 16:30:19,2025-04-30 15:46:19,110993565
+False,True,98299bca-f1e6-4259-97c4-72a2560f907d,False,Ordered lab tests,9698e48c-7ea9-4ef8-b8ba-80a990825f25,True,False,beff37b5-c5e3-44c8-8b80-97ee7e242a94,250,170,2025-05-14 20:17:29,2025-04-23 20:17:29,2025-04-23 19:54:29,110993565
+True,False,52662515-9130-4825-9a09-23a20f91e68b,False,Adjusted medication dosage,5c22ccd7-a682-4b15-9dfa-9a8eabb54267,True,False,a6c1c04e-e64b-48ba-bef6-d464a7f24028,100,163,2025-05-11 14:52:38,2025-05-04 14:52:38,2025-05-04 14:06:38,110993565
+False,True,94ee7899-702c-4b7e-aec4-6f97232364d0,False,Recommended diagnostic procedures,b68b7ff9-79b3-4ebc-a41f-279db81379e8,True,False,946f25c1-5661-4082-ba37-f7311aca18c3,187,162,2025-05-10 14:13:23,2025-05-01 14:13:23,2025-05-01 13:26:23,758342580
+True,True,4b908509-5bf3-4458-abdf-c7499e3296f8,True,Comprehensive treatment plan,9a58e446-4783-4bb5-88dc-b339051e9662,True,False,370251ba-f572-4cec-be46-e67e710bf16e,224,142,2025-05-02 18:53:19,2025-04-22 18:53:19,2025-04-22 18:48:19,758342580
+False,False,1c927062-3d5a-461d-8dc5-a20e0542b434,True,Follow-up assessment,d0964ea7-f854-4652-bfd8-379da9203716,True,False,b55f972b-e4ec-4214-a8ad-fa7e30f23995,229,184,2025-05-19 01:24:22,2025-04-26 01:24:22,2025-04-26 00:36:22,758342580
+False,False,f54f7846-8160-4b49-90a4-3babcb8c0cf1,True,Chronic condition management,eb9115c9-52bc-4195-82f0-c2467b9c5f06,True,False,c02e2b62-7558-4b49-bcc4-b9846e415c06,144,72,2025-04-23 07:51:22,2025-04-20 07:51:22,2025-04-20 07:11:22,758342580
+True,False,b9b6520b-0d89-4933-a7b1-0dc0f18cee54,False,Adjusted medication dosage,e4f91ed1-3ea4-42fe-9c2b-8ed2f0ba0061,True,False,8078ab1f-3c9d-4233-ac35-aaa506cd42dc,260,16,2025-04-17 23:28:52,2025-04-15 23:28:52,2025-04-15 22:43:52,333774253
+False,False,d7239039-5435-422b-8515-f862b91ae86a,True,Progress evaluation,5955e47e-78a8-4549-b1dc-dae50086e3c3,True,False,bc32ff76-8e80-46d4-84ce-7285fdbc6012,134,242,2025-05-02 12:05:46,2025-04-08 12:05:46,2025-04-08 11:35:46,333774253
+False,True,334f430b-8bd5-4e1c-b43f-20c2b3ad79f5,False,Ordered lab tests,9d8a760d-fd90-4908-b201-c4bf5a0ccdaa,True,False,1e4f4695-b765-4f3a-803a-987364df9b5b,149,69,2025-05-04 17:12:59,2025-04-22 17:12:59,2025-04-22 16:44:59,333774253
+False,True,e56703c7-64a5-4b4b-a242-a996e7da89e9,False,Recommended diagnostic procedures,063857e5-23fa-416b-937b-852606058071,True,True,b7bafd1e-d1aa-4715-abf0-bdb31e305032,123,85,2025-05-18 05:05:17,2025-05-06 05:05:17,2025-05-06 04:55:17,333774253
+False,False,44b1c0e9-8df9-4835-94c5-8f555621b3be,True,Follow-up assessment,3824c662-7850-43b1-9729-abe74a2f0e58,True,False,b761f70e-d499-46e8-9af6-b87aaf3f6f94,75,248,2025-04-22 20:57:27,2025-04-17 20:57:27,2025-04-17 20:24:27,333774253
+True,False,10ca7ffa-e1ba-4802-80d5-fd44ecb7385e,False,Refilled existing prescriptions,24c5b2d0-92ef-4739-a142-d73c28388ae7,True,False,77de9740-3ba7-4e5b-be23-3be405a87e9c,106,266,2025-04-10 16:53:21,2025-04-08 16:53:21,2025-04-08 16:34:21,105230671
+True,True,1e2f6d21-e32c-43b7-a603-49b1e941edce,True,Multi-disciplinary approach,40f7a03f-1da8-4b23-bee3-cf31cbf21cba,False,False,42fbf3e0-67f2-44a7-abea-959b328d511f,21,166,2025-05-05 22:13:31,2025-04-20 22:13:31,2025-04-20 21:44:31,105230671
+True,False,119b9f16-64c5-4454-b702-f90ec4d61baa,False,Adjusted medication dosage,bfc44ca5-548e-433f-ae19-d8e857e6c1f6,True,False,26f95559-fb95-4a7c-83a1-e3a82094291c,90,193,2025-05-06 03:26:43,2025-04-10 03:26:43,2025-04-10 02:41:43,105230671
+True,False,5d2ec575-9e80-46dc-95dd-952e3ceaa8a0,False,Adjusted medication dosage,dd0c067a-40ad-4e28-a14b-42adf28f91aa,True,False,aa55d267-8ed3-49b2-95bb-dc7bb736a392,115,265,2025-05-02 06:07:41,2025-04-30 06:07:41,2025-04-30 05:09:41,176428861
+False,True,1255f86a-3dad-4a6a-9a9d-bc7b69ee01ed,False,Referred for imaging,6dbe6ebc-9218-4ddc-a6dc-72c1d1b36ef2,True,False,8c8b575d-b1f9-492c-ac38-69718430e091,257,72,2025-05-28 01:02:33,2025-05-03 01:02:33,2025-05-03 00:26:33,176428861
+False,True,8480c71c-c04e-4815-91ea-e4c4ab5ceb5b,False,Ordered lab tests,aabd30bd-ac0a-44dd-817b-41d25c823965,True,False,7e04a275-ea96-4d5c-aa3f-bbd077b148c3,96,81,2025-05-10 16:11:56,2025-04-24 16:11:56,2025-04-24 16:02:56,176428861
+True,False,d7af5dea-00f4-4ded-bf20-44a0014c74d3,False,Adjusted medication dosage,edd310ee-c279-403f-bde2-eaa79778b8e5,True,False,12d74e65-6a5b-4ca2-9f17-99b454643d74,170,59,2025-05-08 16:57:21,2025-05-05 16:57:21,2025-05-05 16:00:21,176428861
+False,True,8ec0f064-ac52-4f2c-b00e-ba1a4a43a58c,False,Referred for imaging,5fa5c2b0-82bd-4a51-9457-6b9c96f2d6d6,True,False,b896a69b-55c2-4519-97c8-7ae8456c369d,12,125,2025-05-06 15:33:16,2025-04-18 15:33:16,2025-04-18 15:15:16,873740748
+True,False,044cecf2-64db-421e-a7a3-83411703119a,False,Adjusted medication dosage,4c15e64d-0543-48f7-94ef-912787936499,True,False,9babc652-33d1-4cdd-a5f4-55e0f605e958,76,29,2025-04-20 02:44:35,2025-04-15 02:44:35,2025-04-15 02:02:35,873740748
+True,False,a4211815-7938-44ab-9671-ea283d64dbdf,False,Prescribed medication for condition,b89213fe-1b98-47f7-8e5b-fc41e766c185,True,False,6732318c-78a5-4ebf-bc8c-5cb60259b9b4,10,146,2025-05-12 05:21:54,2025-04-12 05:21:54,2025-04-12 04:43:54,873740748
+True,True,13e8ec1d-99ea-45c0-b462-b81f2c9d0219,True,Comprehensive treatment plan,66841bf1-39c3-4313-a85d-6f05fc779a11,False,False,7b6d74fc-c8ca-4d58-b667-dc0af84aaeb7,88,113,2025-05-08 09:23:28,2025-04-19 09:23:28,2025-04-19 08:50:28,873740748
+False,True,202ccac9-fde2-43d8-ad97-970e03748321,False,Recommended diagnostic procedures,adae7747-abf7-44f4-b34b-dca4b2a314e4,True,False,0e4a97d9-c437-4fd4-b8ee-48c802ec8d5e,136,86,2025-05-13 03:11:23,2025-04-19 03:11:23,2025-04-19 02:14:23,262089355
+False,False,a5f82f64-605c-41b7-a3e1-6855f8087ca3,True,Chronic condition management,9a4a3d6e-e2d8-4822-b166-7ff6bd26ffdf,True,False,05f1224f-a78f-40c0-9f86-c2870bfade64,198,68,2025-05-09 08:22:10,2025-04-20 08:22:10,2025-04-20 07:48:10,262089355
+True,False,90ef0eff-d27f-4c62-96ad-69b1b894e7fe,False,Prescribed medication for condition,25bfd6ec-6252-4526-9059-c211f8d3cb9d,False,False,967848e7-fe91-45fc-9d76-e4f0bb3b1e49,77,50,2025-05-30 07:42:11,2025-05-03 07:42:11,2025-05-03 07:04:11,262089355
+True,False,911eb5a4-7892-451d-99ca-c1ebdeb64876,False,Adjusted medication dosage,02ce1693-a743-4798-abba-63876b3772db,True,False,744982bb-9082-4930-9724-5b3ad20508b3,61,48,2025-04-11 03:07:52,2025-04-10 03:07:52,2025-04-10 02:24:52,262089355
+False,True,32f0cc51-aea4-4253-a36c-27cb9c5006f5,False,Recommended diagnostic procedures,da8cf149-1f8a-428a-8ae0-18e8a2dc7bc0,True,False,d11f4f48-ed5f-4d3c-a45d-754ba6f091e8,221,268,2025-05-14 02:35:12,2025-04-18 02:35:12,2025-04-18 01:56:12,202267535
+False,True,c67b4a8c-a5af-46dc-9935-64a4e827accb,False,Ordered lab tests,c9ef0d72-fa25-4456-9293-d4c4d215f5be,True,False,2c631d1f-a9f6-4539-b884-436373815905,247,196,2025-05-21 09:51:01,2025-05-05 09:51:01,2025-05-05 09:02:01,202267535
+True,False,cfc52d14-3b51-4152-aabd-48e361401c22,False,Adjusted medication dosage,9bdd99ae-750c-4d4e-864a-f083291337a5,True,False,103214d2-7d0d-4249-b686-7bef628e6860,69,131,2025-05-22 07:43:56,2025-04-26 07:43:56,2025-04-26 06:50:56,202267535
+False,True,2fb24021-3c7b-4ed2-961a-64fe83619069,False,Ordered lab tests,8f355fca-9244-46f9-a8ea-43264702f9af,True,False,b0bb68d4-9c90-4d9e-b81f-7b12f4ab2e3e,210,132,2025-04-26 16:39:52,2025-04-24 16:39:52,2025-04-24 15:40:52,202267535
+True,False,7f6c0a94-3fb2-44c1-9834-d75398c68bcc,False,Adjusted medication dosage,272b5ec0-53b8-4720-8dce-2cb2d75a40ee,True,False,0fd240b4-1211-43ba-846c-422bac650c79,4,193,2025-04-15 22:43:57,2025-04-15 22:43:57,2025-04-15 21:48:57,173634981
+False,True,cf4693d4-3f25-4e7d-8b52-849105494667,False,Recommended diagnostic procedures,b035c744-d02b-4706-bdcf-ccf2af8140f5,True,False,1bbd0a07-f0ba-40a9-bdf8-6b7359ce3b3d,219,130,2025-04-26 01:31:54,2025-04-16 01:31:54,2025-04-16 00:35:54,173634981
+False,False,db64b81a-c89c-47d7-922b-81c78a2998ef,True,Chronic condition management,91a2b4f6-ce1a-4240-a96a-261691038955,True,False,8984f410-6804-4f0b-a90b-cb236287b76c,204,105,2025-04-30 00:32:02,2025-04-19 00:32:02,2025-04-18 23:51:02,241508568
+False,True,4507ff15-a9aa-4da6-9685-c9c79f2796da,False,Recommended diagnostic procedures,390e758d-f620-491f-80c9-9bcf38574bda,True,False,e26cc9cd-082e-447a-b13d-66b95f470810,130,158,2025-05-11 07:10:01,2025-05-06 07:10:01,2025-05-06 06:35:01,241508568
+False,True,6691ef2c-70be-48c9-bf89-40ea946977a2,False,Recommended diagnostic procedures,fe465181-f600-42c2-80a7-413c5ba18b68,True,False,585d7c56-de1a-42d9-a1d2-c57c52bcc66c,61,118,2025-05-15 23:15:01,2025-04-22 23:15:01,2025-04-22 22:45:01,241508568
+False,False,8058c64e-508b-4a7d-bb57-9426f3d87d37,True,Follow-up assessment,62e5c27f-8a93-42c7-8872-61b56ce68256,True,False,70739807-d37a-428b-bbe7-ccd0644fa8e3,27,83,2025-04-30 22:59:46,2025-04-24 22:59:46,2025-04-24 22:48:46,136461888
+True,False,48af5dd7-90ab-4bec-aa8f-f337966fe20b,False,Adjusted medication dosage,f96ecfcd-94fb-4ae5-a9b5-71c104c5d26b,True,False,40b20ed5-604f-47e8-90ea-bab66bf8f61e,223,46,2025-05-31 06:06:13,2025-05-06 06:06:13,2025-05-06 06:01:13,136461888
+True,False,148ba5ca-9c58-44f2-994d-faf0f145113b,False,Prescribed medication for condition,17020699-5405-46c2-9797-5d53ab82bc05,True,False,b087a59f-638a-41d9-9f53-0f7f58ee3ff2,206,267,2025-04-10 22:07:47,2025-04-08 22:07:47,2025-04-08 21:39:47,136461888
+True,False,7f8a59fc-6cf8-43bd-bce8-23bcb4df7bf4,False,Adjusted medication dosage,d77bf26e-82dd-4797-a2f1-4cc82b00156f,True,False,1290d78d-81ef-403d-8eed-9b6c900cd7d1,254,225,2025-05-24 14:40:22,2025-04-24 14:40:22,2025-04-24 14:32:22,136461888
+True,False,e54d9301-ba88-4392-a31e-e1d3e8b6be49,False,Adjusted medication dosage,881d6fa7-f9cb-435d-acf0-f2399a0f70d9,True,True,c1053b2a-27f6-49d7-8167-c0ad947c8ded,262,265,2025-05-21 04:55:58,2025-05-05 04:55:58,2025-05-05 03:59:58,192150026
+False,True,2d72deeb-4b9c-4770-a17b-1e3ba9b605f1,False,Recommended diagnostic procedures,259a0806-4078-45fa-8aa3-f979fe310ca3,True,True,d005d970-b60f-4f04-80be-0e7e8b6c8018,81,45,2025-05-16 00:23:44,2025-05-05 00:23:44,2025-05-05 00:16:44,105172925
+True,True,2fef8105-024f-4fd9-9e28-a95e4c74b63f,True,Multi-disciplinary approach,f0badc25-4c91-4688-98a5-82901d9a19c0,True,False,a82cd3eb-1deb-4fe7-8ede-52f4dcd98a53,266,8,2025-05-05 13:38:28,2025-04-14 13:38:28,2025-04-14 13:11:28,105172925
+True,True,d65f73b7-3743-4ffa-aedd-caa520dca4ec,True,Integrated care plan,f6dc6a2a-3370-4d4d-8d0f-b0786f5fc1da,True,False,7000a142-d5bc-4047-beb4-1e5a39aecea9,179,178,2025-05-28 00:59:03,2025-05-05 00:59:03,2025-05-05 00:36:03,223865737
+True,False,123d573d-9ecd-4385-b29d-3274c4835a79,False,Prescribed medication for condition,21d65a18-5f9c-401d-9460-f342a832213f,True,True,a4100241-98da-4b0b-a74f-c345a45b31ce,90,209,2025-05-15 21:31:08,2025-04-16 21:31:08,2025-04-16 20:57:08,262895949
+False,True,3bb5e862-d2e7-4d42-bae5-f3704c7f01f9,False,Recommended diagnostic procedures,fb4ca582-2f5e-4066-a420-44a2e848a7c8,True,False,811ac3f2-5047-4474-8a32-65ba1e89695e,263,132,2025-05-17 15:16:47,2025-05-01 15:16:47,2025-05-01 15:07:47,262895949
+False,False,01353db3-b9fc-42dc-bec0-ae6116d16f08,True,Progress evaluation,785f178a-0d77-43dd-b78a-a578184086e4,True,False,778e9452-b4bd-492d-9cc7-3043e2e63ae1,248,125,2025-05-26 01:36:54,2025-05-04 01:36:54,2025-05-04 01:15:54,262895949
+True,True,a82e5412-787d-45c1-a3be-7027d70ddfd4,True,Multi-disciplinary approach,a13ff68a-f39a-4a26-88ae-0508f358de30,True,False,d541f2b1-aac7-47ca-a70c-d4cd8efbbfdc,247,60,2025-05-06 19:04:39,2025-04-22 19:04:39,2025-04-22 18:16:39,102441040
+True,False,e1364b15-f1c4-4294-ae5b-3000fc9c3ed4,False,Refilled existing prescriptions,2e0676fa-1354-4ee8-9af1-578b941d9bb7,False,False,9bed4e17-2e63-4d8d-a417-14dbe43209b4,118,162,2025-05-11 07:29:35,2025-04-16 07:29:35,2025-04-16 06:44:35,102441040
+False,True,5f12964c-2c95-4541-ad72-6aa57247ea5c,False,Referred for imaging,7ca0abb0-0be3-474e-be66-f42878cfdfdd,True,False,3ad6fa85-8602-4dd7-8d3c-a731ac7b7695,128,148,2025-05-18 14:14:16,2025-05-01 14:14:16,2025-05-01 13:36:16,102441040
+True,False,1b3731b2-3256-40e7-b085-f2476c758801,False,Adjusted medication dosage,ce17ca85-85de-444f-98de-71375ac6808f,True,False,116cdeb7-c77f-4f47-a538-a38e93e86d30,244,161,2025-04-19 16:31:27,2025-04-09 16:31:27,2025-04-09 15:34:27,264434037
+True,False,66f0f74f-23ef-4842-a738-7409f120bc18,False,Adjusted medication dosage,f410810c-2130-44f9-908a-54473528cda1,False,False,89e08324-ecaf-4e8f-bbf5-9de630546b8f,98,256,2025-04-17 05:43:02,2025-04-12 05:43:02,2025-04-12 05:21:02,187915971
+False,False,28ffa007-f222-46ab-84e6-8863d079c3de,True,Follow-up assessment,f2686778-2c3a-4ef1-a5a1-b26e1c9a1f91,True,False,15483901-ef61-4ef0-9e58-dac029462b16,104,128,2025-04-17 14:30:01,2025-04-10 14:30:01,2025-04-10 13:38:01,187915971
+False,False,661279e8-fbf3-484b-a347-64c6ba20b997,True,Chronic condition management,d57af4d8-7212-47b3-a31a-a732700183a0,True,False,9a8d4378-fb2d-48d9-8713-47d6548d4318,253,4,2025-05-13 03:27:09,2025-04-19 03:27:09,2025-04-19 03:13:09,187915971
+True,True,522630d4-e093-4acd-b6f5-3433baf507bb,True,Multi-disciplinary approach,24373b0d-190d-4eb6-a9f6-aeb91a405526,True,False,1cae25fa-a483-4f0c-92c9-9b01ca5e9710,141,252,2025-05-07 12:54:07,2025-04-18 12:54:07,2025-04-18 12:26:07,162848082
+True,False,bc00d74f-1242-4cd0-849a-d638cbc37ef1,False,Adjusted medication dosage,1e180649-8f7a-4ee6-a659-ad8308838d3a,True,False,a22088e8-ee1f-4337-a9a2-b160fe243b5c,28,270,2025-04-20 21:05:20,2025-04-08 21:05:20,2025-04-08 20:43:20,162848082
+False,False,39e1a1a2-d2ea-4955-8c62-5732e3059157,True,Chronic condition management,4e20a86f-3f9d-491a-8464-1c908f9b9398,True,False,319cd0be-d27e-4d2f-b0ad-d921939ea49c,90,235,2025-05-04 11:30:41,2025-05-03 11:30:41,2025-05-03 10:51:41,162848082
+True,True,c3c414af-2670-4a6e-afaf-6e63c20f3c26,True,Integrated care plan,2cde65c8-fe8e-4afe-9477-97c2caca910d,True,True,3a401341-3df8-42d7-a251-6013b6742442,108,195,2025-05-15 03:02:07,2025-05-01 03:02:07,2025-05-01 02:24:07,162848082
+False,True,1d372cb0-1f11-4f4e-a354-96734210b573,False,Referred for imaging,553883ff-4175-43f2-b8f0-27fd3b628bfb,True,False,b61cda7a-9c56-463c-a993-f36bebb501e6,135,122,2025-04-26 22:46:02,2025-04-07 22:46:02,2025-04-07 22:18:02,162848082
+False,True,19a79eba-a5ba-4b44-8007-d5ae3cb6cce6,False,Recommended diagnostic procedures,de8e8948-d321-4705-bd83-665654de78aa,True,False,e11551dc-e962-45d0-89ed-81c0581dc242,215,191,2025-05-05 01:23:18,2025-04-24 01:23:18,2025-04-24 00:57:18,229944879
+True,False,4d2ab211-9bc7-498a-a292-2b17da04a5fc,False,Refilled existing prescriptions,ce71e7e5-46e1-44b8-8f72-1bd8cca176ae,True,False,7db6fe1f-5b80-49b1-85fa-566700f91367,118,52,2025-05-01 17:32:47,2025-04-17 17:32:47,2025-04-17 17:10:47,229944879
+False,False,cfa998e8-5aea-48ab-bebd-dcf62e0840b3,True,Follow-up assessment,4a9eb099-1d34-4b6d-94fd-dd907b73fcc3,True,False,ed71a817-8870-4927-9856-63cc95707f48,77,243,2025-04-27 07:09:17,2025-04-14 07:09:17,2025-04-14 06:29:17,229944879
+True,False,8d8c63ec-06af-41e8-b51b-161f54d26ddd,False,Refilled existing prescriptions,cfa98b6e-b498-4574-846a-5948412f28dd,True,False,cfd084b6-0609-4954-ae9b-a765d6fd2717,162,250,2025-05-22 12:15:22,2025-04-24 12:15:22,2025-04-24 12:02:22,143493465
+True,False,e7d3bb83-a6c2-4bbe-b735-da5f8229fc8f,False,Adjusted medication dosage,5b5d3ecd-50ae-44c4-9193-a515351c7b0b,True,False,ffe2be94-1749-4e36-9d6c-1a6162ec0462,111,131,2025-04-28 15:10:05,2025-04-16 15:10:05,2025-04-16 15:02:05,948006433
+False,True,986515dd-225a-4e74-b632-8b7962c9e326,False,Recommended diagnostic procedures,6e4c91fa-52c4-41f7-94ee-58ce12f4096f,True,False,b0404f4a-824b-41b2-b386-a59ecf6675cd,185,132,2025-05-07 17:28:14,2025-04-23 17:28:14,2025-04-23 17:17:14,948006433
+True,False,a2468733-2ed1-4de8-a3dc-3c48d2aa2d48,False,Refilled existing prescriptions,6c6a2947-c41b-40f6-b959-a405aa6f59ec,True,False,1b682081-d059-4c90-862b-d98603559e4d,102,90,2025-04-21 21:52:00,2025-04-10 21:52:00,2025-04-10 21:40:00,948006433
+True,False,d796cd27-235a-43b8-86f2-984058f35989,False,Adjusted medication dosage,7477eed6-855f-4ce7-9925-8dcdd0f0d6ef,True,False,2195dae7-241f-4c06-a33b-9dfff62c6734,41,196,2025-04-24 03:06:52,2025-04-09 03:06:52,2025-04-09 02:29:52,350630820
+False,True,c4b291da-b640-48dd-9fbb-44aa3395c5ac,False,Referred for imaging,491c156e-b273-40d2-81fd-9e586d0692c6,True,False,d761195f-ea4c-47cc-9ef1-582dba197d90,173,216,2025-05-15 05:48:52,2025-04-15 05:48:52,2025-04-15 05:03:52,350630820
+False,True,d6281d03-1248-47bf-b3c9-6bb28075ebb5,False,Recommended diagnostic procedures,3ba77375-2a1d-4d25-8ada-f8d55e1d8a88,False,False,c855e74c-74ae-4091-91fc-85cff4e27e6e,176,117,2025-06-02 12:55:00,2025-05-06 12:55:00,2025-05-06 12:25:00,350630820
+True,False,a2da8138-2ca7-429e-8d8d-46ff3cd7b501,False,Refilled existing prescriptions,ef1bba21-8293-4ffa-a297-4c0b72b1c212,True,False,cd42354c-7a41-48c9-bd32-94b872eb2909,228,186,2025-04-23 00:27:57,2025-04-15 00:27:57,2025-04-14 23:37:57,323919584
+False,False,018a744d-e3b0-46ab-ac32-4752ba3e7995,True,Progress evaluation,77501e9b-599a-47c7-967b-1f0706260a73,True,False,5c3a8294-7f44-47b0-a33c-984dba6fd55f,65,121,2025-04-26 12:22:37,2025-04-13 12:22:37,2025-04-13 11:49:37,323919584
+False,True,321ffca1-3b2f-4c1e-8ee6-f75bc5726ff8,False,Recommended diagnostic procedures,6f00990a-84e8-4e07-aac2-5be0d5875ba6,True,False,ff90969a-efa3-4716-bc28-4fccfd7e9532,53,49,2025-05-26 16:35:23,2025-05-03 16:35:23,2025-05-03 15:46:23,323919584
+True,True,0bb3cf4b-4e87-4d76-8e28-aaa440c3b297,True,Multi-disciplinary approach,d30b71f0-eebf-4e64-bfce-45864625a77e,True,False,44d17a04-30bc-4662-876a-133b4b2e076a,43,54,2025-04-26 20:49:53,2025-04-25 20:49:53,2025-04-25 20:09:53,328947012
+False,True,031e25bc-6387-43d6-bfa4-e422a88a532b,False,Ordered lab tests,5ac9fea6-bd23-4ec1-8134-c178cc5ce468,True,False,1e29c0c1-a60a-4b7c-a424-f5cc237d119c,127,146,2025-05-10 17:53:24,2025-04-11 17:53:24,2025-04-11 17:07:24,261366266
+False,True,82bbf9a9-9c20-4d24-b117-51552fd8cd82,False,Ordered lab tests,d5c0b8d5-8e4a-4577-a43b-07e682dd1b93,True,True,86858b50-9839-4534-a023-83b7b5f20534,183,167,2025-05-12 08:05:58,2025-04-26 08:05:58,2025-04-26 07:52:58,261366266
+False,False,3bb02d86-a989-4fe8-b66d-94abd45373c0,True,Chronic condition management,6c31fb4c-f77b-4ae9-bce3-5630c376c8ad,False,False,7845ca46-f2a9-4b3f-b3a6-613ab8bd9619,70,91,2025-05-14 10:31:13,2025-04-27 10:31:13,2025-04-27 09:31:13,261366266
+False,True,8f853ab1-b465-4417-be51-a33b9caf424c,False,Recommended diagnostic procedures,78d8086c-8ea0-4ba3-b678-7a53b831b27b,True,False,263e5c46-48b5-4171-8da8-dc415aa9e6b1,274,159,2025-05-26 16:59:43,2025-05-06 16:59:43,2025-05-06 16:07:43,146463218
+True,True,903ca15d-908a-4ee3-ad80-f2ba6051e51f,True,Multi-disciplinary approach,1643e304-232a-45de-8374-06af99dfaf78,True,False,80f96b52-df4f-4e7c-8707-9381339f1c71,188,212,2025-04-20 03:43:50,2025-04-13 03:43:50,2025-04-13 03:04:50,146463218
+True,False,c4b3a75d-56d1-4964-a647-63b63ee21846,False,Refilled existing prescriptions,8d4ef218-1ef6-4d4a-b09c-512cf78cf4cc,True,False,936a14f1-8db4-44f1-8808-5672872432db,70,177,2025-04-24 13:34:30,2025-04-24 13:34:30,2025-04-24 13:29:30,146463218
+True,False,18d89a97-cf05-46c5-ba5b-eef0d0c981db,False,Adjusted medication dosage,42add639-062f-4b18-9b37-aa8bcec57fe2,False,False,25d4a634-2e8a-461e-8b52-5206314889cc,245,154,2025-05-14 21:02:05,2025-04-22 21:02:05,2025-04-22 20:57:05,146463218
+True,False,a7af512c-5a3a-4218-8020-65357a4d7910,False,Refilled existing prescriptions,cc0a279e-3ddb-4760-9eaa-a8fb3a535bf7,True,False,dc185b91-415e-4cb2-988d-ecc1594f3408,192,97,2025-05-02 22:09:46,2025-04-23 22:09:46,2025-04-23 21:13:46,146463218
+False,False,c97c7c8f-6a97-4706-b59b-7f29e72d6d0a,True,Chronic condition management,04045e98-a4a7-4fc6-90dd-fb7fd736387d,True,False,e3778439-b2e5-46bc-a5e7-5fc284d83ee0,200,194,2025-04-21 21:53:44,2025-04-14 21:53:44,2025-04-14 21:23:44,143393158
+True,False,966dc698-43fc-45b8-bab8-85ac29327bcd,False,Prescribed medication for condition,8b995dc7-ef86-4099-985f-3f1e159f11c4,True,False,a044037b-6070-4552-bf79-47a9e5597a9a,140,146,2025-05-05 22:27:24,2025-04-15 22:27:24,2025-04-15 21:55:24,143393158
+False,True,1d7928c1-6dea-4b1c-b48f-c4215f915ac0,False,Recommended diagnostic procedures,62a3f6c1-f93e-4c90-b7e5-4c36d70005c1,True,False,5452c371-9d02-4e3e-b5a4-fb7199d88deb,94,70,2025-05-07 12:20:23,2025-04-29 12:20:23,2025-04-29 11:24:23,143393158
+True,False,ab016cf5-6091-4f6e-ad3c-a387089bb299,False,Adjusted medication dosage,1e04f614-bd0c-49b3-a908-bf8e34c51b64,True,False,835f8270-a484-4a08-b5bf-f282da687ff8,252,97,2025-05-20 22:36:49,2025-05-01 22:36:49,2025-05-01 22:02:49,143393158
+True,False,b3e5fb80-5f3d-4699-ae49-a201fc7e7d5a,False,Prescribed medication for condition,ff0d6427-3ac0-4174-a6ea-07f42e57db7c,True,False,577612f2-f8ea-49c0-8e2b-1469ba3afcb9,138,65,2025-04-23 17:56:28,2025-04-23 17:56:28,2025-04-23 17:17:28,175840362
+False,False,cc1fc5b5-f0b5-41c9-a1a4-2cd07b320018,True,Progress evaluation,aa656677-c8c6-4ab4-8f44-d36674e8106a,True,True,ca0ee4ca-4720-41a0-8931-4e63398e91a5,112,176,2025-04-23 18:40:23,2025-04-16 18:40:23,2025-04-16 18:35:23,175840362
+False,True,bd4a1b77-694a-4bf5-b136-14deccb59193,False,Referred for imaging,3a0fc539-bac2-42d1-8b8e-4ded0c5d5001,True,True,9258a24b-13fc-4649-8d1b-f73b4cefb751,42,75,2025-05-19 14:50:48,2025-05-05 14:50:48,2025-05-05 14:22:48,175840362
+True,False,c261ddae-03ab-4891-bb4a-149a83b42ad3,False,Refilled existing prescriptions,c48056d0-1e30-4474-9047-e06cca5dbdde,True,False,d0eb330d-2136-455a-a854-7e73fcc1bc42,129,196,2025-05-12 16:09:25,2025-04-25 16:09:25,2025-04-25 16:00:25,108897511
+True,False,d5e92dc1-6a1e-4b55-91ee-b022f47432d7,False,Adjusted medication dosage,73eba5f6-d0e1-4536-a99c-307a6c99b2fc,True,False,5cad9903-e968-4496-8c23-eaeea0e6a711,18,102,2025-05-01 05:43:50,2025-04-19 05:43:50,2025-04-19 05:23:50,184587353
+False,False,5dc39163-10b2-44ef-93c5-8bba525f2480,True,Follow-up assessment,d8308075-0877-4448-b6d5-01238bf5618c,False,False,e5baadde-7c45-4c98-b455-b30a7ffda7e5,160,166,2025-05-28 00:43:26,2025-05-07 00:43:26,2025-05-07 00:05:26,620069927
+True,False,64751961-553a-4522-858a-4bcd3f835c41,False,Adjusted medication dosage,9eb14787-b723-4a44-8e5d-34fb46f7f494,False,False,3d87c69f-5c83-421a-b415-ead03a98ae74,130,247,2025-05-09 22:19:49,2025-04-16 22:19:49,2025-04-16 22:12:49,620069927
+False,True,c7437966-a2df-47fe-8a57-b2fc5c18b0a6,False,Ordered lab tests,e69b7813-abcd-4965-a6ba-a4b60010ee90,True,False,da4204fa-9b1b-4018-9a08-88926d5fea50,58,121,2025-05-24 19:13:48,2025-04-26 19:13:48,2025-04-26 18:45:48,620069927
+False,True,7f4aaa73-d840-4267-808a-0515bd3cd964,False,Referred for imaging,b21a3235-8c11-4809-a0f7-286a92032610,True,False,5894d1ad-5b59-4265-9e76-6940c793c74b,203,125,2025-04-28 07:28:20,2025-04-23 07:28:20,2025-04-23 07:23:20,620069927
+True,True,9b586361-b73c-4a09-a1eb-1da8b82ccca6,True,Integrated care plan,7854f3a0-249f-439c-ba6b-3e235a8e2269,True,False,8df47a32-3b4d-4fc7-a8da-ff748e4f76c2,191,46,2025-05-14 19:08:16,2025-04-22 19:08:16,2025-04-22 18:13:16,260925688
+True,False,1d9ca4dc-0de9-4478-ae61-1d545e363f7a,False,Prescribed medication for condition,67045464-c38b-4b15-826c-7e397b98f2ac,True,False,3ecfe328-c614-454d-88ea-6259007c373d,31,31,2025-05-03 17:35:24,2025-04-14 17:35:24,2025-04-14 16:47:24,211173634
+True,False,46dafd63-21e8-4229-a78c-052c650218a3,False,Prescribed medication for condition,c874de59-144c-4ce2-b7e9-d627bbbe9327,True,False,c106d13a-ecc7-4717-ac71-a80ab260cae3,120,163,2025-05-04 04:16:49,2025-04-17 04:16:49,2025-04-17 03:27:49,211173634
+False,False,0cbc7f91-3533-4027-9878-2f34e8a6bd38,True,Chronic condition management,437a5177-64a6-4f78-8b85-848819fab04b,True,False,e00f245b-6b54-4e88-87f4-c43a98dd0039,194,184,2025-05-06 16:39:38,2025-04-08 16:39:38,2025-04-08 15:43:38,238129261
+False,False,12d9817b-acc6-46b7-9849-c80deda86483,True,Chronic condition management,4d1d44ba-5b98-47ed-b9bb-4aaaecc4bc7c,True,False,c9080205-6d39-4ff3-bcdc-006decab7030,251,98,2025-05-21 09:09:01,2025-05-06 09:09:01,2025-05-06 09:02:01,238129261
+False,True,6f181c8d-6052-4f37-a4ab-882baddfbc8c,False,Recommended diagnostic procedures,96d1d68c-4820-4206-88b2-827f852b9491,True,False,65c62daf-1645-4191-920e-9f51d725cc2b,83,36,2025-05-07 14:19:53,2025-04-27 14:19:53,2025-04-27 13:52:53,238129261
+False,True,e7f6d51e-730c-440b-936f-8c54869417cf,False,Referred for imaging,0679fbf7-976b-4244-b389-61388d2c795a,True,False,28e781ff-d11f-40f1-a875-b10206af49d5,1,260,2025-06-01 03:10:53,2025-05-06 03:10:53,2025-05-06 02:47:53,238129261
+True,False,7cff8eb5-31d8-4453-bcbb-b335de18ec66,False,Prescribed medication for condition,f5f5e84b-e91e-4909-b705-6091b4180502,True,False,a03b518d-29eb-430e-8be2-0ccddd6d1c99,123,165,2025-04-29 03:27:41,2025-04-10 03:27:41,2025-04-10 03:21:41,238129261
+False,True,a299bb41-4cb6-48f1-9031-f8e38f0809d3,False,Recommended diagnostic procedures,6abe2999-4b47-4a2c-97ae-940d7b5206b0,True,False,d2935de6-8e09-4857-b2b7-a52c05fd513b,79,145,2025-04-29 11:47:08,2025-04-17 11:47:08,2025-04-17 10:50:08,868763510
+False,True,4233d396-64e7-42c3-8194-437f17f4e775,False,Referred for imaging,081b1688-5e01-4294-a4b9-92cd82e04124,True,False,1a410b2d-1113-48ed-bd10-371b884192a7,67,92,2025-04-27 02:04:22,2025-04-24 02:04:22,2025-04-24 01:52:22,965552980
+False,False,5a17bbbb-03b6-4d81-95ee-70470476dfd9,True,Follow-up assessment,fe46648c-bb6b-4b43-af0c-574e6debde7f,True,True,a1a8c4de-46c1-4a48-90e6-87e51bb13786,199,251,2025-05-04 08:40:05,2025-04-19 08:40:05,2025-04-19 08:29:05,965552980
+False,True,c116a110-4263-40dd-b8ca-aaad6892b5e0,False,Recommended diagnostic procedures,24437817-3bb1-42fc-b256-929e26be51d5,True,False,d1976686-6d4c-48cc-bca7-436a346dbf09,37,7,2025-05-14 02:44:13,2025-05-06 02:44:13,2025-05-06 02:02:13,965552980
+False,True,42967ba8-df2c-4f30-92d4-e1077d0c1270,False,Ordered lab tests,a52fe620-e3d6-4253-a0f2-33c08e5bcd15,True,False,4e56e3af-c1a9-4c43-a231-ef4dad654128,213,189,2025-05-08 18:07:06,2025-04-13 18:07:06,2025-04-13 17:33:06,221633696
+False,False,88c7c9b5-41e5-465d-8cf1-d5c0a184cef9,True,Follow-up assessment,b9a314f8-c8e5-440d-82ce-fe825e2e95b9,True,True,3e03881d-c500-4ab2-ac85-e274a54c35f8,37,156,2025-05-21 19:18:07,2025-05-02 19:18:07,2025-05-02 18:21:07,221633696
+True,True,2f401d63-9255-4374-bd69-7e40992c6ad7,True,Integrated care plan,712eeeab-0f36-4b00-a0c6-2c8b07c335d0,True,False,57ff2466-44f1-4a19-a205-1904e6cf5f76,98,99,2025-04-18 13:10:07,2025-04-15 13:10:07,2025-04-15 12:59:07,780215714
+False,True,2ba44d99-08b0-4684-944c-1385b0ed11d9,False,Recommended diagnostic procedures,fdb9a0dc-d860-486e-9648-e772bd3ba3e9,True,False,6d5f3407-60de-4fef-af98-0e612aca2d4e,213,55,2025-05-24 20:27:48,2025-04-24 20:27:48,2025-04-24 19:42:48,271320283
+False,False,cf1890c9-f619-4c6f-91cb-e6432c74523d,True,Progress evaluation,2154c748-ed55-404f-8f92-0802de1ef771,True,False,a577fe61-7090-44d2-83d6-e855a9821aaf,54,86,2025-05-03 12:58:31,2025-04-12 12:58:31,2025-04-12 12:31:31,271320283
+False,False,6863e662-dfb5-4161-9a8c-d4dc3960555d,True,Progress evaluation,dcca44a3-1974-4c3a-9248-bac94c709df3,True,False,27a74b48-21e7-4d01-a963-3c7b24f41b9f,227,181,2025-05-06 07:39:34,2025-04-20 07:39:34,2025-04-20 07:09:34,271320283
+True,True,3b595898-25b6-4cb5-96e3-42350fcc8456,True,Integrated care plan,bc3451ea-6b90-431a-83d6-d8aafb0721ab,True,False,d03eadcb-621d-4150-9875-dd11115c115a,221,166,2025-05-22 14:21:14,2025-04-25 14:21:14,2025-04-25 13:56:14,271320283
+False,True,bb74ed83-7b1c-4cc1-ae13-4da4edd8ce7e,False,Recommended diagnostic procedures,3e83b764-5997-4907-81d5-6727bc398de0,True,False,a0c46805-4c0e-4160-b610-2e995ee00a27,131,185,2025-04-30 06:47:25,2025-04-24 06:47:25,2025-04-24 06:08:25,271320283
+False,True,f0f36160-f1a5-4c71-9428-010b6b7fbef2,False,Referred for imaging,f7748788-0d1e-4c5a-8120-15c0b175f54a,True,False,43c6625c-8cbb-4217-b55f-12cacfae25f2,9,266,2025-05-09 23:02:24,2025-04-16 23:02:24,2025-04-16 22:57:24,154438442
+True,False,7e5d29d1-0604-4dd2-b948-abda205eb973,False,Refilled existing prescriptions,825730d0-5659-474d-a8e3-fbd755313cd6,False,False,a01d6f6e-9e37-417b-9fb2-19ed1bd42bf2,162,12,2025-04-22 02:48:37,2025-04-13 02:48:37,2025-04-13 02:43:37,154438442
+False,False,3bd8f55b-7f23-4753-b58f-890cb7340e4a,True,Progress evaluation,df275f42-991d-4981-b7b9-ebae2bf286f6,False,False,04f4194c-7185-474e-adf9-40a8c374f9ba,80,49,2025-05-03 03:28:49,2025-04-25 03:28:49,2025-04-25 02:31:49,154438442
+True,False,696d982a-0dc8-4346-aaaf-b5e358af68f9,False,Refilled existing prescriptions,155aa7f1-af50-4b8a-ac02-ae1a15290325,True,False,38bdebdb-46b0-4f3c-a215-d01fe6c0e35d,128,120,2025-05-04 11:56:55,2025-04-30 11:56:55,2025-04-30 11:42:55,154438442
+False,False,54c87257-9252-498b-98d6-964e5181a9ae,True,Follow-up assessment,3c59fc27-adce-4ae3-94b9-0424ee38187b,True,False,63b2de6b-7efb-44ca-b1d0-32714e250afd,40,167,2025-04-21 10:33:26,2025-04-09 10:33:26,2025-04-09 09:52:26,536737471
+False,False,eb7e3724-44a7-4227-8c61-76350fe38df3,True,Follow-up assessment,d113b332-8f27-45e1-9b5b-c3c0b58d32c7,True,False,272caff2-de5b-4f7e-80c5-f0f62b2a856c,49,154,2025-05-17 18:11:31,2025-04-21 18:11:31,2025-04-21 17:35:31,536737471
+True,False,403d9181-62e2-4697-96a2-ad2e6e699769,False,Adjusted medication dosage,70167429-2df1-4d7d-a86e-d8a4174fa392,True,False,dd4e40b4-62ee-4dc8-ba61-889144b11a8c,172,179,2025-04-21 01:22:49,2025-04-19 01:22:49,2025-04-19 00:53:49,536737471
+False,True,0916d63a-a57e-44d3-a3ae-97037b37e42c,False,Ordered lab tests,b767f83f-ba91-451b-9673-94c6a99487a2,True,False,10d99a6c-7e2f-4cae-9391-ecaf4e95d2b6,6,196,2025-05-15 01:21:34,2025-04-21 01:21:34,2025-04-21 00:21:34,270089611
+True,False,0ee25064-0683-4a5a-8500-a0d155c1bee5,False,Adjusted medication dosage,3a7a9448-e54f-4900-9e6e-7a3d1ede14c3,True,False,058fc4f0-c204-42e0-9ca0-adef97cc157d,258,114,2025-04-22 04:43:35,2025-04-12 04:43:35,2025-04-12 04:36:35,270089611
+True,False,79751913-a1c0-4465-80e9-09af88ebb0d9,False,Adjusted medication dosage,4775d21b-ac95-4636-9c69-b8383f44f698,False,False,6e01173d-3a63-4b0c-8160-dbbd3eb1ea72,259,47,2025-05-07 22:48:48,2025-04-25 22:48:48,2025-04-25 21:57:48,270089611
+True,False,9421f137-94d0-46d8-8bfe-6b34e9226f2f,False,Refilled existing prescriptions,aba18494-efcd-4c01-b1d2-a1f99c149f0f,True,False,4fa405df-3d82-4d61-adee-d267e6ce64cf,244,26,2025-05-03 09:34:05,2025-04-21 09:34:05,2025-04-21 08:39:05,270089611
+True,False,efb4526c-477a-422c-83a5-e41d0b1db2fe,False,Prescribed medication for condition,c474384e-e2f7-4fa6-8997-5c766271c620,True,False,5014b955-eae9-4cc6-869f-04a904c8c172,70,247,2025-04-30 04:29:18,2025-04-14 04:29:18,2025-04-14 03:59:18,317376101
+False,True,5ffd607a-147a-4a89-97f4-a70fa8eec4e2,False,Referred for imaging,06313604-d0df-41a0-af35-10943d5eddb6,True,False,b78da387-8cfe-4880-ba7f-4024e5aeb23f,269,127,2025-04-29 00:06:42,2025-04-09 00:06:42,2025-04-08 23:36:42,317376101
+True,False,64707901-ffd2-4413-9d00-023b2604306b,False,Refilled existing prescriptions,54a2ce36-e4f7-4b80-8217-097c70659d4f,True,False,4d05ee58-ccb3-439c-b3a6-1b69eaf3b440,46,58,2025-04-24 07:06:54,2025-04-11 07:06:54,2025-04-11 06:12:54,317376101
+False,True,4c522b51-3d0a-4d92-801e-5ec2a6fa260a,False,Referred for imaging,6c16b76b-4ef8-4e88-ae31-c9d0b6cb2a1d,True,False,edc36ba9-63a5-4c4f-91a4-cacce0d07b5b,13,157,2025-05-08 16:14:06,2025-04-27 16:14:06,2025-04-27 15:46:06,317376101
+True,False,57227f0e-dfe2-487d-bff6-4dee21f4ba94,False,Refilled existing prescriptions,22b421d2-a3d8-4af2-84d5-a69d81bafaaf,False,False,bb1eb824-cc5d-4103-88ac-ebe79f437c72,75,226,2025-05-26 05:24:57,2025-04-30 05:24:57,2025-04-30 04:40:57,317376101
+True,True,899e3e54-1530-4a5f-95ef-2a80502c39a2,True,Comprehensive treatment plan,a8bc2f4c-9628-4190-90b8-2df7215f46a3,True,False,bd3654db-7f00-4a68-8b86-5024f8522aa8,44,58,2025-05-20 08:01:38,2025-04-29 08:01:38,2025-04-29 07:44:38,254286917
+True,False,a7183466-4497-40b3-b2f8-e508dbaab9ac,False,Adjusted medication dosage,30f0da1a-5180-421b-86c2-fcb4ace8dde1,True,False,6b253367-2def-40ec-9d47-199e5f98d1d6,176,57,2025-05-14 02:26:12,2025-04-17 02:26:12,2025-04-17 02:12:12,192545476
+False,True,8ea528e1-ab61-47cb-af28-d1bf1f0f6250,False,Ordered lab tests,68970f03-57fa-447d-b3dd-f2eef332701e,True,False,d5d36752-bcc6-43a6-a900-5249e2ae8c17,268,133,2025-05-05 04:07:51,2025-04-29 04:07:51,2025-04-29 03:41:51,685534049
+False,True,8aee1672-1cfd-49ca-bdc3-fca420b2afbe,False,Recommended diagnostic procedures,a6b9a105-9453-4140-9cf1-0acec8d87328,True,False,ebb03ef7-a063-41b1-85fc-e68e2b296c30,193,270,2025-05-07 00:39:44,2025-05-03 00:39:44,2025-05-02 23:48:44,685534049
+True,False,b167dc98-44b4-41f5-96f0-cff19f74cc5e,False,Prescribed medication for condition,a6a48d10-4723-4da7-9f81-d882ee750a68,True,False,2ebf4f20-4920-4348-ab1a-fdf321aadccc,139,28,2025-05-06 10:41:44,2025-04-27 10:41:44,2025-04-27 10:33:44,685534049
+False,True,6657c3ab-5a11-459f-883c-cafb5e7a8fa6,False,Ordered lab tests,a493ad16-bdd9-4b51-b4f0-5c1f860dace2,True,False,cba7af34-ec83-4360-8efc-ddcc37f80277,185,56,2025-05-08 03:37:42,2025-04-26 03:37:42,2025-04-26 03:28:42,143569605
+True,False,fc556a71-85d6-45cb-aad7-352003c3296a,False,Adjusted medication dosage,fb6ab9b1-1deb-464c-aa9f-4e80274ff8b7,False,False,7d2047a5-0345-4122-99ab-a163146a8c5c,51,162,2025-05-12 14:54:42,2025-05-05 14:54:42,2025-05-05 14:25:42,143569605
+False,True,f42fd695-897e-491f-a975-766596c544b2,False,Recommended diagnostic procedures,24dd646b-3567-450e-8e11-2843b1183228,True,False,62fadb30-1607-47cc-99b8-5b3c954e3cba,235,12,2025-04-29 08:13:33,2025-04-27 08:13:33,2025-04-27 07:34:33,143569605
+True,False,457b9ec7-9d68-4b22-9871-8f58507c8e82,False,Adjusted medication dosage,19369ed0-fef1-46c6-bca0-f147f3c65301,True,False,86fec2e6-19ee-4c68-afd0-21c505ef2dcf,10,178,2025-04-24 00:50:14,2025-04-14 00:50:14,2025-04-14 00:26:14,143569605
+True,False,35d0ccb1-6eb1-4c36-ac50-9fc0a784e9c9,False,Refilled existing prescriptions,880e23fe-85c0-4116-a996-56bece5a1f54,True,False,93063470-ec46-4dae-bcd2-527e37201611,132,199,2025-05-18 10:27:50,2025-05-02 10:27:50,2025-05-02 10:07:50,265228983
+False,False,a9d05bcf-379a-43a2-ab1f-1cb49be3373d,True,Follow-up assessment,e489c3aa-e4bb-4108-afd1-bb1e942b5987,True,False,c94c5ac7-acf8-460d-b01b-997bf7ae02bd,202,71,2025-05-20 02:58:29,2025-04-20 02:58:29,2025-04-20 02:18:29,265228983
+True,False,5d6606b2-890b-4b3a-ad36-5584b9359469,False,Refilled existing prescriptions,f4148fbc-75f5-476f-b4e6-d7f534c334f6,True,False,c2e22b6f-26a5-42c9-adab-dde49c7c0755,117,214,2025-05-17 01:37:37,2025-04-17 01:37:37,2025-04-17 00:59:37,265228983
+False,True,7e722704-393d-4508-9e1f-b5525aeb2def,False,Referred for imaging,4ae12955-c3fd-497f-bf01-6b020bff35cf,True,False,54bf2888-bd7a-48f7-b029-4dfcdfebd643,68,106,2025-05-30 02:37:25,2025-05-01 02:37:25,2025-05-01 02:13:25,399471907
+False,True,675218f6-187d-4fc9-9725-9928b42c7a73,False,Recommended diagnostic procedures,4c38f67a-bf7b-4324-8bd5-cf656716bdda,True,False,2c91bcb8-40ce-4c63-b82d-257b37004bc2,159,269,2025-05-03 18:57:48,2025-04-12 18:57:48,2025-04-12 18:18:48,399471907
+False,True,4f680f8e-f651-42d9-9e51-f79f8cdbcc83,False,Ordered lab tests,b54a8bbe-b453-4e0f-8b07-2a2d62db1d60,True,False,943d9631-4244-4873-894f-33f01c435d73,35,273,2025-05-09 20:59:55,2025-04-10 20:59:55,2025-04-10 20:13:55,272135274
+True,True,fcaba30c-ac4f-43e0-873e-90916963c3d0,True,Comprehensive treatment plan,7d365334-7c9e-4eb9-a9a7-03c7d044ea8c,True,False,6825f598-87d9-46d0-9093-ae6a259cbd62,16,164,2025-05-03 13:09:48,2025-04-23 13:09:48,2025-04-23 12:53:48,272135274
+True,True,89b6a807-ac1f-40a1-812f-e1abfd4acc0c,True,Multi-disciplinary approach,65fd859e-3d52-4638-a544-9f82de17c68c,False,False,186f29a7-0459-4da6-9dd6-ae0fc88b7914,141,78,2025-05-03 06:35:04,2025-04-10 06:35:04,2025-04-10 06:02:04,926147870
+False,False,42238ffe-0535-46e0-926f-f6516d94dab3,True,Follow-up assessment,e16baa03-bcfc-4dfe-9ca4-14452dc55fd5,True,False,a841d2fd-2b76-4cf0-ab39-ba2487e8cea5,137,119,2025-04-29 18:11:26,2025-04-24 18:11:26,2025-04-24 17:58:26,926147870
+False,True,c9afebaa-993e-458a-a41b-34a4004fe41c,False,Ordered lab tests,8b92be29-70d7-44da-a61e-ed847f22f53c,True,False,615781f7-a1b8-4d10-ba7f-86ce50e4961e,245,69,2025-04-21 23:40:39,2025-04-21 23:40:39,2025-04-21 22:52:39,926147870
+False,True,b8c53afe-aa12-488a-ba46-76d604246281,False,Recommended diagnostic procedures,9495db17-8de4-4373-ab04-b3de99d75867,True,False,73fa933c-d89a-45e5-b883-13a1208d3696,199,252,2025-05-06 09:14:19,2025-04-14 09:14:19,2025-04-14 08:39:19,926147870
+True,False,ed545a36-8e0f-44ad-9dcc-cf1ce850e598,False,Prescribed medication for condition,584672fa-c5af-47c3-95fc-fec3ee319370,True,False,8f3b968c-25a3-4df6-9bc1-25fe590e96a9,139,212,2025-04-13 22:23:05,2025-04-12 22:23:05,2025-04-12 22:04:05,211748614
+True,False,050c2213-d3ed-434d-b524-05ea2becf232,False,Adjusted medication dosage,504f0a8a-69f9-46d1-8435-c34ccb2ff2ff,True,False,4c678c15-84e3-419d-ad16-b740fcbb8ca5,225,251,2025-05-19 22:08:13,2025-04-25 22:08:13,2025-04-25 21:51:13,211748614
+False,True,cb10bc5c-1a87-4661-97d0-686fcc5948da,False,Referred for imaging,ea620dee-6435-472e-b47e-44e68c798d51,True,True,f53c5152-c302-402c-b51f-0295b3a2b328,195,161,2025-04-30 14:08:18,2025-04-17 14:08:18,2025-04-17 13:48:18,211748614
+True,False,151a771c-95bc-4f69-9716-6105b2031bab,False,Adjusted medication dosage,43cde6c6-601e-49f2-a2f1-5f7c0035a9f7,True,False,5655a6b8-d97a-4a08-88c3-47a2f59a12ad,20,267,2025-05-16 13:44:30,2025-04-27 13:44:30,2025-04-27 13:03:30,211748614
+False,True,158ec795-acac-41f9-be0c-f529e0298278,False,Ordered lab tests,a1c1d78b-3c2e-4847-a6d4-e4e2459daeb8,True,False,a9aa930b-9bc6-4bd5-b4af-e34164f951cf,21,199,2025-05-03 03:42:26,2025-04-17 03:42:26,2025-04-17 03:22:26,799244487
+False,False,c7722aa1-59ae-4919-b343-85b3ccebdd3d,True,Follow-up assessment,3788505f-63bd-4b0d-b26d-274fb15f2f72,True,False,2036815d-84f3-4be2-bc13-0912450e0b4f,147,237,2025-04-22 01:04:18,2025-04-13 01:04:18,2025-04-13 00:47:18,291822680
+True,False,9f854f5c-8bc2-4b13-bd3c-179edf63ca7e,False,Refilled existing prescriptions,a15c0c56-967a-4695-8475-f11ec9e83e61,True,False,077bf34f-7579-444a-80df-3b66dfd40cde,73,238,2025-06-03 23:29:34,2025-05-05 23:29:34,2025-05-05 22:45:34,291822680
+False,False,b235a44b-b37a-4634-ac27-82ab8492df0d,True,Chronic condition management,48ce79ce-bc9d-42d0-9d27-a664008bbc36,True,False,412902ff-f7b8-4dcb-8727-6f21c9cde94b,70,202,2025-05-06 22:02:45,2025-04-13 22:02:45,2025-04-13 21:52:45,291822680
+False,True,a18430b3-c407-4024-83c7-46ea39819397,False,Referred for imaging,ca6f27e6-6669-4f45-9da6-1b560b83a15d,True,False,afdc477a-8fa9-4b0a-9bff-cce3d358cbdd,104,233,2025-04-30 19:14:43,2025-04-25 19:14:43,2025-04-25 19:08:43,291822680
+True,False,bf59066b-70d2-46eb-8800-7e4f294905d4,False,Refilled existing prescriptions,e1355218-7a0e-41b4-80a3-a78eb2a481b8,False,False,23da166c-e240-44af-8757-644d258ce732,64,47,2025-05-22 20:39:00,2025-05-02 20:39:00,2025-05-02 19:50:00,291822680
+False,False,26e6765d-388f-48e9-b4d9-58626caf26ca,True,Progress evaluation,4a8f7ad9-d7e9-45c6-ba88-56eec182db77,True,False,1f1f5d74-73d8-48e0-bb84-fdf699b66fce,262,82,2025-04-12 23:04:26,2025-04-10 23:04:26,2025-04-10 22:36:26,234935517
+False,True,2ed2e017-6a94-47e4-9918-cf59de8f72cd,False,Ordered lab tests,20f46d8e-47bb-4bff-8a6b-ca123ceee179,False,False,1dc7d57f-c19f-45bd-a0a7-7bb9b5db3231,77,84,2025-05-05 11:02:07,2025-04-30 11:02:07,2025-04-30 10:08:07,305444090
+False,False,e54a8736-9c7d-420d-ab3f-b7b46f14c91d,True,Follow-up assessment,5d749d25-c46b-40a9-9e7e-94763a67aad8,True,False,6185ba30-13ea-4ac5-a199-f924a79042e5,229,148,2025-05-09 12:44:34,2025-04-17 12:44:34,2025-04-17 11:50:34,305444090
+False,True,45ec901d-8327-4beb-b744-c5bb51bd6b90,False,Ordered lab tests,369e08bb-f722-4552-86c3-c83ae59cb12f,True,False,484eff5f-3c0c-49f1-ab7b-c0480f73a826,130,7,2025-05-30 13:42:14,2025-04-30 13:42:14,2025-04-30 13:29:14,305444090
+False,True,4c587ee0-e15d-4cea-811c-253528bd7e10,False,Referred for imaging,d2ad3c12-111d-4125-902b-518969403eb5,True,False,c2a01559-4231-4fb5-bc76-9655fe37b7cb,122,112,2025-05-12 03:17:47,2025-04-17 03:17:47,2025-04-17 02:38:47,305444090
+False,True,43ce4fa7-f83f-4be5-8b2b-529dcfddc96c,False,Referred for imaging,39805556-0650-465a-a0eb-1621c0652e2e,True,False,f1a939b8-6b30-4143-8a16-d3adf39a7a52,126,143,2025-04-26 03:20:58,2025-04-12 03:20:58,2025-04-12 02:49:58,238461835
+False,True,0eed4dc5-5a55-45d7-b50f-8f001b37f651,False,Recommended diagnostic procedures,4543daa0-c825-40d6-b934-3b0ef3c41f15,True,False,674fe006-7b34-4ee4-8409-cec27a3e2f77,29,179,2025-05-10 11:21:35,2025-04-14 11:21:35,2025-04-14 10:24:35,238461835
+True,False,34f1015a-6f47-4869-a9fe-7204818f7d63,False,Prescribed medication for condition,1d65f596-f517-464b-8322-06bb6a767ad5,True,False,502c5882-aed1-4ce3-865b-65353a3660bd,45,26,2025-05-13 14:58:20,2025-04-25 14:58:20,2025-04-25 14:11:20,238461835
+True,False,9cab0189-b599-4b61-b8d5-0af99223890d,False,Prescribed medication for condition,ab771c81-2cdb-4fbc-bf79-6d4adb16c4a9,True,False,274fb03b-4af0-4350-9848-81ce6d416507,91,234,2025-05-10 12:10:10,2025-04-19 12:10:10,2025-04-19 11:55:10,238461835
+False,False,cd766e8c-ae51-4286-98cb-32eb0eab2378,True,Chronic condition management,43c67210-e59f-48ad-9e48-044cfdaea829,True,False,9ac7349d-970c-4682-87be-c013caa4e89f,195,35,2025-04-20 17:54:00,2025-04-18 17:54:00,2025-04-18 17:47:00,238461835
+False,False,787021a5-7f63-431f-972e-776ad4e8fb4b,True,Follow-up assessment,2288a1e0-d759-4fd0-a7d6-7ebf57544a64,True,False,7961a932-2cf5-472f-8e52-ed9602f10b64,141,169,2025-05-14 10:40:03,2025-04-29 10:40:03,2025-04-29 10:17:03,126640606
+False,True,e126bb2a-dde1-402d-9fb4-472ec6a8c8ed,False,Recommended diagnostic procedures,25335f4e-fe93-4dd1-8bc7-54719fd08fa8,True,False,7dde0b51-51ed-4c79-8f7b-c7d4a61d04c1,271,45,2025-05-28 11:19:34,2025-05-06 11:19:34,2025-05-06 11:01:34,126640606
+False,True,134cc086-c29a-46b5-a33d-c66beab174ae,False,Recommended diagnostic procedures,e1ccc814-ea80-446a-bb7a-02c6de5d4052,True,False,92880bc9-7efa-472e-9f73-480c6f53603f,219,163,2025-06-03 19:26:49,2025-05-05 19:26:49,2025-05-05 18:43:49,126640606
+True,False,8808937f-b766-4fea-8277-adf231d3ba24,False,Adjusted medication dosage,1d064b34-9043-4111-93ee-0919eaec47cb,False,False,d28ed155-ab67-41c6-ba97-e0690ab40901,255,267,2025-05-03 11:13:40,2025-04-22 11:13:40,2025-04-22 10:29:40,126640606
+False,True,67b65d2b-1180-4541-b813-d1a3628e884f,False,Ordered lab tests,200c015b-e9b1-49e7-820c-ca7c8da44418,True,False,cf056175-714e-49d7-9229-2070f1ff3fea,1,61,2025-04-30 06:42:33,2025-04-23 06:42:33,2025-04-23 05:58:33,841046747
+True,False,b20af3d6-601d-4767-9159-5badcf3c9a04,False,Adjusted medication dosage,1d11daa2-07f1-4e3d-bdee-f1c4de71cbe0,True,False,3a709c80-31d9-4aa9-89b1-8a6f3781e1e1,213,212,2025-04-27 01:23:28,2025-04-24 01:23:28,2025-04-24 00:28:28,841046747
+True,False,43b3c563-3f17-442b-ae97-b677841bc195,False,Refilled existing prescriptions,b40879af-d814-4c35-8dc2-b2f77ad85535,True,True,58395eba-3148-4569-9ea8-880775878a7d,104,145,2025-05-16 03:24:29,2025-04-21 03:24:29,2025-04-21 02:44:29,841046747
+True,False,ed488549-d5c6-42da-bb03-0ea69eb016b9,False,Prescribed medication for condition,dd5c7da1-bf25-4135-a3aa-f726d26999fa,True,False,be4dbf80-4c1b-4283-b000-bfd4fff60798,4,59,2025-04-23 06:07:40,2025-04-14 06:07:40,2025-04-14 05:43:40,841046747
+True,False,5f1c189f-3ff5-43bd-8b3a-95d156a244b1,False,Adjusted medication dosage,eb6d2ad0-aeec-4e37-af65-675e3f4ede49,False,False,89aeca16-3a07-40ae-97e1-165746e38329,100,170,2025-05-01 01:21:40,2025-04-12 01:21:40,2025-04-12 00:40:40,175133831
+False,False,d7641020-1a9c-455c-8d67-dc96efc177b2,True,Progress evaluation,623e274a-7528-4285-b778-e938154fea52,True,True,e8808542-a6b3-4df6-b6ec-e2d137320aef,70,247,2025-05-27 17:11:45,2025-04-28 17:11:45,2025-04-28 16:36:45,175133831
+True,False,3e5f055c-2b47-4da1-bb1f-1c74005b35cb,False,Refilled existing prescriptions,ac956497-5911-4aa8-9d50-15290cefe88e,True,False,1839d8b3-2c9b-4355-866f-4bbffbf70c02,212,29,2025-05-23 08:15:06,2025-05-06 08:15:06,2025-05-06 07:15:06,175133831
+True,False,fd572701-0ec9-4b2a-b002-dc17ba755f52,False,Adjusted medication dosage,7af476c0-000b-4c1e-bd2e-921396fc0f86,True,True,e47a92e5-7c49-4300-b9ba-195a1860c99b,170,182,2025-05-13 12:53:32,2025-05-03 12:53:32,2025-05-03 12:05:32,283517312
+True,False,287fb12c-c353-4bc2-b61c-a1f3362da774,False,Prescribed medication for condition,abffb0be-e6f4-4dfe-992e-ecde1c6eb31e,True,False,a3425c34-7dd8-4d92-a006-20f4efc42fb0,274,85,2025-05-13 03:24:28,2025-04-17 03:24:28,2025-04-17 03:02:28,283517312
+False,True,db557598-9de0-4306-a205-9416ef33c74f,False,Referred for imaging,55d62dea-90b8-4751-a02a-97a42f63637e,True,False,31c0a5e3-c2fd-42f4-925a-03ae323d932f,158,162,2025-05-01 07:51:55,2025-04-12 07:51:55,2025-04-12 07:35:55,283517312
+False,False,e2643095-77dd-42d4-bc00-8624eb362111,True,Chronic condition management,ba1c532f-e053-4ddc-9c72-64db4c678c12,True,False,7eaf298d-fe21-4604-9c50-57b053c60c0f,232,155,2025-04-29 05:00:32,2025-04-27 05:00:32,2025-04-27 04:29:32,283517312
+True,False,772d3bdd-e180-4d62-9bc2-00f451b20f24,False,Refilled existing prescriptions,164d32c6-0180-418d-8de9-f04c4541e9d3,True,True,f5a59ad4-0daa-4f5c-94ef-1c594e6fb183,104,48,2025-04-12 20:48:29,2025-04-09 20:48:29,2025-04-09 20:32:29,283517312
+False,True,fa9f1f4b-e7b2-4091-b571-2cf852de3f45,False,Referred for imaging,b976f620-ab5a-4f2d-ae33-700b2356d69f,True,False,0d8f503e-708a-4bb1-ab0e-b25b203ec4b2,269,159,2025-05-04 11:36:38,2025-04-30 11:36:38,2025-04-30 10:59:38,271096647
+False,False,4c36cc72-d519-41bc-b689-7e867c8afae7,True,Follow-up assessment,90cf4aa7-9406-4d91-9ac6-82e998e4452f,True,False,85c032c9-ebaf-4fca-bc70-669f442a6c4a,265,68,2025-05-10 23:47:28,2025-04-13 23:47:28,2025-04-13 22:53:28,271096647
+True,False,08b0174c-d081-4b63-bb29-8f212a24eabe,False,Prescribed medication for condition,f6f6b9eb-523a-4309-b612-048fda73f4ce,True,False,35118f6c-1bd2-4543-ac1f-c5c3fdb5b811,3,160,2025-05-06 00:32:18,2025-04-24 00:32:18,2025-04-23 23:58:18,271096647
+True,True,2f7ba641-4377-4bff-873a-d9a573ec114d,True,Integrated care plan,8ac6ab8f-1723-4915-b41a-b0bbd3a8fd91,True,False,54e566fb-0a9c-4901-b501-745a7bdbf89e,24,53,2025-05-22 01:24:12,2025-05-03 01:24:12,2025-05-03 00:25:12,271096647
+False,False,93e4239a-c7d2-451a-a744-cd8f0a084af2,True,Progress evaluation,9433f300-7ea8-4a23-bd33-e1b4f9f1444a,True,False,22c73f68-48bd-49e6-8464-1efb1a68b5a4,108,165,2025-04-19 11:10:30,2025-04-19 11:10:30,2025-04-19 10:46:30,287036921
+True,False,1e880084-3609-4b80-9b5a-be3784d8f0e4,False,Refilled existing prescriptions,fa2df997-e7c4-4732-acaf-5b3647c4dd08,True,False,c35828d0-e7c8-487b-af15-0bb391ecea72,61,140,2025-05-01 11:30:06,2025-04-14 11:30:06,2025-04-14 11:08:06,287036921
+True,False,cded6c1c-0671-46e4-b441-de90a7e59836,False,Refilled existing prescriptions,e52231c5-332c-40f0-91ee-776d210c4ab0,False,False,ee331b0e-3615-4472-9977-7241193c03b1,53,106,2025-04-11 00:19:17,2025-04-11 00:19:17,2025-04-11 00:07:17,287036921
+False,True,c5c8751a-8463-4574-8a88-6a7d477b78a0,False,Recommended diagnostic procedures,d8e33762-123c-4c78-a303-f9d5f0de8b58,True,False,726414e6-35e1-4016-ba1d-9b49e9809a70,146,126,2025-04-27 19:40:17,2025-04-19 19:40:17,2025-04-19 19:15:17,287036921
+True,False,92cbc66f-0948-4bd4-a2ed-9bdca6f5ccbf,False,Refilled existing prescriptions,d895b3d7-af65-480a-aa92-25ec4822bcb9,True,False,89761050-48fb-4fd2-a391-476141cc47b5,67,15,2025-05-16 01:54:16,2025-04-18 01:54:16,2025-04-18 01:10:16,287036921
+True,True,35ca2d20-228d-4429-a25f-4795ec09dca7,True,Comprehensive treatment plan,299abb5e-6eed-448d-bd44-169ab044fdd6,True,False,c6bb04af-fa43-4ebf-b117-d01701940b25,92,229,2025-05-05 23:44:19,2025-04-23 23:44:19,2025-04-23 23:33:19,760895556
+False,True,083bad8f-3ae3-451c-9e5f-867b7e0bda1c,False,Referred for imaging,ed1ad410-c48e-44da-ba7b-7672f4308cb6,True,False,f3be980b-7d99-4096-bf6d-54c721b203bc,274,41,2025-05-09 19:27:58,2025-04-13 19:27:58,2025-04-13 19:01:58,760895556
+True,True,576b7ee8-b687-4d20-8777-0cb36b2dd405,True,Multi-disciplinary approach,9a2fddf0-f1be-49cd-ac1c-e06d301ab025,True,False,31432621-0829-412d-ad50-c9b202116757,240,50,2025-05-06 20:00:13,2025-05-02 20:00:13,2025-05-02 19:19:13,760895556
+False,True,de76f122-c79a-44e3-bbe6-513077b13eec,False,Recommended diagnostic procedures,bdda881b-8bc7-4f13-ac35-1e150a5d0249,True,False,3f83d662-3867-4eb0-8643-6245ea7528ca,115,74,2025-05-07 10:54:53,2025-04-15 10:54:53,2025-04-15 10:08:53,760895556
+True,False,98c31d5b-2de0-4661-bcae-d3fc57bf2e19,False,Refilled existing prescriptions,9cb169bd-3df1-4f37-89ea-59a88f43d243,True,False,963a6d84-8372-4306-80bd-9caed74445bd,167,233,2025-04-29 19:33:33,2025-04-24 19:33:33,2025-04-24 19:03:33,156713988
+False,True,928f0a4e-78f0-405f-a03e-0fc38a3b5534,False,Ordered lab tests,5ab8d54e-4390-406a-8b6d-c0c14eda791c,True,False,23846d45-c4dd-4762-a798-72594c220ada,88,145,2025-05-02 03:28:04,2025-04-29 03:28:04,2025-04-29 02:53:04,156713988
+False,False,a8965755-5e03-4acb-91f0-cac887de3b34,True,Progress evaluation,6c8985c3-385a-4f8e-80ab-43419a5761fb,True,False,413b6445-a570-42bc-a140-a881a410c2fb,55,167,2025-05-06 17:10:30,2025-05-02 17:10:30,2025-05-02 16:29:30,156713988
+False,True,35b72f67-3106-4b5c-bc4c-530911f54d18,False,Ordered lab tests,f2ed142b-02f2-4485-b882-e8b5a0df0c10,True,False,f5e8e3b3-7200-4cf6-adf1-04a947c84b5d,212,123,2025-05-12 14:33:26,2025-05-03 14:33:26,2025-05-03 13:38:26,156713988
+False,True,f3111433-a4fb-47f4-ab99-f347b9b0c5c6,False,Recommended diagnostic procedures,a873a34f-e6ef-4193-9765-04f0827b0832,True,False,8bbcd30b-5294-4197-a008-440bc7f6edcb,221,223,2025-05-07 16:48:15,2025-04-22 16:48:15,2025-04-22 16:33:15,156713988
+False,False,4e21de88-6566-4f2c-96f3-9a2bb412abe6,True,Progress evaluation,d6acdf74-30e2-4e74-9378-e520381e8c5f,True,False,5c0e6f96-8c4e-4bfe-81ab-e7f7a336d24b,250,59,2025-04-21 07:48:01,2025-04-14 07:48:01,2025-04-14 06:59:01,253328188
+False,True,9996ee0b-b4f5-484f-b92b-09d34caa776b,False,Referred for imaging,84d31de6-f6b7-42e0-ae2e-6ce920a85261,True,False,0aa4a1c9-3ee0-4676-a828-87003b596ce4,158,208,2025-05-23 07:10:15,2025-05-06 07:10:15,2025-05-06 06:45:15,253328188
+True,False,86be07aa-059c-478a-a0dd-d97d0d6b9901,False,Prescribed medication for condition,b721dd5d-49be-4909-8576-4f1a1bd3a123,True,False,40300d5a-ee73-4d46-975c-526bb9f21865,168,254,2025-05-24 17:06:12,2025-04-28 17:06:12,2025-04-28 16:18:12,253328188
+False,True,f0619b4f-0e03-4fa2-ba66-38cb4d8d6ed5,False,Ordered lab tests,fc5d7489-0244-472e-8a64-c50d489ff479,True,False,e5255353-8b2b-4dd7-a00a-f0a6d9ebecfb,1,76,2025-04-24 20:22:14,2025-04-18 20:22:14,2025-04-18 20:12:14,253328188
+False,True,a89c06c9-1085-4dcd-a4c8-3cb4320fb268,False,Referred for imaging,fe147ec7-be27-46bb-a00e-451900486420,True,False,e833142c-069b-435a-9912-1f56bd4089d0,101,106,2025-05-06 21:43:18,2025-04-27 21:43:18,2025-04-27 21:04:18,253328188
+True,False,0f3063dd-d673-4a9c-a57f-3802de6d7734,False,Adjusted medication dosage,e0320d69-5663-4004-9436-c9674f4f7a53,False,False,dc9a587a-d6b0-496f-8d84-2252bc92288a,177,46,2025-05-27 10:54:58,2025-04-28 10:54:58,2025-04-28 10:30:58,168816628
+False,True,68368d7a-6f88-4c08-b6fc-af3d4e65df82,False,Recommended diagnostic procedures,fdee93f2-0164-4e0e-9c59-07f60a72ce18,True,False,76cd22ec-4e0b-4bc6-9890-fa0a7ffe083f,32,190,2025-05-09 21:06:03,2025-04-27 21:06:03,2025-04-27 20:29:03,168816628
+True,True,449167a8-907b-4cfe-818a-32ddba7d0910,True,Comprehensive treatment plan,d67637bc-35a7-45de-be55-a7abf479a5a7,True,False,bb26cc37-b829-4e91-9746-99b8eff58be5,57,145,2025-05-10 23:34:06,2025-04-18 23:34:06,2025-04-18 23:29:06,168816628
+True,False,519f2bc0-0b71-419b-b018-99063fc16b84,False,Adjusted medication dosage,2262739d-6252-44f4-9c03-924ebb55469c,True,False,33f50b05-0bb9-402c-a2ce-7352a8610c80,208,196,2025-05-13 15:48:33,2025-05-01 15:48:33,2025-05-01 15:06:33,796764832
+False,True,636a7d84-4a25-40ef-8b8d-20c0842eb803,False,Recommended diagnostic procedures,1963b53e-154a-4d8e-99f4-cdc867452aad,True,False,f0ef3ca2-20c4-47ce-87ae-38cc2d8cf067,185,214,2025-04-27 04:21:35,2025-04-12 04:21:35,2025-04-12 04:05:35,293603667
+True,False,30708b23-929e-457d-9603-32dcac06ba5d,False,Adjusted medication dosage,b2af8280-2020-43c3-a393-935cf09434e0,True,False,909fca17-c59b-4cf0-9ad7-331197b8c49f,74,250,2025-04-26 19:05:22,2025-04-22 19:05:22,2025-04-22 18:52:22,293603667
+False,True,875831fe-ac17-4fbc-aeb4-a6b9756a0775,False,Ordered lab tests,55d1f29e-eaeb-499b-8f57-3764ef704576,True,False,558fb415-44f9-4573-a73d-9f8394cb24be,234,218,2025-05-05 08:36:44,2025-05-01 08:36:44,2025-05-01 08:26:44,293603667
+False,True,13bbede9-44a6-4fb0-87dd-fc771a1cb2ec,False,Referred for imaging,5f61ed63-f4bc-4f66-81fe-2f114e621dc2,True,False,28dba58c-4dc0-4c83-af2f-1663f5f55927,182,116,2025-05-15 14:33:33,2025-05-02 14:33:33,2025-05-02 13:56:33,293603667
+False,True,e1a62bf4-fd76-4d2d-bdbb-eec158752a9f,False,Ordered lab tests,6352dcdc-d4a2-429a-80a9-165b2cf7b082,True,False,5290cae9-6a81-4c65-977f-0bf8ae5b6f61,257,138,2025-05-07 21:04:47,2025-04-22 21:04:47,2025-04-22 20:23:47,197208620
+False,True,c2f8ee3a-65e3-4e42-99e1-899a0257e17c,False,Recommended diagnostic procedures,e5915d6b-4982-4be4-9db9-e7a148278aac,True,True,edad9645-9809-446a-92e5-4f6688a00b1c,248,189,2025-05-02 01:47:12,2025-04-21 01:47:12,2025-04-21 01:06:12,197208620
+False,True,11fe5b02-6b94-4a7b-b891-b9af97077ccf,False,Recommended diagnostic procedures,07237f76-d801-4f88-9292-d41496b394b4,True,False,dcc6e6e9-5a66-4a03-adcc-c5a8f0b8e0b9,144,239,2025-04-27 03:17:22,2025-04-23 03:17:22,2025-04-23 03:07:22,237566800
+True,False,29fd68c8-bd01-42c9-8cd8-7adf5526f8be,False,Adjusted medication dosage,f87f080f-adab-4599-92bf-f57e0dadcef2,True,False,05416df3-7422-4b27-bcea-b862f2a7f16c,40,160,2025-04-20 02:57:06,2025-04-13 02:57:06,2025-04-13 02:47:06,102441964
+False,True,9b9f7c71-2254-40d7-ab9c-a0ab7f652bb8,False,Referred for imaging,e22c966a-89cd-4722-b1e4-d39093df0407,True,False,b47a3d9b-fdda-41e1-ba75-d3183031514b,241,170,2025-05-11 11:41:59,2025-04-17 11:41:59,2025-04-17 11:02:59,102441964
+False,True,ffcf5981-d7c3-4e94-a3ed-35406bf99ca9,False,Referred for imaging,6fc92457-b846-42e0-a15d-4de15e34db66,True,False,d35110bd-e8a0-4343-a9f6-d02a29198bf7,156,134,2025-04-19 20:01:12,2025-04-14 20:01:12,2025-04-14 19:38:12,102441964
+True,False,93a27832-0e47-4499-bd0a-aaec6953e06b,False,Refilled existing prescriptions,4cc7e8b6-66d8-45bf-8d9c-ff6726405cfa,True,False,9c307ba7-9452-4dfd-a27b-d24ba1389b4b,150,14,2025-04-19 07:31:34,2025-04-14 07:31:34,2025-04-14 06:49:34,102441964
+True,False,514cf8a8-ed8d-454f-b72a-245934cc378c,False,Prescribed medication for condition,2af1d701-a2a8-46a3-9592-b1d1d7e7ab30,True,False,25cd9c13-9336-448e-9097-fe496af2aaee,130,68,2025-05-12 19:43:57,2025-04-26 19:43:57,2025-04-26 19:30:57,102441964
+True,False,309610ae-40d1-4f3f-99c1-eb9fd74aad69,False,Refilled existing prescriptions,8b5b31cd-63a0-4f0f-a5e0-6887aafbc0c7,True,False,186d23df-f5b7-4ff5-a3ad-19c5a4e86976,78,229,2025-05-29 11:11:48,2025-05-06 11:11:48,2025-05-06 11:06:48,188841580
+True,False,add6b94d-7264-48eb-a131-e22ee2b96abc,False,Prescribed medication for condition,3f59aa4a-2dcb-4b3c-a18c-6ad604c1f2db,True,False,e5035849-cc99-4e17-a2bb-3d2f9ffe5b0c,271,17,2025-05-25 06:57:32,2025-04-30 06:57:32,2025-04-30 06:36:32,188841580
+True,False,c821fa28-2347-4348-9264-f31e81c45f63,False,Prescribed medication for condition,6a42b8a4-2d02-48d2-ad76-96c471b725af,False,False,f02f44ef-a7f9-41d2-954a-ecc9d53cc8d5,254,212,2025-05-10 05:35:04,2025-04-21 05:35:04,2025-04-21 05:21:04,188841580
+False,False,2d402f74-8ea6-48c0-8d8b-bd2a1c170b43,True,Follow-up assessment,1d5eafaf-5a10-4fb6-8e7a-448bc9380d3e,True,False,8e7522f0-4dcd-4ef2-ae59-9ba677a9bf0b,177,28,2025-04-27 04:06:51,2025-04-13 04:06:51,2025-04-13 03:19:51,188841580
+False,True,20f34a4a-ea75-4d95-bd47-91a41da62f2b,False,Ordered lab tests,7527ee47-6bd4-4c93-b736-3a0ceee6ed08,True,False,bad480ad-4862-4cfc-bea9-15124ad3d4b4,244,273,2025-05-03 23:25:27,2025-04-28 23:25:27,2025-04-28 23:17:27,188841580
+True,False,1d0788a4-cc65-4dc8-a4ae-b2b8841997c7,False,Adjusted medication dosage,2d560c66-e2f4-4406-a6ec-f248a7e9fe5d,True,False,00b68008-5d86-4b42-85ed-ee4aeb386158,223,7,2025-05-20 15:01:43,2025-05-05 15:01:43,2025-05-05 14:32:43,273770614
+True,False,0c6bd75b-64cd-42eb-a30c-cc000593e477,False,Refilled existing prescriptions,660221d2-5564-4d6e-bc8a-01f002dffc1d,True,False,5b060e95-e8c4-40ea-88a8-10bdc9d0c7a3,22,50,2025-05-21 13:55:05,2025-04-30 13:55:05,2025-04-30 13:26:05,273770614
+False,True,b38d5d92-5829-4fb6-99a2-42865907b9ce,False,Referred for imaging,4c1d0c4a-a9ff-4a63-b7ed-d69ea58d3ecd,True,False,5418a4f6-b8aa-4811-93e8-a7ac5c58f127,139,137,2025-06-04 06:24:23,2025-05-06 06:24:23,2025-05-06 05:40:23,233319813
+False,False,1e78263f-1e3e-4582-9beb-86854728e720,True,Chronic condition management,7606cf10-b040-402a-88d8-af23f06c2657,True,False,a391bf28-8a4b-4586-b1d9-f1bbe2713fa3,124,100,2025-05-21 07:43:50,2025-05-03 07:43:50,2025-05-03 06:57:50,233319813
+False,True,908f8e6a-632d-4fcb-ae13-cd6ec0191c08,False,Recommended diagnostic procedures,3d7cb330-37ee-43e2-874e-3fe5d0e6a171,True,True,0ca13e8b-e336-4485-97fe-f75d9202a9ec,5,35,2025-04-26 17:06:47,2025-04-21 17:06:47,2025-04-21 16:17:47,233319813
+True,False,2d0c56ea-5455-45fa-92e2-aca3d970c8c2,False,Prescribed medication for condition,6cfd6a22-be68-471a-8797-be992a6d5ef8,True,False,d62792af-50cb-4c64-9ab8-c2206d46971c,146,129,2025-05-06 09:16:21,2025-05-03 09:16:21,2025-05-03 08:38:21,233319813
+True,False,5a2b88c9-708b-4620-8b88-0c652d7bf328,False,Prescribed medication for condition,637e8a12-5441-40d5-bd08-1de28a2d941d,True,False,d8ec65ae-9a31-4246-8033-e6585f3a6a45,112,63,2025-04-26 18:40:29,2025-04-24 18:40:29,2025-04-24 17:56:29,233319813
+True,False,2928f8d1-5932-4c24-980c-c6bfc96251ef,False,Adjusted medication dosage,94ae732b-d96f-4d38-98ee-9167eb020b2a,True,False,8f679026-ad58-4ef5-9e0f-4db23a7928a6,95,57,2025-04-26 03:06:26,2025-04-14 03:06:26,2025-04-14 02:53:26,128202821
+True,False,54f05564-3b18-4832-9f53-4b54d616b79b,False,Refilled existing prescriptions,ebb3a407-36b7-4e73-a7a4-ec79b3655788,True,False,62f27f24-f64b-404d-8880-c3df41bc847a,142,219,2025-05-28 12:47:15,2025-04-29 12:47:15,2025-04-29 12:00:15,264840781
+False,True,3c8ea167-5c93-4201-92d7-b6dc862bae1d,False,Recommended diagnostic procedures,65493692-8c46-4249-b2ee-50c433080b7e,True,False,8548a38b-811d-44f3-9a94-aca2a6def79a,38,142,2025-05-06 01:23:07,2025-04-12 01:23:07,2025-04-12 00:29:07,264840781
+True,False,ad503934-8244-41a1-b514-fcf7c269c23b,False,Refilled existing prescriptions,525e55bd-1972-4d5f-84c1-50cd792ffe89,False,False,a73d6f29-80d4-490a-a2fb-f78732571cb4,226,36,2025-05-12 18:52:16,2025-05-04 18:52:16,2025-05-04 18:44:16,171966408
+True,True,878496b6-e6c8-49fb-a0d0-bd35485d4d4c,True,Comprehensive treatment plan,5d3cd3c2-bdba-43cc-b709-c2db684101fb,True,False,0f16f71d-177d-4d0e-8192-7f918ee9f82a,74,221,2025-05-17 12:41:06,2025-05-05 12:41:06,2025-05-05 11:57:06,264219022
+True,False,51ddc0e9-3c62-42bf-9209-bd55ed65df82,False,Adjusted medication dosage,dfe72d8a-169b-4d11-a611-dc9936d06519,True,False,122b94e2-f61d-42f3-85a4-766b07048495,18,38,2025-05-16 13:47:17,2025-04-17 13:47:17,2025-04-17 13:36:17,264219022
+True,False,a7fb1c75-812d-417c-b3d8-fb7daa4d4684,False,Adjusted medication dosage,8a6f6bae-02b2-447e-8139-886babba7283,True,False,224060d2-92bc-4a22-9dc4-3e95bdbf81f7,77,1,2025-05-10 06:18:15,2025-04-16 06:18:15,2025-04-16 05:57:15,264219022
+True,True,0e185ca3-4d73-40e1-86e9-e77bf4a5f08d,True,Integrated care plan,17648adb-e4cc-4ec7-8d13-49be5724b6c5,True,False,52a94aef-6156-4a40-a906-892539af15ed,201,2,2025-05-10 05:28:06,2025-05-02 05:28:06,2025-05-02 04:59:06,264219022
+False,False,9c32705d-8445-4392-a03d-bd35b2bd463c,True,Chronic condition management,19feca25-f648-43a8-b12f-0d392202ca54,True,False,3aabbdc8-6ad4-41cc-9265-5ca6008dba27,36,116,2025-05-01 21:17:50,2025-04-18 21:17:50,2025-04-18 20:42:50,210125089
+True,False,457ca8e0-3233-47f0-8385-a9633e426d96,False,Adjusted medication dosage,71267f3f-d3c6-47a3-a800-0116fcf21fb6,True,False,5d02cda5-9cc3-4798-8896-f730f46d9b03,184,171,2025-05-12 15:00:23,2025-04-18 15:00:23,2025-04-18 14:03:23,210125089
+False,True,2f8b46e0-d470-4770-b5fe-f2ca7ed0a40d,False,Referred for imaging,2a47c5dc-fe0a-4b4b-bdda-67859d5a8198,False,False,d47cf412-00d4-4be2-bd53-935cab235d01,188,274,2025-05-10 18:17:55,2025-04-20 18:17:55,2025-04-20 18:09:55,210125089
+False,False,01f40f32-42f1-4b6f-b7b3-9c0896d0edfb,True,Chronic condition management,0b5f7e66-ccc8-4099-83db-03d528ddfc99,True,False,da2d5cf2-b66e-468b-8215-1969c0dcca0a,104,91,2025-05-15 20:00:15,2025-04-19 20:00:15,2025-04-19 19:50:15,210125089
+False,True,405c1010-b70c-4083-b90f-b32bedc12672,False,Referred for imaging,8f1c1441-e536-4326-987a-c37084d8780f,True,False,0d2e59b1-da55-4c16-91e8-6da9cf253ec2,55,184,2025-04-22 15:05:46,2025-04-16 15:05:46,2025-04-16 14:18:46,210125089
+True,False,6dc24f04-bdaa-4c3f-9216-cc96302f9dc9,False,Adjusted medication dosage,64303e10-7576-4891-81bf-61c2c8cddbcf,True,True,b9191c71-e567-43cd-9d74-f7131782e797,13,123,2025-05-05 14:04:23,2025-04-12 14:04:23,2025-04-12 13:31:23,662831434
+False,True,b0999368-9d4c-4c32-b6b5-893a85cb0efc,False,Ordered lab tests,301e1fa6-24f8-4a36-8c29-0960b2978df1,True,False,8d517df6-f2bc-426c-83c6-a2166898a8da,231,9,2025-05-18 01:59:11,2025-05-01 01:59:11,2025-05-01 01:04:11,662831434
+True,False,bcc0c976-6616-4cfb-ac56-2ecfb9b58ca8,False,Prescribed medication for condition,473c4db1-7b0b-4bba-ba3f-f617b7d88208,True,False,7da83690-df65-4e22-a794-8b2b4dc22b27,109,268,2025-05-09 07:32:29,2025-04-14 07:32:29,2025-04-14 07:06:29,662831434
+False,True,50acfd4a-49c8-43e6-bd4f-3b1ee4319b99,False,Recommended diagnostic procedures,38fd28d2-11f8-4300-9a22-3705da0bcbaa,True,False,c23043b1-ac56-4b6c-8225-0eb9189a97d9,120,37,2025-05-28 16:04:19,2025-05-01 16:04:19,2025-05-01 15:04:19,662831434
+False,False,09b639d8-e2eb-4ad4-bf46-c8d39916c940,True,Chronic condition management,643b109d-edca-41de-9cff-7e337f409dcd,True,False,2c8a9599-8257-4379-91b1-4066bd9777dd,24,125,2025-04-20 08:58:44,2025-04-20 08:58:44,2025-04-20 08:12:44,713484457
+True,False,9ce6e527-8e60-464a-8093-a993bdcb48cc,False,Adjusted medication dosage,fa0149e3-9de6-4322-b605-555e459d0f56,True,False,9529f1d6-5b79-4bca-a3ee-a575445395d6,234,88,2025-05-15 19:05:57,2025-04-17 19:05:57,2025-04-17 18:57:57,291445315
+False,False,94df0375-7b9c-48d7-80e6-8c9a802cccf4,True,Follow-up assessment,452b8d38-1b9a-4908-abbc-c549c386caa3,True,False,93d1dbcd-f2c8-4bcf-bc8d-631fa3b9b337,113,33,2025-05-19 04:05:04,2025-04-23 04:05:04,2025-04-23 03:08:04,291445315
+False,True,0c01c3f0-a4ae-4a9a-882f-d274d541940b,False,Recommended diagnostic procedures,387956fb-5030-41d6-9b41-c0898c082fb3,True,False,d7fa56a3-a871-40d6-a1b2-12999ee02e5c,71,165,2025-05-08 04:16:48,2025-04-26 04:16:48,2025-04-26 03:28:48,366114968
+False,False,b46fd2d5-9094-4144-91ec-be35408b3ef0,True,Follow-up assessment,4fd40579-15b6-4a47-b41a-ddcc51fc69bf,True,False,3308d54d-a323-4297-8085-823b25fc554e,62,141,2025-04-14 21:54:10,2025-04-13 21:54:10,2025-04-13 21:01:10,366114968
+False,False,cf0dbcc8-8f4d-4667-8624-328b4bf2ffba,True,Follow-up assessment,aeea294a-9fba-488c-a17d-96d16fb888a9,True,False,f4d8c204-677e-461c-9801-093b464c2871,21,69,2025-04-25 22:43:53,2025-04-14 22:43:53,2025-04-14 21:54:53,297176445
+True,False,f3c990e7-3b26-4fd8-81e2-ed13f7b8ea72,False,Adjusted medication dosage,959f95b6-aee4-4556-840a-f8fdcd13e759,True,True,42e1cb9b-d223-490e-af51-255093ac794f,250,42,2025-05-11 13:25:19,2025-04-29 13:25:19,2025-04-29 12:41:19,297176445
+True,False,fdcc7183-7b51-4074-bcb5-ebde57390ae6,False,Prescribed medication for condition,65400ed9-4209-4e92-987d-b2cff9e1777b,True,False,4924a233-4da2-43b8-ad60-ed0798834af3,244,65,2025-05-20 00:37:09,2025-04-30 00:37:09,2025-04-29 23:47:09,331914988
+True,False,d31fcefb-c76c-4f6d-be9f-a3678bf932b3,False,Refilled existing prescriptions,3ca51200-68d0-49f2-b223-991686234dfc,True,False,41d945f5-53b0-43ed-b9d4-6d1c2eb2c23d,20,93,2025-05-10 15:14:28,2025-04-26 15:14:28,2025-04-26 14:36:28,218338156
+False,False,5b85bac2-2b70-4018-9979-118d3ec98e6a,True,Progress evaluation,e41039f5-a7a6-442a-9211-3e26854cab6c,True,False,ddae496a-3184-495d-880f-4f36ced54d4f,215,3,2025-05-14 04:36:24,2025-04-24 04:36:24,2025-04-24 04:26:24,218338156
+True,False,f83a2264-542f-4f7a-9c1b-578bb59e462f,False,Prescribed medication for condition,46aeb03c-725b-40de-9ee1-009b95adcfcb,True,False,8e859c42-c387-4ffc-8c39-230dd3cdbd5c,260,113,2025-05-09 01:32:23,2025-05-06 01:32:23,2025-05-06 00:54:23,397030640
+False,True,7341e993-9e6e-4e2c-850c-ebeae363136f,False,Recommended diagnostic procedures,66c7b26c-2727-4d24-ae49-84652eb4dd15,True,False,fd7053c5-c9b5-43fa-93dc-6e99cf6c0d3d,77,243,2025-05-09 02:00:03,2025-05-03 02:00:03,2025-05-03 01:13:03,397030640
+False,True,ccb87021-fd1c-4733-92c5-6fbb765dffdf,False,Ordered lab tests,9d0158fc-15c7-4692-9b92-ee9bb672b740,True,False,30edfdf1-c245-4810-a40f-61358c011de5,146,108,2025-05-10 10:36:50,2025-04-11 10:36:50,2025-04-11 09:49:50,397030640
+False,True,ef58435b-3798-48b9-842c-36113275609f,False,Referred for imaging,db4329ec-8d54-44ac-a461-541f08e5e32d,True,False,555b0527-fb91-4cec-82c7-b1d863e42909,54,27,2025-05-31 04:59:16,2025-05-06 04:59:16,2025-05-06 04:15:16,397030640
+True,True,cebf8224-fde8-4ef2-9182-dca987f0de1b,True,Comprehensive treatment plan,1b66bfff-4327-4da8-befc-73dfa761844e,True,False,433a89db-56a0-46ad-8b57-179d0c9105fb,37,121,2025-05-26 04:32:17,2025-05-01 04:32:17,2025-05-01 04:17:17,397030640
+False,True,a78033cf-76eb-4415-8100-92c86c7c9861,False,Referred for imaging,6d9f85cd-c0be-46b5-bccc-56110ac7516f,True,False,1b41e473-7ab0-4a70-a2cb-d78073d2c03c,118,57,2025-04-22 07:48:28,2025-04-16 07:48:28,2025-04-16 07:17:28,712696127
+True,False,7a104975-4a24-4a17-bbc2-d7ec195c4b1b,False,Prescribed medication for condition,905d97b0-e155-4a62-b9f0-30fd4de50ea2,True,False,d00283bd-635c-4472-a82f-9e96e9aee904,113,38,2025-05-23 23:23:27,2025-04-30 23:23:27,2025-04-30 23:03:27,712696127
+False,True,7cdd04ff-9382-4515-8c47-55308c4fc6e9,False,Referred for imaging,614a51f8-9756-4612-874a-7a8b56f52f0e,True,False,733aa4f7-d39f-4aed-a5f1-f4089731977c,233,92,2025-05-16 02:40:35,2025-04-18 02:40:35,2025-04-18 02:32:35,712696127
+True,False,e2a61091-da72-4880-9af1-69819fb1bbf7,False,Prescribed medication for condition,837efba8-4477-4344-a55a-c63cd98664f8,True,False,78d53a51-6c55-4a7c-a23e-55b75bee7761,139,104,2025-05-11 01:25:44,2025-04-18 01:25:44,2025-04-18 00:51:44,712696127
+True,False,933710b2-b42a-4435-ad2c-a9021d4a26b5,False,Adjusted medication dosage,d479068d-72d1-4a07-9e3c-7d27a7ad0a53,True,False,072caafb-f3fb-4d33-94a8-837597c1a902,239,235,2025-04-16 18:38:08,2025-04-15 18:38:08,2025-04-15 17:57:08,289313729
+False,True,29a95bae-949b-4548-a511-5e96e3ed9ec4,False,Referred for imaging,59eda121-adc8-447b-80ef-e6ac913fba10,True,False,d5a42434-b904-43c0-8317-4cad6e3033ed,88,118,2025-05-14 00:35:46,2025-04-16 00:35:46,2025-04-16 00:16:46,289313729
+True,False,1b0fdf76-cad3-4e48-ad42-d93cc5d8bad1,False,Adjusted medication dosage,eaf55fea-e95b-4401-9dc4-6b28adde12a2,False,False,36a744aa-01fa-44e7-9370-04ad3faa01d9,237,143,2025-05-12 19:28:06,2025-04-15 19:28:06,2025-04-15 18:52:06,289313729
+False,False,a865eab0-8bb6-4c3c-b01e-2d6c1c74f954,True,Progress evaluation,43b6626f-e782-4085-b2b6-491f79f53a60,True,False,ea80f962-05e6-4166-865d-2260df0dd8bb,114,77,2025-05-01 20:38:30,2025-04-24 20:38:30,2025-04-24 19:38:30,252822616
+False,False,4b999f7b-bd7d-41d0-a906-9000ab1ebab6,True,Chronic condition management,9a207e6f-159d-443a-bf39-fae737f48f38,False,False,1b157dcb-d343-4fe8-946e-dfee9c1c60cf,259,18,2025-05-07 23:30:43,2025-05-06 23:30:43,2025-05-06 23:23:43,189302643
+False,True,4c36e283-044f-4fa6-baed-0b4518e964f3,False,Referred for imaging,46ff0688-50d8-4f2c-8f03-779fcb138527,True,False,9366344e-fcd8-4aab-a67f-cd0065e086c6,232,254,2025-05-22 16:33:25,2025-04-27 16:33:25,2025-04-27 15:58:25,189302643
+True,False,a7ddc0a7-9d76-442a-b056-f0a72337cfac,False,Adjusted medication dosage,4580e780-d413-4ad8-b6f5-ba4d2738d37a,True,False,fe35e558-5290-4b49-ae36-19662726acc9,112,68,2025-04-30 22:56:31,2025-04-30 22:56:31,2025-04-30 22:03:31,189302643
+True,False,30acb93a-83b1-4019-bd36-4b484d0f8dc7,False,Prescribed medication for condition,ce50b85a-c6b7-46a0-9a7a-0237f493c627,True,False,bc301849-c429-481e-8710-a0024ee9bc95,83,236,2025-04-25 19:50:43,2025-04-23 19:50:43,2025-04-23 19:04:43,189302643
+False,False,bac175e6-0fc5-4395-a74f-22d61841c45b,True,Progress evaluation,b54fa8c9-41bf-4f06-b876-ea1d8cc6a8ab,False,False,0bd69693-a908-4c5f-b97b-db7e2a8dbaf0,71,208,2025-04-29 14:18:54,2025-04-29 14:18:54,2025-04-29 13:36:54,189302643
+False,False,964c4586-7bfe-4d60-99d1-9fdb437751dc,True,Chronic condition management,3fdfb59c-a049-4454-a5a4-5c9adc8f15e2,True,True,f4ec3830-9f88-4b4d-9c90-18c2711cb345,37,198,2025-05-18 14:50:52,2025-05-04 14:50:52,2025-05-04 14:05:52,883975743
+False,False,f47838ee-6584-49e7-9a5a-bca92cebb84e,True,Chronic condition management,f078b5f7-80c5-439f-8a44-4f1c15b1dfb0,True,False,6337b864-8939-4986-8934-28875faa0817,107,42,2025-05-05 00:07:23,2025-05-04 00:07:23,2025-05-03 23:29:23,883975743
+False,False,05872279-bb56-4723-a309-283017f17598,True,Progress evaluation,add1452e-381f-4771-b1f5-e4888177ac77,False,False,05770b65-efe6-4da9-8b7e-a8b91fddeae2,27,57,2025-04-28 20:41:27,2025-04-12 20:41:27,2025-04-12 20:33:27,149802061
+True,False,ad1fff96-84ac-4079-bed7-d58b089321ba,False,Refilled existing prescriptions,2ffae891-d1fc-48ac-b8df-75185c897e83,True,False,14432334-18fc-465e-9ad0-91f7908abfd7,35,105,2025-04-20 10:16:03,2025-04-19 10:16:03,2025-04-19 09:32:03,149802061
+True,False,e31cce40-8d22-4987-8777-e95fa2df16dc,False,Refilled existing prescriptions,c8a86522-0185-416d-b9b2-0406942669f8,True,False,c693bf8a-5bb1-4a0f-941a-23c36bfef616,108,116,2025-05-11 10:07:15,2025-04-24 10:07:15,2025-04-24 09:47:15,149802061
+True,False,cd4bd868-c159-4731-ac4b-5cff912094ff,False,Refilled existing prescriptions,808ac11c-13ae-43a8-89dd-367bfc5c50c8,True,False,8cdacd82-515b-4db5-934f-6ba4f2245021,191,177,2025-05-21 15:01:20,2025-04-30 15:01:20,2025-04-30 14:24:20,149802061
+False,True,0eff45d8-016a-4506-8d90-01335c6e306a,False,Recommended diagnostic procedures,dbf259f7-8b75-4c76-b5b7-f196790e1310,True,False,77d1514c-7c95-4921-a3d4-26784adf2786,273,150,2025-05-14 01:08:26,2025-04-18 01:08:26,2025-04-18 00:30:26,149802061
+False,True,4e53299c-28b9-42bd-8479-8be486542795,False,Recommended diagnostic procedures,9f2977d8-417e-4abc-8c93-52c3b091267f,False,False,05ee4632-9bbe-4da7-b2c2-458f418d3699,97,235,2025-05-25 15:04:38,2025-04-30 15:04:38,2025-04-30 14:15:38,197340900
+True,False,c0a49d9e-f721-4148-8c65-4689bbe92643,False,Refilled existing prescriptions,1e3596ec-f113-4ec6-9141-41b14979ce69,False,False,9ea3acb1-dda2-4198-9e35-f330e9fa2d02,85,142,2025-04-21 23:40:28,2025-04-12 23:40:28,2025-04-12 23:24:28,197340900
+True,False,2d591932-f091-4f0a-8d28-af2536307ab1,False,Prescribed medication for condition,1c804f94-9d47-47b8-a2e4-5455e05e0b6d,True,False,c50c281b-f4b3-4ff8-b986-1c08429efc23,12,151,2025-05-04 07:57:18,2025-04-30 07:57:18,2025-04-30 07:21:18,197340900
+False,True,05454c36-1c37-4f67-b9c1-c8db5e78cd81,False,Recommended diagnostic procedures,c5d17e4e-910f-4ff2-acdc-2bf27baaed74,True,False,cd7137fc-72c2-4421-84fd-a2a66547a19f,228,11,2025-05-26 05:05:29,2025-04-27 05:05:29,2025-04-27 04:26:29,197340900
+True,False,8be3c775-5378-4a00-8b53-f3092b3af840,False,Prescribed medication for condition,bfd9a02a-9622-473d-84b0-58e1bd665070,True,False,41c5661a-0d6b-4ee3-9c91-905f8b9dfc6b,172,211,2025-05-17 17:23:14,2025-04-22 17:23:14,2025-04-22 16:23:14,595115268
+False,True,ebcc98f4-a659-42ed-87c1-5689595de01f,False,Recommended diagnostic procedures,65711206-7f96-4851-b82d-e9d174e8a773,True,False,ef99315e-f53d-4eb4-90c6-5a31b062e5ed,272,228,2025-05-08 13:46:56,2025-04-13 13:46:56,2025-04-13 13:00:56,595115268
+False,True,2e56eb28-25bc-4fad-87eb-8303d8feacb3,False,Recommended diagnostic procedures,9ca4be04-44fc-4f8c-bd66-a89f5e98bb9e,True,False,ba805dc4-f34c-47d1-816b-f4e230243c89,134,117,2025-06-01 05:28:24,2025-05-04 05:28:24,2025-05-04 05:15:24,595115268
+True,False,7b78f94b-9a38-4a7c-84b4-f1e151b5cdfd,False,Refilled existing prescriptions,808212a9-cefc-47bd-a197-8a00741aaa72,True,False,58889a69-f995-4330-be45-e70ee2f0b84e,234,86,2025-05-21 06:32:59,2025-04-24 06:32:59,2025-04-24 05:38:59,312528862
+False,True,e5f07046-ea0c-49f5-bed3-ba621f3ab925,False,Ordered lab tests,7bf15638-af11-415b-93ae-1dbcbf780af1,True,False,67928f1f-842e-40b6-a578-22848d77b505,79,83,2025-05-16 07:29:04,2025-04-29 07:29:04,2025-04-29 06:39:04,312528862
+True,False,a8013e12-4ef2-41d2-86e9-6b84b01c5902,False,Prescribed medication for condition,ef64f6d6-d8d6-418b-873e-4f61f427c38b,True,False,06488af5-deb0-437a-b886-152f790d74be,95,106,2025-04-30 04:42:57,2025-04-12 04:42:57,2025-04-12 04:17:57,312528862
+False,True,d669dd8e-704e-4402-8563-49a898b69e2c,False,Ordered lab tests,a79426cf-b094-4170-8517-bdbcca86a339,False,False,1d5add3e-7450-4227-bef5-7b7d461a9f03,230,84,2025-05-07 15:09:08,2025-04-27 15:09:08,2025-04-27 14:22:08,312528862
