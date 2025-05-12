@@ -1,3 +1,4 @@
+import atexit
 from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
@@ -22,9 +23,15 @@ import uuid
 from fastapi import FastAPI
 from models import Base
 from database import engine
-
+from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.triggers.interval import IntervalTrigger
 
 app = FastAPI()
+
+# Initialize scheduler
+scheduler = BackgroundScheduler()
+scheduler.start()
+atexit.register(lambda: scheduler.shutdown())  # Proper shutdown on app exit
 
 # Enable CORS
 app.add_middleware(
@@ -35,15 +42,6 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-# THIS IS THE FIX - Creates the folder automatically when starting
-@app.on_event("startup")
-def startup():
-    os.makedirs("data/raw", exist_ok=True)  # Creates folder if missing
-    print(f"Data will be saved to: {os.path.abspath('data/raw')}")
-
-    # Create tables in the database
-    Base.metadata.create_all(bind=engine)
-    print("Database tables created (if not already existing).")
 
 # Include API routes
 app.include_router(router, prefix="/api")
@@ -81,10 +79,40 @@ async def generate_data(
             "end": datetime.now().isoformat()
      }}
 
+def scheduled_data_generation():
+    """Function to be called every 5 minutes"""
+    print(f"\n--- Running scheduled data generation at {datetime.now()} ---")
+    try:
+        run_pipeline(
+            num_patients=100,  # Smaller batch for frequent updates
+            days=30,           # Shorter lookback period
+            frequency="30min" # Adjust frequency for more granular data
+        )
+    except Exception as e:
+        print(f"Scheduled job failed: {str(e)}")
+
+# Add this to your startup event
+@app.on_event("startup")
+def startup():
+    os.makedirs("data/raw", exist_ok=True)
+    print(f"Data will be saved to: {os.path.abspath('data/raw')}")
+
+    Base.metadata.create_all(bind=engine)  # Create database tables if they don't exist
+    print("Database tables created (if not already existing).")
+    
+    # Schedule the data generation job
+    scheduler.add_job(
+        scheduled_data_generation,
+        trigger=IntervalTrigger(minutes=30),
+        id="periodic_data_generation",
+        replace_existing=True
+    )
+    print("Scheduled data generation job added (runs every 30 minutes)")
+
 def run_pipeline(
     num_patients: int = 100,
     days: int = 30,
-    frequency: str = "hourly"
+    frequency: str = "30min"
 ):
     """Core data generation pipeline"""
     try:

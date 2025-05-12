@@ -16,6 +16,7 @@ from utils.monitoring import (
     main,
     get_current_active_counts,
     calculate_decline_percentage,
+    HISTORICAL_DATA_PATH
 )
 from utils.followup import (
     load_previous_metrics,
@@ -41,6 +42,7 @@ BP_LOGS_PATH = Path("data/raw/bp_logs.csv")
 GLUCOSE_LOGS_PATH = Path("data/raw/glucose_logs.csv")
 PREVIOUS_METRICS_PATH = Path("data/previous_metrics.json")
 HISTORICAL_METRICS_PATH = Path("data/historical_metrics.json")
+HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
 
 
 @router.get("/sites")
@@ -132,17 +134,21 @@ async def check_activity_decline():
         - Decline status (5% threshold)
         - Complete historical data
     """
+    # 1. Load previous counts first and cache them
+    previous_counts = load_previous_counts()
+    previous_sites = previous_counts["active_sites"]
+    previous_users = previous_counts["active_users"]
     # Use the main function which handles the proper sequence
     site_declined, user_declined = main()
     
     # Load the current state for response
     current_sites, current_users = get_current_active_counts()
-    previous_counts = load_previous_counts()
+    # previous_counts = load_previous_counts()
     
     # Load historical data for response
     historical_data = {}
-    if HISTORICAL_METRICS_PATH.exists():
-        with open(HISTORICAL_METRICS_PATH) as f:
+    if HISTORICAL_DATA_PATH.exists():
+        with open(HISTORICAL_DATA_PATH) as f:
             historical_data = json.load(f)
 
     return {
@@ -151,12 +157,12 @@ async def check_activity_decline():
             "users": current_users
         },
         "previous": {
-            "sites": previous_counts["active_sites"],
-            "users": previous_counts["active_users"]
+            "sites": previous_sites,
+            "users": previous_users
         },
         "percent_declines": {
-            "sites": calculate_decline_percentage(previous_counts["active_sites"], current_sites),
-            "users": calculate_decline_percentage(previous_counts["active_users"], current_users)
+            "sites": calculate_decline_percentage(previous_sites, current_sites),
+            "users": calculate_decline_percentage(previous_users, current_users)
         },
         "historical_data": historical_data,
         "last_checked": datetime.now().isoformat(),
@@ -244,7 +250,8 @@ async def get_monitoring_metrics():
                     current["percent_bp_controlled"]
                 ) 
             },
-            "historical_data": historical_data,
+            # "historical_data": historical_data,
+            "historical_data": historical_data.get("metrics", []),
             "last_checked": datetime.now().isoformat(),
             "performance_declined": bool(current["performance_declined"]),
             "threshold_violations": {
@@ -261,102 +268,6 @@ async def get_monitoring_metrics():
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
-    
-# @router.get("/monitoring-metrics")
-# async def get_monitoring_metrics():
-#     """
-#     Endpoint to check monitoring metrics and return comprehensive data.
-    
-#     Returns:
-#         - Current and previous metrics
-#         - Percentage changes
-#         - Performance status (50% threshold)
-#         - Complete historical data
-#     """
-#     try:
-#         if not DIAGNOSES_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Diagnoses data file not found")
-#         if not BP_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="BP logs file not found")
-#         if not GLUCOSE_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Glucose logs file not found")
-
-#         # Ensure data directory exists
-#         PREVIOUS_METRICS_PATH.parent.mkdir(parents=True, exist_ok=True)
-#         HISTORICAL_METRICS_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-#         # Load data with error handling
-#         try:
-#             diagnoses_df = pd.read_csv(DIAGNOSES_PATH)
-#             bp_logs_df = pd.read_csv(BP_LOGS_PATH)
-#             glucose_logs_df = pd.read_csv(GLUCOSE_LOGS_PATH)
-#         except Exception as e:
-#             raise HTTPException(status_code=400, detail=f"Error reading CSV files: {str(e)}")
-        
-#         # Calculate current metrics
-#         current = calculate_monitoring_metrics(diagnoses_df, bp_logs_df, glucose_logs_df)
-        
-#         # Load previous metrics
-#         previous = load_previous_metrics()
-        
-#         # Save current as new previous
-#         save_current_metrics(current)
-        
-#         # Load historical data
-#         historical_data = {}
-#         if HISTORICAL_METRICS_PATH.exists():
-#             with open(HISTORICAL_METRICS_PATH) as f:
-#                 historical_data = json.load(f)
-
-#         return {
-#             "current": {
-#                 "new_diagnoses": current["percent_new_diagnoses"],
-#                 "bp_followup": current["percent_bp_followup"],
-#                 "bg_followup": current["percent_bg_followup"],
-#                 "bp_controlled": current["percent_bp_controlled"]
-#             },
-#             "previous": {
-#                 "new_diagnoses": previous.get("percent_new_diagnoses", 0),
-#                 "bp_followup": previous.get("percent_bp_followup", 0),
-#                 "bg_followup": previous.get("percent_bg_followup", 0),
-#                 "bp_controlled": previous.get("percent_bp_controlled", 0) 
-#             },
-#             "percent_changes": {
-#                 "new_diagnoses": calculate_change_percentage(
-#                     previous.get("percent_new_diagnoses", 0), 
-#                     current["percent_new_diagnoses"]
-#                 ),
-#                 "bp_followup": calculate_change_percentage(
-#                     previous.get("percent_bp_followup", 0),
-#                     current["percent_bp_followup"]
-#                 ),
-#                 "bg_followup": calculate_change_percentage(
-#                     previous.get("percent_bg_followup", 0),
-#                     current["percent_bg_followup"]
-#                 ),
-#                 # "bp_controlled": calculate_change_percentage(
-#                 #     previous.get("bp_controlled", 0),
-#                 #     current["bp_controlled"]
-#                 # )    
-#                 "bp_controlled": calculate_change_percentage(
-#                     previous.get("percent_bp_controlled", 0),  # Changed from bp_controlled to percent_bp_controlled
-#                     current["percent_bp_controlled"]
-#                 ) 
-#             },
-#             "historical_data": historical_data,
-#             "last_checked": datetime.now().isoformat(),
-#             "performance_declined": bool(current["performance_declined"]),  # Convert to native bool
-#             "threshold_violations": {
-#                 "new_diagnoses": bool(current["percent_new_diagnoses"] < 50),
-#                 "bp_followup": bool(current["percent_bp_followup"] < 50),
-#                 "bg_followup": bool(current["percent_bg_followup"] < 50),
-#                 # "bp_controlled_violation": bool(current["bp_controlled"] < 50),
-#                 "bp_controlled": bool(current["percent_bp_controlled"] < 50), 
-#             }
-#         }
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
-
 
 @router.get("/patients")
 async def generate_and_get_patients(
@@ -436,23 +347,16 @@ async def get_patientdiagnosis(limit: int = 100):
     """Get generated patient data"""
     try:
         df = pd.read_csv("data/raw/diagnoses.csv")
-        return df.head(limit).to_dict(orient="records")
+
+        # Convert NaN/NaT values to None (which becomes null in JSON)
+        cleaned_df = df.replace({np.nan: None, pd.NaT: None})
+        
+        # Return the cleaned data
+        return cleaned_df.head().to_dict(orient="records")
+        # return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
 
-# @router.get("/anomalies")
-# async def get_anomalies(limit: int = 50):
-#     """Get detected anomalies"""
-#     try:
-#         # This would come from your anomaly detection system
-#         health_df = pd.read_csv(f"data/raw/health_metrics_hourly.csv")
-#         anomalies = health_df[
-#             (health_df["glucose"] > 180) | 
-#             (health_df["blood_pressure_systolic"] > 140)
-#         ]
-#         return anomalies.head(limit).to_dict(orient="records")
-#     except FileNotFoundError:
-#         raise HTTPException(status_code=404, detail="Health metrics not found. Generate data first.")
 @router.get("/anomalies")
 async def get_anomalies(limit: int = 50, severity: str = None):
     """Get detected anomalies with optional severity filter"""

@@ -107,45 +107,7 @@ def save_current_metrics(metrics):
             "percent_bp_controlled": metrics["percent_bp_controlled"],
             "timestamp": metrics["timestamp"]
         }, f)
-
-# def save_historical_metrics(previous, current):
-#     try:
-#         # Load or initialize historical data
-#         if HISTORICAL_METRICS_PATH.exists():
-#             with open(HISTORICAL_METRICS_PATH) as f:
-#                 historical = json.load(f)
-#         else:
-#             historical = {"metrics": [], "alerts": []}
         
-#         # Add current metrics
-#         historical["metrics"].append(current)
-        
-#         # Check for threshold violations
-#         if current["performance_declined"]:
-#             historical["alerts"].append({
-#                 "timestamp": current["timestamp"],
-#                 "metrics": current,
-#                 "changes": {
-#                     # "new_diagnoses": current["percent_new_diagnoses"] - previous.get("percent_new_diagnoses", 0),
-#                     # "bp_followup": current["percent_bp_followup"] - previous.get("percent_bp_followup", 0),
-#                     # "bg_followup": current["percent_bg_followup"] - previous.get("percent_bg_followup", 0),
-#                     # "bp_controlled": current["percent_bp_controlled"] - previous.get("percent_bp_controlled", 0)
-#                     "new_diagnoses": float(current["percent_new_diagnoses"]) - float(previous.get("percent_new_diagnoses", 0)),
-#                     "bp_followup": float(current["percent_bp_followup"]) - float(previous.get("percent_bp_followup", 0)),
-#                     "bg_followup": float(current["percent_bg_followup"]) - float(previous.get("percent_bg_followup", 0)),
-#                     "bp_controlled": float(current["percent_bp_controlled"]) - float(previous.get("percent_bp_controlled", 0))
-#                 }
-#             })
-        
-#         # Trim old data
-#         historical["metrics"] = historical["metrics"][-90:]
-#         historical["alerts"] = historical["alerts"][-30:]
-        
-#         # Save back
-#         with open(HISTORICAL_METRICS_PATH, 'w') as f:
-#             json.dump(historical, f, indent=2)
-#     except Exception as e:
-#         print(f"Error saving historical data: {e}")
 def save_historical_metrics(previous, current):
     try:
         # Initialize default historical data structure
