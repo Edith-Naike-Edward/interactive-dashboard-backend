@@ -86,7 +86,7 @@ def scheduled_data_generation():
         run_pipeline(
             num_patients=100,  # Smaller batch for frequent updates
             days=30,           # Shorter lookback period
-            frequency="30min" # Adjust frequency for more granular data
+            frequency="5min" # Adjust frequency for more granular data
         )
     except Exception as e:
         print(f"Scheduled job failed: {str(e)}")
@@ -103,16 +103,16 @@ def startup():
     # Schedule the data generation job
     scheduler.add_job(
         scheduled_data_generation,
-        trigger=IntervalTrigger(minutes=30),
+        trigger=IntervalTrigger(minutes=5),
         id="periodic_data_generation",
         replace_existing=True
     )
-    print("Scheduled data generation job added (runs every 30 minutes)")
+    print("Scheduled data generation job added (runs every 5 minutes)")
 
 def run_pipeline(
     num_patients: int = 100,
     days: int = 30,
-    frequency: str = "30min"
+    frequency: str = "5min"
 ):
     """Core data generation pipeline"""
     try:
