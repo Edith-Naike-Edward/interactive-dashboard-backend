@@ -6,6 +6,7 @@ from routes import router
 import pandas as pd
 from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
+from utils.email_utils import send_email
 from src.generators.bplog_generator import generate_bp_log
 from src.generators.glucoselog_generator import generate_glucose_log
 from src.generators.patientmedicalcompliance_generator import generate_patient_medical_compliances
@@ -70,6 +71,7 @@ async def generate_data(
         num_patients=num_patients,
         days=days,
         frequency=frequency
+
     )
     return {
         "message": "Data generation started in background",    
@@ -196,7 +198,13 @@ def run_pipeline(
         
         print("Data generation and anomaly detection completed successfully")
         
-        # print("Data generation completed successfully")
+        send_email(
+            subject="Data Generation Completed",
+            html_content=f"<p>Data has been generated for {num_patients} patients from the last {days} days. </p>",
+            to_email="edithnaike@gmail.com",
+            to_name="Edith Naike"
+        )
+
     except Exception as e:
         print(f"Error in data generation: {str(e)}")
         raise e
