@@ -1,0 +1,14 @@
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.venv
+venv/
+
+# System files
+.DS_Store  # Mac
+Thumbs.db  # Windows
