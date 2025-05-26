@@ -1,9 +1,15 @@
 import atexit
-from fastapi import FastAPI, BackgroundTasks
+import json
+from fastapi import Depends, FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
+
+import numpy as np
 from routes import router
 import pandas as pd
+from database import init_db, get_db
+from models import Base
+from sqlalchemy.orm import Session
 from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
 from utils.email_utils import send_email
@@ -33,6 +39,14 @@ app = FastAPI()
 scheduler = BackgroundScheduler()
 scheduler.start()
 atexit.register(lambda: scheduler.shutdown())  # Proper shutdown on app exit
+
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, (np.float32, np.float64)):
+            return float(obj) if not np.isnan(obj) else None
+        return super().default(obj)
+
+app.json_encoder = CustomJSONEncoder
 
 # Enable CORS
 app.add_middleware(
@@ -99,7 +113,7 @@ def startup():
     os.makedirs("data/raw", exist_ok=True)
     print(f"Data will be saved to: {os.path.abspath('data/raw')}")
 
-    Base.metadata.create_all(bind=engine)  # Create database tables if they don't exist
+    init_db()
     print("Database tables created (if not already existing).")
     
     # Schedule the data generation job
@@ -114,7 +128,8 @@ def startup():
 def run_pipeline(
     num_patients: int = 100,
     days: int = 30,
-    frequency: str = "5min"
+    frequency: str = "5min",
+    db: Session = Depends(get_db)
 ):
     """Core data generation pipeline"""
     try:

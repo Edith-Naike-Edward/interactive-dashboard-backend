@@ -35,3 +35,35 @@ def get_db():
         yield db
     finally:
         db.close()
+
+def init_db():
+    Base.metadata.create_all(bind=engine)
+
+def batch_insert(model, data_list, batch_size=100):
+    """Insert records in batches for better performance"""
+    db = SessionLocal()
+    try:
+        for i in range(0, len(data_list), batch_size):
+            batch = data_list[i:i + batch_size]
+            db.bulk_insert_mappings(model, batch)
+            db.commit()
+    except Exception as e:
+        db.rollback()
+        raise e
+    finally:
+        db.close()
+
+def update_existing_records(model, update_data, filter_field):
+    """Update existing records in the database"""
+    db = SessionLocal()
+    try:
+        for data in update_data:
+            db.query(model).filter(
+                getattr(model, filter_field) == data[filter_field]
+            ).update(data)
+        db.commit()
+    except Exception as e:
+        db.rollback()
+        raise e
+    finally:
+        db.close()

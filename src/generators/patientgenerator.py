@@ -4,8 +4,10 @@ import random
 import numpy as np
 from datetime import datetime, timedelta
 import uuid
+from models import Patient
 from config.settings import NUM_PATIENTS, KDHS_2022, REPEAT_PATIENT_RATE
 from datetime import date
+from database import SessionLocal
 from src.generators.site_user_generation import generate_site_user_data
 sites_df, users_df = generate_site_user_data(n_users_per_site=0)  
 fake = Faker()
@@ -251,6 +253,20 @@ def get_created_and_updated_by(site_id):
 
     return created_by, updated_by
 
+def convert_to_python_types(data):
+    """Convert numpy types to native Python types"""
+    if isinstance(data, (np.integer, np.int64)):
+        return int(data)
+    elif isinstance(data, (np.floating, np.float64)):
+        return float(data)
+    elif isinstance(data, np.ndarray):
+        return data.tolist()
+    elif isinstance(data, dict):
+        return {k: convert_to_python_types(v) for k, v in data.items()}
+    elif isinstance(data, (list, tuple)):
+        return [convert_to_python_types(item) for item in data]
+    return data
+
 def generate_patient(start_date, end_date):
     # Select a random sub-county and get its county
     sub_county_name = random.choice(list(SUB_COUNTIES.keys()))
@@ -396,19 +412,60 @@ def generate_patients(num_patients, start_date, end_date):
 
     # Convert to DataFrame
     patients_df = pd.DataFrame(patients_list)
-
-    # # Apply health conditions using the wrapper
-    # patients_df = patients_df.apply(_assign_health_conditions_wrapper, axis=1)
-    # Apply health conditions WITHOUT converting to Series
-    # patients_df = patients_df.apply(lambda row: _assign_health_conditions(row.to_dict()), axis=1, result_type='expand')
-
-    # Convert date fields
-    date_cols = ['date_of_birth', 'created_at', 'updated_at']
-    for col in date_cols:
-        if col in patients_df.columns:
-            patients_df[col] = pd.to_datetime(patients_df[col])
-
+    
+    # Convert all numpy numeric types to native Python types
+    for col in patients_df.select_dtypes(include=[np.number]).columns:
+        patients_df[col] = patients_df[col].astype('int64')  # or 'float64' as needed
+    
+    # Convert boolean columns
+    for col in patients_df.select_dtypes(include=[np.bool_]).columns:
+        patients_df[col] = patients_df[col].astype('bool')
+    
+    # Convert back to list of dicts
+    patients_list = patients_df.to_dict('records')
+    
+    save_patients_to_db(patients_list)
     return patients_df
 
-#
-
+def save_patients_to_db(patients_data):
+    """Save generated patients to the database"""
+    db = SessionLocal()
+    try:
+        # Convert list of dicts to list of Patient objects
+        patient_objects = []
+        for patient_data in patients_data:
+            # Convert numpy types to native Python types
+            converted_data = {}
+            for key, value in patient_data.items():
+                if hasattr(value, 'item'):  # Checks for numpy types
+                    converted_data[key] = value.item()  # Convert numpy to native
+                else:
+                    converted_data[key] = value
+            # Handle date conversions
+            if isinstance(patient_data['date_of_birth'], str):
+                patient_data['date_of_birth'] = datetime.strptime(
+                    patient_data['date_of_birth'], "%Y-%m-%d"
+                ).date()  # Note: using .date() for DATE fields
+            
+            if isinstance(patient_data['created_at'], str):
+                patient_data['created_at'] = datetime.strptime(
+                    patient_data['created_at'], "%Y-%m-%d %H:%M:%S"
+                )
+            
+            if isinstance(patient_data['updated_at'], str):
+                patient_data['updated_at'] = datetime.strptime(
+                    patient_data['updated_at'], "%Y-%m-%d %H:%M:%S"
+                )
+            
+            patient_objects.append(Patient(**patient_data))
+        
+        # Bulk insert for better performance
+        db.bulk_save_objects(patient_objects)
+        db.commit()
+        print(f"Successfully saved {len(patient_objects)} patients to database")
+    except Exception as e:
+        db.rollback()
+        print(f"Error saving patients to database: {str(e)}")
+        raise
+    finally:
+        db.close()

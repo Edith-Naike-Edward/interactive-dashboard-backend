@@ -98,9 +98,9 @@ def generate_medical_compliance_record(bp_log, days = 30):
     return {
         "patient_medical_compliance_id": str(uuid.uuid4()),
         "compliance_id": str(uuid.uuid4()),
-        "name": name,
+        "name": name if name is not None else "N/A",
         "compliance_name": compliance_name,
-        "other_compliance": other_compliance,
+        "other_compliance": other_compliance if other_compliance is not None else "N/A", 
         "bplog_id": bp_log['bplog_id'],
         "patient_track_id": bp_log['patient_track_id'],
         "is_active": random.choices([True, False], weights=[0.8, 0.2])[0],

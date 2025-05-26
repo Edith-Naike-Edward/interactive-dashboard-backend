@@ -329,7 +329,12 @@ async def get_compliances(limit: int = 100):
     """Get patient compliance data"""
     try:
         df = pd.read_csv("data/raw/compliances.csv")
-        return df.head(limit).to_dict(orient="records")
+        # Convert NaN/NaT values to None (which becomes null in JSON)
+        cleaned_df = df.replace({np.nan: None, pd.NaT: None})
+        
+        # Return the cleaned data
+        return cleaned_df.head().to_dict(orient="records")
+        # return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Compliance data not found. Generate data first.")
 
@@ -378,10 +383,15 @@ async def get_screenings(limit: int = 100):
     """Get screening log data"""
     try:
         df = pd.read_csv("data/raw/screenings.csv")
-        return df.head(limit).to_dict(orient="records")
+        # Convert NaN/NaT values to None (which becomes null in JSON)
+        cleaned_df = df.replace({np.nan: None, pd.NaT: None})
+        
+        # Return the cleaned data
+        return cleaned_df.head().to_dict(orient="records")
+        # return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Screening data not found. Generate data first.")
-
+    
 @router.get("/bp-logs")
 async def get_bp_logs(patient_id: str = None, limit: int = 100):
     """Get blood pressure logs"""
