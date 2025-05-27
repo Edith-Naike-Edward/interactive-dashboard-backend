@@ -323,6 +323,14 @@ async def get_patientmedicalreview(limit: int = 100):
         return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
+    
+@router.get("/test-db")
+def test_db(db: Session = Depends(get_db)):
+    try:
+        db.execute("SELECT 1")
+        return {"status": "Database connection successful"}
+    except Exception as e:
+        return {"error": str(e)}
 
 @router.get("/compliances")
 async def get_compliances(limit: int = 100):

@@ -4,6 +4,8 @@ import numpy as np
 from datetime import datetime, timedelta
 import uuid
 from faker import Faker
+from models import GlucoseLog
+from database import SessionLocal
 
 fake = Faker()
 
@@ -46,3 +48,33 @@ def generate_glucose_log(screenings_df):
             glucose_logs.append(glucose_log)
     
     return pd.DataFrame(glucose_logs)
+
+def save_glucose_logs_to_db(glucose_logs_data):
+    """Save generated glucose logs list of dicts to the database"""
+    db = SessionLocal()
+    try:
+        glucose_objects = []
+        for log_data in glucose_logs_data:
+            converted_data = {}
+            for key, value in log_data.items():
+                if hasattr(value, 'item'):
+                    converted_data[key] = value.item()
+                else:
+                    converted_data[key] = value
+
+            # Convert datetime strings if any
+            if isinstance(converted_data.get('glucose_date_time'), str):
+                converted_data['glucose_date_time'] = datetime.strptime(converted_data['glucose_date_time'], "%Y-%m-%d %H:%M:%S")
+            # add other date/datetime conversions if needed
+
+            glucose_objects.append(GlucoseLog(**converted_data))
+
+        db.bulk_save_objects(glucose_objects)
+        db.commit()
+        print(f"Saved {len(glucose_objects)} glucose logs to database")
+    except Exception as e:
+        db.rollback()
+        print(f"Error saving glucose logs: {e}")
+        raise
+    finally:
+        db.close()

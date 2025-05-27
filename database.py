@@ -36,8 +36,12 @@ def get_db():
     finally:
         db.close()
 
+# def init_db():
+#     Base.metadata.create_all(bind=engine)
 def init_db():
+    from models import Base, BPLog  # Import all your models here
     Base.metadata.create_all(bind=engine)
+    print("All database tables created/verified")
 
 def batch_insert(model, data_list, batch_size=100):
     """Insert records in batches for better performance"""

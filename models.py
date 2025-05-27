@@ -83,3 +83,90 @@ class Patient(Base):
     on_diabetes_meds = Column(Boolean)
     has_mental_health_issue = Column(Boolean)
     on_mh_treatment = Column(Boolean)
+
+class ScreeningLog(Base):
+    __tablename__ = 'screening_logs'
+    
+    id = Column(Integer, primary_key=True)
+    screening_id = Column(String(50), unique=True)
+    patient_id = Column(String(50), ForeignKey('patients.patient_id'))
+    first_name = Column(String(100))
+    last_name = Column(String(100))
+    middle_name = Column(String(100))
+    
+class GlucoseLog(Base):
+    __tablename__ = 'glucose_logs'
+    
+    glucose_log_id = Column(String(50), primary_key=True)
+    patient_id = Column(String(50), ForeignKey('patients.patient_id'))
+    patient_track_id = Column(String(50))
+    glucose_value = Column(Float)
+    glucose_type = Column(String(50))
+    hba1c = Column(Float)
+    type = Column(String(50))
+    is_latest = Column(Boolean, default=True)
+    is_active = Column(Boolean, default=True)
+    is_deleted = Column(Boolean, default=False)
+    tenant_id = Column(String(50))
+    glucose_date_time = Column(DateTime)
+    last_meal_time = Column(DateTime)
+    created_by = Column(String(50))
+    updated_by = Column(String(50))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
+
+class BPLog(Base):
+    __tablename__ = 'bp_logs'
+    
+    bplog_id = Column(String(50), primary_key=True)
+    patient_id = Column(String(50), ForeignKey('patients.patient_id'))
+    patient_track_id = Column(String(50))
+    avg_systolic = Column(Integer)
+    avg_diastolic = Column(Integer)
+    avg_pulse = Column(Integer)
+    height = Column(Float)
+    weight = Column(Float)
+    bmi = Column(Float)
+    temperature = Column(Float)
+    is_regular_smoker = Column(Boolean)
+    cvd_risk_score = Column(Float)
+    cvd_risk_level = Column(String(50))
+    risk_level = Column(String(50))  # Simplified risk level
+    type = Column(String(50))
+    is_latest = Column(Boolean, default=True)
+    is_active = Column(Boolean, default=True)
+    is_deleted = Column(Boolean, default=False)
+    tenant_id = Column(String(50))
+    created_by = Column(String(50))
+    updated_by = Column(String(50))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+class PatientMedicalCompliance(Base):
+    __tablename__ = 'patient_medical_compliance'
+    
+    patient_medical_compliance_id = Column(String(50), primary_key=True) #Unique Id refers the each distinct patient medical compliance
+    compliance_id = Column(String(50), unique=True) # Unique ID for each compliance record
+    name = Column(String(100))
+    compliance_name = Column(String(100))
+    other_compliance = Column(String(200))
+    bplog_id = Column(String(50), ForeignKey('bp_logs.bplog_id'))
+    patient_track_id = Column(String(50))
+    is_active = Column(Boolean, default=True)
+    is_deleted = Column(Boolean, default=False)
+    tenant_id = Column(String(50))
+    created_by = Column(String(50))
+    updated_by = Column(String(50))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+class PatientLifestyle(Base):
+    __tablename__ = 'patient_lifestyle'
+    patient_lifestyle_id = Column(String(50), primary_key=True)
+    patient_id = Column(String(50), ForeignKey('patients.patient_id'))
+    lifestyle_type = Column(String(100))
+    lifestyle_value = Column(String(200))
+    is_active = Column(Boolean, default=True)
+    is_deleted = Column(Boolean, default=False)
+    tenant_id = Column(String(50))

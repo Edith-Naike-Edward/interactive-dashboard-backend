@@ -3,7 +3,6 @@ import json
 from fastapi import Depends, FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
-
 import numpy as np
 from routes import router
 import pandas as pd
@@ -13,7 +12,7 @@ from sqlalchemy.orm import Session
 from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
 from utils.email_utils import send_email
-from src.generators.bplog_generator import generate_bp_log
+from src.generators.bplog_generator import generate_bp_logs
 from src.generators.glucoselog_generator import generate_glucose_log
 from src.generators.patientmedicalcompliance_generator import generate_patient_medical_compliances
 from src.generators.patientlifestyle_generator import generate_patient_lifestyles
@@ -77,7 +76,7 @@ async def generate_data(
     background_tasks: BackgroundTasks,
     num_patients: Optional[int] = 100,
     days: Optional[int] = 30,
-    frequency: Optional[str] = "hourly"
+    frequency: Optional[str] = "5 min"  # Default frequency for health metrics
 ):
     """Endpoint to trigger data generation"""
     background_tasks.add_task(
@@ -97,15 +96,24 @@ async def generate_data(
 
 def scheduled_data_generation():
     """Function to be called every 5 minutes"""
+    from database import SessionLocal
     print(f"\n--- Running scheduled data generation at {datetime.now()} ---")
+    db = SessionLocal()  # Create a new database session
     try:
         run_pipeline(
             num_patients=100,  # Smaller batch for frequent updates
             days=30,           # Shorter lookback period
-            frequency="5min" # Adjust frequency for more granular data
+            frequency="5min",
+            db = db # Adjust frequency for more granular data
         )
+    # except Exception as e:
+    #     print(f"Scheduled job failed: {str(e)}")
     except Exception as e:
         print(f"Scheduled job failed: {str(e)}")
+        db.rollback()
+    finally:
+        db.close()
+        print("Database session closed")
 
 # Add this to your startup event
 @app.on_event("startup")
@@ -129,10 +137,15 @@ def run_pipeline(
     num_patients: int = 100,
     days: int = 30,
     frequency: str = "5min",
-    db: Session = Depends(get_db)
+    # db: Session = Depends(get_db)
+    db: Session = None 
 ):
     """Core data generation pipeline"""
+    from database import SessionLocal
+
+    db = db or SessionLocal()  # Use provided session or create a new one
     try:
+        print(f"Database session valid: {db.is_active}")
         print(f"Starting data generation for {days} days...")
         
         # Calculate consistent date range for all generated data
@@ -162,7 +175,7 @@ def run_pipeline(
         screenings.to_csv("data/raw/screenings.csv", index=False)
         
         # 3. Generate clinical logs
-        bp_logs = generate_bp_log(screenings)
+        bp_logs = generate_bp_logs(screenings)
         bp_logs.to_csv("data/raw/bp_logs.csv", index=False)
         
         glucose_logs = generate_glucose_log(screenings)
@@ -220,12 +233,20 @@ def run_pipeline(
             to_name="Edith Naike"
         )
 
+    # except Exception as e:
+    #     print(f"Error in data generation: {str(e)}")
+    #     raise e
     except Exception as e:
         print(f"Error in data generation: {str(e)}")
-        raise e
+        if db:  # Only rollback if we have a session
+            db.rollback()
+        raise
+    finally:
+        if db:  # Only close if we have a session
+            db.close()
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8010)
 
 
