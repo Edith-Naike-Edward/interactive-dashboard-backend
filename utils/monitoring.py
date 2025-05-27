@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime 
 import json
 from pathlib import Path
 import pandas as pd
@@ -34,16 +34,13 @@ def detect_5_percent_drop(previous, current):
     return percent_change <= -5
 
 def save_historical_data(previous_sites, previous_users, current_sites, current_users):
-    """Save both previous and current activity counts with timestamp"""
     try:
-        # Load existing data or create new structure
         if HISTORICAL_DATA_PATH.exists():
             with open(HISTORICAL_DATA_PATH) as f:
                 historical_data = json.load(f)
-                # Ensure all required keys exist
-                historical_data.setdefault("sites", [])
-                historical_data.setdefault("users", [])
-                historical_data.setdefault("changes", [])
+            historical_data.setdefault("sites", [])
+            historical_data.setdefault("users", [])
+            historical_data.setdefault("changes", [])
         else:
             historical_data = {
                 "sites": [],
@@ -51,12 +48,10 @@ def save_historical_data(previous_sites, previous_users, current_sites, current_
                 "changes": []
             }
         
-        # Get current timestamp
         now = datetime.now()
         today = now.strftime("%Y-%m-%d")
         timestamp = now.isoformat()
         
-        # Store the change record
         change_record = {
             "timestamp": timestamp,
             "previous_sites": previous_sites,
@@ -66,7 +61,6 @@ def save_historical_data(previous_sites, previous_users, current_sites, current_
         }
         historical_data["changes"].append(change_record)
         
-        # Store daily snapshot (only if it's a new day)
         if not historical_data["sites"] or historical_data["sites"][-1]["date"] != today:
             historical_data["sites"].append({
                 "date": today,
@@ -79,42 +73,162 @@ def save_historical_data(previous_sites, previous_users, current_sites, current_
                 "timestamp": timestamp
             })
         
-        # Keep data size manageable
-        historical_data["changes"] = historical_data["changes"][-100:]  # Keep last 100 changes
-        historical_data["sites"] = historical_data["sites"][-30:]  # Keep last 30 days
-        historical_data["users"] = historical_data["users"][-30:]  # Keep last 30 days
+        historical_data["changes"] = historical_data["changes"][-100:]
+        historical_data["sites"] = historical_data["sites"][-30:]
+        historical_data["users"] = historical_data["users"][-30:]
         
-        # Save back to file
         with open(HISTORICAL_DATA_PATH, 'w') as f:
             json.dump(historical_data, f)
             
     except Exception as e:
         print(f"Error saving historical data: {e}")
 
-def main():
-    # 1. Load previous counts
-    previous_counts = load_previous_counts()
-    prev_sites = previous_counts["active_sites"]
-    prev_users = previous_counts["active_users"]
-    
-    # 2. Get current counts
-    current_sites, current_users = get_current_active_counts()
-    
-    # 3. Check for significant drops
-    sites_dropped = detect_5_percent_drop(prev_sites, current_sites)
-    users_dropped = detect_5_percent_drop(prev_users, current_users)
-    
-    # 4. Save historical data (including previous state)
-    save_historical_data(prev_sites, prev_users, current_sites, current_users)
-    
-    # 5. Only now update the previous counts
-    save_current_counts(current_sites, current_users)
-    
-    return sites_dropped, users_dropped
-
 def calculate_decline_percentage(prev, curr):
     if prev == 0:
         return 0
     return round(((curr - prev) / prev) * 100, 1)  # one decimal place
+
+def main():
+    previous_counts = load_previous_counts()
+    prev_sites = previous_counts["active_sites"]
+    prev_users = previous_counts["active_users"]
+    
+    current_sites, current_users = get_current_active_counts()
+    
+    sites_dropped = detect_5_percent_drop(prev_sites, current_sites)
+    users_dropped = detect_5_percent_drop(prev_users, current_users)
+    
+    save_historical_data(prev_sites, prev_users, current_sites, current_users)
+    save_current_counts(current_sites, current_users)
+    
+    # Calculate percentage drops (negative values indicate drop)
+    sites_drop_percent = calculate_decline_percentage(prev_sites, current_sites)
+    users_drop_percent = calculate_decline_percentage(prev_users, current_users)
+    
+    # Return the percentage drops so frontend can show the % drop
+    return {
+        "sites_drop_percent": sites_drop_percent,
+        "users_drop_percent": users_drop_percent,
+        "sites_dropped": sites_dropped,
+        "users_dropped": users_dropped
+    }
+# from datetime import datetime
+# import json
+# from pathlib import Path
+# import pandas as pd
+
+# DATA_PATH = Path("data/previous_counts.json")
+# SITE_CSV = Path("data/raw/sites.csv")
+# USER_CSV = Path("data/raw/users.csv")
+# HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
+
+# def load_previous_counts():
+#     if not DATA_PATH.exists():
+#         return {"active_sites": 0, "active_users": 0}
+#     with open(DATA_PATH) as f:
+#         return json.load(f)
+
+# def save_current_counts(active_sites, active_users):
+#     with open(DATA_PATH, "w") as f:
+#         json.dump({"active_sites": active_sites, "active_users": active_users}, f)
+
+# def get_current_active_counts():
+#     sites_df = pd.read_csv(SITE_CSV)
+#     users_df = pd.read_csv(USER_CSV)
+
+#     active_sites = sites_df[sites_df["is_active"] == True].shape[0]
+#     active_users = users_df[users_df["is_active"] == True].shape[0]
+
+#     return active_sites, active_users
+
+# def detect_5_percent_drop(previous, current):
+#     if previous == 0:
+#         return False
+#     percent_change = ((current - previous) / previous) * 100
+#     return percent_change <= -5
+
+# def save_historical_data(previous_sites, previous_users, current_sites, current_users):
+#     """Save both previous and current activity counts with timestamp"""
+#     try:
+#         # Load existing data or create new structure
+#         if HISTORICAL_DATA_PATH.exists():
+#             with open(HISTORICAL_DATA_PATH) as f:
+#                 historical_data = json.load(f)
+#                 # Ensure all required keys exist
+#                 historical_data.setdefault("sites", [])
+#                 historical_data.setdefault("users", [])
+#                 historical_data.setdefault("changes", [])
+#         else:
+#             historical_data = {
+#                 "sites": [],
+#                 "users": [],
+#                 "changes": []
+#             }
+        
+#         # Get current timestamp
+#         now = datetime.now()
+#         today = now.strftime("%Y-%m-%d")
+#         timestamp = now.isoformat()
+        
+#         # Store the change record
+#         change_record = {
+#             "timestamp": timestamp,
+#             "previous_sites": previous_sites,
+#             "current_sites": current_sites,
+#             "previous_users": previous_users,
+#             "current_users": current_users
+#         }
+#         historical_data["changes"].append(change_record)
+        
+#         # Store daily snapshot (only if it's a new day)
+#         if not historical_data["sites"] or historical_data["sites"][-1]["date"] != today:
+#             historical_data["sites"].append({
+#                 "date": today,
+#                 "count": current_sites,
+#                 "timestamp": timestamp
+#             })
+#             historical_data["users"].append({
+#                 "date": today,
+#                 "count": current_users,
+#                 "timestamp": timestamp
+#             })
+        
+#         # Keep data size manageable
+#         historical_data["changes"] = historical_data["changes"][-100:]  # Keep last 100 changes
+#         historical_data["sites"] = historical_data["sites"][-30:]  # Keep last 30 days
+#         historical_data["users"] = historical_data["users"][-30:]  # Keep last 30 days
+        
+#         # Save back to file
+#         with open(HISTORICAL_DATA_PATH, 'w') as f:
+#             json.dump(historical_data, f)
+            
+#     except Exception as e:
+#         print(f"Error saving historical data: {e}")
+
+# def main():
+#     # 1. Load previous counts
+#     previous_counts = load_previous_counts()
+#     prev_sites = previous_counts["active_sites"]
+#     prev_users = previous_counts["active_users"]
+    
+#     # 2. Get current counts
+#     current_sites, current_users = get_current_active_counts()
+    
+#     # 3. Check for significant drops
+#     sites_dropped = detect_5_percent_drop(prev_sites, current_sites)
+#     users_dropped = detect_5_percent_drop(prev_users, current_users)
+    
+#     # 4. Save historical data (including previous state)
+#     save_historical_data(prev_sites, prev_users, current_sites, current_users)
+    
+#     # 5. Only now update the previous counts
+#     save_current_counts(current_sites, current_users)
+    
+#     return sites_dropped, users_dropped
+
+# def calculate_decline_percentage(prev, curr):
+#     if prev == 0:
+#         return 0
+#     return round(((curr - prev) / prev) * 100, 1)  # one decimal place
 
 

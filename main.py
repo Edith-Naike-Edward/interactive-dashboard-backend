@@ -1,13 +1,15 @@
 import atexit
 import json
-from fastapi import Depends, FastAPI, BackgroundTasks
+from fastapi import Depends, FastAPI, BackgroundTasks, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
 import numpy as np
+from pydantic import BaseModel
 from routes import router
 import pandas as pd
 from database import init_db, get_db
 from models import Base
+from sms_service import sms_service
 from sqlalchemy.orm import Session
 from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
@@ -23,7 +25,7 @@ from src.analytics.anomaly_detector import detect_anomalies
 from src.generators.site_user_generation import generate_site_user_data
 from src.generators.patient_visit_generator import generate_visits
 import os
-from typing import Optional
+from typing import List, Optional
 import os
 import uuid
 from fastapi import FastAPI
@@ -133,6 +135,26 @@ def startup():
     )
     print("Scheduled data generation job added (runs every 5 minutes)")
 
+class SMSRequest(BaseModel):
+    recipients: List[str]
+    message: str
+    sender_id: Optional[str] = "Masterclass"
+
+@app.post("/send-sms")
+async def send_sms(request: SMSRequest):
+    """
+    Send SMS to one or more recipients
+    """
+    try:
+        response = sms_service.send_sms(
+            message=request.message,
+            recipients=request.recipients,
+            sender_id=request.sender_id
+        )
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 def run_pipeline(
     num_patients: int = 100,
     days: int = 30,
@@ -233,9 +255,6 @@ def run_pipeline(
             to_name="Edith Naike"
         )
 
-    # except Exception as e:
-    #     print(f"Error in data generation: {str(e)}")
-    #     raise e
     except Exception as e:
         print(f"Error in data generation: {str(e)}")
         if db:  # Only rollback if we have a session

@@ -56,7 +56,13 @@ def calculate_monitoring_metrics(diagnoses_df, bp_logs_df, glucose_logs_df):
         "performance_declined": new_diag_violation or bp_followup_violation or bg_followup_violation or bp_controlled_violation,
         "timestamp": datetime.now().isoformat()
     }
-    
+
+def calculate_change_percentage(previous, current):
+    if previous == 0:
+        return 0 if current == 0 else 100
+    return round(((previous - current) / previous) * 100, 2)
+
+
 
 # Helper functions
 def calculate_change_percentage(previous, current):
@@ -82,6 +88,25 @@ def load_previous_metrics():
             return json.loads(content)
     except (json.JSONDecodeError, IOError):
         return default_metrics
+    
+# Load previous metrics
+previous_metrics = load_previous_metrics()
+
+metrics = calculate_monitoring_metrics(diagnoses_df, bp_logs_df, glucose_logs_df)
+
+# Calculate percentage drops
+drop_new_diagnoses = calculate_change_percentage(previous_metrics["percent_new_diagnoses"], metrics["percent_new_diagnoses"])
+drop_bp_followup = calculate_change_percentage(previous_metrics["percent_bp_followup"], metrics["percent_bp_followup"])
+drop_bg_followup = calculate_change_percentage(previous_metrics["percent_bg_followup"], metrics["percent_bg_followup"])
+drop_bp_controlled = calculate_change_percentage(previous_metrics["percent_bp_controlled"], metrics["percent_bp_controlled"])
+
+# Add to metrics output
+metrics.update({
+    "drop_new_diagnoses": drop_new_diagnoses,
+    "drop_bp_followup": drop_bp_followup,
+    "drop_bg_followup": drop_bg_followup,
+    "drop_bp_controlled": drop_bp_controlled
+})
 
 def load_historical_data():
     default_data = {"metrics": [], "alerts": []}

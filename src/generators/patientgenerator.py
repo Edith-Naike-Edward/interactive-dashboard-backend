@@ -428,48 +428,6 @@ def generate_patients(num_patients, start_date, end_date):
     save_patients_to_db(patients_list)
     return patients_df
 
-# def save_patients_to_db(patients_data):
-#     """Save generated patients to the database"""
-#     db = SessionLocal()
-#     try:
-#         # Convert list of dicts to list of Patient objects
-#         patient_objects = []
-#         for patient_data in patients_data:
-#             # Convert numpy types to native Python types
-#             converted_data = {}
-#             for key, value in patient_data.items():
-#                 if hasattr(value, 'item'):  # Checks for numpy types
-#                     converted_data[key] = value.item()  # Convert numpy to native
-#                 else:
-#                     converted_data[key] = value
-#             # Handle date conversions
-#             if isinstance(patient_data['date_of_birth'], str):
-#                 patient_data['date_of_birth'] = datetime.strptime(
-#                     patient_data['date_of_birth'], "%Y-%m-%d"
-#                 ).date()  # Note: using .date() for DATE fields
-            
-#             if isinstance(patient_data['created_at'], str):
-#                 patient_data['created_at'] = datetime.strptime(
-#                     patient_data['created_at'], "%Y-%m-%d %H:%M:%S"
-#                 )
-            
-#             if isinstance(patient_data['updated_at'], str):
-#                 patient_data['updated_at'] = datetime.strptime(
-#                     patient_data['updated_at'], "%Y-%m-%d %H:%M:%S"
-#                 )
-            
-#             patient_objects.append(Patient(**patient_data))
-        
-#         # Bulk insert for better performance
-#         db.bulk_save_objects(patient_objects)
-#         db.commit()
-#         print(f"Successfully saved {len(patient_objects)} patients to database")
-#     except Exception as e:
-#         db.rollback()
-#         print(f"Error saving patients to database: {str(e)}")
-#         raise
-#     finally:
-#         db.close()
 
 def save_patients_to_db(patients_data):
     db = SessionLocal()
@@ -519,38 +477,3 @@ def save_patients_to_db(patients_data):
     finally:
         db.close()
 
-# def save_patients_to_db(patients_data):
-#     db = SessionLocal()
-#     try:
-#         patient_objects = []
-#         for patient_data in patients_data:
-#             converted_data = {}
-#             for key, value in patient_data.items():
-#                 if hasattr(value, 'item'):
-#                     converted_data[key] = value.item()
-#                 else:
-#                     converted_data[key] = value
-
-#             # Safer date handling
-#             if 'date_of_birth' in converted_data and isinstance(converted_data['date_of_birth'], str):
-#                 converted_data['date_of_birth'] = datetime.strptime(
-#                     converted_data['date_of_birth'], "%Y-%m-%d"
-#                 ).date()
-
-#             for dt_field in ['created_at', 'updated_at']:
-#                 if dt_field in converted_data and isinstance(converted_data[dt_field], str):
-#                     converted_data[dt_field] = datetime.strptime(
-#                         converted_data[dt_field], "%Y-%m-%d %H:%M:%S"
-#                     )
-
-#             patient_objects.append(Patient(**converted_data))
-
-#         db.bulk_save_objects(patient_objects)
-#         db.commit()
-#         print(f"Successfully saved {len(patient_objects)} patients to database")
-#     except Exception as e:
-#         db.rollback()
-#         print(f"Error saving patients to database: {str(e)}")
-#         raise
-#     finally:
-#         db.close()

@@ -92,38 +92,6 @@ async def get_users(limit: int = 1000):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Visits data not found. Generate data first.")
 
-# @router.get("/patient-summary")
-# async def patient_summary():
-#     """
-#     Retrieve aggregate patient statistics
-    
-#     Returns:
-#         JSON response with:
-#         - Total Patient Records
-#         - New Patients Count
-#         - Repeat Patients Count
-#     """
-#     try:
-#         # Generate patient data
-#         summary = get_patient_summary()
-
-#         # return {
-#         # "summary": summary,
-#         # }
-#         return JSONResponse(
-#             status_code=200,
-#             content={
-#                 "message": "Patient summary retrieved successfully",
-#                 "data": summary
-#             }
-#         )
-        
-#     except Exception as e:
-#         raise HTTPException(
-#             status_code=500,
-#             detail=f"Error processing patient data: {str(e)}"
-#         )
-
 @router.get("/check-activity-decline")
 async def check_activity_decline():
     """
@@ -292,11 +260,11 @@ async def generate_and_get_patients(
         data_dir.mkdir(parents=True, exist_ok=True)
 
         # Save patient data
-        version = datetime.now().strftime("%Y%m%d_%H%M%S")
-        versioned_filename = f"patients_{version}.csv"
+        # version = datetime.now().strftime("%Y%m%d_%H%M%S")
+        # versioned_filename = f"patients_{version}.csv"
         latest_filename = "patients.csv"
 
-        patients_df.to_csv(data_dir / versioned_filename, index=False)
+        # patients_df.to_csv(data_dir / versioned_filename, index=False)
         patients_df.to_csv(data_dir / latest_filename, index=False)
 
         # Read and return a limited preview
@@ -306,7 +274,8 @@ async def generate_and_get_patients(
         cleaned_df = df.replace({np.nan: None, pd.NaT: None})
         
         # Return the cleaned data
-        return cleaned_df.head().to_dict(orient="records")
+       # Return all records instead of just the first 5
+        return cleaned_df.to_dict(orient="records")
         # return df.head().to_dict(orient="records")
 
     except FileNotFoundError:
@@ -341,7 +310,8 @@ async def get_compliances(limit: int = 100):
         cleaned_df = df.replace({np.nan: None, pd.NaT: None})
         
         # Return the cleaned data
-        return cleaned_df.head().to_dict(orient="records")
+        # Return all records instead of just the first 5
+        return cleaned_df.to_dict(orient="records")
         # return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Compliance data not found. Generate data first.")
@@ -365,7 +335,8 @@ async def get_patientdiagnosis(limit: int = 100):
         cleaned_df = df.replace({np.nan: None, pd.NaT: None})
         
         # Return the cleaned data
-        return cleaned_df.head().to_dict(orient="records")
+        # Return all records instead of just the first 5
+        return cleaned_df.to_dict(orient="records")
         # return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
@@ -395,8 +366,7 @@ async def get_screenings(limit: int = 100):
         cleaned_df = df.replace({np.nan: None, pd.NaT: None})
         
         # Return the cleaned data
-        return cleaned_df.head().to_dict(orient="records")
-        # return df.head(limit).to_dict(orient="records")
+        return cleaned_df.to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Screening data not found. Generate data first.")
     
