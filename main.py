@@ -14,6 +14,7 @@ from sqlalchemy.orm import Session
 from src.generators.patientgenerator import generate_patients, _assign_health_conditions_wrapper
 from src.generators.screeninglog_generator import generate_screening_log
 from utils.email_utils import send_email
+from utils.alert_service import alert_service, scheduled_alert_monitoring
 from src.generators.bplog_generator import generate_bp_logs
 from src.generators.glucoselog_generator import generate_glucose_log
 from src.generators.patientmedicalcompliance_generator import generate_patient_medical_compliances
@@ -135,6 +136,16 @@ def startup():
     )
     print("Scheduled data generation job added (runs every 5 minutes)")
 
+    # Schedule the alert monitoring job
+    scheduler.add_job(
+        scheduled_alert_monitoring,
+        trigger=IntervalTrigger(minutes=5),
+        id="periodic_alert_monitoring",
+        replace_existing=True
+    )
+    
+    print("Scheduled jobs added (data generation and alert monitoring)")
+
 class SMSRequest(BaseModel):
     recipients: List[str]
     message: str
@@ -190,6 +201,12 @@ def run_pipeline(
         ]
         patients_df = patients_df.drop(columns=[col for col in columns_to_drop if col in patients_df.columns])
         patients_df.to_csv("data/raw/patients.csv", index=False)
+
+        result = alert_service.check_activity_and_generate_alerts()
+        if result.get("status") == "error":
+            print(f"Alert monitoring failed: {result['message']}")
+        else:
+            print(f"Generated {len(result.get('alerts', []))} alerts")
 
         # 2. Generate screening logs
         # screenings = generate_screening_log(patients)

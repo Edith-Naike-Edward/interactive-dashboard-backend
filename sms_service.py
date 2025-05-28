@@ -1,10 +1,11 @@
+import os
 import africastalking
 from fastapi import HTTPException
 from typing import List
 
 # Initialize SDK (you might want to move these to config)
 username = "masterclass"  # Your Africa's Talking username
-AFRICASTALKING_APIKEY = "0f6cb88ba15c5882c7363bf91e357c8faf6df66dfd9dd4e20c240798ef95ca14"  # Your API key from the dashboard 
+AFRICASTALKING_APIKEY = os.getenv("AFRICASTALKING_APIKEY") # Your API key from the dashboard 
 
 class SMSService:
     def __init__(self):

@@ -1,7 +1,13 @@
 from datetime import datetime
 import json
+import os
 from pathlib import Path
+from typing import Dict, List
 import pandas as pd
+import africastalking
+from sib_api_v3_sdk import Configuration, ApiClient
+from sib_api_v3_sdk.api import transactional_emails_api
+from sib_api_v3_sdk.models import SendSmtpEmail
 
 DATA_PATH = Path("data/previous_counts.json")
 SITE_CSV = Path("data/raw/sites.csv")
@@ -19,6 +25,32 @@ SITE_CSV = Path("data/raw/sites.csv")
 USER_CSV = Path("data/raw/users.csv")
 HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
 MIN_COMPARISON_INTERVAL = 300  # 5 minutes in seconds
+
+# Notification settings
+SMS_RECIPIENTS = ["+254702171841"]  # Replace with actual numbers
+EMAIL_RECIPIENTS = ["edithnaike@gmail.com"]  # Replace with actual emails
+SMS_SENDER_ID = "Masterclass"  # Your Africa's Talking sender ID
+EMAIL_SENDER = {"name": "Alert System", "email": "alerts@students.uonbi.ac.ke"}
+
+username = "masterclass"  # Your Africa's Talking username
+AFRICASTALKING_APIKEY = os.getenv("AFRICASTALKING_APIKEY")
+# Initialize SMS service
+try:
+    africastalking.initialize(username, AFRICASTALKING_APIKEY)  # Replace with actual credentials
+    sms = africastalking.SMS
+except Exception as e:
+    print(f"Failed to initialize SMS service: {e}")
+    sms = None
+
+# Initialize Email service
+try:
+    email_config = Configuration()
+    email_config.api_key['api-key'] = os.getenv("SENDINBLUE_API_KEY")
+    email_client = ApiClient(email_config)
+    email_api = transactional_emails_api.TransactionalEmailsApi(email_client)
+except Exception as e:
+    print(f"Failed to initialize email service: {e}")
+    email_api = None
 
 def get_most_recent_comparable_counts():
     """Get the most recent counts that are old enough for comparison"""
@@ -138,8 +170,177 @@ def save_historical_data(current_sites, current_users, prev_sites, prev_users):
     except Exception as e:
         print(f"Error saving historical data: {e}")
 
-def main():
-    """Main monitoring function with proper comparison logic"""
+# def main():
+#     """Main monitoring function with proper comparison logic"""
+#     # 1. Get previous counts that are old enough for comparison
+#     prev_sites, prev_users = get_most_recent_comparable_counts()
+    
+#     # 2. Get current counts
+#     current_sites, current_users = get_current_active_counts()
+    
+#     # Handle cases where we couldn't get current data
+#     if current_sites is None or current_users is None:
+#         print("Error: Could not get current counts")
+#         return {
+#             "error": "Could not get current counts",
+#             "last_updated": datetime.now().isoformat()
+#         }
+    
+#     # 3. If no previous data exists, use current as previous (no change)
+#     if prev_sites is None:
+#         prev_sites = current_sites
+#     if prev_users is None:
+#         prev_users = current_users
+    
+#     # 4. Calculate changes
+#     sites_change = calculate_percentage_change(prev_sites, current_sites)
+#     users_change = calculate_percentage_change(prev_users, current_users)
+    
+#     # 5. Save to history (with both previous and current values)
+#     save_historical_data(current_sites, current_users, prev_sites, prev_users)
+    
+#     return {
+#         "current": {
+#             "sites": current_sites,
+#             "users": current_users
+#         },
+#         "previous": {
+#             "sites": prev_sites,
+#             "users": prev_users
+#         },
+#         "sites_percentage_change": sites_change,
+#         "users_percentage_change": users_change,
+#         "site_activity_declined_5_percent": sites_change <= -5,
+#         "user_activity_declined_5_percent": users_change <= -5,
+#         "last_updated": datetime.now().isoformat()
+#     }
+
+def send_sms_alert(message: str):
+    """Send SMS alert via Africa's Talking"""
+    if not sms:
+        print("SMS service not available")
+        return False
+    
+    try:
+        response = sms.send(message, SMS_RECIPIENTS, sender_id=SMS_SENDER_ID)
+        print(f"SMS sent: {response}")
+        return True
+    except Exception as e:
+        print(f"Failed to send SMS: {e}")
+        return False
+
+def send_email_alert(subject: str, message: str):
+    """Send email alert via SendinBlue"""
+    if not email_api:
+        print("Email service not available")
+        return False
+    
+    try:
+        send_smtp_email = SendSmtpEmail(
+            to=[{"email": email, "name": "Admin"} for email in EMAIL_RECIPIENTS],
+            sender=EMAIL_SENDER,
+            subject=subject,
+            html_content=f"<p>{message}</p>"
+        )
+        response = email_api.send_transac_email(send_smtp_email)
+        print(f"Email sent: {response}")
+        return True
+    except Exception as e:
+        print(f"Failed to send email: {e}")
+        return False
+
+def generate_alerts(activity_data: Dict) -> List[Dict]:
+    """Generate alerts based on activity data and send notifications"""
+    alerts = []
+    timestamp = datetime.now().isoformat()
+    
+    # Check for site activity decline
+    if activity_data.get("site_activity_declined_5_percent", False):
+        change = activity_data["sites_percentage_change"]
+        severity = "high" if change <= -10 else "medium"
+        alert_msg = f"Site activity declined by {abs(change)}% (Current: {activity_data['current']['sites']}, Previous: {activity_data['previous']['sites']})"
+        
+        alerts.append({
+            "type": "site_activity_decline",
+            "severity": severity,
+            "message": alert_msg,
+            "timestamp": timestamp
+        })
+        
+        # Send notifications for medium/high severity
+        sms_msg = f"ALERT: Site activity declined by {abs(change)}%"
+        email_subject = f"{severity.upper()} ALERT: Site Activity Decline"
+        send_sms_alert(sms_msg)
+        send_email_alert(email_subject, alert_msg)
+    
+    # Check for user activity decline
+    if activity_data.get("user_activity_declined_5_percent", False):
+        change = activity_data["users_percentage_change"]
+        severity = "high" if change <= -10 else "medium"
+        alert_msg = f"User activity declined by {abs(change)}% (Current: {activity_data['current']['users']}, Previous: {activity_data['previous']['users']})"
+        
+        alerts.append({
+            "type": "user_activity_decline",
+            "severity": severity,
+            "message": alert_msg,
+            "timestamp": timestamp
+        })
+        
+        # Send notifications
+        sms_msg = f"ALERT: User activity declined by {abs(change)}%"
+        email_subject = f"{severity.upper()} ALERT: User Activity Decline"
+        send_sms_alert(sms_msg)
+        send_email_alert(email_subject, alert_msg)
+    
+    # Check for inactive sites/users
+    try:
+        sites_df = pd.read_csv(SITE_CSV)
+        users_df = pd.read_csv(USER_CSV)
+        
+        # Inactive sites
+        inactive_sites = sites_df[~sites_df["is_active"]]
+        if len(inactive_sites) > 0:
+            alert_msg = f"{len(inactive_sites)} inactive sites detected"
+            alerts.append({
+                "type": "inactive_sites",
+                "severity": "high",
+                "message": alert_msg,
+                "timestamp": timestamp,
+                "details": inactive_sites[["site_id", "name"]].to_dict('records')
+            })
+            
+            # Send notifications
+            sms_msg = f"ALERT: {len(inactive_sites)} inactive sites"
+            email_subject = "HIGH ALERT: Inactive Sites Detected"
+            send_sms_alert(sms_msg)
+            send_email_alert(email_subject, alert_msg)
+        
+        # Inactive users
+        inactive_users = users_df[~users_df["is_active"]]
+        if len(inactive_users) > 0:
+            alert_msg = f"{len(inactive_users)} inactive users detected"
+            alerts.append({
+                "type": "inactive_users",
+                "severity": "medium",
+                "message": alert_msg,
+                "timestamp": timestamp,
+                "details": inactive_users[["id", "name"]].to_dict('records')
+            })
+            
+            # Send notifications if more than threshold
+            if len(inactive_users) > 10:  # Only notify if more than 10 inactive users
+                sms_msg = f"ALERT: {len(inactive_users)} inactive users"
+                email_subject = "MEDIUM ALERT: Inactive Users Detected"
+                send_sms_alert(sms_msg)
+                send_email_alert(email_subject, alert_msg)
+                
+    except Exception as e:
+        print(f"Error checking inactive sites/users: {e}")
+    
+    return alerts
+
+def main() -> Dict:
+    """Main monitoring function with alert generation"""
     # 1. Get previous counts that are old enough for comparison
     prev_sites, prev_users = get_most_recent_comparable_counts()
     
@@ -148,9 +349,11 @@ def main():
     
     # Handle cases where we couldn't get current data
     if current_sites is None or current_users is None:
-        print("Error: Could not get current counts")
+        error_msg = "Could not get current counts"
+        print(f"Error: {error_msg}")
         return {
-            "error": "Could not get current counts",
+            "status": "error",
+            "message": error_msg,
             "last_updated": datetime.now().isoformat()
         }
     
@@ -164,10 +367,15 @@ def main():
     sites_change = calculate_percentage_change(prev_sites, current_sites)
     users_change = calculate_percentage_change(prev_users, current_users)
     
-    # 5. Save to history (with both previous and current values)
+    # 5. Determine if activity declined
+    site_decline = sites_change <= -5
+    user_decline = users_change <= -5
+    
+    # 6. Save to history
     save_historical_data(current_sites, current_users, prev_sites, prev_users)
     
-    return {
+    # 7. Generate activity data
+    activity_data = {
         "current": {
             "sites": current_sites,
             "users": current_users
@@ -178,205 +386,13 @@ def main():
         },
         "sites_percentage_change": sites_change,
         "users_percentage_change": users_change,
-        "site_activity_declined_5_percent": sites_change <= -5,
-        "user_activity_declined_5_percent": users_change <= -5,
+        "site_activity_declined_5_percent": site_decline,
+        "user_activity_declined_5_percent": user_decline,
         "last_updated": datetime.now().isoformat()
     }
-# def get_most_recent_counts():
-#     """Get the most recent counts from historical data"""
-#     if not HISTORICAL_DATA_PATH.exists():
-#         return None, None
-
-#     try:
-#         with open(HISTORICAL_DATA_PATH) as f:
-#             historical_data = json.load(f)
-
-#             # Get most recent site count (only consider entries with 'timestamp')
-#             site_count = None
-#             if historical_data.get("sites"):
-#                 timestamped_sites = [site for site in historical_data["sites"] if "timestamp" in site]
-#                 if timestamped_sites:
-#                     latest_site = max(timestamped_sites, key=lambda x: x["timestamp"])
-#                     site_count = latest_site["count"]
-
-#             # Get most recent user count (only consider entries with 'timestamp')
-#             user_count = None
-#             if historical_data.get("users"):
-#                 timestamped_users = [user for user in historical_data["users"] if "timestamp" in user]
-#                 if timestamped_users:
-#                     latest_user = max(timestamped_users, key=lambda x: x["timestamp"])
-#                     user_count = latest_user["count"]
-
-#             return site_count, user_count
-
-#     except Exception as e:
-#         print(f"Error reading historical data: {e}")
-#         return None, None
-
-
-# def get_current_active_counts():
-#     """Get current counts from CSV files"""
-#     try:
-#         sites_df = pd.read_csv(SITE_CSV)
-#         users_df = pd.read_csv(USER_CSV)
-#         active_sites = sites_df[sites_df["is_active"]].shape[0]
-#         active_users = users_df[users_df["is_active"]].shape[0]
-#         return active_sites, active_users
-#     except Exception as e:
-#         print(f"Error reading current counts: {e}")
-#         return 0, 0
-
-# def calculate_percentage_change(previous, current):
-#     """Safe percentage calculation"""
-#     if previous is None or previous == 0:
-#         return 0
-#     return round(((current - previous) / previous) * 100, 1)
-
-# def is_significant_drop(percentage_change):
-#     """Check for significant drop"""
-#     return percentage_change <= -5
-
-# # def save_historical_data(current_sites, current_users):
-# #     """Save current counts to historical data with timestamp"""
-# #     try:
-# #         historical_data = {
-# #             "sites": [],
-# #             "users": [],
-# #             "changes": []
-# #         }
-        
-# #         if HISTORICAL_DATA_PATH.exists():
-# #             with open(HISTORICAL_DATA_PATH) as f:
-# #                 historical_data.update(json.load(f))
-        
-# #         timestamp = datetime.now().isoformat()
-        
-# #         # Add current counts
-# #         historical_data["sites"].append({
-# #             "timestamp": timestamp,
-# #             "count": current_sites
-# #         })
-# #         historical_data["users"].append({
-# #             "timestamp": timestamp,
-# #             "count": current_users
-# #         })
-        
-# #         # Limit data size
-# #         # historical_data["sites"] = historical_data["sites"][-1000:]
-# #         # historical_data["users"] = historical_data["users"][-1000:]
-        
-# #         with open(HISTORICAL_DATA_PATH, 'w') as f:
-# #             json.dump(historical_data, f)
-            
-# #     except Exception as e:
-# #         print(f"Error saving historical data: {e}")
-# def save_historical_data(current_sites, current_users, prev_sites, prev_users):
-#     """Save current counts and percentage changes to historical data with timestamp"""
-#     try:
-#         historical_data = {
-#             "sites": [],
-#             "users": [],
-#             "changes": []
-#         }
-
-#         if HISTORICAL_DATA_PATH.exists():
-#             with open(HISTORICAL_DATA_PATH) as f:
-#                 historical_data.update(json.load(f))
-
-#         timestamp = datetime.now().isoformat()
-
-#         # Calculate changes before saving
-#         site_change = calculate_percentage_change(prev_sites, current_sites)
-#         user_change = calculate_percentage_change(prev_users, current_users)
-
-#         # Save entry with change included
-#         historical_data["sites"].append({
-#             "timestamp": timestamp,
-#             "count": current_sites,
-#             "percentage_change": site_change
-#         })
-
-#         historical_data["users"].append({
-#             "timestamp": timestamp,
-#             "count": current_users,
-#             "percentage_change": user_change
-#         })
-
-#         historical_data["changes"].append({
-#             "timestamp": timestamp,
-#             "site_change": site_change,
-#             "user_change": user_change,
-#             "prev_sites": prev_sites,
-#             "current_sites": current_sites,
-#             "prev_users": prev_users,
-#             "current_users": current_users
-#         })
-
-#         with open(HISTORICAL_DATA_PATH, 'w') as f:
-#             json.dump(historical_data, f, indent=2)
-
-#     except Exception as e:
-#         print(f"Error saving historical data: {e}")
-
-# def main():
-#     """Main monitoring function using historical data for comparison"""
-#     prev_sites, prev_users = get_most_recent_counts()
-#     current_sites, current_users = get_current_active_counts()
-
-#     if prev_sites is None:
-#         prev_sites = current_sites
-#     if prev_users is None:
-#         prev_users = current_users
-
-#     sites_change = calculate_percentage_change(prev_sites, current_sites)
-#     users_change = calculate_percentage_change(prev_users, current_users)
-#     sites_dropped = is_significant_drop(sites_change)
-#     users_dropped = is_significant_drop(users_change)
-
-#     save_historical_data(current_sites, current_users, prev_sites, prev_users)
-
-#     return {
-#         "current": {"sites": current_sites, "users": current_users},
-#         "previous": {"sites": prev_sites, "users": prev_users},
-#         "sites_percentage_change": sites_change,
-#         "users_percentage_change": users_change,
-#         "site_activity_declined_5_percent": sites_dropped,
-#         "user_activity_declined_5_percent": users_dropped,
-#         "last_updated": datetime.now().isoformat()
-#     }
-
-
-# def main():
-#     """Main monitoring function using historical data for comparison"""
-#     # 1. Get most recent counts from historical data
-#     prev_sites, prev_users = get_most_recent_counts()
     
-#     # 2. Get current counts
-#     current_sites, current_users = get_current_active_counts()
+    # 8. Generate and process alerts
+    alerts = generate_alerts(activity_data)
+    activity_data["alerts"] = alerts
     
-#     # 3. Handle case where there's no previous data
-#     if prev_sites is None:
-#         prev_sites = current_sites
-#     if prev_users is None:
-#         prev_users = current_users
-    
-#     # 4. Calculate changes
-#     sites_change = calculate_percentage_change(prev_sites, current_sites)
-#     users_change = calculate_percentage_change(prev_users, current_users)
-#     sites_dropped = is_significant_drop(sites_change)
-#     users_dropped = is_significant_drop(users_change)
-    
-#     # 5. Save current data to history
-#     save_historical_data(current_sites, current_users)
-    
-#     return {
-#         "current_sites": current_sites,
-#         "current_users": current_users,
-#         "previous_sites": prev_sites,
-#         "previous_users": prev_users,
-#         "sites_percentage_change": sites_change,
-#         "users_percentage_change": users_change,
-#         "sites_dropped": sites_dropped,
-#         "users_dropped": users_dropped,
-#         "last_updated": datetime.now().isoformat()
-#     }
+    return activity_data
