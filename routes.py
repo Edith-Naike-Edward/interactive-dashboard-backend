@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+from typing import Any, Dict
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi.responses import JSONResponse
 import numpy as np
@@ -12,10 +13,7 @@ from datetime import datetime, timedelta
 from api.auth.signin.auth import router as signin_router  # Import the signin router
 from api.auth.register.auth import router as register_router  # Import the register router
 from utils.monitoring import (
-    load_previous_counts,
     main,
-    get_current_active_counts,
-    calculate_decline_percentage,
     HISTORICAL_DATA_PATH
 )
 from utils.followup import (
@@ -91,52 +89,69 @@ async def get_users(limit: int = 1000):
         return df.head(limit).to_dict(orient="records")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Visits data not found. Generate data first.")
-
+    
 @router.get("/check-activity-decline")
 async def check_activity_decline():
-    """
-    Endpoint to check for activity decline and return comprehensive activity data.
-    
-    Returns:
-        - Current and previous counts
-        - Decline status (5% threshold)
-        - Complete historical data
-    """
-    # 1. Load previous counts first and cache them
-    previous_counts = load_previous_counts()
-    previous_sites = previous_counts["active_sites"]
-    previous_users = previous_counts["active_users"]
-    # Use the main function which handles the proper sequence
-    site_declined, user_declined = main()
-    
-    # Load the current state for response
-    current_sites, current_users = get_current_active_counts()
-    # previous_counts = load_previous_counts()
-    
-    # Load historical data for response
-    historical_data = {}
-    if HISTORICAL_DATA_PATH.exists():
-        with open(HISTORICAL_DATA_PATH) as f:
-            historical_data = json.load(f)
+    """Endpoint to check for activity declines based on historical trends."""
+    try:
+        monitoring_data = main()
 
-    return {
-        "current": {
-            "sites": current_sites,
-            "users": current_users
-        },
-        "previous": {
-            "sites": previous_sites,
-            "users": previous_users
-        },
-        "percent_declines": {
-            "sites": calculate_decline_percentage(previous_sites, current_sites),
-            "users": calculate_decline_percentage(previous_users, current_users)
-        },
-        "historical_data": historical_data,
-        "last_checked": datetime.now().isoformat(),
-        "site_activity_declined_5_percent": site_declined,
-        "user_activity_declined_5_percent": user_declined
-    }
+        # If main() returned an error dictionary
+        if "error" in monitoring_data:
+            raise HTTPException(status_code=500, detail=monitoring_data["error"])
+
+        # Load full historical activity records
+        historical_data = {}
+        if HISTORICAL_DATA_PATH.exists():
+            with open(HISTORICAL_DATA_PATH, "r") as f:
+                try:
+                    historical_data = json.load(f)
+                except json.JSONDecodeError:
+                    historical_data = {"warning": "Historical data file is corrupted"}
+
+        return {
+            "status": "success",
+            "data": {
+                "current": monitoring_data["current"],
+                "previous": monitoring_data["previous"],
+                "sites_percentage_change": monitoring_data["sites_percentage_change"],
+                "users_percentage_change": monitoring_data["users_percentage_change"],
+                "site_activity_declined_5_percent": monitoring_data["site_activity_declined_5_percent"],
+                "user_activity_declined_5_percent": monitoring_data["user_activity_declined_5_percent"],
+                "last_checked": monitoring_data["last_updated"],
+                "historical_data": historical_data
+            }
+        }
+
+    except HTTPException as he:
+        raise he
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}") 
+    
+# @router.get("/check-activity-decline")
+# async def check_activity_decline():
+#     """Endpoint to check activity changes using historical data"""
+#     try:
+#         monitoring_data = main()
+        
+#         # Load full historical data for response
+#         historical_data = {}
+#         if HISTORICAL_DATA_PATH.exists():
+#             with open(HISTORICAL_DATA_PATH) as f:
+#                 historical_data = json.load(f)
+        
+#         return {
+#             "current": monitoring_data["current"],
+#             "previous": monitoring_data["previous"],
+#             "sites_percentage_change": monitoring_data["sites_percentage_change"],
+#             "users_percentage_change": monitoring_data["users_percentage_change"],
+#             "site_activity_declined_5_percent": monitoring_data["site_activity_declined_5_percent"],
+#             "user_activity_declined_5_percent": monitoring_data["user_activity_declined_5_percent"],
+#             "historical_data": historical_data,
+#             "last_checked": monitoring_data["last_updated"]
+#         }
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/monitoring-metrics", response_class=JSONResponse)
 async def get_monitoring_metrics():

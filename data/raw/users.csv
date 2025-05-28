@@ -1,48 +1,48 @@
 id,name,email,password,role,organisation,site_id,is_active
-1,Taylor Berry,taylorberry@gmail.com,^0dWLk7zU6,CHV,Ministry of Health,2,True
-2,Jonathan York,jonathanyork@gmail.com,8p4E0V+t%7,CHV,Ministry of Health,3,False
+1,Taylor Berry,taylorberry@gmail.com,^0dWLk7zU6,CHV,Ministry of Health,2,False
+2,Jonathan York,jonathanyork@gmail.com,8p4E0V+t%7,CHV,Ministry of Health,3,True
 3,Grace Miller,gracemiller@gmail.com,#9Eaf0Up%7,CHV,Ministry of Health,4,True
 4,Eric Reese,ericreese@gmail.com,(3_q!MLcvc,Nurse,Ministry of Health,5,False
 5,Jessica Hull,jessicahull@gmail.com,56IMbibj%c,Nurse,Ministry of Health,6,False
-6,Sandra Smith,sandrasmith@gmail.com,K@82@&vanD,Nurse,Ministry of Health,7,True
-7,Stephanie Knight,stephanieknight@gmail.com,#1WZf8JsiB,Doctor,Ministry of Health,8,False
-8,Gary Brown,garybrown@gmail.com,%2X1O_i4Zc,Data Officer,Ministry of Health,9,False
-9,Paula Smith,paulasmith@gmail.com,!2GUCGue*N,Lab Technician,Ministry of Health,10,True
+6,Sandra Smith,sandrasmith@gmail.com,K@82@&vanD,Nurse,Ministry of Health,7,False
+7,Stephanie Knight,stephanieknight@gmail.com,#1WZf8JsiB,Doctor,Ministry of Health,8,True
+8,Gary Brown,garybrown@gmail.com,%2X1O_i4Zc,Data Officer,Ministry of Health,9,True
+9,Paula Smith,paulasmith@gmail.com,!2GUCGue*N,Lab Technician,Ministry of Health,10,False
 10,Troy Meyers,troymeyers@gmail.com,vE*1Sw&rx^,Pharmacist,Ministry of Health,11,True
-11,Tracy Guerrero,tracyguerrero@gmail.com,6OrKD#@u%G,CHV,Ministry of Health,12,False
-12,Anthony French,anthonyfrench@gmail.com,!bLDq+Ug#6,CHV,Ministry of Health,13,False
-13,Bianca Jackson,biancajackson@gmail.com,L!Vm*4Z4ld,CHV,Ministry of Health,14,True
+11,Tracy Guerrero,tracyguerrero@gmail.com,6OrKD#@u%G,CHV,Ministry of Health,12,True
+12,Anthony French,anthonyfrench@gmail.com,!bLDq+Ug#6,CHV,Ministry of Health,13,True
+13,Bianca Jackson,biancajackson@gmail.com,L!Vm*4Z4ld,CHV,Ministry of Health,14,False
 14,Erica Oconnell,ericaoconnell@gmail.com,$(SIdSfu$0,CHV,Ministry of Health,15,True
 15,Angela Smith,angelasmith@gmail.com,dJ9)_8Ln0@,Nurse,Faith-Based Organization,16,True
 16,Rachel Bailey,rachelbailey@gmail.com,(!8HiR4ga8,Nurse,Ministry of Health,17,True
-17,Christopher Livingston Jr.,christopherlivingstonjr.@gmail.com,6^r4*$Rn#G,Nurse,Ministry of Health,18,False
+17,Christopher Livingston Jr.,christopherlivingstonjr.@gmail.com,6^r4*$Rn#G,Nurse,Ministry of Health,18,True
 18,Jennifer Burgess,jenniferburgess@gmail.com,C*3qF4Ydr^,Doctor,Ministry of Health,19,False
-19,Jimmy Lee,jimmylee@gmail.com,)dGkpL0D^4,Data Officer,Ministry of Health,20,False
-20,Scott Burns,scottburns@gmail.com,$gg6CUPo9U,Lab Technician,Ministry of Health,21,False
-21,Joseph Mendoza,josephmendoza@gmail.com,5T1gO)9p&+,Pharmacist,Ministry of Health,22,True
+19,Jimmy Lee,jimmylee@gmail.com,)dGkpL0D^4,Data Officer,Ministry of Health,20,True
+20,Scott Burns,scottburns@gmail.com,$gg6CUPo9U,Lab Technician,Ministry of Health,21,True
+21,Joseph Mendoza,josephmendoza@gmail.com,5T1gO)9p&+,Pharmacist,Ministry of Health,22,False
 22,Allison Gibson,allisongibson@gmail.com,qzeFYGdR#6,CHV,Ministry of Health,23,False
-23,Gabriela Randolph,gabrielarandolph@gmail.com,G5$FZeTd(B,CHV,Ministry of Health,24,False
-24,Michele Mullins,michelemullins@gmail.com,PJ%F5LniR$,CHV,Ministry of Health,25,False
-25,Theresa Lamb,theresalamb@gmail.com,@s9wO8cO3Q,CHV,Ministry of Health,26,True
-26,Kara Fisher,karafisher@gmail.com,%q5wJIDg+0,Nurse,Ministry of Health,27,True
+23,Gabriela Randolph,gabrielarandolph@gmail.com,G5$FZeTd(B,CHV,Ministry of Health,24,True
+24,Michele Mullins,michelemullins@gmail.com,PJ%F5LniR$,CHV,Ministry of Health,25,True
+25,Theresa Lamb,theresalamb@gmail.com,@s9wO8cO3Q,CHV,Ministry of Health,26,False
+26,Kara Fisher,karafisher@gmail.com,%q5wJIDg+0,Nurse,Ministry of Health,27,False
 27,Richard Jackson,richardjackson@gmail.com,%3PlL0ue9y,Nurse,Ministry of Health,28,False
-28,Laura Alexander MD,lauraalexandermd@gmail.com,$y8LyW(bui,Nurse,Ministry of Health,29,False
-29,Kimberly Romero,kimberlyromero@gmail.com,_jPblfuD4N,Doctor,Ministry of Health,30,False
-30,James Randall,jamesrandall@gmail.com,%5VCv8kR*b,Data Officer,Ministry of Health,31,True
-31,Larry Hunt Jr.,larryhuntjr.@gmail.com,eJ_!5AMe3r,Lab Technician,Ministry of Health,32,True
+28,Laura Alexander MD,lauraalexandermd@gmail.com,$y8LyW(bui,Nurse,Ministry of Health,29,True
+29,Kimberly Romero,kimberlyromero@gmail.com,_jPblfuD4N,Doctor,Ministry of Health,30,True
+30,James Randall,jamesrandall@gmail.com,%5VCv8kR*b,Data Officer,Ministry of Health,31,False
+31,Larry Hunt Jr.,larryhuntjr.@gmail.com,eJ_!5AMe3r,Lab Technician,Ministry of Health,32,False
 32,Tracy Coleman,tracycoleman@gmail.com,&32qS%th&I,Pharmacist,Ministry of Health,33,True
 33,Keith Melendez,keithmelendez@gmail.com,S$nn2TMj!7,CHV,Ministry of Health,34,True
 34,Terry Newman,terrynewman@gmail.com,ixWENY7c!1,CHV,Ministry of Health,35,False
-35,Carla Brown,carlabrown@gmail.com,E7WZw$9Z^e,CHV,Ministry of Health,36,True
+35,Carla Brown,carlabrown@gmail.com,E7WZw$9Z^e,CHV,Ministry of Health,36,False
 36,Eugene Kirk,eugenekirk@gmail.com,c4Vw!QFN%t,CHV,Ministry of Health,37,False
 37,Colin Prince,colinprince@gmail.com,Sh(M^Ruw)8,Nurse,Ministry of Health,38,False
 38,Eric Garner,ericgarner@gmail.com,@3)E^dk^wi,Nurse,Ministry of Health,39,False
 39,Julie Kerr,juliekerr@gmail.com,!*1WJvb#_!,Nurse,Ministry of Health,40,True
-40,Phyllis Austin,phyllisaustin@gmail.com,miRexChd(9,Doctor,Ministry of Health,41,False
+40,Phyllis Austin,phyllisaustin@gmail.com,miRexChd(9,Doctor,Ministry of Health,41,True
 41,Michael Rodriguez,michaelrodriguez@gmail.com,Q^iBM6Ng9f,Data Officer,Ministry of Health,42,True
-42,Kyle Collins,kylecollins@gmail.com,931^oNRn*O,Lab Technician,Ministry of Health,43,True
-43,Angela Thomas,angelathomas@gmail.com,uy%y9Dx)o&,Pharmacist,Ministry of Health,44,False
-44,Larry Sullivan,larrysullivan@gmail.com,i*8OYIe$^*,CHV,Private Practice,45,True
+42,Kyle Collins,kylecollins@gmail.com,931^oNRn*O,Lab Technician,Ministry of Health,43,False
+43,Angela Thomas,angelathomas@gmail.com,uy%y9Dx)o&,Pharmacist,Ministry of Health,44,True
+44,Larry Sullivan,larrysullivan@gmail.com,i*8OYIe$^*,CHV,Private Practice,45,False
 45,Marco Davis,marcodavis@gmail.com,k@aO78Ypw#,CHV,Private Practice,46,True
 46,Jessica Johnson,jessicajohnson@gmail.com,AeV)eO(y#8,CHV,Private Practice,47,True
 47,Jenna Simpson,jennasimpson@gmail.com,&9%V)VlViY,CHV,Ministry of Health,48,False
@@ -52,141 +52,141 @@ id,name,email,password,role,organisation,site_id,is_active
 51,James Weber,jamesweber@gmail.com,*Q1OamF7a8,Doctor,Ministry of Health,52,True
 52,Joel Allen,joelallen@gmail.com,+4NnImZ6WI,Data Officer,Ministry of Health,53,True
 53,Ronald Marshall,ronaldmarshall@gmail.com,(68#kNSZ$u,Lab Technician,Ministry of Health,54,False
-54,Arthur Friedman,arthurfriedman@gmail.com,o^U1(MUjQx,Pharmacist,Ministry of Health,55,True
+54,Arthur Friedman,arthurfriedman@gmail.com,o^U1(MUjQx,Pharmacist,Ministry of Health,55,False
 55,Kevin Price,kevinprice@gmail.com,_0x+3VNgwB,CHV,Ministry of Health,56,False
-56,Taylor Cox,taylorcox@gmail.com,Z5#Jlatb+G,CHV,Ministry of Health,57,True
-57,Jasmine Browning,jasminebrowning@gmail.com,v&Ap4KJcZk,CHV,Ministry of Health,58,False
-58,Faith Henderson,faithhenderson@gmail.com,@E2WgLi$ZY,CHV,Ministry of Health,59,True
+56,Taylor Cox,taylorcox@gmail.com,Z5#Jlatb+G,CHV,Ministry of Health,57,False
+57,Jasmine Browning,jasminebrowning@gmail.com,v&Ap4KJcZk,CHV,Ministry of Health,58,True
+58,Faith Henderson,faithhenderson@gmail.com,@E2WgLi$ZY,CHV,Ministry of Health,59,False
 59,Emily Miller,emilymiller@gmail.com,xni3QwBNg#,Nurse,Ministry of Health,60,False
-60,Jacob Long,jacoblong@gmail.com,wu9YHyad0&,Nurse,Ministry of Health,61,False
-61,Jacob Valentine,jacobvalentine@gmail.com,Ku@0(eWqj9,Nurse,Ministry of Health,62,False
+60,Jacob Long,jacoblong@gmail.com,wu9YHyad0&,Nurse,Ministry of Health,61,True
+61,Jacob Valentine,jacobvalentine@gmail.com,Ku@0(eWqj9,Nurse,Ministry of Health,62,True
 62,Whitney Campbell,whitneycampbell@gmail.com,I__3XNfcL!,Doctor,Ministry of Health,63,False
-63,Michelle Fitzgerald,michellefitzgerald@gmail.com,%C5tDvrW%1,Data Officer,Private Practice,64,False
-64,James Wood,jameswood@gmail.com,7P(q0SRf($,Lab Technician,Ministry of Health,65,True
-65,Diane Mcdowell,dianemcdowell@gmail.com,)04QwTukK1,Pharmacist,Ministry of Health,66,True
+63,Michelle Fitzgerald,michellefitzgerald@gmail.com,%C5tDvrW%1,Data Officer,Private Practice,64,True
+64,James Wood,jameswood@gmail.com,7P(q0SRf($,Lab Technician,Ministry of Health,65,False
+65,Diane Mcdowell,dianemcdowell@gmail.com,)04QwTukK1,Pharmacist,Ministry of Health,66,False
 66,Michael Graham,michaelgraham@gmail.com,zTLOl_D3*0,CHV,Ministry of Health,67,True
-67,Valerie Fox,valeriefox@gmail.com,)2NC9c)Fu*,CHV,Private Practice,68,True
+67,Valerie Fox,valeriefox@gmail.com,)2NC9c)Fu*,CHV,Private Practice,68,False
 68,Michael Castillo,michaelcastillo@gmail.com,_4awTvgwU3,CHV,Ministry of Health,69,True
-69,Lindsey Davis,lindseydavis@gmail.com,q&20H9ya(%,CHV,Private Hospital,70,True
-70,Brendan Richardson,brendanrichardson@gmail.com,NT7OmXKm$D,Nurse,Private Practice,71,True
+69,Lindsey Davis,lindseydavis@gmail.com,q&20H9ya(%,CHV,Private Hospital,70,False
+70,Brendan Richardson,brendanrichardson@gmail.com,NT7OmXKm$D,Nurse,Private Practice,71,False
 71,Kelly Roberts,kellyroberts@gmail.com,A1cA6JZp&P,Nurse,Ministry of Health,72,False
-72,Laura King,lauraking@gmail.com,P(a19C&yA%,Nurse,Ministry of Health,73,True
-73,Shelby Lopez,shelbylopez@gmail.com,7bK@1XatH#,Doctor,Ministry of Health,74,False
+72,Laura King,lauraking@gmail.com,P(a19C&yA%,Nurse,Ministry of Health,73,False
+73,Shelby Lopez,shelbylopez@gmail.com,7bK@1XatH#,Doctor,Ministry of Health,74,True
 74,Tracey Leonard,traceyleonard@gmail.com,@1@Ee3Za%Y,Data Officer,Ministry of Health,75,True
 75,Brittany Henderson,brittanyhenderson@gmail.com,dxMpV2Ex@2,Lab Technician,Ministry of Health,76,False
-76,Mrs. Jennifer Palmer DDS,mrs.jenniferpalmerdds@gmail.com,_@7S7ZHwYZ,Pharmacist,Ministry of Health,77,False
-77,Corey Cooper,coreycooper@gmail.com,tD8oaH9sx$,CHV,Ministry of Health,78,True
+76,Mrs. Jennifer Palmer DDS,mrs.jenniferpalmerdds@gmail.com,_@7S7ZHwYZ,Pharmacist,Ministry of Health,77,True
+77,Corey Cooper,coreycooper@gmail.com,tD8oaH9sx$,CHV,Ministry of Health,78,False
 78,Michael Miller,michaelmiller@gmail.com,2gFvO5Tz*7,CHV,Ministry of Health,79,False
-79,Brian Perez,brianperez@gmail.com,(3iiTspiWP,CHV,Ministry of Health,80,False
-80,Shannon Garcia,shannongarcia@gmail.com,0(0QfdiOq+,CHV,Ministry of Health,81,False
+79,Brian Perez,brianperez@gmail.com,(3iiTspiWP,CHV,Ministry of Health,80,True
+80,Shannon Garcia,shannongarcia@gmail.com,0(0QfdiOq+,CHV,Ministry of Health,81,True
 81,Jason Mack,jasonmack@gmail.com,P&FhE7Kj$4,Nurse,Ministry of Health,82,False
-82,Jessica Carrillo,jessicacarrillo@gmail.com,DHjK8Cc++y,Nurse,Faith-Based Organization,83,False
+82,Jessica Carrillo,jessicacarrillo@gmail.com,DHjK8Cc++y,Nurse,Faith-Based Organization,83,True
 83,Aimee Ramirez,aimeeramirez@gmail.com,(9rYEKDmwj,Nurse,Faith-Based Organization,84,False
-84,Neil Singh,neilsingh@gmail.com,38BDR@jR#n,Doctor,Ministry of Health,85,True
+84,Neil Singh,neilsingh@gmail.com,38BDR@jR#n,Doctor,Ministry of Health,85,False
 85,Sarah Green,sarahgreen@gmail.com,hvLD!b5h(5,Data Officer,Ministry of Health,86,False
 86,Michael Briggs,michaelbriggs@gmail.com,)62VmEWmn&,Lab Technician,Ministry of Health,87,False
 87,Blake Rhodes,blakerhodes@gmail.com,j9RZzcwq&0,Pharmacist,Ministry of Health,88,False
-88,Joy Johnson,joyjohnson@gmail.com,#ILU#+dzA8,CHV,Ministry of Health,89,False
-89,Elizabeth Campbell,elizabethcampbell@gmail.com,S%7NAACd#n,CHV,Ministry of Health,90,True
-90,Mario Hanson,mariohanson@gmail.com,S3rMZqeU&k,CHV,Ministry of Health,91,True
+88,Joy Johnson,joyjohnson@gmail.com,#ILU#+dzA8,CHV,Ministry of Health,89,True
+89,Elizabeth Campbell,elizabethcampbell@gmail.com,S%7NAACd#n,CHV,Ministry of Health,90,False
+90,Mario Hanson,mariohanson@gmail.com,S3rMZqeU&k,CHV,Ministry of Health,91,False
 91,Nina Bernard,ninabernard@gmail.com,P3aRxY3n(p,CHV,Ministry of Health,1,True
-92,Andrew Atkins,andrewatkins@gmail.com,!p57N*f_6&,Nurse,Ministry of Health,2,True
-93,Erika Johnson,erikajohnson@gmail.com,B4BFM(dh!O,Nurse,Ministry of Health,3,False
-94,John Russell,johnrussell@gmail.com,50Nub6Tk*I,Nurse,Ministry of Health,4,True
+92,Andrew Atkins,andrewatkins@gmail.com,!p57N*f_6&,Nurse,Ministry of Health,2,False
+93,Erika Johnson,erikajohnson@gmail.com,B4BFM(dh!O,Nurse,Ministry of Health,3,True
+94,John Russell,johnrussell@gmail.com,50Nub6Tk*I,Nurse,Ministry of Health,4,False
 95,William Casey,williamcasey@gmail.com,$mx6aRou8(,Doctor,Ministry of Health,5,True
 96,Diana Martin,dianamartin@gmail.com,&dn(9C3jlr,Data Officer,Ministry of Health,6,True
-97,Erica Clark,ericaclark@gmail.com,A5X!!0Tw)H,Lab Technician,Ministry of Health,7,False
+97,Erica Clark,ericaclark@gmail.com,A5X!!0Tw)H,Lab Technician,Ministry of Health,7,True
 98,Heather Hess,heatherhess@gmail.com,o)y5FM!gif,Pharmacist,Ministry of Health,8,False
-99,Rhonda Walker,rhondawalker@gmail.com,Oi5ByZ(8P*,CHV,Ministry of Health,9,True
+99,Rhonda Walker,rhondawalker@gmail.com,Oi5ByZ(8P*,CHV,Ministry of Health,9,False
 100,Nichole Anderson,nicholeanderson@gmail.com,)2cz3QxTLv,CHV,Ministry of Health,10,False
-101,Joseph Simpson,josephsimpson@gmail.com,$(0XGChlz4,CHV,Ministry of Health,11,False
+101,Joseph Simpson,josephsimpson@gmail.com,$(0XGChlz4,CHV,Ministry of Health,11,True
 102,Arthur Garrett,arthurgarrett@gmail.com,@!v76NwzmN,CHV,Ministry of Health,12,False
 103,Lori Riley,loririley@gmail.com,0o%)BKmY@c,Nurse,Ministry of Health,13,False
 104,Luis Jenkins,luisjenkins@gmail.com,)9rADvjLCo,Nurse,Ministry of Health,14,True
-105,Beth Hicks,bethhicks@gmail.com,X16$PVPx^V,Nurse,Ministry of Health,15,True
+105,Beth Hicks,bethhicks@gmail.com,X16$PVPx^V,Nurse,Ministry of Health,15,False
 106,Donna Cordova,donnacordova@gmail.com,_5m9%Vyv2(,Doctor,Faith-Based Organization,16,False
 107,Kylie Rogers,kylierogers@gmail.com,*q%6uKfM3N,Data Officer,Ministry of Health,17,False
-108,Adriana Smith,adrianasmith@gmail.com,_K0REd29^7,Lab Technician,Ministry of Health,18,True
+108,Adriana Smith,adrianasmith@gmail.com,_K0REd29^7,Lab Technician,Ministry of Health,18,False
 109,Alex Cameron,alexcameron@gmail.com,Ge0vA5Vav@,Pharmacist,Ministry of Health,19,False
 110,Bianca Lopez,biancalopez@gmail.com,BJWulVp9(6,CHV,Ministry of Health,20,True
 111,Christine Miller,christinemiller@gmail.com,PhZP9MCfd*,CHV,Ministry of Health,21,True
 112,Rachel Santos,rachelsantos@gmail.com,pHA3UGFo$&,CHV,Ministry of Health,22,True
 113,Julie Oliver,julieoliver@gmail.com,I7BOn5ZE&o,CHV,Ministry of Health,23,True
-114,Benjamin Johnson,benjaminjohnson@gmail.com,$Amc5Gvzhg,Nurse,Ministry of Health,24,True
-115,Samantha Todd,samanthatodd@gmail.com,z!q7fU5qSM,Nurse,Ministry of Health,25,True
-116,Tom Butler,tombutler@gmail.com,FU)v7RaD*c,Nurse,Ministry of Health,26,False
-117,Latoya Johnson,latoyajohnson@gmail.com,YKWq23Gs1#,Doctor,Ministry of Health,27,True
-118,Michael Thompson,michaelthompson@gmail.com,19P95aa%+0,Data Officer,Ministry of Health,28,True
-119,Patrick Price,patrickprice@gmail.com,J$2WvVGj8!,Lab Technician,Ministry of Health,29,True
-120,Danielle Murphy,daniellemurphy@gmail.com,Ug7OLdoAX),Pharmacist,Ministry of Health,30,True
-121,Judith Bartlett,judithbartlett@gmail.com,d9r+rRDm#s,CHV,Ministry of Health,31,True
+114,Benjamin Johnson,benjaminjohnson@gmail.com,$Amc5Gvzhg,Nurse,Ministry of Health,24,False
+115,Samantha Todd,samanthatodd@gmail.com,z!q7fU5qSM,Nurse,Ministry of Health,25,False
+116,Tom Butler,tombutler@gmail.com,FU)v7RaD*c,Nurse,Ministry of Health,26,True
+117,Latoya Johnson,latoyajohnson@gmail.com,YKWq23Gs1#,Doctor,Ministry of Health,27,False
+118,Michael Thompson,michaelthompson@gmail.com,19P95aa%+0,Data Officer,Ministry of Health,28,False
+119,Patrick Price,patrickprice@gmail.com,J$2WvVGj8!,Lab Technician,Ministry of Health,29,False
+120,Danielle Murphy,daniellemurphy@gmail.com,Ug7OLdoAX),Pharmacist,Ministry of Health,30,False
+121,Judith Bartlett,judithbartlett@gmail.com,d9r+rRDm#s,CHV,Ministry of Health,31,False
 122,Angela Garcia PhD,angelagarciaphd@gmail.com,^6O^fhGhpH,CHV,Ministry of Health,32,True
 123,Paul Washington,paulwashington@gmail.com,@1Rmo0v*9R,CHV,Ministry of Health,33,False
 124,Brittany Howard,brittanyhoward@gmail.com,$dn0ZVrGA$,CHV,Ministry of Health,34,False
 125,Christina Smith,christinasmith@gmail.com,c%wKngf$!0,Nurse,Ministry of Health,35,False
-126,Joshua Mcmillan,joshuamcmillan@gmail.com,E@H3GLdmaF,Nurse,Ministry of Health,36,False
+126,Joshua Mcmillan,joshuamcmillan@gmail.com,E@H3GLdmaF,Nurse,Ministry of Health,36,True
 127,Kathryn Mooney,kathrynmooney@gmail.com,+8WydZxsCZ,Nurse,Ministry of Health,37,True
-128,Lauren Reyes,laurenreyes@gmail.com,e!_3Q5Js^_,Doctor,Ministry of Health,38,False
-129,Martin Young,martinyoung@gmail.com,9)BO#xIm+4,Data Officer,Ministry of Health,39,False
-130,Mary Wright,marywright@gmail.com,Q1TmOw$z_3,Lab Technician,Ministry of Health,40,False
+128,Lauren Reyes,laurenreyes@gmail.com,e!_3Q5Js^_,Doctor,Ministry of Health,38,True
+129,Martin Young,martinyoung@gmail.com,9)BO#xIm+4,Data Officer,Ministry of Health,39,True
+130,Mary Wright,marywright@gmail.com,Q1TmOw$z_3,Lab Technician,Ministry of Health,40,True
 131,Blake Hardy,blakehardy@gmail.com,6129LZXg%x,Pharmacist,Ministry of Health,41,True
 132,Jessica Moore,jessicamoore@gmail.com,JYtARS1m*0,CHV,Ministry of Health,42,False
 133,Miguel Gonzalez,miguelgonzalez@gmail.com,$0HIHgAAzq,CHV,Ministry of Health,43,False
-134,Phillip Krueger,phillipkrueger@gmail.com,+cQawg5#m5,CHV,Ministry of Health,44,True
+134,Phillip Krueger,phillipkrueger@gmail.com,+cQawg5#m5,CHV,Ministry of Health,44,False
 135,Michael King,michaelking@gmail.com,!jZtVVfQ)9,CHV,Private Practice,45,False
-136,Jason Walter,jasonwalter@gmail.com,U1m7Dhu!+O,Nurse,Private Practice,46,True
+136,Jason Walter,jasonwalter@gmail.com,U1m7Dhu!+O,Nurse,Private Practice,46,False
 137,Carolyn Brooks,carolynbrooks@gmail.com,12Lm1%Gp7+,Nurse,Private Practice,47,False
 138,Carol Carter,carolcarter@gmail.com,c1NI*%h!&z,Nurse,Ministry of Health,48,False
 139,Joseph Hayden,josephhayden@gmail.com,%7FrzPvyG%,Doctor,Ministry of Health,49,True
 140,Jennifer Houston,jenniferhouston@gmail.com,#8d0FTadI1,Data Officer,Ministry of Health,50,True
-141,Jennifer Salazar,jennifersalazar@gmail.com,5pNg92_p@p,Lab Technician,Ministry of Health,51,True
+141,Jennifer Salazar,jennifersalazar@gmail.com,5pNg92_p@p,Lab Technician,Ministry of Health,51,False
 142,Elizabeth Nunez,elizabethnunez@gmail.com,wNS(7Fo*z#,Pharmacist,Ministry of Health,52,True
-143,Mary Lynn,marylynn@gmail.com,uYO1V4eu_D,CHV,Ministry of Health,53,False
-144,Brandon Davis,brandondavis@gmail.com,vU9BGGxV+G,CHV,Ministry of Health,54,False
+143,Mary Lynn,marylynn@gmail.com,uYO1V4eu_D,CHV,Ministry of Health,53,True
+144,Brandon Davis,brandondavis@gmail.com,vU9BGGxV+G,CHV,Ministry of Health,54,True
 145,Leslie Rodriguez,leslierodriguez@gmail.com,_vnOOk_b!8,CHV,Ministry of Health,55,True
-146,Becky Shea DDS,beckysheadds@gmail.com,eF*C33Pjd$,CHV,Ministry of Health,56,False
+146,Becky Shea DDS,beckysheadds@gmail.com,eF*C33Pjd$,CHV,Ministry of Health,56,True
 147,Miss Sarah Ritter,misssarahritter@gmail.com,(zKGRnd2p6,Nurse,Ministry of Health,57,False
 148,Michelle Ellis,michelleellis@gmail.com,#9E4hgofUc,Nurse,Ministry of Health,58,True
 149,John Landry,johnlandry@gmail.com,V@YH85Ukwa,Nurse,Ministry of Health,59,True
 150,Jill Smith,jillsmith@gmail.com,Zt1VDNp&V@,Doctor,Ministry of Health,60,False
-151,Arthur Stout,arthurstout@gmail.com,@(2MOQVekw,Data Officer,Ministry of Health,61,True
-152,Abigail West,abigailwest@gmail.com,^a&Be&)A10,Lab Technician,Ministry of Health,62,True
-153,Elaine Ferguson,elaineferguson@gmail.com,BtPwPcb$#9,Pharmacist,Ministry of Health,63,True
-154,Ian Anderson,iananderson@gmail.com,6Gs6CrJdR),CHV,Private Practice,64,False
-155,Samantha Jacobs,samanthajacobs@gmail.com,K@&2KzS%ZE,CHV,Ministry of Health,65,False
+151,Arthur Stout,arthurstout@gmail.com,@(2MOQVekw,Data Officer,Ministry of Health,61,False
+152,Abigail West,abigailwest@gmail.com,^a&Be&)A10,Lab Technician,Ministry of Health,62,False
+153,Elaine Ferguson,elaineferguson@gmail.com,BtPwPcb$#9,Pharmacist,Ministry of Health,63,False
+154,Ian Anderson,iananderson@gmail.com,6Gs6CrJdR),CHV,Private Practice,64,True
+155,Samantha Jacobs,samanthajacobs@gmail.com,K@&2KzS%ZE,CHV,Ministry of Health,65,True
 156,Brent Petty,brentpetty@gmail.com,$zDAmORdq6,CHV,Ministry of Health,66,False
 157,Paul White,paulwhite@gmail.com,rHV8cRt_T+,CHV,Ministry of Health,67,False
-158,Catherine Andersen,catherineandersen@gmail.com,w*8J4Z&Aji,Nurse,Private Practice,68,True
+158,Catherine Andersen,catherineandersen@gmail.com,w*8J4Z&Aji,Nurse,Private Practice,68,False
 159,Patrick Spencer,patrickspencer@gmail.com,*gNQzNvI0t,Nurse,Ministry of Health,69,False
-160,Patrick Tapia,patricktapia@gmail.com,L0(is9BtE$,Nurse,Private Hospital,70,False
+160,Patrick Tapia,patricktapia@gmail.com,L0(is9BtE$,Nurse,Private Hospital,70,True
 161,Gail Shelton,gailshelton@gmail.com,(7!YHJujQ1,Doctor,Private Practice,71,True
 162,Joe Evans,joeevans@gmail.com,1E*@0QLxO+,Data Officer,Ministry of Health,72,True
 163,Jacob Mcclain,jacobmcclain@gmail.com,(K4h!Do(9),Lab Technician,Ministry of Health,73,True
-164,Tiffany Moyer,tiffanymoyer@gmail.com,%1NCipPuoG,Pharmacist,Ministry of Health,74,False
+164,Tiffany Moyer,tiffanymoyer@gmail.com,%1NCipPuoG,Pharmacist,Ministry of Health,74,True
 165,Pamela Young,pamelayoung@gmail.com,gK9_56Nt6i,CHV,Ministry of Health,75,False
-166,Rhonda Haynes,rhondahaynes@gmail.com,(9Y4)#FugX,CHV,Ministry of Health,76,True
+166,Rhonda Haynes,rhondahaynes@gmail.com,(9Y4)#FugX,CHV,Ministry of Health,76,False
 167,Mark Hall,markhall@gmail.com,^ZA6PbIB$$,CHV,Ministry of Health,77,True
 168,Terry Garcia,terrygarcia@gmail.com,C(b4PlElg#,CHV,Ministry of Health,78,False
-169,James Eaton,jameseaton@gmail.com,9tDbeu^S#f,Nurse,Ministry of Health,79,False
+169,James Eaton,jameseaton@gmail.com,9tDbeu^S#f,Nurse,Ministry of Health,79,True
 170,Jason Dawson,jasondawson@gmail.com,((KLowk085,Nurse,Ministry of Health,80,True
 171,Jennifer Cohen,jennifercohen@gmail.com,hGj1F1+o(r,Nurse,Ministry of Health,81,False
 172,Derrick Wilson,derrickwilson@gmail.com,$0v8)R$yzh,Doctor,Ministry of Health,82,False
-173,Erika Potts,erikapotts@gmail.com,IXC%mmex(4,Data Officer,Faith-Based Organization,83,False
-174,Dawn Sims,dawnsims@gmail.com,4)8Gh+5oFs,Lab Technician,Faith-Based Organization,84,True
-175,Terri White,terriwhite@gmail.com,%fJ1_JLZH0,Pharmacist,Ministry of Health,85,True
+173,Erika Potts,erikapotts@gmail.com,IXC%mmex(4,Data Officer,Faith-Based Organization,83,True
+174,Dawn Sims,dawnsims@gmail.com,4)8Gh+5oFs,Lab Technician,Faith-Based Organization,84,False
+175,Terri White,terriwhite@gmail.com,%fJ1_JLZH0,Pharmacist,Ministry of Health,85,False
 176,Alex Serrano,alexserrano@gmail.com,i_0Ek!khmp,CHV,Ministry of Health,86,True
 177,Stephanie Ochoa,stephanieochoa@gmail.com,%S5P@$e*rI,CHV,Ministry of Health,87,False
-178,Dustin Dorsey,dustindorsey@gmail.com,_6V(*wEX(w,CHV,Ministry of Health,88,True
+178,Dustin Dorsey,dustindorsey@gmail.com,_6V(*wEX(w,CHV,Ministry of Health,88,False
 179,Joseph Greene,josephgreene@gmail.com,_Y6q8Ev7tl,CHV,Ministry of Health,89,True
 180,Robert Bray,robertbray@gmail.com,x8@11SnJdI,Nurse,Ministry of Health,90,True
 181,Jonathan Ferguson,jonathanferguson@gmail.com,&e8jmH&m(o,Nurse,Ministry of Health,91,False
 182,Amy Bailey,amybailey@gmail.com,#4uJ3Oe(d_,Nurse,Ministry of Health,1,False
 183,Angela Monroe,angelamonroe@gmail.com,#6!nI0ElRw,Doctor,Ministry of Health,2,True
-184,Christopher Ibarra,christopheribarra@gmail.com,P!9cYTfuPe,Data Officer,Ministry of Health,3,False
-185,Vanessa Martinez,vanessamartinez@gmail.com,$16ToTbBZn,Lab Technician,Ministry of Health,4,True
-186,Brian Miller,brianmiller@gmail.com,)S%WhASh#5,Pharmacist,Ministry of Health,5,False
+184,Christopher Ibarra,christopheribarra@gmail.com,P!9cYTfuPe,Data Officer,Ministry of Health,3,True
+185,Vanessa Martinez,vanessamartinez@gmail.com,$16ToTbBZn,Lab Technician,Ministry of Health,4,False
+186,Brian Miller,brianmiller@gmail.com,)S%WhASh#5,Pharmacist,Ministry of Health,5,True
 187,Eric Hooper,erichooper@gmail.com,%GE)bCQgP6,CHV,Ministry of Health,6,True
-188,Sarah Roberts,sarahroberts@gmail.com,&f7laC+u#f,CHV,Ministry of Health,7,True
+188,Sarah Roberts,sarahroberts@gmail.com,&f7laC+u#f,CHV,Ministry of Health,7,False
 189,Isaac Chase,isaacchase@gmail.com,c0zWWTzy&i,CHV,Ministry of Health,8,False
 190,Erik Villa,erikvilla@gmail.com,#11j7N6saI,CHV,Ministry of Health,9,False
 191,Dustin Ortiz,dustinortiz@gmail.com,)YOlILqz2y,Nurse,Ministry of Health,10,False
@@ -194,10 +194,10 @@ id,name,email,password,role,organisation,site_id,is_active
 193,Zachary Tucker,zacharytucker@gmail.com,+Sw73UDi%l,Nurse,Ministry of Health,12,False
 194,Alexander Blake,alexanderblake@gmail.com,&48&qIu3s1,Doctor,Ministry of Health,13,True
 195,Elizabeth Gonzalez,elizabethgonzalez@gmail.com,&+PEdr!jW7,Data Officer,Ministry of Health,14,False
-196,Jimmy Hernandez,jimmyhernandez@gmail.com,IQ1Zn)vx^4,Lab Technician,Ministry of Health,15,False
-197,Cindy Clark,cindyclark@gmail.com,m9sPqAlL$E,Pharmacist,Faith-Based Organization,16,True
-198,Judy Brooks,judybrooks@gmail.com,(9acYdrt*F,CHV,Ministry of Health,17,False
-199,Paul Hanson,paulhanson@gmail.com,(lbp31Uopw,CHV,Ministry of Health,18,True
+196,Jimmy Hernandez,jimmyhernandez@gmail.com,IQ1Zn)vx^4,Lab Technician,Ministry of Health,15,True
+197,Cindy Clark,cindyclark@gmail.com,m9sPqAlL$E,Pharmacist,Faith-Based Organization,16,False
+198,Judy Brooks,judybrooks@gmail.com,(9acYdrt*F,CHV,Ministry of Health,17,True
+199,Paul Hanson,paulhanson@gmail.com,(lbp31Uopw,CHV,Ministry of Health,18,False
 200,Rachael Romero,rachaelromero@gmail.com,tb4t#JzoQ%,CHV,Ministry of Health,19,True
 201,William Lee,williamlee@gmail.com,u6BGfHB+_z,CHV,Ministry of Health,20,False
 202,Sarah Burton,sarahburton@gmail.com,3&%8VFek^G,Nurse,Ministry of Health,21,False
@@ -206,71 +206,71 @@ id,name,email,password,role,organisation,site_id,is_active
 205,Wendy Webb,wendywebb@gmail.com,)g9R#aP+q(,Doctor,Ministry of Health,24,False
 206,Nicholas Case,nicholascase@gmail.com,w%S94OPH2g,Data Officer,Ministry of Health,25,False
 207,Laurie Martin,lauriemartin@gmail.com,$hNYoJTF7%,Lab Technician,Ministry of Health,26,False
-208,Elaine Serrano,elaineserrano@gmail.com,_1B8ELamj),Pharmacist,Ministry of Health,27,False
-209,Erica Hall,ericahall@gmail.com,@4T6wJtUZc,CHV,Ministry of Health,28,True
+208,Elaine Serrano,elaineserrano@gmail.com,_1B8ELamj),Pharmacist,Ministry of Health,27,True
+209,Erica Hall,ericahall@gmail.com,@4T6wJtUZc,CHV,Ministry of Health,28,False
 210,Kathleen Mooney,kathleenmooney@gmail.com,&CGU9Doz19,CHV,Ministry of Health,29,False
 211,Andrea Davis,andreadavis@gmail.com,&4TBXIdLok,CHV,Ministry of Health,30,False
 212,Roger Taylor,rogertaylor@gmail.com,^6mmHfc$r$,CHV,Ministry of Health,31,False
-213,Rebecca Gray,rebeccagray@gmail.com,M)ph2EIs)+,Nurse,Ministry of Health,32,True
-214,Karen Davis,karendavis@gmail.com,n%Z1d^LrbM,Nurse,Ministry of Health,33,False
+213,Rebecca Gray,rebeccagray@gmail.com,M)ph2EIs)+,Nurse,Ministry of Health,32,False
+214,Karen Davis,karendavis@gmail.com,n%Z1d^LrbM,Nurse,Ministry of Health,33,True
 215,Robert Gill,robertgill@gmail.com,e(o5YtjLX3,Nurse,Ministry of Health,34,False
-216,Michael Lynn,michaellynn@gmail.com,q)511EoL7u,Doctor,Ministry of Health,35,False
-217,Jonathan Romero,jonathanromero@gmail.com,!7gI9HVROl,Data Officer,Ministry of Health,36,False
+216,Michael Lynn,michaellynn@gmail.com,q)511EoL7u,Doctor,Ministry of Health,35,True
+217,Jonathan Romero,jonathanromero@gmail.com,!7gI9HVROl,Data Officer,Ministry of Health,36,True
 218,Austin Garcia,austingarcia@gmail.com,$9WmwO03Ze,Lab Technician,Ministry of Health,37,False
-219,Melody Woods,melodywoods@gmail.com,%0FLxkJ@y3,Pharmacist,Ministry of Health,38,True
-220,Lauren Freeman,laurenfreeman@gmail.com,mTzn7D_b$g,CHV,Ministry of Health,39,True
-221,Dawn Ellis,dawnellis@gmail.com,rj^4WWck@y,CHV,Ministry of Health,40,True
-222,Kenneth Dominguez,kennethdominguez@gmail.com,&u&*5Gxtzq,CHV,Ministry of Health,41,True
+219,Melody Woods,melodywoods@gmail.com,%0FLxkJ@y3,Pharmacist,Ministry of Health,38,False
+220,Lauren Freeman,laurenfreeman@gmail.com,mTzn7D_b$g,CHV,Ministry of Health,39,False
+221,Dawn Ellis,dawnellis@gmail.com,rj^4WWck@y,CHV,Ministry of Health,40,False
+222,Kenneth Dominguez,kennethdominguez@gmail.com,&u&*5Gxtzq,CHV,Ministry of Health,41,False
 223,Theresa Hill,theresahill@gmail.com,dn0kSkDq$u,CHV,Ministry of Health,42,True
 224,Mary Torres,marytorres@gmail.com,@$1VZjJa%6,Nurse,Ministry of Health,43,True
-225,Michelle Thomas,michellethomas@gmail.com,t93vNcsHs+,Nurse,Ministry of Health,44,False
-226,Erica Lane,ericalane@gmail.com,I2AAu3Ie_*,Nurse,Private Practice,45,False
+225,Michelle Thomas,michellethomas@gmail.com,t93vNcsHs+,Nurse,Ministry of Health,44,True
+226,Erica Lane,ericalane@gmail.com,I2AAu3Ie_*,Nurse,Private Practice,45,True
 227,Tyrone Murray,tyronemurray@gmail.com,(_0kUFYnq$,Doctor,Private Practice,46,False
 228,Shelly Stevens,shellystevens@gmail.com,!aBi9NC%1b,Data Officer,Private Practice,47,False
-229,Tracy Taylor,tracytaylor@gmail.com,_2!Jc(!u(*,Lab Technician,Ministry of Health,48,False
-230,Jill Brown,jillbrown@gmail.com,ym4Mmcpp@Z,Pharmacist,Ministry of Health,49,True
-231,Mr. Brett Chapman,mr.brettchapman@gmail.com,^*IJ#MTmA4,CHV,Ministry of Health,50,True
-232,Julie Sharp,juliesharp@gmail.com,Pp%s0PFlaT,CHV,Ministry of Health,51,False
-233,Ryan Webb,ryanwebb@gmail.com,*9Vf)BwDXH,CHV,Ministry of Health,52,True
+229,Tracy Taylor,tracytaylor@gmail.com,_2!Jc(!u(*,Lab Technician,Ministry of Health,48,True
+230,Jill Brown,jillbrown@gmail.com,ym4Mmcpp@Z,Pharmacist,Ministry of Health,49,False
+231,Mr. Brett Chapman,mr.brettchapman@gmail.com,^*IJ#MTmA4,CHV,Ministry of Health,50,False
+232,Julie Sharp,juliesharp@gmail.com,Pp%s0PFlaT,CHV,Ministry of Health,51,True
+233,Ryan Webb,ryanwebb@gmail.com,*9Vf)BwDXH,CHV,Ministry of Health,52,False
 234,Kathryn Shelton,kathrynshelton@gmail.com,^3*rfYyz%6,CHV,Ministry of Health,53,True
 235,Sara Mclean,saramclean@gmail.com,^1UW6K92+o,Nurse,Ministry of Health,54,False
-236,Mary Harris,maryharris@gmail.com,IS^1gLZy#0,Nurse,Ministry of Health,55,False
+236,Mary Harris,maryharris@gmail.com,IS^1gLZy#0,Nurse,Ministry of Health,55,True
 237,Sarah Solis,sarahsolis@gmail.com,q*)Q6UmR@m,Nurse,Ministry of Health,56,False
 238,Brooke Roberts,brookeroberts@gmail.com,uPH(9Hqt7#,Doctor,Ministry of Health,57,True
-239,Phillip Taylor,philliptaylor@gmail.com,tvOlTXYl(5,Data Officer,Ministry of Health,58,False
+239,Phillip Taylor,philliptaylor@gmail.com,tvOlTXYl(5,Data Officer,Ministry of Health,58,True
 240,Carl Cummings,carlcummings@gmail.com,@DNjq4P@q0,Lab Technician,Ministry of Health,59,False
 241,Mr. James Martinez,mr.jamesmartinez@gmail.com,e(XsEDR5+6,Pharmacist,Ministry of Health,60,True
-242,Alexis Cortez PhD,alexiscortezphd@gmail.com,1$D0E9Wo@^,CHV,Ministry of Health,61,False
-243,Robin Hurst,robinhurst@gmail.com,vW9a77dj$$,CHV,Ministry of Health,62,False
-244,Chad Daugherty,chaddaugherty@gmail.com,$Fm_XdrL(4,CHV,Ministry of Health,63,True
+242,Alexis Cortez PhD,alexiscortezphd@gmail.com,1$D0E9Wo@^,CHV,Ministry of Health,61,True
+243,Robin Hurst,robinhurst@gmail.com,vW9a77dj$$,CHV,Ministry of Health,62,True
+244,Chad Daugherty,chaddaugherty@gmail.com,$Fm_XdrL(4,CHV,Ministry of Health,63,False
 245,Vincent Brown,vincentbrown@gmail.com,)G$3Pa$AS6,CHV,Private Practice,64,False
 246,Leslie Todd,leslietodd@gmail.com,juhlNwn9^9,Nurse,Ministry of Health,65,True
-247,James Reese,jamesreese@gmail.com,$i&6ACHXE2,Nurse,Ministry of Health,66,True
+247,James Reese,jamesreese@gmail.com,$i&6ACHXE2,Nurse,Ministry of Health,66,False
 248,Erica Baker,ericabaker@gmail.com,K#7NoO%a8X,Nurse,Ministry of Health,67,True
-249,Richard Green,richardgreen@gmail.com,*qa2HuPKBS,Doctor,Private Practice,68,True
-250,Amanda Young,amandayoung@gmail.com,(^3Un1Qo8@,Data Officer,Ministry of Health,69,True
-251,Elizabeth Johnson,elizabethjohnson@gmail.com,^@JlPjeVD0,Lab Technician,Private Hospital,70,True
-252,Marie Friedman,mariefriedman@gmail.com,YgR9QsWaQ$,Pharmacist,Private Practice,71,True
+249,Richard Green,richardgreen@gmail.com,*qa2HuPKBS,Doctor,Private Practice,68,False
+250,Amanda Young,amandayoung@gmail.com,(^3Un1Qo8@,Data Officer,Ministry of Health,69,False
+251,Elizabeth Johnson,elizabethjohnson@gmail.com,^@JlPjeVD0,Lab Technician,Private Hospital,70,False
+252,Marie Friedman,mariefriedman@gmail.com,YgR9QsWaQ$,Pharmacist,Private Practice,71,False
 253,Randall Cox,randallcox@gmail.com,dK5X^TdEN*,CHV,Ministry of Health,72,True
-254,Danielle Blankenship,danielleblankenship@gmail.com,_9V(IP_er2,CHV,Ministry of Health,73,True
-255,Ralph Dawson,ralphdawson@gmail.com,n*01EbGJ)d,CHV,Ministry of Health,74,True
-256,Stephanie Vargas,stephanievargas@gmail.com,^bXtYgKi)1,CHV,Ministry of Health,75,False
+254,Danielle Blankenship,danielleblankenship@gmail.com,_9V(IP_er2,CHV,Ministry of Health,73,False
+255,Ralph Dawson,ralphdawson@gmail.com,n*01EbGJ)d,CHV,Ministry of Health,74,False
+256,Stephanie Vargas,stephanievargas@gmail.com,^bXtYgKi)1,CHV,Ministry of Health,75,True
 257,Linda Wood,lindawood@gmail.com,KP_v7MkTsU,Nurse,Ministry of Health,76,True
-258,Amanda Landry,amandalandry@gmail.com,8qB3N9O40+,Nurse,Ministry of Health,77,False
+258,Amanda Landry,amandalandry@gmail.com,8qB3N9O40+,Nurse,Ministry of Health,77,True
 259,Brenda Clark,brendaclark@gmail.com,sx2lAn@t(U,Nurse,Ministry of Health,78,True
-260,Michelle Calhoun,michellecalhoun@gmail.com,7pzg7N^p@C,Doctor,Ministry of Health,79,True
+260,Michelle Calhoun,michellecalhoun@gmail.com,7pzg7N^p@C,Doctor,Ministry of Health,79,False
 261,Kayla Waters,kaylawaters@gmail.com,*eQ5BnnwY+,Data Officer,Ministry of Health,80,True
 262,John Lopez,johnlopez@gmail.com,Y&Q4EKgXe*,Lab Technician,Ministry of Health,81,False
 263,Kari Sandoval,karisandoval@gmail.com,bOY#S4Hjsi,Pharmacist,Ministry of Health,82,False
-264,Audrey Marshall,audreymarshall@gmail.com,^)ropLw#13,CHV,Faith-Based Organization,83,True
+264,Audrey Marshall,audreymarshall@gmail.com,^)ropLw#13,CHV,Faith-Based Organization,83,False
 265,Evan Myers,evanmyers@gmail.com,t*6DmMIU0i,CHV,Faith-Based Organization,84,False
-266,Alicia Bowen,aliciabowen@gmail.com,CE&1YwRyoH,CHV,Ministry of Health,85,True
+266,Alicia Bowen,aliciabowen@gmail.com,CE&1YwRyoH,CHV,Ministry of Health,85,False
 267,Daniel Quinn,danielquinn@gmail.com,v!0NAAyj68,CHV,Ministry of Health,86,True
 268,Angela Wagner,angelawagner@gmail.com,+Su6AGnakJ,Nurse,Ministry of Health,87,True
 269,Wayne Johnston,waynejohnston@gmail.com,448NePGc&w,Nurse,Ministry of Health,88,True
-270,Allison Wise,allisonwise@gmail.com,(A_Y&TPs*5,Nurse,Ministry of Health,89,False
+270,Allison Wise,allisonwise@gmail.com,(A_Y&TPs*5,Nurse,Ministry of Health,89,True
 271,Lacey Hall,laceyhall@gmail.com,gn#4WN7j*O,Doctor,Ministry of Health,90,True
-272,Nancy Quinn,nancyquinn@gmail.com,Fi6h0KWc@0,Data Officer,Ministry of Health,91,True
-273,Edward Graham,edwardgraham@gmail.com,XF%4QQXkQ6,Lab Technician,Ministry of Health,1,False
+272,Nancy Quinn,nancyquinn@gmail.com,Fi6h0KWc@0,Data Officer,Ministry of Health,91,False
+273,Edward Graham,edwardgraham@gmail.com,XF%4QQXkQ6,Lab Technician,Ministry of Health,1,True
 274,Edith Edward,edith_naike27@students.uonbi.ac.ke,$2b$12$HQKHXMh52ixkJE0pL5xUuOg9fF63Pj7UYsq7o7xKCXrgb7Bj726Mq,Data Officer,Ministry of Health,52,False
 275,Paul Obado,pualobado@gmail.com,$2b$12$6GxNVt6gikHKpDltXF4UauO3rsl4NDznLsOOXBO.oaGkrQOokL.EO,Doctor,Ministry of Health,26,True

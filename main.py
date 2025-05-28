@@ -25,7 +25,7 @@ from src.analytics.anomaly_detector import detect_anomalies
 from src.generators.site_user_generation import generate_site_user_data
 from src.generators.patient_visit_generator import generate_visits
 import os
-from typing import List, Optional
+from typing import Dict, List, Optional
 import os
 import uuid
 from fastapi import FastAPI

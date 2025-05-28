@@ -1,1 +1,5948 @@
-{"sites": [{"date": "2025-05-04", "count": 44}, {"date": "2025-05-05", "count": 44}, {"date": "2025-05-06", "count": 34, "timestamp": "2025-05-06T21:26:48.730145"}, {"date": "2025-05-07", "count": 44, "timestamp": "2025-05-07T19:10:40.473023"}, {"date": "2025-05-08", "count": 44, "timestamp": "2025-05-08T00:52:45.898833"}, {"date": "2025-05-12", "count": 44, "timestamp": "2025-05-12T10:00:25.112868"}, {"date": "2025-05-13", "count": 44, "timestamp": "2025-05-13T17:27:32.857000"}, {"date": "2025-05-27", "count": 34, "timestamp": "2025-05-27T15:47:24.386414"}], "users": [{"date": "2025-05-04", "count": 132}, {"date": "2025-05-05", "count": 132}, {"date": "2025-05-06", "count": 134, "timestamp": "2025-05-06T21:26:48.730145"}, {"date": "2025-05-07", "count": 132, "timestamp": "2025-05-07T19:10:40.473023"}, {"date": "2025-05-08", "count": 132, "timestamp": "2025-05-08T00:52:45.898833"}, {"date": "2025-05-12", "count": 132, "timestamp": "2025-05-12T10:00:25.112868"}, {"date": "2025-05-13", "count": 132, "timestamp": "2025-05-13T17:27:32.857000"}, {"date": "2025-05-27", "count": 134, "timestamp": "2025-05-27T15:47:24.386414"}], "changes": [{"timestamp": "2025-05-12T21:56:51.905470", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T21:57:52.226697", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T21:58:51.908592", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T21:59:52.221001", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:00:51.918214", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:01:52.215802", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:02:51.919811", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:03:52.220683", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:04:51.920443", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:05:52.206758", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:06:51.924688", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:07:52.210568", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:08:51.902048", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:09:52.210064", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:10:51.913244", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:11:52.202281", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:12:52.214245", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:13:52.214104", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:14:52.214125", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:15:52.211189", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:16:52.213671", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:17:52.223090", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:18:52.214920", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:19:52.232810", "previous_sites": 43, "current_sites": 43, "previous_users": 145, "current_users": 145}, {"timestamp": "2025-05-12T22:20:52.229572", "previous_sites": 43, "current_sites": 40, "previous_users": 145, "current_users": 140}, {"timestamp": "2025-05-12T22:21:52.208552", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:22:52.217741", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:23:52.856841", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:24:52.218966", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:25:52.735746", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:26:51.917803", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:27:52.232158", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:28:52.212841", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:29:52.211216", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:30:31.257203", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:30:41.225284", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:31:10.907770", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:31:52.235974", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:32:52.267228", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:33:52.212113", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:34:52.205514", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:35:52.218897", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:36:51.910730", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:37:52.470102", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:38:52.023944", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:39:52.210881", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:40:51.919171", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:41:52.218774", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:42:51.909392", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:43:52.231254", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:44:52.221130", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:45:52.218438", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:46:51.911147", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:47:52.220291", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:48:51.910512", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:49:52.214218", "previous_sites": 40, "current_sites": 40, "previous_users": 140, "current_users": 140}, {"timestamp": "2025-05-12T22:50:51.924536", "previous_sites": 40, "current_sites": 47, "previous_users": 140, "current_users": 158}, {"timestamp": "2025-05-12T22:51:52.216274", "previous_sites": 47, "current_sites": 47, "previous_users": 158, "current_users": 158}, {"timestamp": "2025-05-12T22:52:51.910217", "previous_sites": 47, "current_sites": 47, "previous_users": 158, "current_users": 158}, {"timestamp": "2025-05-13T17:27:32.857000", "previous_sites": 47, "current_sites": 44, "previous_users": 158, "current_users": 132}, {"timestamp": "2025-05-13T17:27:51.416120", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:28:21.628214", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:28:51.326926", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:29:21.640507", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:29:51.950201", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:30:22.251662", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:30:51.943653", "previous_sites": 44, "current_sites": 44, "previous_users": 132, "current_users": 132}, {"timestamp": "2025-05-13T17:31:54.264736", "previous_sites": 44, "current_sites": 51, "previous_users": 132, "current_users": 147}, {"timestamp": "2025-05-13T17:32:53.935664", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:33:30.936636", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:33:51.330068", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:34:21.630689", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:34:51.339822", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:35:21.644599", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:35:51.336401", "previous_sites": 51, "current_sites": 51, "previous_users": 147, "current_users": 147}, {"timestamp": "2025-05-13T17:36:22.244514", "previous_sites": 51, "current_sites": 48, "previous_users": 147, "current_users": 150}, {"timestamp": "2025-05-13T17:36:51.947440", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:37:48.999929", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:37:51.332663", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:38:21.948708", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:38:51.643091", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:39:21.342285", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:39:52.258386", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:40:22.256258", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:40:51.339883", "previous_sites": 48, "current_sites": 48, "previous_users": 150, "current_users": 150}, {"timestamp": "2025-05-13T17:41:21.644590", "previous_sites": 48, "current_sites": 36, "previous_users": 150, "current_users": 134}, {"timestamp": "2025-05-13T17:41:51.639489", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:42:21.949920", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:42:52.245372", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:43:54.246520", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:44:53.943711", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:45:54.239387", "previous_sites": 36, "current_sites": 36, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-13T17:46:53.956423", "previous_sites": 36, "current_sites": 48, "previous_users": 134, "current_users": 135}, {"timestamp": "2025-05-13T17:47:54.253530", "previous_sites": 48, "current_sites": 48, "previous_users": 135, "current_users": 135}, {"timestamp": "2025-05-13T17:48:53.945347", "previous_sites": 48, "current_sites": 48, "previous_users": 135, "current_users": 135}, {"timestamp": "2025-05-27T15:47:24.386414", "previous_sites": 48, "current_sites": 34, "previous_users": 135, "current_users": 134}, {"timestamp": "2025-05-27T15:58:15.742634", "previous_sites": 34, "current_sites": 34, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-27T16:02:11.366922", "previous_sites": 34, "current_sites": 34, "previous_users": 134, "current_users": 134}, {"timestamp": "2025-05-27T17:04:16.978429", "previous_sites": 34, "current_sites": 47, "previous_users": 134, "current_users": 143}, {"timestamp": "2025-05-27T23:57:18.085471", "previous_sites": 47, "current_sites": 44, "previous_users": 143, "current_users": 132}]}
+{
+  "sites": [
+    {
+      "date": "2025-05-04",
+      "count": 44
+    },
+    {
+      "date": "2025-05-05",
+      "count": 44
+    },
+    {
+      "date": "2025-05-06",
+      "count": 34,
+      "timestamp": "2025-05-06T21:26:48.730145"
+    },
+    {
+      "date": "2025-05-07",
+      "count": 44,
+      "timestamp": "2025-05-07T19:10:40.473023"
+    },
+    {
+      "date": "2025-05-08",
+      "count": 44,
+      "timestamp": "2025-05-08T00:52:45.898833"
+    },
+    {
+      "date": "2025-05-12",
+      "count": 44,
+      "timestamp": "2025-05-12T10:00:25.112868"
+    },
+    {
+      "date": "2025-05-13",
+      "count": 44,
+      "timestamp": "2025-05-13T17:27:32.857000"
+    },
+    {
+      "date": "2025-05-27",
+      "count": 34,
+      "timestamp": "2025-05-27T15:47:24.386414"
+    },
+    {
+      "date": "2025-05-28",
+      "count": 34,
+      "timestamp": "2025-05-28T15:29:43.747934"
+    },
+    {
+      "timestamp": "2025-05-28T16:52:19.036076",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:53:11.720526",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:53:30.733983",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:53:51.431388",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:54:00.483534",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:54:10.555107",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:54:30.735629",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:55:00.749757",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:55:30.729467",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:56:00.789396",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:56:30.728571",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:57:00.738038",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T16:57:55.432931",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T16:58:18.755629",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T16:59:18.756679",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:00:18.749120",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:01:18.738475",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:02:18.730590",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:02:46.755225",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:03:18.776025",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:04:18.730506",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:04:47.751988",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:05:01.726191",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:06:18.750756",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:06:38.737823",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:07:18.745966",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:08:18.730777",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:09:18.441055",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:10:18.745105",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:10:30.110343",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:10:35.799049",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:11:00.744636",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:11:30.435589",
+      "count": 54
+    },
+    {
+      "timestamp": "2025-05-28T17:12:18.757228",
+      "count": 43
+    },
+    {
+      "timestamp": "2025-05-28T17:13:18.439074",
+      "count": 43
+    },
+    {
+      "timestamp": "2025-05-28T17:14:18.747304",
+      "count": 43
+    },
+    {
+      "timestamp": "2025-05-28T17:15:18.739532",
+      "count": 43
+    },
+    {
+      "timestamp": "2025-05-28T17:16:18.740595",
+      "count": 43
+    },
+    {
+      "timestamp": "2025-05-28T17:17:19.058078",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:17:34.137945",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:18:18.747300",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:19:18.750463",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:20:18.753807",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:21:18.734424",
+      "count": 41
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.169524",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.206076",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.239993",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.288153",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.343502",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.407872",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:27:18.445082",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:28:18.755341",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:28:30.103615",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:29:00.410665",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:29:30.431819",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:30:00.737973",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:30:30.430422",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:31:18.735485",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:32:11.671033",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:32:18.542932",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:32:30.738074",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:32:42.708361",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:33:13.734496",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:33:43.731460",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:34:13.737807",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:34:43.737868",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:35:13.731548",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:35:43.735834",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:36:18.721892",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:37:18.735093",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:38:18.740269",
+      "count": 47
+    },
+    {
+      "timestamp": "2025-05-28T17:39:18.763838",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:39:56.497284",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:40:11.116218",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:40:12.964989",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:40:42.977420",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:41:13.732417",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:41:43.727749",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:42:18.744422",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:43:18.729217",
+      "count": 34
+    },
+    {
+      "timestamp": "2025-05-28T17:44:04.153715",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:44:12.964029",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:44:29.302753",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:44:43.725341",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:45:13.740462",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:46:18.733238",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:47:18.731724",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:48:18.747581",
+      "count": 44
+    },
+    {
+      "timestamp": "2025-05-28T17:49:58.637571",
+      "count": 34,
+      "percentage_change": -22.7
+    },
+    {
+      "timestamp": "2025-05-28T17:50:16.626699",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:50:18.721804",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:51:18.430977",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:52:18.735618",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:53:18.728515",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:54:18.426327",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:55:18.751664",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T17:56:18.434827",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:57:18.722749",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:57:52.653512",
+      "count": 34,
+      "percentage_change": -22.7
+    },
+    {
+      "timestamp": "2025-05-28T17:58:18.728298",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:58:27.468726",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:58:58.738293",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:59:28.738761",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:59:58.739830",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:00:28.736277",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:00:58.723769",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:01:28.740015",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:00.464962",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:28.728854",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:58.746580",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:04:18.744532",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:04:28.434307",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:05:18.757152",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:06:20.890948",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T18:07:18.733525",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:08:18.750880",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:09:04.917871",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:10:05.734717",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:11:18.768284",
+      "count": 58,
+      "percentage_change": 31.8
+    },
+    {
+      "timestamp": "2025-05-28T18:12:18.727540",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:18.741768",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:40.785259",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:51.387147",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:09.721135",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:18.944895",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:22.824696",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:55.468519",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:15:16.622106",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:15:46.730591",
+      "count": 58,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:19:55.654846",
+      "count": 48,
+      "percentage_change": -17.2
+    },
+    {
+      "timestamp": "2025-05-28T18:20:25.731704",
+      "count": 48,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:20:55.959105",
+      "count": 48,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:21:25.455783",
+      "count": 46,
+      "percentage_change": -4.2
+    },
+    {
+      "timestamp": "2025-05-28T18:21:55.738417",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:22:25.754273",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:22:55.739728",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:23:25.431154",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:23:55.736103",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:24:25.132036",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:24:55.733095",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:25:25.423318",
+      "count": 46,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:01.394145",
+      "count": 34,
+      "percentage_change": -26.1
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.273341",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.354179",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.894594",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:49:04.734591",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:49:54.796216",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:50:25.737533",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:50:55.335026",
+      "count": 43,
+      "percentage_change": 26.5
+    },
+    {
+      "timestamp": "2025-05-28T18:51:25.735595",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:51:59.284383",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:52:29.724613",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:52:56.988125",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:53:27.732195",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:13.482476",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.362186",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.434406",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:33.255628",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:42.943788",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:53.261817",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:03.270893",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:13.743873",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:23.438036",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:33.738092",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:42.953708",
+      "count": 43,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:54.080752",
+      "count": 44,
+      "percentage_change": 2.3
+    },
+    {
+      "timestamp": "2025-05-28T19:06:03.270287",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:13.256450",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:23.733910",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:33.428843",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:37.837218",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:43.744919",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:53.442257",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:03.742379",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:12.952654",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:23.728366",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:33.424438",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:43.742171",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:53.425456",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:03.757414",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:13.440397",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:23.747786",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:33.433856",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:44.737692",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:54.735597",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:04.728073",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:14.745025",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:24.734134",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:34.739102",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:59.040944",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:04.734746",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:14.753344",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:24.759069",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:34.736193",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:44.728198",
+      "count": 44,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:54.761834",
+      "count": 51,
+      "percentage_change": 15.9
+    },
+    {
+      "timestamp": "2025-05-28T19:11:18.750988",
+      "count": 51,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:12:18.767595",
+      "count": 51,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.186535",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.298602",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.366861",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.420850",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.483253",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.533827",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:18:59.929443",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:01.238009",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:03.436582",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:06.575841",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:16.840214",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:26.846099",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:37.747634",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:47.735755",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:19:57.739878",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:20:07.736649",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:20:17.745790",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:20:27.748391",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:21:18.752582",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:22:18.725241",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:23:18.733478",
+      "count": 34,
+      "percentage_change": -33.3
+    },
+    {
+      "timestamp": "2025-05-28T19:24:18.755974",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:25:18.778739",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:26:18.764192",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:26:41.174260",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:26:51.761518",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:27:01.847332",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:27:11.737698",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:27:21.733529",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:27:31.745198",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:27:41.740133",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:28:18.758387",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:28:28.688629",
+      "count": 44,
+      "percentage_change": 29.4
+    },
+    {
+      "timestamp": "2025-05-28T19:28:58.351231",
+      "count": 49,
+      "percentage_change": 44.1
+    },
+    {
+      "timestamp": "2025-05-28T19:29:07.734977",
+      "count": 49,
+      "percentage_change": 44.1
+    },
+    {
+      "timestamp": "2025-05-28T19:29:17.730979",
+      "count": 49,
+      "percentage_change": 44.1
+    },
+    {
+      "timestamp": "2025-05-28T19:29:27.736961",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:29:41.397558",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:29:48.349691",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:30:18.768208",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:30:48.732905",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:31:18.748217",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:31:51.734247",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:32:18.750525",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:32:48.898214",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:33:18.736954",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:33:49.829093",
+      "count": 49,
+      "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-28T19:34:18.807921",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:34:48.637522",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:35:19.025423",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:35:48.631641",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:36:18.750700",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:36:48.724376",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:37:18.726277",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:38:18.737784",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:38:37.416271",
+      "count": 38,
+      "percentage_change": -22.4
+    },
+    {
+      "timestamp": "2025-05-28T19:39:07.781822",
+      "count": 46,
+      "percentage_change": -6.1
+    },
+    {
+      "timestamp": "2025-05-28T19:39:37.920674",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:40:35.423793",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:41:05.734895",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:41:35.731365",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:42:05.735331",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:42:35.748962",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:43:05.736771",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:43:35.436257",
+      "count": 46,
+      "percentage_change": 21.1
+    },
+    {
+      "timestamp": "2025-05-28T19:44:05.805520",
+      "count": 41,
+      "percentage_change": 7.9
+    },
+    {
+      "timestamp": "2025-05-28T19:44:35.745041",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:45:20.008610",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:45:36.784861",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:46:05.378956",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:46:35.728840",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:47:05.740922",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:48:18.738025",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:48:35.156746",
+      "count": 41,
+      "percentage_change": -10.9
+    },
+    {
+      "timestamp": "2025-05-28T19:49:05.789984",
+      "count": 47,
+      "percentage_change": 2.2
+    },
+    {
+      "timestamp": "2025-05-28T19:49:35.386059",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:50:05.753150",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:50:41.524145",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:51:56.927357",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:52:27.736414",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:52:56.865800",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:53:27.728648",
+      "count": 47,
+      "percentage_change": 14.6
+    },
+    {
+      "timestamp": "2025-05-28T19:53:57.771955",
+      "count": 37,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T19:54:21.445233",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:54:51.745285",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:55:21.418268",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:55:51.394923",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:56:21.750378",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:56:51.748451",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:57:21.731607",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:58:02.641406",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:58:09.237947",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:58:39.737916",
+      "count": 37,
+      "percentage_change": -21.3
+    },
+    {
+      "timestamp": "2025-05-28T19:59:09.758822",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T19:59:39.203153",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:00:09.732724",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:00:39.737612",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:01:09.749904",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:02:18.746377",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:03:18.768581",
+      "count": 51,
+      "percentage_change": 37.8
+    },
+    {
+      "timestamp": "2025-05-28T20:04:00.783365",
+      "count": 46,
+      "percentage_change": 24.3
+    },
+    {
+      "timestamp": "2025-05-28T20:04:12.741942",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:04:39.210123",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:05:09.206990",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:05:39.208087",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:06:09.200079",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:06:39.729981",
+      "count": 46,
+      "percentage_change": -9.8
+    },
+    {
+      "timestamp": "2025-05-28T20:07:09.740019",
+      "count": 46,
+      "percentage_change": -9.8
+    }
+  ],
+  "users": [
+    {
+      "date": "2025-05-04",
+      "count": 132
+    },
+    {
+      "date": "2025-05-05",
+      "count": 132
+    },
+    {
+      "date": "2025-05-06",
+      "count": 134,
+      "timestamp": "2025-05-06T21:26:48.730145"
+    },
+    {
+      "date": "2025-05-07",
+      "count": 132,
+      "timestamp": "2025-05-07T19:10:40.473023"
+    },
+    {
+      "date": "2025-05-08",
+      "count": 132,
+      "timestamp": "2025-05-08T00:52:45.898833"
+    },
+    {
+      "date": "2025-05-12",
+      "count": 132,
+      "timestamp": "2025-05-12T10:00:25.112868"
+    },
+    {
+      "date": "2025-05-13",
+      "count": 132,
+      "timestamp": "2025-05-13T17:27:32.857000"
+    },
+    {
+      "date": "2025-05-27",
+      "count": 134,
+      "timestamp": "2025-05-27T15:47:24.386414"
+    },
+    {
+      "date": "2025-05-28",
+      "count": 134,
+      "timestamp": "2025-05-28T15:29:43.747934"
+    },
+    {
+      "timestamp": "2025-05-28T16:52:19.036076",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:11.720526",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:30.733983",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:51.431388",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:00.483534",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:10.555107",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:30.735629",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:55:00.749757",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:55:30.729467",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:56:00.789396",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:56:30.728571",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:57:00.738038",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:57:55.432931",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:58:18.755629",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:59:18.756679",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:00:18.749120",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:01:18.738475",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:02:18.730590",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:02:46.755225",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:03:18.776025",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:04:18.730506",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:04:47.751988",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:05:01.726191",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:06:18.750756",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:06:38.737823",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:07:18.745966",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:08:18.730777",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:09:18.441055",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:18.745105",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:30.110343",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:35.799049",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:11:00.744636",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:11:30.435589",
+      "count": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:12:18.757228",
+      "count": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:13:18.439074",
+      "count": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:14:18.747304",
+      "count": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:15:18.739532",
+      "count": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:16:18.740595",
+      "count": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:17:19.058078",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:17:34.137945",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:18:18.747300",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:19:18.750463",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:20:18.753807",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:21:18.734424",
+      "count": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.169524",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.206076",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.239993",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.288153",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.343502",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:13.407872",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:27:18.445082",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:28:18.755341",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:28:30.103615",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:29:00.410665",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:29:30.431819",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:30:00.737973",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:30:30.430422",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:31:18.735485",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:32:11.671033",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:32:18.542932",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:32:30.738074",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:32:42.708361",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:33:13.734496",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:33:43.731460",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:34:13.737807",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:34:43.737868",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:35:13.731548",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:35:43.735834",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:36:18.721892",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:37:18.735093",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:38:18.740269",
+      "count": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:39:18.763838",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:39:56.497284",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:40:11.116218",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:40:12.964989",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:40:42.977420",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:41:13.732417",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:41:43.727749",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:42:18.744422",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:43:18.729217",
+      "count": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:44:04.153715",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:44:12.964029",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:44:29.302753",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:44:43.725341",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:45:13.740462",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:46:18.733238",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:47:18.731724",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:48:18.747581",
+      "count": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:49:58.637571",
+      "count": 134,
+      "percentage_change": 1.5
+    },
+    {
+      "timestamp": "2025-05-28T17:50:16.626699",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:50:18.721804",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:51:18.430977",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:52:18.735618",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:53:18.728515",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:54:18.426327",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:55:18.751664",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T17:56:18.434827",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:57:18.722749",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:57:52.653512",
+      "count": 134,
+      "percentage_change": 1.5
+    },
+    {
+      "timestamp": "2025-05-28T17:58:18.728298",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:58:27.468726",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:58:58.738293",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:59:28.738761",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T17:59:58.739830",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:00:28.736277",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:00:58.723769",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:01:28.740015",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:00.464962",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:28.728854",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:02:58.746580",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:04:18.744532",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:04:28.434307",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:05:18.757152",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:06:20.890948",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T18:07:18.733525",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:08:18.750880",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:09:04.917871",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:10:05.734717",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:11:18.768284",
+      "count": 145,
+      "percentage_change": 9.8
+    },
+    {
+      "timestamp": "2025-05-28T18:12:18.727540",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:18.741768",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:40.785259",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:13:51.387147",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:09.721135",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:18.944895",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:22.824696",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:14:55.468519",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:15:16.622106",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:15:46.730591",
+      "count": 145,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:19:55.654846",
+      "count": 132,
+      "percentage_change": -9.0
+    },
+    {
+      "timestamp": "2025-05-28T18:20:25.731704",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:20:55.959105",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:21:25.455783",
+      "count": 134,
+      "percentage_change": 1.5
+    },
+    {
+      "timestamp": "2025-05-28T18:21:55.738417",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:22:25.754273",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:22:55.739728",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:23:25.431154",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:23:55.736103",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:24:25.132036",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:24:55.733095",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:25:25.423318",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:01.394145",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.273341",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.354179",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.894594",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:49:04.734591",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:49:54.796216",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:50:25.737533",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:50:55.335026",
+      "count": 147,
+      "percentage_change": 9.7
+    },
+    {
+      "timestamp": "2025-05-28T18:51:25.735595",
+      "count": 147,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:51:59.284383",
+      "count": 147,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:52:29.724613",
+      "count": 147,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:52:56.988125",
+      "count": 147,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T18:53:27.732195",
+      "count": 147,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:13.482476",
+      "count": 132,
+      "percentage_change": -10.2
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.362186",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.434406",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:33.255628",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:42.943788",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:04:53.261817",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:03.270893",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:13.743873",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:23.438036",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:33.738092",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:42.953708",
+      "count": 132,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:05:54.080752",
+      "count": 140,
+      "percentage_change": 6.1
+    },
+    {
+      "timestamp": "2025-05-28T19:06:03.270287",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:13.256450",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:23.733910",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:33.428843",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:37.837218",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:43.744919",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:06:53.442257",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:03.742379",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:12.952654",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:23.728366",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:33.424438",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:43.742171",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:07:53.425456",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:03.757414",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:13.440397",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:23.747786",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:33.433856",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:44.737692",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:08:54.735597",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:04.728073",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:14.745025",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:24.734134",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:34.739102",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:09:59.040944",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:04.734746",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:14.753344",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:24.759069",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:34.736193",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:44.728198",
+      "count": 140,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:10:54.761834",
+      "count": 138,
+      "percentage_change": -1.4
+    },
+    {
+      "timestamp": "2025-05-28T19:11:18.750988",
+      "count": 138,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:12:18.767595",
+      "count": 138,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.186535",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.298602",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.366861",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.420850",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.483253",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.533827",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:59.929443",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:01.238009",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:03.436582",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:06.575841",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:16.840214",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:26.846099",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:37.747634",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:47.735755",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:57.739878",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:07.736649",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:17.745790",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:27.748391",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:21:18.752582",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:22:18.725241",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:23:18.733478",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:24:18.755974",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:25:18.778739",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:18.764192",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:41.174260",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:51.761518",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:01.847332",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:11.737698",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:21.733529",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:31.745198",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:41.740133",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:18.758387",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:28.688629",
+      "count": 132,
+      "percentage_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:58.351231",
+      "count": 149,
+      "percentage_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:07.734977",
+      "count": 149,
+      "percentage_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:17.730979",
+      "count": 149,
+      "percentage_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:27.736961",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:29:41.397558",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:29:48.349691",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:30:18.768208",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:30:48.732905",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:31:18.748217",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:31:51.734247",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:32:18.750525",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:32:48.898214",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:33:18.736954",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:33:49.829093",
+      "count": 149,
+      "percentage_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:34:18.807921",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:34:48.637522",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:35:19.025423",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:35:48.631641",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:36:18.750700",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:36:48.724376",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:37:18.726277",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:38:18.737784",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:38:37.416271",
+      "count": 136,
+      "percentage_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:39:07.781822",
+      "count": 146,
+      "percentage_change": -2.0
+    },
+    {
+      "timestamp": "2025-05-28T19:39:37.920674",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:40:35.423793",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:41:05.734895",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:41:35.731365",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:42:05.735331",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:42:35.748962",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:43:05.736771",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:43:35.436257",
+      "count": 146,
+      "percentage_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:44:05.805520",
+      "count": 139,
+      "percentage_change": 2.2
+    },
+    {
+      "timestamp": "2025-05-28T19:44:35.745041",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:45:20.008610",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:45:36.784861",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:46:05.378956",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:46:35.728840",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:47:05.740922",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:48:18.738025",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:48:35.156746",
+      "count": 139,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:49:05.789984",
+      "count": 145,
+      "percentage_change": -0.7
+    },
+    {
+      "timestamp": "2025-05-28T19:49:35.386059",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:50:05.753150",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:50:41.524145",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:51:56.927357",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:52:27.736414",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:52:56.865800",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:53:27.728648",
+      "count": 145,
+      "percentage_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:53:57.771955",
+      "count": 125,
+      "percentage_change": -10.1
+    },
+    {
+      "timestamp": "2025-05-28T19:54:21.445233",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:54:51.745285",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:55:21.418268",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:55:51.394923",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:56:21.750378",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:56:51.748451",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:57:21.731607",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:02.641406",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:09.237947",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:39.737916",
+      "count": 125,
+      "percentage_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:59:09.758822",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T19:59:39.203153",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:00:09.732724",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:00:39.737612",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:01:09.749904",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:02:18.746377",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:03:18.768581",
+      "count": 147,
+      "percentage_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:04:00.783365",
+      "count": 125,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T20:04:12.741942",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:04:39.210123",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:05:09.206990",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:05:39.208087",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:06:09.200079",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:06:39.729981",
+      "count": 125,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:07:09.740019",
+      "count": 125,
+      "percentage_change": -15.0
+    }
+  ],
+  "changes": [
+    {
+      "timestamp": "2025-05-28T15:40:12.755894",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:40:42.735302",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:41:18.734614",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:42:18.751000",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:43:18.422699",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:44:18.417818",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:45:18.739745",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:46:18.738775",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T15:47:18.756456",
+      "previous_sites": 34,
+      "current_sites": 42,
+      "previous_users": 134,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T15:48:18.737282",
+      "previous_sites": 42,
+      "current_sites": 42,
+      "previous_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T15:49:18.425363",
+      "previous_sites": 42,
+      "current_sites": 42,
+      "previous_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T15:50:18.748845",
+      "previous_sites": 42,
+      "current_sites": 42,
+      "previous_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T15:51:18.744131",
+      "previous_sites": 42,
+      "current_sites": 42,
+      "previous_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T15:52:18.752856",
+      "previous_sites": 42,
+      "current_sites": 48,
+      "previous_users": 145,
+      "current_users": 135
+    },
+    {
+      "timestamp": "2025-05-28T15:53:18.431844",
+      "previous_sites": 48,
+      "current_sites": 48,
+      "previous_users": 135,
+      "current_users": 135
+    },
+    {
+      "timestamp": "2025-05-28T15:54:18.727591",
+      "previous_sites": 48,
+      "current_sites": 48,
+      "previous_users": 135,
+      "current_users": 135
+    },
+    {
+      "timestamp": "2025-05-28T15:55:18.424934",
+      "previous_sites": 48,
+      "current_sites": 48,
+      "previous_users": 135,
+      "current_users": 135
+    },
+    {
+      "timestamp": "2025-05-28T15:56:18.742223",
+      "previous_sites": 48,
+      "current_sites": 48,
+      "previous_users": 135,
+      "current_users": 135
+    },
+    {
+      "timestamp": "2025-05-28T15:57:18.437641",
+      "previous_sites": 48,
+      "current_sites": 56,
+      "previous_users": 135,
+      "current_users": 128
+    },
+    {
+      "timestamp": "2025-05-28T15:58:18.733665",
+      "previous_sites": 56,
+      "current_sites": 56,
+      "previous_users": 128,
+      "current_users": 128
+    },
+    {
+      "timestamp": "2025-05-28T15:59:18.428819",
+      "previous_sites": 56,
+      "current_sites": 56,
+      "previous_users": 128,
+      "current_users": 128
+    },
+    {
+      "timestamp": "2025-05-28T16:00:18.737866",
+      "previous_sites": 56,
+      "current_sites": 56,
+      "previous_users": 128,
+      "current_users": 128
+    },
+    {
+      "timestamp": "2025-05-28T16:01:18.742659",
+      "previous_sites": 56,
+      "current_sites": 56,
+      "previous_users": 128,
+      "current_users": 128
+    },
+    {
+      "timestamp": "2025-05-28T16:02:18.761659",
+      "previous_sites": 56,
+      "current_sites": 34,
+      "previous_users": 128,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:03:18.426414",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:04:08.361373",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:04:12.336642",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:04:21.147131",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:04:29.854276",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:04:51.434898",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:05:21.744094",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:05:51.430084",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:06:21.729243",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:06:52.178001",
+      "previous_sites": 34,
+      "current_sites": 44,
+      "previous_users": 134,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:07:21.429636",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:07:44.998271",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:07:51.416569",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:08:21.721618",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:08:51.430855",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:09:43.567366",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:09:51.739813",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:10:21.736603",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:10:51.426386",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:11:21.722343",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:11:51.756244",
+      "previous_sites": 44,
+      "current_sites": 47,
+      "previous_users": 132,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:12:31.449665",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:12:51.730972",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:13:21.419247",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:13:51.733511",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:14:21.731923",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:15:18.736833",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:16:18.738644",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:17:18.750862",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:17:22.558385",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:17:51.738080",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:18:21.723719",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:19:18.430699",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:20:18.722260",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:21:18.752128",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:22:18.743757",
+      "previous_sites": 47,
+      "current_sites": 43,
+      "previous_users": 138,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:22:25.743230",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:22:51.431241",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:23:21.736523",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:24:18.448268",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:25:18.744852",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:26:18.429864",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:27:18.780756",
+      "previous_sites": 43,
+      "current_sites": 34,
+      "previous_users": 144,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:27:56.694715",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:28:18.732295",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:28:21.287508",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:28:51.735015",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:29:21.432258",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:29:51.740107",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:30:21.738037",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:30:35.806462",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:31:18.748167",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:32:18.751509",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:33:18.765767",
+      "previous_sites": 34,
+      "current_sites": 44,
+      "previous_users": 134,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:34:19.283914",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:35:18.762872",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:36:18.778418",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:37:18.729696",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:38:18.747233",
+      "previous_sites": 44,
+      "current_sites": 47,
+      "previous_users": 132,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:39:18.436779",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:40:18.732103",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:41:18.433236",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:42:18.725102",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T16:43:18.432749",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:43:36.748513",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:43:54.734178",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:44:21.761956",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:44:53.847164",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:45:34.894868",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:46:18.725502",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:47:18.753828",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T16:48:22.740494",
+      "previous_sites": 47,
+      "current_sites": 43,
+      "previous_users": 138,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:49:02.736267",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:49:21.750323",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:50:18.847166",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 144,
+      "current_users": 144
+    },
+    {
+      "timestamp": "2025-05-28T16:51:23.081086",
+      "previous_sites": 43,
+      "current_sites": 34,
+      "previous_users": 144,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:52:19.036076",
+      "previous_sites": 0,
+      "current_sites": 34,
+      "previous_users": 0,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:11.720526",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:30.733983",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:53:51.431388",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:00.483534",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:10.555107",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:54:30.735629",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:55:00.749757",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:55:30.729467",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:56:00.789396",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:56:30.728571",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:57:00.738038",
+      "previous_sites": 34,
+      "current_sites": 34,
+      "previous_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T16:57:55.432931",
+      "previous_sites": 34,
+      "current_sites": 44,
+      "previous_users": 134,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:58:18.755629",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T16:59:18.756679",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:00:18.749120",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:01:18.738475",
+      "previous_sites": 44,
+      "current_sites": 44,
+      "previous_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:02:18.730590",
+      "previous_sites": 44,
+      "current_sites": 47,
+      "previous_users": 132,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:02:46.755225",
+      "previous_sites": 44,
+      "current_sites": 47,
+      "previous_users": 132,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:03:18.776025",
+      "previous_sites": 44,
+      "current_sites": 47,
+      "previous_users": 132,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:04:18.730506",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:04:47.751988",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:05:01.726191",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:06:18.750756",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:06:38.737823",
+      "previous_sites": 47,
+      "current_sites": 47,
+      "previous_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T17:07:18.745966",
+      "previous_sites": 47,
+      "current_sites": 54,
+      "previous_users": 147,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:08:18.730777",
+      "previous_sites": 47,
+      "current_sites": 54,
+      "previous_users": 147,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:09:18.441055",
+      "previous_sites": 47,
+      "current_sites": 54,
+      "previous_users": 147,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:18.745105",
+      "previous_sites": 54,
+      "current_sites": 54,
+      "previous_users": 122,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:30.110343",
+      "previous_sites": 54,
+      "current_sites": 54,
+      "previous_users": 122,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:10:35.799049",
+      "previous_sites": 54,
+      "current_sites": 54,
+      "previous_users": 122,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:11:00.744636",
+      "previous_sites": 54,
+      "current_sites": 54,
+      "previous_users": 122,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:11:30.435589",
+      "previous_sites": 54,
+      "current_sites": 54,
+      "previous_users": 122,
+      "current_users": 122
+    },
+    {
+      "timestamp": "2025-05-28T17:12:18.757228",
+      "previous_sites": 54,
+      "current_sites": 43,
+      "previous_users": 122,
+      "current_users": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:13:18.439074",
+      "previous_sites": 54,
+      "current_sites": 43,
+      "previous_users": 122,
+      "current_users": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:14:18.747304",
+      "previous_sites": 54,
+      "current_sites": 43,
+      "previous_users": 122,
+      "current_users": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:15:18.739532",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 141,
+      "current_users": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:16:18.740595",
+      "previous_sites": 43,
+      "current_sites": 43,
+      "previous_users": 141,
+      "current_users": 141
+    },
+    {
+      "timestamp": "2025-05-28T17:17:19.058078",
+      "previous_sites": 43,
+      "current_sites": 41,
+      "previous_users": 141,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:17:34.137945",
+      "previous_sites": 43,
+      "current_sites": 41,
+      "previous_users": 141,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:18:18.747300",
+      "previous_sites": 43,
+      "current_sites": 41,
+      "previous_users": 141,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:19:18.750463",
+      "previous_sites": 43,
+      "current_sites": 41,
+      "previous_users": 141,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:20:18.753807",
+      "previous_sites": 41,
+      "current_sites": 41,
+      "previous_users": 148,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:21:18.734424",
+      "previous_sites": 41,
+      "current_sites": 41,
+      "previous_users": 148,
+      "current_users": 148
+    },
+    {
+      "timestamp": "2025-05-28T17:49:58.637571",
+      "site_change": -22.7,
+      "user_change": 1.5,
+      "prev_sites": 44,
+      "current_sites": 34,
+      "prev_users": 132,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:50:16.626699",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:50:18.721804",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:51:18.430977",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:52:18.735618",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:53:18.728515",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:54:18.426327",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:55:18.751664",
+      "site_change": 29.4,
+      "user_change": -1.5,
+      "prev_sites": 34,
+      "current_sites": 44,
+      "prev_users": 134,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:56:18.434827",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:57:18.722749",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T17:57:52.653512",
+      "site_change": -22.7,
+      "user_change": 1.5,
+      "prev_sites": 44,
+      "current_sites": 34,
+      "prev_users": 132,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:58:18.728298",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:58:27.468726",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:58:58.738293",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:59:28.738761",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T17:59:58.739830",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:00:28.736277",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:00:58.723769",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:01:28.740015",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:02:00.464962",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:02:28.728854",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:02:58.746580",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:04:18.744532",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:04:28.434307",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:05:18.757152",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:06:20.890948",
+      "site_change": 29.4,
+      "user_change": -1.5,
+      "prev_sites": 34,
+      "current_sites": 44,
+      "prev_users": 134,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:07:18.733525",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:08:18.750880",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:09:04.917871",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:10:05.734717",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:11:18.768284",
+      "site_change": 31.8,
+      "user_change": 9.8,
+      "prev_sites": 44,
+      "current_sites": 58,
+      "prev_users": 132,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:12:18.727540",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:13:18.741768",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:13:40.785259",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:13:51.387147",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:14:09.721135",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:14:18.944895",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:14:22.824696",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:14:55.468519",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:15:16.622106",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:15:46.730591",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 58,
+      "current_sites": 58,
+      "prev_users": 145,
+      "current_users": 145
+    },
+    {
+      "timestamp": "2025-05-28T18:19:55.654846",
+      "site_change": -17.2,
+      "user_change": -9.0,
+      "prev_sites": 58,
+      "current_sites": 48,
+      "prev_users": 145,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:20:25.731704",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 48,
+      "current_sites": 48,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:20:55.959105",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 48,
+      "current_sites": 48,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T18:21:25.455783",
+      "site_change": -4.2,
+      "user_change": 1.5,
+      "prev_sites": 48,
+      "current_sites": 46,
+      "prev_users": 132,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:21:55.738417",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:22:25.754273",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:22:55.739728",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:23:25.431154",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:23:55.736103",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:24:25.132036",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:24:55.733095",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:25:25.423318",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 46,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:48:01.394145",
+      "site_change": -26.1,
+      "user_change": 0.0,
+      "prev_sites": 46,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.273341",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.354179",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:48:33.894594",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:49:04.734591",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:49:54.796216",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:50:25.737533",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 34,
+      "current_sites": 34,
+      "prev_users": 134,
+      "current_users": 134
+    },
+    {
+      "timestamp": "2025-05-28T18:50:55.335026",
+      "site_change": 26.5,
+      "user_change": 9.7,
+      "prev_sites": 34,
+      "current_sites": 43,
+      "prev_users": 134,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T18:51:25.735595",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T18:51:59.284383",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T18:52:29.724613",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T18:52:56.988125",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T18:53:27.732195",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 147
+    },
+    {
+      "timestamp": "2025-05-28T19:04:13.482476",
+      "site_change": 0.0,
+      "user_change": -10.2,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 147,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.362186",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:04:23.434406",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:04:33.255628",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:04:42.943788",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:04:53.261817",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:03.270893",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:13.743873",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:23.438036",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:33.738092",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:42.953708",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 43,
+      "current_sites": 43,
+      "prev_users": 132,
+      "current_users": 132
+    },
+    {
+      "timestamp": "2025-05-28T19:05:54.080752",
+      "site_change": 2.3,
+      "user_change": 6.1,
+      "prev_sites": 43,
+      "current_sites": 44,
+      "prev_users": 132,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:03.270287",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:13.256450",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:23.733910",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:33.428843",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:37.837218",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:43.744919",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:06:53.442257",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:03.742379",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:12.952654",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:23.728366",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:33.424438",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:43.742171",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:07:53.425456",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:03.757414",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:13.440397",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:23.747786",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:33.433856",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:44.737692",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:08:54.735597",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:09:04.728073",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:09:14.745025",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:09:24.734134",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:09:34.739102",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:09:59.040944",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:04.734746",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:14.753344",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:24.759069",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:34.736193",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:44.728198",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 44,
+      "current_sites": 44,
+      "prev_users": 140,
+      "current_users": 140
+    },
+    {
+      "timestamp": "2025-05-28T19:10:54.761834",
+      "site_change": 15.9,
+      "user_change": -1.4,
+      "prev_sites": 44,
+      "current_sites": 51,
+      "prev_users": 140,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T19:11:18.750988",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 51,
+      "current_sites": 51,
+      "prev_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T19:12:18.767595",
+      "site_change": 0.0,
+      "user_change": 0.0,
+      "prev_sites": 51,
+      "current_sites": 51,
+      "prev_users": 138,
+      "current_users": 138
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.186535",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.298602",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.366861",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.420850",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.483253",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:52.533827",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:18:59.929443",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:01.238009",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:03.436582",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:06.575841",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:16.840214",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:26.846099",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:37.747634",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:47.735755",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:19:57.739878",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:07.736649",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:17.745790",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:20:27.748391",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:21:18.752582",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:22:18.725241",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:23:18.733478",
+      "prev_sites": 51,
+      "current_sites": 34,
+      "site_change": -33.3,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-28T19:24:18.755974",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:25:18.778739",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:18.764192",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:41.174260",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:26:51.761518",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:01.847332",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:11.737698",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:21.733529",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:31.745198",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:27:41.740133",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:18.758387",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:28.688629",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
+    },
+    {
+      "timestamp": "2025-05-28T19:28:58.351231",
+      "prev_sites": 34,
+      "current_sites": 49,
+      "site_change": 44.1,
+      "prev_users": 134,
+      "current_users": 149,
+      "user_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:07.734977",
+      "prev_sites": 34,
+      "current_sites": 49,
+      "site_change": 44.1,
+      "prev_users": 134,
+      "current_users": 149,
+      "user_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:17.730979",
+      "prev_sites": 34,
+      "current_sites": 49,
+      "site_change": 44.1,
+      "prev_users": 134,
+      "current_users": 149,
+      "user_change": 11.2
+    },
+    {
+      "timestamp": "2025-05-28T19:29:27.736961",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:29:41.397558",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:29:48.349691",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:30:18.768208",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:30:48.732905",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:31:18.748217",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:31:51.734247",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:32:18.750525",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:32:48.898214",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:33:18.736954",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:33:49.829093",
+      "prev_sites": 44,
+      "current_sites": 49,
+      "site_change": 11.4,
+      "prev_users": 132,
+      "current_users": 149,
+      "user_change": 12.9
+    },
+    {
+      "timestamp": "2025-05-28T19:34:18.807921",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:34:48.637522",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:35:19.025423",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:35:48.631641",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:36:18.750700",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:36:48.724376",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:37:18.726277",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:38:18.737784",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:38:37.416271",
+      "prev_sites": 49,
+      "current_sites": 38,
+      "site_change": -22.4,
+      "prev_users": 149,
+      "current_users": 136,
+      "user_change": -8.7
+    },
+    {
+      "timestamp": "2025-05-28T19:39:07.781822",
+      "prev_sites": 49,
+      "current_sites": 46,
+      "site_change": -6.1,
+      "prev_users": 149,
+      "current_users": 146,
+      "user_change": -2.0
+    },
+    {
+      "timestamp": "2025-05-28T19:39:37.920674",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:40:35.423793",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:41:05.734895",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:41:35.731365",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:42:05.735331",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:42:35.748962",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:43:05.736771",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:43:35.436257",
+      "prev_sites": 38,
+      "current_sites": 46,
+      "site_change": 21.1,
+      "prev_users": 136,
+      "current_users": 146,
+      "user_change": 7.4
+    },
+    {
+      "timestamp": "2025-05-28T19:44:05.805520",
+      "prev_sites": 38,
+      "current_sites": 41,
+      "site_change": 7.9,
+      "prev_users": 136,
+      "current_users": 139,
+      "user_change": 2.2
+    },
+    {
+      "timestamp": "2025-05-28T19:44:35.745041",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:45:20.008610",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:45:36.784861",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:46:05.378956",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:46:35.728840",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:47:05.740922",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:48:18.738025",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:48:35.156746",
+      "prev_sites": 46,
+      "current_sites": 41,
+      "site_change": -10.9,
+      "prev_users": 146,
+      "current_users": 139,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-28T19:49:05.789984",
+      "prev_sites": 46,
+      "current_sites": 47,
+      "site_change": 2.2,
+      "prev_users": 146,
+      "current_users": 145,
+      "user_change": -0.7
+    },
+    {
+      "timestamp": "2025-05-28T19:49:35.386059",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:50:05.753150",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:50:41.524145",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:51:56.927357",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:52:27.736414",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:52:56.865800",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:53:27.728648",
+      "prev_sites": 41,
+      "current_sites": 47,
+      "site_change": 14.6,
+      "prev_users": 139,
+      "current_users": 145,
+      "user_change": 4.3
+    },
+    {
+      "timestamp": "2025-05-28T19:53:57.771955",
+      "prev_sites": 41,
+      "current_sites": 37,
+      "site_change": -9.8,
+      "prev_users": 139,
+      "current_users": 125,
+      "user_change": -10.1
+    },
+    {
+      "timestamp": "2025-05-28T19:54:21.445233",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:54:51.745285",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:55:21.418268",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:55:51.394923",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:56:21.750378",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:56:51.748451",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:57:21.731607",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:02.641406",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:09.237947",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:58:39.737916",
+      "prev_sites": 47,
+      "current_sites": 37,
+      "site_change": -21.3,
+      "prev_users": 145,
+      "current_users": 125,
+      "user_change": -13.8
+    },
+    {
+      "timestamp": "2025-05-28T19:59:09.758822",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T19:59:39.203153",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:00:09.732724",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:00:39.737612",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:01:09.749904",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:02:18.746377",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:03:18.768581",
+      "prev_sites": 37,
+      "current_sites": 51,
+      "site_change": 37.8,
+      "prev_users": 125,
+      "current_users": 147,
+      "user_change": 17.6
+    },
+    {
+      "timestamp": "2025-05-28T20:04:00.783365",
+      "prev_sites": 37,
+      "current_sites": 46,
+      "site_change": 24.3,
+      "prev_users": 125,
+      "current_users": 125,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-28T20:04:12.741942",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:04:39.210123",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:05:09.206990",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:05:39.208087",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:06:09.200079",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:06:39.729981",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-28T20:07:09.740019",
+      "prev_sites": 51,
+      "current_sites": 46,
+      "site_change": -9.8,
+      "prev_users": 147,
+      "current_users": 125,
+      "user_change": -15.0
+    }
+  ]
+}

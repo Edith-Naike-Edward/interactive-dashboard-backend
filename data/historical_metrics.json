@@ -6,38 +6,6 @@
       "percent_bg_followup": 45.0,
       "percent_bp_controlled": 69.0,
       "performance_declined": true,
-      "timestamp": "2025-05-12T13:47:57.595324"
-    },
-    {
-      "percent_new_diagnoses": 33.33,
-      "percent_bp_followup": 75.0,
-      "percent_bg_followup": 45.0,
-      "percent_bp_controlled": 69.0,
-      "performance_declined": true,
-      "timestamp": "2025-05-12T13:49:36.837298"
-    },
-    {
-      "percent_new_diagnoses": 33.33,
-      "percent_bp_followup": 75.0,
-      "percent_bg_followup": 45.0,
-      "percent_bp_controlled": 69.0,
-      "performance_declined": true,
-      "timestamp": "2025-05-12T13:49:41.747956"
-    },
-    {
-      "percent_new_diagnoses": 33.33,
-      "percent_bp_followup": 75.0,
-      "percent_bg_followup": 45.0,
-      "percent_bp_controlled": 69.0,
-      "performance_declined": true,
-      "timestamp": "2025-05-12T13:49:52.534935"
-    },
-    {
-      "percent_new_diagnoses": 33.33,
-      "percent_bp_followup": 75.0,
-      "percent_bg_followup": 45.0,
-      "percent_bp_controlled": 69.0,
-      "performance_declined": true,
       "timestamp": "2025-05-12T13:53:18.518844"
     },
     {
@@ -719,77 +687,41 @@
       "percent_bp_controlled": 75.0,
       "performance_declined": true,
       "timestamp": "2025-05-27T23:58:03.781293"
+    },
+    {
+      "percent_new_diagnoses": 40.68,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 47.0,
+      "percent_bp_controlled": 72.0,
+      "performance_declined": true,
+      "timestamp": "2025-05-28T16:57:54.826993"
+    },
+    {
+      "percent_new_diagnoses": 40.68,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 47.0,
+      "percent_bp_controlled": 72.0,
+      "performance_declined": true,
+      "timestamp": "2025-05-28T16:57:55.014765"
+    },
+    {
+      "percent_new_diagnoses": 33.64,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 52.0,
+      "percent_bp_controlled": 66.0,
+      "performance_declined": true,
+      "timestamp": "2025-05-28T17:17:39.006460"
+    },
+    {
+      "percent_new_diagnoses": 33.64,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 52.0,
+      "percent_bp_controlled": 66.0,
+      "performance_declined": true,
+      "timestamp": "2025-05-28T17:17:39.092646"
     }
   ],
   "alerts": [
-    {
-      "timestamp": "2025-05-13T16:46:23.917137",
-      "metrics": {
-        "percent_new_diagnoses": 30.25,
-        "percent_bp_followup": 74.0,
-        "percent_bg_followup": 47.0,
-        "percent_bp_controlled": 72.0,
-        "performance_declined": true,
-        "timestamp": "2025-05-13T16:46:23.917137"
-      },
-      "changes": {
-        "new_diagnoses": -9.57,
-        "bp_followup": 3.0,
-        "bg_followup": -1.0,
-        "bp_controlled": -8.0
-      }
-    },
-    {
-      "timestamp": "2025-05-13T16:46:24.022083",
-      "metrics": {
-        "percent_new_diagnoses": 30.25,
-        "percent_bp_followup": 74.0,
-        "percent_bg_followup": 47.0,
-        "percent_bp_controlled": 72.0,
-        "performance_declined": true,
-        "timestamp": "2025-05-13T16:46:24.022083"
-      },
-      "changes": {
-        "new_diagnoses": 0.0,
-        "bp_followup": 0.0,
-        "bg_followup": 0.0,
-        "bp_controlled": 0.0
-      }
-    },
-    {
-      "timestamp": "2025-05-13T17:27:19.773133",
-      "metrics": {
-        "percent_new_diagnoses": 30.25,
-        "percent_bp_followup": 74.0,
-        "percent_bg_followup": 47.0,
-        "percent_bp_controlled": 68.0,
-        "performance_declined": true,
-        "timestamp": "2025-05-13T17:27:19.773133"
-      },
-      "changes": {
-        "new_diagnoses": 0.0,
-        "bp_followup": 0.0,
-        "bg_followup": 0.0,
-        "bp_controlled": -4.0
-      }
-    },
-    {
-      "timestamp": "2025-05-13T17:27:41.032969",
-      "metrics": {
-        "percent_new_diagnoses": 30.25,
-        "percent_bp_followup": 74.0,
-        "percent_bg_followup": 47.0,
-        "percent_bp_controlled": 68.0,
-        "performance_declined": true,
-        "timestamp": "2025-05-13T17:27:41.032969"
-      },
-      "changes": {
-        "new_diagnoses": 0.0,
-        "bp_followup": 0.0,
-        "bg_followup": 0.0,
-        "bp_controlled": 0.0
-      }
-    },
     {
       "timestamp": "2025-05-13T17:27:41.090573",
       "metrics": {
@@ -1224,6 +1156,74 @@
         "percent_bp_controlled": 75.0,
         "performance_declined": true,
         "timestamp": "2025-05-27T23:58:03.781293"
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-28T16:57:54.826993",
+      "metrics": {
+        "percent_new_diagnoses": 40.68,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 47.0,
+        "percent_bp_controlled": 72.0,
+        "performance_declined": true,
+        "timestamp": "2025-05-28T16:57:54.826993"
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": -3.0
+      }
+    },
+    {
+      "timestamp": "2025-05-28T16:57:55.014765",
+      "metrics": {
+        "percent_new_diagnoses": 40.68,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 47.0,
+        "percent_bp_controlled": 72.0,
+        "performance_declined": true,
+        "timestamp": "2025-05-28T16:57:55.014765"
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-28T17:17:39.006460",
+      "metrics": {
+        "percent_new_diagnoses": 33.64,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 52.0,
+        "percent_bp_controlled": 66.0,
+        "performance_declined": true,
+        "timestamp": "2025-05-28T17:17:39.006460"
+      },
+      "changes": {
+        "new_diagnoses": -7.039999999999999,
+        "bp_followup": -14.0,
+        "bg_followup": 5.0,
+        "bp_controlled": -6.0
+      }
+    },
+    {
+      "timestamp": "2025-05-28T17:17:39.092646",
+      "metrics": {
+        "percent_new_diagnoses": 33.64,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 52.0,
+        "percent_bp_controlled": 66.0,
+        "performance_declined": true,
+        "timestamp": "2025-05-28T17:17:39.092646"
       },
       "changes": {
         "new_diagnoses": 0.0,
