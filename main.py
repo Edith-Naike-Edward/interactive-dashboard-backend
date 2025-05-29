@@ -247,12 +247,12 @@ def run_pipeline(
         
         print("Data generation and anomaly detection completed successfully")
         
-        send_email(
-            subject="Data Generation Completed",
-            html_content=f"<p>Data has been generated for {num_patients} patients from the last {days} days. </p>",
-            to_email="edithnaike@gmail.com",
-            to_name="Edith Naike"
-        )
+        # send_email(
+        #     subject="Data Generation Completed",
+        #     html_content=f"<p>Data has been generated for {num_patients} patients from the last {days} days. </p>",
+        #     to_email="edithnaike@gmail.com",
+        #     to_name="Edith Naike"
+        # )
 
     except Exception as e:
         print(f"Error in data generation: {str(e)}")
