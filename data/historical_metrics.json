@@ -719,6 +719,669 @@
       "percent_bp_controlled": 72.0,
       "performance_declined": true,
       "timestamp": "2025-05-28T21:08:49.403517"
+    },
+    {
+      "percent_new_diagnoses": 26.09,
+      "percent_bp_followup": 63.0,
+      "percent_bg_followup": 56.0,
+      "percent_bp_controlled": 75.0,
+      "timestamp": "2025-05-29T06:49:54.790078",
+      "changes": {
+        "new_diagnoses": -25.65,
+        "bp_followup": 5.0,
+        "bg_followup": 12.0,
+        "bp_controlled": 4.17
+      }
+    },
+    {
+      "percent_new_diagnoses": 43.22,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 47.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T06:57:36.729862",
+      "changes": {
+        "new_diagnoses": 65.66,
+        "bp_followup": 17.46,
+        "bg_followup": -16.07,
+        "bp_controlled": -10.67
+      }
+    },
+    {
+      "percent_new_diagnoses": 43.22,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 47.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:03:29.780180",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:15:49.735935",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:15:53.754799",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:17:10.034318",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:17:13.297004",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:17:48.356998",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:17:53.394782",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:18:18.498658",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.21,
+      "percent_bp_followup": 60.0,
+      "percent_bg_followup": 39.0,
+      "percent_bp_controlled": 70.0,
+      "timestamp": "2025-05-29T07:18:22.576025",
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.95,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 69.0,
+      "timestamp": "2025-05-29T07:19:24.204173",
+      "changes": {
+        "new_diagnoses": -33.02,
+        "bp_followup": -8.11,
+        "bg_followup": 6.38,
+        "bp_controlled": 2.99
+      }
+    },
+    {
+      "percent_new_diagnoses": 28.95,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 69.0,
+      "timestamp": "2025-05-29T07:19:26.103287",
+      "changes": {
+        "new_diagnoses": -33.02,
+        "bp_followup": -8.11,
+        "bg_followup": 6.38,
+        "bp_controlled": 2.99
+      }
+    },
+    {
+      "percent_new_diagnoses": 32.5,
+      "percent_bp_followup": 71.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:46:34.495044",
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 32.5,
+      "percent_bp_followup": 71.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:47:17.463388",
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 32.5,
+      "percent_bp_followup": 71.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:47:48.043112",
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 32.5,
+      "percent_bp_followup": 71.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:48:18.044297",
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 32.5,
+      "percent_bp_followup": 71.0,
+      "percent_bg_followup": 50.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T07:48:19.733786",
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:48:48.109054",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:49:18.050014",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:49:48.048750",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:50:04.757851",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:50:18.041769",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:50:50.872287",
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:51:57.158911",
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:52:02.724002",
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:52:17.738020",
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:52:48.033907",
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:53:17.757084",
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:53:48.215254",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:55:14.543529",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:55:17.733852",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:55:47.757244",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T07:57:11.055310",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T08:02:02.358149",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 39.13,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 49.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T08:02:06.769225",
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "percent_new_diagnoses": 29.57,
+      "percent_bp_followup": 63.0,
+      "percent_bg_followup": 41.0,
+      "percent_bp_controlled": 65.0,
+      "timestamp": "2025-05-29T08:10:00.797600",
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "percent_new_diagnoses": 29.57,
+      "percent_bp_followup": 63.0,
+      "percent_bg_followup": 41.0,
+      "percent_bp_controlled": 65.0,
+      "timestamp": "2025-05-29T08:10:04.502358",
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "percent_new_diagnoses": 29.57,
+      "percent_bp_followup": 63.0,
+      "percent_bg_followup": 41.0,
+      "percent_bp_controlled": 65.0,
+      "timestamp": "2025-05-29T08:13:47.520536",
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "percent_new_diagnoses": 29.46,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 51.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T08:17:13.734772",
+      "changes": {
+        "new_diagnoses": -0.37,
+        "bp_followup": 7.94,
+        "bg_followup": 24.39,
+        "bp_controlled": 9.23
+      }
+    },
+    {
+      "percent_new_diagnoses": 29.46,
+      "percent_bp_followup": 68.0,
+      "percent_bg_followup": 51.0,
+      "percent_bp_controlled": 71.0,
+      "timestamp": "2025-05-29T08:17:15.890801",
+      "changes": {
+        "new_diagnoses": -0.37,
+        "bp_followup": 7.94,
+        "bg_followup": 24.39,
+        "bp_controlled": 9.23
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:21:11.814421",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:21:15.633619",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:21:39.108838",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:21:44.476561",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:02.350141",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:05.926966",
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:19.683826",
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:23.850142",
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:38.926696",
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "percent_new_diagnoses": 30.43,
+      "percent_bp_followup": 74.0,
+      "percent_bg_followup": 48.0,
+      "percent_bp_controlled": 67.0,
+      "timestamp": "2025-05-29T08:22:41.873493",
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
     }
   ],
   "alerts": [
@@ -1230,6 +1893,1128 @@
         "bp_followup": 0.0,
         "bg_followup": 0.0,
         "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T06:49:54.790078",
+      "metrics": {
+        "percent_new_diagnoses": 26.09,
+        "percent_bp_followup": 63.0,
+        "percent_bg_followup": 56.0,
+        "percent_bp_controlled": 75.0,
+        "timestamp": "2025-05-29T06:49:54.790078",
+        "changes": {
+          "new_diagnoses": -25.65,
+          "bp_followup": 5.0,
+          "bg_followup": 12.0,
+          "bp_controlled": 4.17
+        }
+      },
+      "changes": {
+        "new_diagnoses": -25.65,
+        "bp_followup": 5.0,
+        "bg_followup": 12.0,
+        "bp_controlled": 4.17
+      }
+    },
+    {
+      "timestamp": "2025-05-29T06:57:36.729862",
+      "metrics": {
+        "percent_new_diagnoses": 43.22,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 47.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T06:57:36.729862",
+        "changes": {
+          "new_diagnoses": 65.66,
+          "bp_followup": 17.46,
+          "bg_followup": -16.07,
+          "bp_controlled": -10.67
+        }
+      },
+      "changes": {
+        "new_diagnoses": 65.66,
+        "bp_followup": 17.46,
+        "bg_followup": -16.07,
+        "bp_controlled": -10.67
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:03:29.780180",
+      "metrics": {
+        "percent_new_diagnoses": 43.22,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 47.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:03:29.780180",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:15:49.735935",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:15:49.735935",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:15:53.754799",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:15:53.754799",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:17:10.034318",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:17:10.034318",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:17:13.297004",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:17:13.297004",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:17:48.356998",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:17:48.356998",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:17:53.394782",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:17:53.394782",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:18:18.498658",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:18:18.498658",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:18:22.576025",
+      "metrics": {
+        "percent_new_diagnoses": 28.21,
+        "percent_bp_followup": 60.0,
+        "percent_bg_followup": 39.0,
+        "percent_bp_controlled": 70.0,
+        "timestamp": "2025-05-29T07:18:22.576025",
+        "changes": {
+          "new_diagnoses": -34.73,
+          "bp_followup": -18.92,
+          "bg_followup": -17.02,
+          "bp_controlled": 4.48
+        }
+      },
+      "changes": {
+        "new_diagnoses": -34.73,
+        "bp_followup": -18.92,
+        "bg_followup": -17.02,
+        "bp_controlled": 4.48
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:19:24.204173",
+      "metrics": {
+        "percent_new_diagnoses": 28.95,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 69.0,
+        "timestamp": "2025-05-29T07:19:24.204173",
+        "changes": {
+          "new_diagnoses": -33.02,
+          "bp_followup": -8.11,
+          "bg_followup": 6.38,
+          "bp_controlled": 2.99
+        }
+      },
+      "changes": {
+        "new_diagnoses": -33.02,
+        "bp_followup": -8.11,
+        "bg_followup": 6.38,
+        "bp_controlled": 2.99
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:19:26.103287",
+      "metrics": {
+        "percent_new_diagnoses": 28.95,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 69.0,
+        "timestamp": "2025-05-29T07:19:26.103287",
+        "changes": {
+          "new_diagnoses": -33.02,
+          "bp_followup": -8.11,
+          "bg_followup": 6.38,
+          "bp_controlled": 2.99
+        }
+      },
+      "changes": {
+        "new_diagnoses": -33.02,
+        "bp_followup": -8.11,
+        "bg_followup": 6.38,
+        "bp_controlled": 2.99
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:46:34.495044",
+      "metrics": {
+        "percent_new_diagnoses": 32.5,
+        "percent_bp_followup": 71.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:46:34.495044",
+        "changes": {
+          "new_diagnoses": 12.26,
+          "bp_followup": 4.41,
+          "bg_followup": 0.0,
+          "bp_controlled": -2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:47:17.463388",
+      "metrics": {
+        "percent_new_diagnoses": 32.5,
+        "percent_bp_followup": 71.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:47:17.463388",
+        "changes": {
+          "new_diagnoses": 12.26,
+          "bp_followup": 4.41,
+          "bg_followup": 0.0,
+          "bp_controlled": -2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:47:48.043112",
+      "metrics": {
+        "percent_new_diagnoses": 32.5,
+        "percent_bp_followup": 71.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:47:48.043112",
+        "changes": {
+          "new_diagnoses": 12.26,
+          "bp_followup": 4.41,
+          "bg_followup": 0.0,
+          "bp_controlled": -2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:48:18.044297",
+      "metrics": {
+        "percent_new_diagnoses": 32.5,
+        "percent_bp_followup": 71.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:48:18.044297",
+        "changes": {
+          "new_diagnoses": 12.26,
+          "bp_followup": 4.41,
+          "bg_followup": 0.0,
+          "bp_controlled": -2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:48:19.733786",
+      "metrics": {
+        "percent_new_diagnoses": 32.5,
+        "percent_bp_followup": 71.0,
+        "percent_bg_followup": 50.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T07:48:19.733786",
+        "changes": {
+          "new_diagnoses": 12.26,
+          "bp_followup": 4.41,
+          "bg_followup": 0.0,
+          "bp_controlled": -2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 12.26,
+        "bp_followup": 4.41,
+        "bg_followup": 0.0,
+        "bp_controlled": -2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:48:48.109054",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:48:48.109054",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:49:18.050014",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:49:18.050014",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:49:48.048750",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:49:48.048750",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:50:04.757851",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:50:04.757851",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:50:18.041769",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:50:18.041769",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:50:50.872287",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:50:50.872287",
+        "changes": {
+          "new_diagnoses": 35.16,
+          "bp_followup": 0.0,
+          "bg_followup": -2.0,
+          "bp_controlled": 2.9
+        }
+      },
+      "changes": {
+        "new_diagnoses": 35.16,
+        "bp_followup": 0.0,
+        "bg_followup": -2.0,
+        "bp_controlled": 2.9
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:51:57.158911",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:51:57.158911",
+        "changes": {
+          "new_diagnoses": 20.4,
+          "bp_followup": -4.23,
+          "bg_followup": -2.0,
+          "bp_controlled": 5.97
+        }
+      },
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:52:02.724002",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:52:02.724002",
+        "changes": {
+          "new_diagnoses": 20.4,
+          "bp_followup": -4.23,
+          "bg_followup": -2.0,
+          "bp_controlled": 5.97
+        }
+      },
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:52:17.738020",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:52:17.738020",
+        "changes": {
+          "new_diagnoses": 20.4,
+          "bp_followup": -4.23,
+          "bg_followup": -2.0,
+          "bp_controlled": 5.97
+        }
+      },
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:52:48.033907",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:52:48.033907",
+        "changes": {
+          "new_diagnoses": 20.4,
+          "bp_followup": -4.23,
+          "bg_followup": -2.0,
+          "bp_controlled": 5.97
+        }
+      },
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:53:17.757084",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:53:17.757084",
+        "changes": {
+          "new_diagnoses": 20.4,
+          "bp_followup": -4.23,
+          "bg_followup": -2.0,
+          "bp_controlled": 5.97
+        }
+      },
+      "changes": {
+        "new_diagnoses": 20.4,
+        "bp_followup": -4.23,
+        "bg_followup": -2.0,
+        "bp_controlled": 5.97
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:53:48.215254",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:53:48.215254",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:55:14.543529",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:55:14.543529",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:55:17.733852",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:55:17.733852",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:55:47.757244",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:55:47.757244",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T07:57:11.055310",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T07:57:11.055310",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:02:02.358149",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T08:02:02.358149",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:02:06.769225",
+      "metrics": {
+        "percent_new_diagnoses": 39.13,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 49.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T08:02:06.769225",
+        "changes": {
+          "new_diagnoses": 0.0,
+          "bp_followup": 0.0,
+          "bg_followup": 0.0,
+          "bp_controlled": 0.0
+        }
+      },
+      "changes": {
+        "new_diagnoses": 0.0,
+        "bp_followup": 0.0,
+        "bg_followup": 0.0,
+        "bp_controlled": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:10:00.797600",
+      "metrics": {
+        "percent_new_diagnoses": 29.57,
+        "percent_bp_followup": 63.0,
+        "percent_bg_followup": 41.0,
+        "percent_bp_controlled": 65.0,
+        "timestamp": "2025-05-29T08:10:00.797600",
+        "changes": {
+          "new_diagnoses": -24.43,
+          "bp_followup": -7.35,
+          "bg_followup": -16.33,
+          "bp_controlled": -8.45
+        }
+      },
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:10:04.502358",
+      "metrics": {
+        "percent_new_diagnoses": 29.57,
+        "percent_bp_followup": 63.0,
+        "percent_bg_followup": 41.0,
+        "percent_bp_controlled": 65.0,
+        "timestamp": "2025-05-29T08:10:04.502358",
+        "changes": {
+          "new_diagnoses": -24.43,
+          "bp_followup": -7.35,
+          "bg_followup": -16.33,
+          "bp_controlled": -8.45
+        }
+      },
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:13:47.520536",
+      "metrics": {
+        "percent_new_diagnoses": 29.57,
+        "percent_bp_followup": 63.0,
+        "percent_bg_followup": 41.0,
+        "percent_bp_controlled": 65.0,
+        "timestamp": "2025-05-29T08:13:47.520536",
+        "changes": {
+          "new_diagnoses": -24.43,
+          "bp_followup": -7.35,
+          "bg_followup": -16.33,
+          "bp_controlled": -8.45
+        }
+      },
+      "changes": {
+        "new_diagnoses": -24.43,
+        "bp_followup": -7.35,
+        "bg_followup": -16.33,
+        "bp_controlled": -8.45
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:17:13.734772",
+      "metrics": {
+        "percent_new_diagnoses": 29.46,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 51.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T08:17:13.734772",
+        "changes": {
+          "new_diagnoses": -0.37,
+          "bp_followup": 7.94,
+          "bg_followup": 24.39,
+          "bp_controlled": 9.23
+        }
+      },
+      "changes": {
+        "new_diagnoses": -0.37,
+        "bp_followup": 7.94,
+        "bg_followup": 24.39,
+        "bp_controlled": 9.23
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:17:15.890801",
+      "metrics": {
+        "percent_new_diagnoses": 29.46,
+        "percent_bp_followup": 68.0,
+        "percent_bg_followup": 51.0,
+        "percent_bp_controlled": 71.0,
+        "timestamp": "2025-05-29T08:17:15.890801",
+        "changes": {
+          "new_diagnoses": -0.37,
+          "bp_followup": 7.94,
+          "bg_followup": 24.39,
+          "bp_controlled": 9.23
+        }
+      },
+      "changes": {
+        "new_diagnoses": -0.37,
+        "bp_followup": 7.94,
+        "bg_followup": 24.39,
+        "bp_controlled": 9.23
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:21:11.814421",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:21:11.814421",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:21:15.633619",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:21:15.633619",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:21:39.108838",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:21:39.108838",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:21:44.476561",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:21:44.476561",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:02.350141",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:02.350141",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:05.926966",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:05.926966",
+        "changes": {
+          "new_diagnoses": 2.91,
+          "bp_followup": 17.46,
+          "bg_followup": 17.07,
+          "bp_controlled": 3.08
+        }
+      },
+      "changes": {
+        "new_diagnoses": 2.91,
+        "bp_followup": 17.46,
+        "bg_followup": 17.07,
+        "bp_controlled": 3.08
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:19.683826",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:19.683826",
+        "changes": {
+          "new_diagnoses": 3.29,
+          "bp_followup": 8.82,
+          "bg_followup": -5.88,
+          "bp_controlled": -5.63
+        }
+      },
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:23.850142",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:23.850142",
+        "changes": {
+          "new_diagnoses": 3.29,
+          "bp_followup": 8.82,
+          "bg_followup": -5.88,
+          "bp_controlled": -5.63
+        }
+      },
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:38.926696",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:38.926696",
+        "changes": {
+          "new_diagnoses": 3.29,
+          "bp_followup": 8.82,
+          "bg_followup": -5.88,
+          "bp_controlled": -5.63
+        }
+      },
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
+      }
+    },
+    {
+      "timestamp": "2025-05-29T08:22:41.873493",
+      "metrics": {
+        "percent_new_diagnoses": 30.43,
+        "percent_bp_followup": 74.0,
+        "percent_bg_followup": 48.0,
+        "percent_bp_controlled": 67.0,
+        "timestamp": "2025-05-29T08:22:41.873493",
+        "changes": {
+          "new_diagnoses": 3.29,
+          "bp_followup": 8.82,
+          "bg_followup": -5.88,
+          "bp_controlled": -5.63
+        }
+      },
+      "changes": {
+        "new_diagnoses": 3.29,
+        "bp_followup": 8.82,
+        "bg_followup": -5.88,
+        "bp_controlled": -5.63
       }
     }
   ]

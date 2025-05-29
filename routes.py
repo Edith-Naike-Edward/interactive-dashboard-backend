@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+import traceback
 from typing import Any, Dict
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi.responses import JSONResponse
@@ -12,14 +13,16 @@ from fastapi import BackgroundTasks
 from datetime import datetime, timedelta
 from api.auth.signin.auth import router as signin_router  # Import the signin router
 from api.auth.register.auth import router as register_router  # Import the register router
-from utils.monitoring import (
-    main,
-    HISTORICAL_DATA_PATH
-)
-from utils.followup import (
-    load_historical_data,
-    HISTORICAL_METRICS_PATH 
-)
+# from utils.monitoring import (
+#     main,
+#     HISTORICAL_DATA_PATH
+# )
+# from utils.followup import (
+#     main,
+#     HISTORICAL_METRICS_PATH 
+# )
+from utils.monitoring import monitor_activity as monitoring_main, HISTORICAL_DATA_PATH
+from utils.followup import followup_activity as followup_main
 import json  # Add this import if not already present
 # from utils.patient_summary import get_patient_summary
 from src.generators.patientgenerator import generate_patients, generated_patients
@@ -89,7 +92,7 @@ async def get_users(limit: int = 1000):
 async def check_activity_decline():
     """Endpoint to check for activity declines based on historical trends."""
     try:
-        monitoring_data = main()
+        monitoring_data = monitoring_main()
 
         # If main() returned an error dictionary
         if "error" in monitoring_data:
@@ -123,195 +126,73 @@ async def check_activity_decline():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}") 
     
-# @router.get("/monitoring-metrics", response_class=JSONResponse)
-# async def get_monitoring_metrics():
-#     """
-#     Endpoint to compute and return the latest monitoring metrics,
-#     compare with previous, and provide full historical metrics and alerts.
-#     """
-#     try:
-#         # Validate input data files exist
-#         if not DIAGNOSES_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Diagnoses data file not found.")
-#         if not BP_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="BP logs data file not found.")
-#         if not GLUCOSE_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Glucose logs data file not found.")
-
-#         # Run the monitoring workflow
-#         current_metrics = main()
-
-#         # Load historical data for additional context
-#         historical_data = load_historical_data()
-
-#         # Compose full response
-#         return {
-#             "status": "success",
-#             "current_metrics": current_metrics,
-#             "historical_data": {
-#                 "metrics": historical_data.get("metrics", []),
-#                 "alerts": historical_data.get("alerts", [])
-#             }
-#         }
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Failed to generate monitoring metrics: {e}")
-
 @router.get("/monitoring-metrics", response_class=JSONResponse)
 async def get_monitoring_metrics():
     """
     Endpoint to compute and return the latest monitoring metrics,
     compare with previous, and provide full historical metrics and alerts.
     """
+    print("\n=== Starting monitoring metrics generation ===")
+    print(f"Current time: {datetime.now().isoformat()}")
+    
     try:
         # Validate input data files exist
-        if not DIAGNOSES_PATH.exists():
-            raise HTTPException(status_code=404, detail="Diagnoses data file not found.")
-        if not BP_LOGS_PATH.exists():
-            raise HTTPException(status_code=404, detail="BP logs data file not found.")
-        if not GLUCOSE_LOGS_PATH.exists():
-            raise HTTPException(status_code=404, detail="Glucose logs data file not found.")
+        required_files = [DIAGNOSES_PATH, BP_LOGS_PATH, GLUCOSE_LOGS_PATH]
+        print("\nChecking required data files:")
+        for file_path in required_files:
+            file_exists = file_path.exists()
+            print(f"- {file_path.name}: {'Found' if file_exists else 'MISSING'}")
+            if not file_exists:
+                raise HTTPException(status_code=404, detail=f"{file_path.name} data file not found.")
 
         # Run the monitoring workflow
-        current_metrics = main()
+        print("\nRunning main monitoring workflow...")
+        metrics_data = followup_main()
+        # Convert numpy types to native Python types for JSON serialization
+        metrics_data = json.loads(
+            json.dumps(metrics_data, default=lambda x: bool(x) if isinstance(x, np.bool_) else x)
+        )
+        print("Main workflow completed with result:", json.dumps(metrics_data, indent=2))
+
+        # Debug: Check structure of returned metrics
+        if not metrics_data:
+            print("ERROR: Main workflow returned None")
+            raise HTTPException(status_code=500, detail="Monitoring workflow returned no data")
+            
+        if "current_metrics" not in metrics_data:
+            print("ERROR: current_metrics key missing in returned data")
+            print("Full returned data structure:", type(metrics_data))
+            if isinstance(metrics_data, dict):
+                print("Keys in returned data:", metrics_data.keys())
+            raise HTTPException(status_code=500, detail="'current_metrics' key missing in response")
 
         # Ensure changes exists even if no comparison was made
-        if 'changes' not in current_metrics:
-            current_metrics['changes'] = {
+        if 'changes' not in metrics_data["current_metrics"]:
+            print("No previous metrics found for comparison - initializing empty changes")
+            metrics_data["current_metrics"]['changes'] = {
                 'new_diagnoses': 0,
                 'bp_followup': 0,
                 'bg_followup': 0,
                 'bp_controlled': 0
             }
 
-        # Ensure threshold_violations exists
-        if 'threshold_violations' not in current_metrics:
-            current_metrics['threshold_violations'] = {
-                'new_diagnoses': current_metrics.get('performance_declined', False),
-                'bp_followup': current_metrics.get('performance_declined', False),
-                'bg_followup': current_metrics.get('performance_declined', False),
-                'bp_controlled': current_metrics.get('performance_declined', False)
-            }
-
-        # Load historical data for additional context
-        historical_data = load_historical_data()
-
-        # Compose full response
+        print("\nFinal metrics data structure:")
+        print(json.dumps(metrics_data, indent=2))
+        
+        print("\n=== Monitoring metrics generation completed successfully ===")
         return {
             "status": "success",
-            "current_metrics": {
-                "percent_new_diagnoses": current_metrics["percent_new_diagnoses"],
-                "percent_bp_followup": current_metrics["percent_bp_followup"],
-                "percent_bg_followup": current_metrics["percent_bg_followup"],
-                "percent_bp_controlled": current_metrics["percent_bp_controlled"],
-                "timestamp": current_metrics["timestamp"],
-                "changes": current_metrics["changes"]
-            },
-            "historical_data": historical_data.get("metrics", []),
-            "last_checked": current_metrics["timestamp"],
-            "performance_declined": current_metrics.get("performance_declined", False),
-            "threshold_violations": current_metrics["threshold_violations"]
+            "data": metrics_data
         }
+        
+    except HTTPException as http_err:
+        print(f"\nHTTP Exception occurred: {http_err.detail}")
+        raise http_err
+        
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to generate monitoring metrics: {e}")
-    
-# @router.get("/monitoring-metrics", response_class=JSONResponse)
-# async def get_monitoring_metrics():
-#     """
-#     Endpoint to check monitoring metrics and return comprehensive data.
-    
-#     Returns:
-#         - Current and previous metrics
-#         - Percentage changes
-#         - Performance status (50% threshold)
-#         - Complete historical data
-#     """
-#     try:
-#         # Check if files exist
-#         if not DIAGNOSES_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Diagnoses data file not found")
-#         if not BP_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="BP logs file not found")
-#         if not GLUCOSE_LOGS_PATH.exists():
-#             raise HTTPException(status_code=404, detail="Glucose logs file not found")
-
-#         # Ensure data directory exists
-#         PREVIOUS_METRICS_PATH.parent.mkdir(parents=True, exist_ok=True)
-#         HISTORICAL_METRICS_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-#         # Load data
-#         try:
-#             diagnoses_df = pd.read_csv(DIAGNOSES_PATH)
-#             bp_logs_df = pd.read_csv(BP_LOGS_PATH)
-#             glucose_logs_df = pd.read_csv(GLUCOSE_LOGS_PATH)
-#         except Exception as e:
-#             raise HTTPException(status_code=400, detail=f"Error reading CSV files: {str(e)}")
-        
-#         # Calculate current metrics
-#         current = calculate_monitoring_metrics(diagnoses_df, bp_logs_df, glucose_logs_df)
-        
-#         # Load previous metrics
-#         previous = load_previous_metrics()
-        
-#         # Save current as new previous
-#         save_current_metrics(current)
-        
-#         # Update historical data
-#         save_historical_metrics(previous, current)
-        
-#         # Load historical data for response
-#         historical_data = load_historical_data()
-
-#         response_data = {
-#             "current": {
-#                 "new_diagnoses": current["percent_new_diagnoses"],
-#                 "bp_followup": current["percent_bp_followup"],
-#                 "bg_followup": current["percent_bg_followup"],
-#                 "bp_controlled": current["percent_bp_controlled"],
-#                 "timestamp": current["timestamp"]
-#             },
-#             "previous": {
-#                 "new_diagnoses": previous.get("percent_new_diagnoses", 0),
-#                 "bp_followup": previous.get("percent_bp_followup", 0),
-#                 "bg_followup": previous.get("percent_bg_followup", 0),
-#                 "bp_controlled": previous.get("percent_bp_controlled", 0),
-#                 "timestamp": previous.get("timestamp", "")
-#             },
-#             "percent_changes": {
-#                 "new_diagnoses": calculate_change_percentage(
-#                     previous.get("percent_new_diagnoses", 0), 
-#                     current["percent_new_diagnoses"]
-#                 ),
-#                 "bp_followup": calculate_change_percentage(
-#                     previous.get("percent_bp_followup", 0),
-#                     current["percent_bp_followup"]
-#                 ),
-#                 "bg_followup": calculate_change_percentage(
-#                     previous.get("percent_bg_followup", 0),
-#                     current["percent_bg_followup"]
-#                 ),
-#                 "bp_controlled": calculate_change_percentage(
-#                     previous.get("percent_bp_controlled", 0),
-#                     current["percent_bp_controlled"]
-#                 ) 
-#             },
-#             # "historical_data": historical_data,
-#             "historical_data": historical_data.get("metrics", []),
-#             "last_checked": datetime.now().isoformat(),
-#             "performance_declined": bool(current["performance_declined"]),
-#             "threshold_violations": {
-#                 "new_diagnoses": bool(current["percent_new_diagnoses"] < 50),
-#                 "bp_followup": bool(current["percent_bp_followup"] < 50),
-#                 "bg_followup": bool(current["percent_bg_followup"] < 50),
-#                 "bp_controlled": bool(current["percent_bp_controlled"] < 50)
-#             }
-#         }
-        
-#         return response_data
-        
-#     except HTTPException:
-#         raise
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
+        print(f"\nERROR in monitoring metrics endpoint: {str(e)}")
+        print("Traceback:", traceback.format_exc())
+        raise HTTPException(status_code=500, detail=f"Failed to generate monitoring metrics: {str(e)}")
 
 @router.get("/patients")
 async def generate_and_get_patients(

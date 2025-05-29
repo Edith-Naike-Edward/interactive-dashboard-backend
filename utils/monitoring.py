@@ -170,57 +170,12 @@ def save_historical_data(current_sites, current_users, prev_sites, prev_users):
     except Exception as e:
         print(f"Error saving historical data: {e}")
 
-# def main():
-#     """Main monitoring function with proper comparison logic"""
-#     # 1. Get previous counts that are old enough for comparison
-#     prev_sites, prev_users = get_most_recent_comparable_counts()
-    
-#     # 2. Get current counts
-#     current_sites, current_users = get_current_active_counts()
-    
-#     # Handle cases where we couldn't get current data
-#     if current_sites is None or current_users is None:
-#         print("Error: Could not get current counts")
-#         return {
-#             "error": "Could not get current counts",
-#             "last_updated": datetime.now().isoformat()
-#         }
-    
-#     # 3. If no previous data exists, use current as previous (no change)
-#     if prev_sites is None:
-#         prev_sites = current_sites
-#     if prev_users is None:
-#         prev_users = current_users
-    
-#     # 4. Calculate changes
-#     sites_change = calculate_percentage_change(prev_sites, current_sites)
-#     users_change = calculate_percentage_change(prev_users, current_users)
-    
-#     # 5. Save to history (with both previous and current values)
-#     save_historical_data(current_sites, current_users, prev_sites, prev_users)
-    
-#     return {
-#         "current": {
-#             "sites": current_sites,
-#             "users": current_users
-#         },
-#         "previous": {
-#             "sites": prev_sites,
-#             "users": prev_users
-#         },
-#         "sites_percentage_change": sites_change,
-#         "users_percentage_change": users_change,
-#         "site_activity_declined_5_percent": sites_change <= -5,
-#         "user_activity_declined_5_percent": users_change <= -5,
-#         "last_updated": datetime.now().isoformat()
-#     }
-
 def send_sms_alert(message: str):
     """Send SMS alert via Africa's Talking"""
     if not sms:
         print("SMS service not available")
         return False
-    
+        
     try:
         response = sms.send(message, SMS_RECIPIENTS, sender_id=SMS_SENDER_ID)
         print(f"SMS sent: {response}")
@@ -270,7 +225,7 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
         # Send notifications for medium/high severity
         sms_msg = f"ALERT: Site activity declined by {abs(change)}%"
         email_subject = f"{severity.upper()} ALERT: Site Activity Decline"
-        send_sms_alert(sms_msg)
+        # send_sms_alert(sms_msg)
         send_email_alert(email_subject, alert_msg)
     
     # Check for user activity decline
@@ -289,7 +244,7 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
         # Send notifications
         sms_msg = f"ALERT: User activity declined by {abs(change)}%"
         email_subject = f"{severity.upper()} ALERT: User Activity Decline"
-        send_sms_alert(sms_msg)
+        # send_sms_alert(sms_msg)
         send_email_alert(email_subject, alert_msg)
     
     # Check for inactive sites/users
@@ -339,7 +294,7 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
     
     return alerts
 
-def main() -> Dict:
+def monitor_activity() -> Dict:
     """Main monitoring function with alert generation"""
     # 1. Get previous counts that are old enough for comparison
     prev_sites, prev_users = get_most_recent_comparable_counts()
