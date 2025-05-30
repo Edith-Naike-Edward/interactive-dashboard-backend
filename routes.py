@@ -6,6 +6,9 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.responses import JSONResponse
 import numpy as np
 import pandas as pd
+from pydantic import BaseModel
+from models import User
+from src.analytics.anomaly_detector import detect_anomalies
 from utils.dataloader import reload_all_data
 from database import get_db
 from sqlalchemy.orm import Session
@@ -13,14 +16,6 @@ from fastapi import BackgroundTasks
 from datetime import datetime, timedelta
 from api.auth.signin.auth import router as signin_router  # Import the signin router
 from api.auth.register.auth import router as register_router  # Import the register router
-# from utils.monitoring import (
-#     main,
-#     HISTORICAL_DATA_PATH
-# )
-# from utils.followup import (
-#     main,
-#     HISTORICAL_METRICS_PATH 
-# )
 from utils.monitoring import monitor_activity as monitoring_main, HISTORICAL_DATA_PATH
 from utils.followup import followup_activity as followup_main
 import json  # Add this import if not already present
@@ -40,7 +35,62 @@ PREVIOUS_METRICS_PATH = Path("data/previous_metrics.json")
 HISTORICAL_METRICS_PATH = Path("data/historical_metrics.json")
 HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
 
+class HealthDataRequest(BaseModel):
+    screenings: Dict[str, Any] = None
+    bp_logs: Dict[str, Any] = None
+    glucose_logs: Dict[str, Any] = None
+    patient_diagnosis: Dict[str, Any] = None
+    patient_lifestyle: Dict[str, Any] = None
+    patient_medical_compliance: Dict[str, Any] = None
+    patient_visits: Dict[str, Any] = None
+    patient_medical_reviews: Dict[str, Any] = None
 
+@router.post("/detect", response_model=Dict[str, Any])
+async def detect_health_anomalies(data: HealthDataRequest):
+    try:
+        # Convert input data to DataFrames
+        health_data = {}
+        
+        if data.screenings:
+            health_data['screenings'] = pd.DataFrame(data.screenings)
+        if data.bp_logs:
+            health_data['bp_logs'] = pd.DataFrame(data.bp_logs)
+        if data.glucose_logs:
+            health_data['glucose_logs'] = pd.DataFrame(data.glucose_logs)
+        if data.patient_diagnosis:
+            health_data['patient_diagnosis'] = pd.DataFrame(data.patient_diagnosis)
+        if data.patient_lifestyle:
+            health_data['patient_lifestyle'] = pd.DataFrame(data.patient_lifestyle)
+        if data.patient_medical_compliance:
+            health_data['patient_medical_compliance'] = pd.DataFrame(data.patient_medical_compliance)
+        if data.patient_visits:
+            health_data['patient_visits'] = pd.DataFrame(data.patient_visits)
+        if data.patient_medical_reviews:
+            health_data['patient_medical_reviews'] = pd.DataFrame(data.patient_medical_reviews)
+        
+        # Detect anomalies
+        anomalies = detect_anomalies(health_data)
+        
+        # Convert DataFrame to JSON-friendly format
+        if not anomalies.empty:
+            anomalies['timestamp'] = anomalies['timestamp'].astype(str)
+            return {
+                "anomalies": anomalies.to_dict(orient='records'),
+                "summary": {
+                    "total": len(anomalies),
+                    "critical": len(anomalies[anomalies['severity'] >= 4]),
+                    "warning": len(anomalies[anomalies['severity'] < 4]),
+                    "by_category": anomalies['alert_type'].value_counts().to_dict()
+                }
+            }
+        else:
+            return {"anomalies": [], "summary": {"total": 0, "critical": 0, "warning": 0, "by_category": {}}}
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+    
 @router.get("/sites")
 async def get_sites(limit: int = 100):
     """Get generated site data"""
@@ -70,6 +120,29 @@ async def get_active_user_count():
         return {"active_user_count": active_count, "total_user_count": user_count}
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="User data not found.")
+    
+@router.post("users/me")
+async def get_current_user_data(db: Session = Depends(get_db)):
+    """Get current user data"""
+    try:
+        # Assuming the user is authenticated and we have their ID
+        # Replace with actual authentication logic
+        user_id = "current_user_id"  # Placeholder for current user ID
+        
+        user = db.query(User).filter(User.id == user_id).first()
+        if not user:
+            raise HTTPException(status_code=404, detail="User not found")
+        
+        return {
+            "id": user.id,
+            "name": user.name,
+            "email": user.email,
+            "role": user.role,
+            "organisation": user.organisation,
+            "is_active": user.is_active
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/reload-data")
 async def reload_data(db: Session = Depends(get_db)):
@@ -126,6 +199,56 @@ async def check_activity_decline():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}") 
     
+# @router.get("/monitoring-metrics", response_class=JSONResponse)
+# async def get_monitoring_metrics():
+#     """
+#     Endpoint to return the latest cached monitoring metrics.
+#     Data is generated separately every 5 minutes by the scheduler.
+#     """
+#     print(f"\n=== Fetching monitoring metrics at {datetime.now().isoformat()} ===")
+    
+#     try:
+#         # Check if historical metrics file exists
+#         if not HISTORICAL_METRICS_PATH.exists():
+#             raise HTTPException(
+#                 status_code=404,
+#                 detail="Monitoring data not available yet. First generation in progress."
+#             )
+
+#         # Load the pre-calculated metrics
+#         with open(HISTORICAL_METRICS_PATH, 'r') as f:
+#             metrics_data = json.load(f)
+
+#         # Get the most recent metrics (last entry in the array)
+#         if not metrics_data.get("metrics"):
+#             raise HTTPException(
+#                 status_code=404,
+#                 detail="No metrics data available"
+#             )
+
+#         latest_metrics = metrics_data["metrics"][-1]
+#         latest_alerts = metrics_data.get("alerts", [])[-5:]  # Last 5 alerts
+
+#         print(f"Returning metrics from {latest_metrics['timestamp']}")
+        
+#         return {
+#             "status": "success",
+#             "data": {
+#                 "current_metrics": latest_metrics,
+#                 "historical_data": metrics_data["metrics"][-100:],  # Last 30 data points
+#                 "alerts": latest_alerts,
+#                 "last_updated": latest_metrics["timestamp"]
+#             }
+#         }
+        
+#     except HTTPException:
+#         raise
+#     except Exception as e:
+#         print(f"\nERROR loading metrics: {str(e)}")
+#         raise HTTPException(
+#             status_code=500,
+#             detail=f"Failed to load monitoring metrics: {str(e)}"
+#         )
 @router.get("/monitoring-metrics", response_class=JSONResponse)
 async def get_monitoring_metrics():
     """
@@ -298,21 +421,66 @@ async def get_patientdiagnosis(limit: int = 100):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
 
+# @router.get("/anomalies")
+# async def get_anomalies(limit: int = 50, severity: str = None):
+#     """Get detected anomalies with optional severity filter"""
+#     try:
+#         df = pd.read_csv("data/raw/anomalies.csv")
+        
+#         if severity:
+#             severity = severity.upper()
+#             df = df[df["alert_type"].str.contains(severity)]
+            
+#         return df.head(limit).to_dict(orient="records")
+#     except FileNotFoundError:
+#         raise HTTPException(status_code=404, detail="Anomaly data not found. Generate data first.")
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
+
 @router.get("/anomalies")
 async def get_anomalies(limit: int = 50, severity: str = None):
     """Get detected anomalies with optional severity filter"""
     try:
         df = pd.read_csv("data/raw/anomalies.csv")
-        
+
         if severity:
             severity = severity.upper()
             df = df[df["alert_type"].str.contains(severity)]
-            
-        return df.head(limit).to_dict(orient="records")
+
+        # Replace NaN/NaT with None and convert to dict
+        data = df.head(limit).replace({np.nan: None, pd.NaT: None}).to_dict(orient="records")
+        
+        return data
+
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Anomaly data not found. Generate data first.")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+import numpy as np
+
+# @router.get("/anomalies")
+# async def get_anomalies(severity: str = None):
+#     """Get detected anomalies with optional severity filter"""
+#     try:
+#         df = pd.read_csv("data/raw/anomalies.csv")
+
+#         if severity:
+#             severity = severity.upper()
+#             df = df[df["alert_type"].str.contains(severity)]
+
+#         # Replace NaN and infinite values with None to avoid JSON serialization errors
+#         df_cleaned = df.replace([np.nan, np.inf, -np.inf], None)
+
+#         data = df_cleaned.to_dict(orient="records")
+
+#         return data
+
+#     except FileNotFoundError:
+#         raise HTTPException(status_code=404, detail="Anomaly data not found. Generate data first.")
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
+
+
 
 @router.get("/screenings")
 async def get_screenings(limit: int = 100):

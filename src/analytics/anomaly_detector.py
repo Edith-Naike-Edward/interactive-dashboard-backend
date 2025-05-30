@@ -1,4 +1,5 @@
 # anomaly_detector.py
+import os
 import pandas as pd
 from datetime import datetime
 from typing import Dict, Any
@@ -67,8 +68,83 @@ def detect_anomalies(health_data: Dict[str, pd.DataFrame]) -> pd.DataFrame:
             lambda row: f"{row.get('first_name', '')} {row.get('last_name', '')}".strip(),
             axis=1
         )
+        # Add human-readable descriptions
+        anomalies['description'] = anomalies['alert_type'].apply(_get_alert_description)
     
     return anomalies
+
+
+def load_health_data_from_csv(data_dir: str) -> Dict[str, pd.DataFrame]:
+    """
+    Loads health data from CSV files in the specified directory.
+
+    Args:
+        data_dir: Path to the directory containing the CSV files.
+
+    Returns:
+        A dictionary of DataFrames with keys:
+            - screenings
+            - bp_logs
+            - glucose_logs
+            - patient_diagnosis
+            - patient_lifestyle
+            - patient_medical_compliance
+            - patient_visits
+            - patient_medical_reviews
+            - patients
+            - users
+    """
+    filenames = {
+        "screenings": "screenings.csv",
+        "bp_logs": "bp_logs.csv",
+        "glucose_logs": "glucose_logs.csv",
+        "patient_diagnosis": "patient_diagnosis.csv",
+        "patient_lifestyle": "patient_lifestyle.csv",
+        "patient_medical_compliance": "patient_medical_compliance.csv",
+        "patient_visits": "patient_visits.csv",
+        "patient_medical_reviews": "patient_medical_reviews.csv",
+        "patients": "patients.csv",
+        "users": "users.csv",
+    }
+
+    data = {}
+    for key, filename in filenames.items():
+        path = os.path.join(data_dir, filename)
+        try:
+            df = pd.read_csv(path)
+            data[key] = df
+        except FileNotFoundError:
+            print(f"Warning: {filename} not found in {data_dir}")
+        except Exception as e:
+            print(f"Error loading {filename}: {e}")
+    
+    return data
+
+def _get_alert_description(alert_type: str) -> str:
+    """Returns human-readable descriptions for each alert type"""
+    descriptions = {
+        "SEVERE_HYPERGLYCEMIA": "Severely high glucose level detected",
+        "HYPOGLYCEMIA": "Dangerously low glucose level detected",
+        "HYPERTENSIVE_CRISIS": "Severely high blood pressure detected",
+        "HYPOTENSIVE_CRISIS": "Dangerously low blood pressure detected",
+        "TACHYCARDIA": "Abnormally high heart rate detected",
+        "BRADYCARDIA": "Abnormally low heart rate detected",
+        "POOR_GLYCEMIC_CONTROL": "Long-term blood sugar control is poor",
+        "HIGH_CVD_RISK": "Patient has high cardiovascular disease risk",
+        "SEVERE_OBESITY": "Patient BMI indicates severe obesity",
+        "SEVERE_UNDERWEIGHT": "Patient BMI indicates severe underweight",
+        "MENTAL_HEALTH_CONCERN": "Patient shows signs of mental health concern",
+        "UNDIAGNOSED_HIGH_RISK": "Patient shows high risk factors but remains undiagnosed",
+        "UNCONTROLLED_CONDITION": "Patient's condition appears uncontrolled",
+        "HIGH_RISK_LIFESTYLE": "Patient engages in high-risk lifestyle behaviors",
+        "MEDICATION_NON_COMPLIANCE": "Patient is non-compliant with medications",
+        "FREQUENT_VISITOR": "Patient has unusually high number of visits",
+        "CONCERNING_CLINICAL_NOTES": "Clinical notes contain concerning language",
+        "ELEVATED_FASTING_GLUCOSE": "Elevated fasting glucose level detected",
+        "ELEVATED_RANDOM_GLUCOSE": "Elevated random glucose level detected",
+        "WARNING": "General health warning"
+    }
+    return descriptions.get(alert_type, "Potential health concern detected")
 
 # Existing detection functions (kept from original code)
 def _detect_screening_anomalies(screenings: pd.DataFrame) -> pd.DataFrame:
@@ -320,142 +396,3 @@ def _get_severity_score(alert_type):
         "WARNING": 1
     }
     return severity_map.get(alert_type, 0)
-# import pandas as pd
-# from config.settings import ANOMALY_THRESHOLDS
-
-
-# def detect_anomalies(health_data: dict) -> pd.DataFrame:
-#     """
-#     Detects anomalies across multiple health data tables.
-    
-#     Args:
-#         health_data: Dictionary containing DataFrames for:
-#             - screenings: pd.DataFrame
-#             - bp_logs: pd.DataFrame
-#             - glucose_logs: pd.DataFrame
-    
-#     Returns:
-#         DataFrame with all detected anomalies across all tables
-#     """
-#     anomalies = pd.DataFrame()
-    
-#     # Check each table if it exists in the input
-#     if 'screenings' in health_data:
-#         screening_anomalies = _detect_screening_anomalies(health_data['screenings'])
-#         anomalies = pd.concat([anomalies, screening_anomalies], ignore_index=True)
-    
-#     if 'bp_logs' in health_data:
-#         bp_anomalies = _detect_bp_anomalies(health_data['bp_logs'])
-#         anomalies = pd.concat([anomalies, bp_anomalies], ignore_index=True)
-    
-#     if 'glucose_logs' in health_data:
-#         glucose_anomalies = _detect_glucose_anomalies(health_data['glucose_logs'])
-#         anomalies = pd.concat([anomalies, glucose_anomalies], ignore_index=True)
-    
-#     # Add severity ranking
-#     if not anomalies.empty:
-#         anomalies['severity'] = anomalies['alert_type'].apply(_get_severity_score)
-#         anomalies = anomalies.sort_values(['severity', 'timestamp'], ascending=[False, True])
-    
-#     return anomalies
-
-# def _detect_screening_anomalies(screenings: pd.DataFrame) -> pd.DataFrame:
-#     """Detects anomalies in screening data"""
-#     anomalies = screenings[
-#         (screenings["glucose_value"] > ANOMALY_THRESHOLDS["glucose"]["critical_high"]) |
-#         (screenings["avg_systolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_high"]) |
-#         (screenings["avg_diastolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_high"]) |
-#         (screenings["phq4_risk_level"].isin(["Moderate", "Severe"])) |
-#         (screenings["cvd_risk_level"] == "High")
-#     ].copy()
-    
-#     if not anomalies.empty:
-#         anomalies["alert_type"] = anomalies.apply(_classify_screening_alert, axis=1)
-#         anomalies["timestamp"] = pd.to_datetime(anomalies["created_at"])
-#         anomalies["source_table"] = "screenings"
-    
-#     return anomalies
-
-# def _detect_bp_anomalies(bp_logs: pd.DataFrame) -> pd.DataFrame:
-#     """Detects anomalies in blood pressure logs"""
-#     anomalies = bp_logs[
-#         (bp_logs["avg_systolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_high"]) |
-#         (bp_logs["avg_diastolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_high"]) |
-#         (bp_logs["avg_systolic"] < ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_low"]) |
-#         (bp_logs["avg_diastolic"] < ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_low"])
-#     ].copy()
-    
-#     if not anomalies.empty:
-#         anomalies["alert_type"] = anomalies.apply(_classify_bp_alert, axis=1)
-#         anomalies["timestamp"] = pd.to_datetime(anomalies["created_at"])
-#         anomalies["source_table"] = "bp_logs"
-    
-#     return anomalies
-
-# def _detect_glucose_anomalies(glucose_logs: pd.DataFrame) -> pd.DataFrame:
-#     """Detects anomalies in glucose logs"""
-#     anomalies = glucose_logs[
-#         (glucose_logs["glucose_value"] > ANOMALY_THRESHOLDS["glucose"]["critical_high"]) |
-#         (glucose_logs["glucose_value"] < ANOMALY_THRESHOLDS["glucose"]["critical_low"]) |
-#         (glucose_logs["hba1c"] > ANOMALY_THRESHOLDS["hba1c"]["critical_high"])
-#     ].copy()
-    
-#     if not anomalies.empty:
-#         anomalies["alert_type"] = anomalies.apply(_classify_glucose_alert, axis=1)
-#         anomalies["timestamp"] = pd.to_datetime(anomalies["created_at"])
-#         anomalies["source_table"] = "glucose_logs"
-    
-#     return anomalies
-
-# def _classify_screening_alert(row):
-#     """Classifies alerts from screening data"""
-#     if row["glucose_value"] > ANOMALY_THRESHOLDS["glucose"]["critical_high"]:
-#         return "SEVERE_HYPERGLYCEMIA"
-#     elif row["avg_systolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_high"]:
-#         return "HYPERTENSIVE_CRISIS"
-#     elif row["avg_diastolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_high"]:
-#         return "HYPERTENSIVE_CRISIS"
-#     elif row["phq4_risk_level"] in ["Moderate", "Severe"]:
-#         return "MENTAL_HEALTH_CONCERN"
-#     elif row["cvd_risk_level"] == "High":
-#         return "HIGH_CVD_RISK"
-#     else:
-#         return "WARNING"
-
-# def _classify_bp_alert(row):
-#     """Classifies alerts from blood pressure logs"""
-#     if row["avg_systolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_high"]:
-#         return "HYPERTENSIVE_CRISIS"
-#     elif row["avg_diastolic"] > ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_high"]:
-#         return "HYPERTENSIVE_CRISIS"
-#     elif row["avg_systolic"] < ANOMALY_THRESHOLDS["blood_pressure"]["systolic"]["critical_low"]:
-#         return "HYPOTENSIVE_CRISIS"
-#     elif row["avg_diastolic"] < ANOMALY_THRESHOLDS["blood_pressure"]["diastolic"]["critical_low"]:
-#         return "HYPOTENSIVE_CRISIS"
-#     else:
-#         return "WARNING"
-
-# def _classify_glucose_alert(row):
-#     """Classifies alerts from glucose logs"""
-#     if row["glucose_value"] > ANOMALY_THRESHOLDS["glucose"]["critical_high"]:
-#         return "SEVERE_HYPERGLYCEMIA"
-#     elif row["glucose_value"] < ANOMALY_THRESHOLDS["glucose"]["critical_low"]:
-#         return "HYPOGLYCEMIA"
-#     elif row["hba1c"] > ANOMALY_THRESHOLDS["hba1c"]["critical_high"]:
-#         return "POOR_GLYCEMIC_CONTROL"
-#     else:
-#         return "WARNING"
-
-# def _get_severity_score(alert_type):
-#     """Assigns severity score to prioritize critical alerts"""
-#     severity_map = {
-#         "SEVERE_HYPERGLYCEMIA": 4,
-#         "HYPOGLYCEMIA": 4,
-#         "HYPERTENSIVE_CRISIS": 4,
-#         "HYPOTENSIVE_CRISIS": 4,
-#         "POOR_GLYCEMIC_CONTROL": 3,
-#         "HIGH_CVD_RISK": 3,
-#         "MENTAL_HEALTH_CONCERN": 2,
-#         "WARNING": 1
-#     }
-#     return severity_map.get(alert_type, 0)

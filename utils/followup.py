@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Dict
 import africastalking
@@ -10,6 +11,7 @@ from fastapi.responses import JSONResponse
 from sib_api_v3_sdk import Configuration, ApiClient
 from sib_api_v3_sdk.api import transactional_emails_api
 from sib_api_v3_sdk.models import SendSmtpEmail
+import requests
 
 # Define paths
 DIAGNOSES_PATH = Path("data/raw/diagnoses.csv")
@@ -23,10 +25,11 @@ MAX_HISTORICAL_METRICS = 1000
 MAX_HISTORICAL_ALERTS = 100
 
 # Notification settings
-SMS_RECIPIENTS = ["+254702171841"]
+SMS_RECIPIENTS = ["+254721685600", "+254702171841"]
 EMAIL_RECIPIENTS = ["edithnaike@gmail.com"]
 SMS_SENDER_ID = "Masterclass"
-EMAIL_SENDER = {"name": "Alert System", "email": "alerts@students.uonbi.ac.ke"}
+EMAIL_SENDER = {"name": "Edith", "email": "edith_naike27@students.uonbi.ac.ke"}
+
 
 def load_data_safely(file_path, required_columns=None):
     """Safe data loading with validation"""
@@ -253,18 +256,46 @@ def send_sms_alert(message: str):
         print(f"Failed to send SMS: {e}")
         return False
 
+# def send_email_alert(subject: str, message: str):
+#     """Send email alert via SendinBlue"""
+#     try:
+#         import os
+#         print("SENDINBLUE_API_KEY =", os.getenv("SENDINBLUE_API_KEY")) 
+#         send_smtp_email = SendSmtpEmail(
+#             to=[{"email": email, "name": "Admin"} for email in EMAIL_RECIPIENTS],
+#             sender=EMAIL_SENDER,
+#             subject=subject,
+#             html_content=f"<p>{message}</p>"
+#         )
+#         response = transactional_emails_api.TransactionalEmailsApi(ApiClient(Configuration())).send_transac_email(send_smtp_email)
+#         print(f"Email sent: {response}")
+#         return True
+#     except Exception as e:
+#         print(f"Failed to send email: {e}")
+#         return False
+SENDINBLUE_API_KEY = os.getenv("SENDINBLUE_API_KEY")
+EMAIL_API_URL = "https://api.brevo.com/v3/smtp/email"
+
 def send_email_alert(subject: str, message: str):
-    """Send email alert via SendinBlue"""
+    """Send email alert using Sendinblue (Brevo) with requests"""
+    headers = {
+        "accept": "application/json",
+        "api-key": SENDINBLUE_API_KEY,
+        "content-type": "application/json",
+    }
+
+    payload = {
+        "sender": {"name": EMAIL_SENDER["name"], "email": EMAIL_SENDER["email"]},
+        "to": [{"email": email, "name": "Edith Naike"} for email in EMAIL_RECIPIENTS],
+        "subject": subject,
+        "htmlContent": f"<html><body><p>{message}</p></body></html>"
+    }
+
     try:
-        send_smtp_email = SendSmtpEmail(
-            to=[{"email": email, "name": "Admin"} for email in EMAIL_RECIPIENTS],
-            sender=EMAIL_SENDER,
-            subject=subject,
-            html_content=f"<p>{message}</p>"
-        )
-        response = transactional_emails_api.TransactionalEmailsApi(ApiClient(Configuration())).send_transac_email(send_smtp_email)
-        print(f"Email sent: {response}")
-        return True
+        response = requests.post(EMAIL_API_URL, headers=headers, json=payload)
+        print(f"Email response code: {response.status_code}")
+        print(f"Email response: {response.json()}")
+        return response.status_code == 201
     except Exception as e:
         print(f"Failed to send email: {e}")
         return False

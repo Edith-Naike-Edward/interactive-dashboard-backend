@@ -27,7 +27,7 @@ HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
 MIN_COMPARISON_INTERVAL = 300  # 5 minutes in seconds
 
 # Notification settings
-SMS_RECIPIENTS = ["+254702171841"]  # Replace with actual numbers
+SMS_RECIPIENTS = ["+254721685600"]  # Replace with actual numbers
 EMAIL_RECIPIENTS = ["edithnaike@gmail.com"]  # Replace with actual emails
 SMS_SENDER_ID = "Masterclass"  # Your Africa's Talking sender ID
 EMAIL_SENDER = {"name": "Alert System", "email": "alerts@students.uonbi.ac.ke"}

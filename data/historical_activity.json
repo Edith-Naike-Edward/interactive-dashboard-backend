@@ -3679,6 +3679,111 @@
       "timestamp": "2025-05-29T08:40:57.817803",
       "count": 49,
       "percentage_change": 11.4
+    },
+    {
+      "timestamp": "2025-05-29T15:00:38.345358",
+      "count": 46,
+      "percentage_change": -6.1
+    },
+    {
+      "timestamp": "2025-05-29T15:01:08.676765",
+      "count": 40,
+      "percentage_change": -18.4
+    },
+    {
+      "timestamp": "2025-05-29T18:02:40.543244",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:03:10.392861",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:03:40.385698",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:04:10.072846",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:04:40.376687",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:05:10.405798",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:05:40.408695",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:06:13.039899",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:06:40.385211",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:07:10.384682",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:07:40.390207",
+      "count": 34,
+      "percentage_change": -15.0
+    },
+    {
+      "timestamp": "2025-05-29T18:08:10.364543",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:08:40.403926",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:10.401635",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:40.401445",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:10.407398",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:40.402131",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:10.406064",
+      "count": 34,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:40.393305",
+      "count": 44,
+      "percentage_change": 29.4
     }
   ],
   "users": [
@@ -7361,6 +7466,111 @@
       "timestamp": "2025-05-29T08:40:57.817803",
       "count": 145,
       "percentage_change": 9.8
+    },
+    {
+      "timestamp": "2025-05-29T15:00:38.345358",
+      "count": 141,
+      "percentage_change": -2.8
+    },
+    {
+      "timestamp": "2025-05-29T15:01:08.676765",
+      "count": 138,
+      "percentage_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-29T18:02:40.543244",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:03:10.392861",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:03:40.385698",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:04:10.072846",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:04:40.376687",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:05:10.405798",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:05:40.408695",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:06:13.039899",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:06:40.385211",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:07:10.384682",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:07:40.390207",
+      "count": 134,
+      "percentage_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:08:10.364543",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:08:40.403926",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:10.401635",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:40.401445",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:10.407398",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:40.402131",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:10.406064",
+      "count": 134,
+      "percentage_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:40.393305",
+      "count": 132,
+      "percentage_change": -1.5
     }
   ],
   "changes": [
@@ -14266,6 +14476,195 @@
       "prev_users": 132,
       "current_users": 145,
       "user_change": 9.8
+    },
+    {
+      "timestamp": "2025-05-29T15:00:38.345358",
+      "prev_sites": 49,
+      "current_sites": 46,
+      "site_change": -6.1,
+      "prev_users": 145,
+      "current_users": 141,
+      "user_change": -2.8
+    },
+    {
+      "timestamp": "2025-05-29T15:01:08.676765",
+      "prev_sites": 49,
+      "current_sites": 40,
+      "site_change": -18.4,
+      "prev_users": 145,
+      "current_users": 138,
+      "user_change": -4.8
+    },
+    {
+      "timestamp": "2025-05-29T18:02:40.543244",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:03:10.392861",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:03:40.385698",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:04:10.072846",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:04:40.376687",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:05:10.405798",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:05:40.408695",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:06:13.039899",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:06:40.385211",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:07:10.384682",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:07:40.390207",
+      "prev_sites": 40,
+      "current_sites": 34,
+      "site_change": -15.0,
+      "prev_users": 138,
+      "current_users": 134,
+      "user_change": -2.9
+    },
+    {
+      "timestamp": "2025-05-29T18:08:10.364543",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:08:40.403926",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:10.401635",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:09:40.401445",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:10.407398",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:10:40.402131",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:10.406064",
+      "prev_sites": 34,
+      "current_sites": 34,
+      "site_change": 0.0,
+      "prev_users": 134,
+      "current_users": 134,
+      "user_change": 0.0
+    },
+    {
+      "timestamp": "2025-05-29T18:11:40.393305",
+      "prev_sites": 34,
+      "current_sites": 44,
+      "site_change": 29.4,
+      "prev_users": 134,
+      "current_users": 132,
+      "user_change": -1.5
     }
   ]
 }
