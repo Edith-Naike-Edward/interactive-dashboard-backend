@@ -27,10 +27,10 @@ HISTORICAL_DATA_PATH = Path("data/historical_activity.json")
 MIN_COMPARISON_INTERVAL = 300  # 5 minutes in seconds
 
 # Notification settings
-SMS_RECIPIENTS = ["+254721685600"]  # Replace with actual numbers
+SMS_RECIPIENTS = ["+254702171841"]  # Replace with actual numbers
 EMAIL_RECIPIENTS = ["edithnaike@gmail.com"]  # Replace with actual emails
 SMS_SENDER_ID = "Masterclass"  # Your Africa's Talking sender ID
-EMAIL_SENDER = {"name": "Alert System", "email": "alerts@students.uonbi.ac.ke"}
+EMAIL_SENDER = {"name": "Edith", "email": "edith_naike27@students.uonbi.ac.ke"}
 
 username = "masterclass"  # Your Africa's Talking username
 AFRICASTALKING_APIKEY = os.getenv("AFRICASTALKING_APIKEY")
@@ -192,7 +192,7 @@ def send_email_alert(subject: str, message: str):
     
     try:
         send_smtp_email = SendSmtpEmail(
-            to=[{"email": email, "name": "Admin"} for email in EMAIL_RECIPIENTS],
+            to=[{"email": email, "name": "Edith Naike"} for email in EMAIL_RECIPIENTS],
             sender=EMAIL_SENDER,
             subject=subject,
             html_content=f"<p>{message}</p>"
@@ -251,6 +251,18 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
     try:
         sites_df = pd.read_csv(SITE_CSV)
         users_df = pd.read_csv(USER_CSV)
+
+        # Calculate detailed site statistics
+        total_sites = len(sites_df)
+        active_sites = sites_df["is_active"].sum()
+        inactive_sites = total_sites - active_sites
+        site_stats = f"{inactive_sites} inactive sites, {active_sites} active sites, {total_sites} total sites"
+        
+        # Calculate detailed user statistics
+        total_users = len(users_df)
+        active_users = users_df["is_active"].sum()
+        inactive_users = total_users - active_users
+        user_stats = f"{inactive_users} inactive users, {active_users} active users, {total_users} total users"
         
         # Inactive sites
         inactive_sites = sites_df[~sites_df["is_active"]]
@@ -261,7 +273,7 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
                 "severity": "high",
                 "message": alert_msg,
                 "timestamp": timestamp,
-                "details": inactive_sites[["site_id", "name"]].to_dict('records')
+                "stats": site_stats
             })
             
             # Send notifications
@@ -279,7 +291,7 @@ def generate_alerts(activity_data: Dict) -> List[Dict]:
                 "severity": "medium",
                 "message": alert_msg,
                 "timestamp": timestamp,
-                "details": inactive_users[["id", "name"]].to_dict('records')
+                "stats": user_stats
             })
             
             # Send notifications if more than threshold

@@ -19,7 +19,6 @@ from api.auth.register.auth import router as register_router  # Import the regis
 from utils.monitoring import monitor_activity as monitoring_main, HISTORICAL_DATA_PATH
 from utils.followup import followup_activity as followup_main
 import json  # Add this import if not already present
-# from utils.patient_summary import get_patient_summary
 from src.generators.patientgenerator import generate_patients, generated_patients
 
 router = APIRouter()
@@ -199,56 +198,6 @@ async def check_activity_decline():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}") 
     
-# @router.get("/monitoring-metrics", response_class=JSONResponse)
-# async def get_monitoring_metrics():
-#     """
-#     Endpoint to return the latest cached monitoring metrics.
-#     Data is generated separately every 5 minutes by the scheduler.
-#     """
-#     print(f"\n=== Fetching monitoring metrics at {datetime.now().isoformat()} ===")
-    
-#     try:
-#         # Check if historical metrics file exists
-#         if not HISTORICAL_METRICS_PATH.exists():
-#             raise HTTPException(
-#                 status_code=404,
-#                 detail="Monitoring data not available yet. First generation in progress."
-#             )
-
-#         # Load the pre-calculated metrics
-#         with open(HISTORICAL_METRICS_PATH, 'r') as f:
-#             metrics_data = json.load(f)
-
-#         # Get the most recent metrics (last entry in the array)
-#         if not metrics_data.get("metrics"):
-#             raise HTTPException(
-#                 status_code=404,
-#                 detail="No metrics data available"
-#             )
-
-#         latest_metrics = metrics_data["metrics"][-1]
-#         latest_alerts = metrics_data.get("alerts", [])[-5:]  # Last 5 alerts
-
-#         print(f"Returning metrics from {latest_metrics['timestamp']}")
-        
-#         return {
-#             "status": "success",
-#             "data": {
-#                 "current_metrics": latest_metrics,
-#                 "historical_data": metrics_data["metrics"][-100:],  # Last 30 data points
-#                 "alerts": latest_alerts,
-#                 "last_updated": latest_metrics["timestamp"]
-#             }
-#         }
-        
-#     except HTTPException:
-#         raise
-#     except Exception as e:
-#         print(f"\nERROR loading metrics: {str(e)}")
-#         raise HTTPException(
-#             status_code=500,
-#             detail=f"Failed to load monitoring metrics: {str(e)}"
-#         )
 @router.get("/monitoring-metrics", response_class=JSONResponse)
 async def get_monitoring_metrics():
     """
@@ -421,22 +370,6 @@ async def get_patientdiagnosis(limit: int = 100):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Patient data not found. Generate data first.")
 
-# @router.get("/anomalies")
-# async def get_anomalies(limit: int = 50, severity: str = None):
-#     """Get detected anomalies with optional severity filter"""
-#     try:
-#         df = pd.read_csv("data/raw/anomalies.csv")
-        
-#         if severity:
-#             severity = severity.upper()
-#             df = df[df["alert_type"].str.contains(severity)]
-            
-#         return df.head(limit).to_dict(orient="records")
-#     except FileNotFoundError:
-#         raise HTTPException(status_code=404, detail="Anomaly data not found. Generate data first.")
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
-
 @router.get("/anomalies")
 async def get_anomalies(limit: int = 50, severity: str = None):
     """Get detected anomalies with optional severity filter"""
@@ -457,29 +390,6 @@ async def get_anomalies(limit: int = 50, severity: str = None):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 import numpy as np
-
-# @router.get("/anomalies")
-# async def get_anomalies(severity: str = None):
-#     """Get detected anomalies with optional severity filter"""
-#     try:
-#         df = pd.read_csv("data/raw/anomalies.csv")
-
-#         if severity:
-#             severity = severity.upper()
-#             df = df[df["alert_type"].str.contains(severity)]
-
-#         # Replace NaN and infinite values with None to avoid JSON serialization errors
-#         df_cleaned = df.replace([np.nan, np.inf, -np.inf], None)
-
-#         data = df_cleaned.to_dict(orient="records")
-
-#         return data
-
-#     except FileNotFoundError:
-#         raise HTTPException(status_code=404, detail="Anomaly data not found. Generate data first.")
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
-
 
 
 @router.get("/screenings")

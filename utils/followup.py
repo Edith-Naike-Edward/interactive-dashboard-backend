@@ -25,7 +25,7 @@ MAX_HISTORICAL_METRICS = 1000
 MAX_HISTORICAL_ALERTS = 100
 
 # Notification settings
-SMS_RECIPIENTS = ["+254721685600", "+254702171841"]
+SMS_RECIPIENTS = [ "+254702171841"]
 EMAIL_RECIPIENTS = ["edithnaike@gmail.com"]
 SMS_SENDER_ID = "Masterclass"
 EMAIL_SENDER = {"name": "Edith", "email": "edith_naike27@students.uonbi.ac.ke"}
@@ -256,23 +256,6 @@ def send_sms_alert(message: str):
         print(f"Failed to send SMS: {e}")
         return False
 
-# def send_email_alert(subject: str, message: str):
-#     """Send email alert via SendinBlue"""
-#     try:
-#         import os
-#         print("SENDINBLUE_API_KEY =", os.getenv("SENDINBLUE_API_KEY")) 
-#         send_smtp_email = SendSmtpEmail(
-#             to=[{"email": email, "name": "Admin"} for email in EMAIL_RECIPIENTS],
-#             sender=EMAIL_SENDER,
-#             subject=subject,
-#             html_content=f"<p>{message}</p>"
-#         )
-#         response = transactional_emails_api.TransactionalEmailsApi(ApiClient(Configuration())).send_transac_email(send_smtp_email)
-#         print(f"Email sent: {response}")
-#         return True
-#     except Exception as e:
-#         print(f"Failed to send email: {e}")
-#         return False
 SENDINBLUE_API_KEY = os.getenv("SENDINBLUE_API_KEY")
 EMAIL_API_URL = "https://api.brevo.com/v3/smtp/email"
 
@@ -300,6 +283,59 @@ def send_email_alert(subject: str, message: str):
         print(f"Failed to send email: {e}")
         return False
 
+# def generate_alerts(metrics_data: Dict) -> Dict:
+#     """Generate alerts based on metrics data"""
+#     alerts = []
+#     timestamp = datetime.now().isoformat()
+    
+#     # Check threshold violations
+#     if metrics_data["threshold_violations"]["new_diagnoses"]:
+#         alert_msg = f"New diagnoses below threshold: {metrics_data['current_metrics']['percent_new_diagnoses']}%"
+#         alerts.append({
+#             "type": "new_diagnoses_threshold",
+#             "severity": "high",
+#             "message": alert_msg,
+#             "timestamp": timestamp
+#         })
+#         send_sms_alert(f"ALERT: {alert_msg}")
+#         send_email_alert("New Diagnoses Alert", alert_msg)
+    
+#     if metrics_data["threshold_violations"]["bp_followup"]:
+#         alert_msg = f"BP follow-up below threshold: {metrics_data['current_metrics']['percent_bp_followup']}%"
+#         alerts.append({
+#             "type": "bp_followup_threshold",
+#             "severity": "medium",
+#             "message": alert_msg,
+#             "timestamp": timestamp
+#         })
+#         send_sms_alert(f"ALERT: {alert_msg}")
+#         send_email_alert("BP Follow-up Alert", alert_msg)
+    
+#     if metrics_data["threshold_violations"]["bg_followup"]:
+#         alert_msg = f"BG follow-up below threshold: {metrics_data['current_metrics']['percent_bg_followup']}%"
+#         alerts.append({
+#             "type": "bg_followup_threshold",
+#             "severity": "medium",
+#             "message": alert_msg,
+#             "timestamp": timestamp
+#         })
+#         send_sms_alert(f"ALERT: {alert_msg}")
+#         send_email_alert("BG Follow-up Alert", alert_msg)
+    
+#     if metrics_data["threshold_violations"]["bp_controlled"]:
+#         alert_msg = f"BP controlled below threshold: {metrics_data['current_metrics']['percent_bp_controlled']}%"
+#         alerts.append({
+#             "type": "bp_controlled_threshold",
+#             "severity": "high",
+#             "message": alert_msg,
+#             "timestamp": timestamp
+#         })
+#         send_sms_alert(f"ALERT: {alert_msg}")
+#         send_email_alert("BP Controlled Alert", alert_msg)
+    
+#     metrics_data["alerts"] = alerts
+#     return metrics_data
+
 def generate_alerts(metrics_data: Dict) -> Dict:
     """Generate alerts based on metrics data"""
     alerts = []
@@ -318,7 +354,7 @@ def generate_alerts(metrics_data: Dict) -> Dict:
         send_email_alert("New Diagnoses Alert", alert_msg)
     
     if metrics_data["threshold_violations"]["bp_followup"]:
-        alert_msg = f"BP follow-up below threshold: {metrics_data['current_metrics']['percent_bp_followup']}%"
+        alert_msg = f"Blood pressure follow-up below threshold: {metrics_data['current_metrics']['percent_bp_followup']}%"
         alerts.append({
             "type": "bp_followup_threshold",
             "severity": "medium",
@@ -329,7 +365,7 @@ def generate_alerts(metrics_data: Dict) -> Dict:
         send_email_alert("BP Follow-up Alert", alert_msg)
     
     if metrics_data["threshold_violations"]["bg_followup"]:
-        alert_msg = f"BG follow-up below threshold: {metrics_data['current_metrics']['percent_bg_followup']}%"
+        alert_msg = f"Blood glucose follow-up below threshold: {metrics_data['current_metrics']['percent_bg_followup']}%"
         alerts.append({
             "type": "bg_followup_threshold",
             "severity": "medium",
@@ -340,7 +376,7 @@ def generate_alerts(metrics_data: Dict) -> Dict:
         send_email_alert("BG Follow-up Alert", alert_msg)
     
     if metrics_data["threshold_violations"]["bp_controlled"]:
-        alert_msg = f"BP controlled below threshold: {metrics_data['current_metrics']['percent_bp_controlled']}%"
+        alert_msg = f"Blood pressure controlled below threshold: {metrics_data['current_metrics']['percent_bp_controlled']}%"
         alerts.append({
             "type": "bp_controlled_threshold",
             "severity": "high",
